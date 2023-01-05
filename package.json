@@ -1,0 +1,27 @@
+{
+  "name": "danjacquemin-com",
+  "private": true,
+  "description": "Gatsby site for DanJacquemin.com",
+  "version": "0.1.0",
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "dependencies": {
+    "gatsby": "^5.3.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/danjacquemin/danjacquemin-com"
+  },
+  "bugs": {
+    "url": "https://github.com/danjacquemin/danjacquemin-com/issues"
+  }
+}
