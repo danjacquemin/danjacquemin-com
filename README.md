@@ -39,4 +39,4 @@ It does, doesn't it?!
 
 ## Obtw...
 
-If you need a senior type developer, him me up. Deets on LinkedIn -- [linkedin.com/in/dan-jacquemin/](https://www.linkedin.com/in/dan-jacquemin/)
+If you need a senior type developer, hit me up. Deets on LinkedIn -- [linkedin.com/in/dan-jacquemin/](https://www.linkedin.com/in/dan-jacquemin/)
