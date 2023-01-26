@@ -6,8 +6,8 @@ Universe created.
 Some time passes.  
 Dinosaurs. Rawr!  
 Romans invent concrete.  
-2001: v1 of this site.  
-2001-2022: Various updates.
+2001. v1 of this site.  
+2001-2022. Various updates.
 
 2023: This rebuild starts.
 
@@ -23,7 +23,7 @@ web page I built was for [Netscape Navigator](<https://en.wikipedia.org/wiki/Net
 Then I spent a decade or two doing doing Web Development eventually working my
 way to to Lead Front-end Developer at [ETS](https://www.ets.org/) with strong focus on standards, #a11y, and usability. Sadly we get to 2023 and my role is getting outsourced. It was fun while it lasted.
 
-As part of that process I've been told having a "portfolio site" would be a Good Thing. So I'm using my time to build out something for the world to see and as a place where I can do a better job of brain dumping all the nifty tricks 2+ decades of front-end coding teaches you.
+As part of that process I've been told having a "portfolio site" would be a Good Thing. So I'm using my time to build out something for the world to see and as a place where I can do a better job of brain dumping all the nifty tricks 2+ decades of front-end coding has taught me.
 
 ## Okay, so what exactly are you doing...
 
