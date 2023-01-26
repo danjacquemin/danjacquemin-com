@@ -2,12 +2,12 @@
 
 ## The story so far...
 
-Universe created.
-Some time passes.
-Dinosaurs. Rawr!
+Universe created.  
+Some time passes.  
+Dinosaurs. Rawr!  
 Romans invent concrete.
 
-2001: v1 of this site.
+2001: v1 of this site.  
 2001-2022: Various updates.
 
 2023: This rebuild starts.
