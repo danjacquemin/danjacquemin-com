@@ -1,0 +1,29 @@
+.wrapSocial {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socialLink {
+  a {
+    display: inline-block;
+    padding: 1em;
+    width: 2em;
+    height: 2em;
+    text-align: center;
+    border-radius: 50%;
+
+    &:hover {
+      background-color: orange;
+
+      svg {
+        fill: white;
+      }
+    }
+  }
+
+  svg {
+    width: auto; // unset the default Icon provides
+    height: 2em;
+  }
+}
