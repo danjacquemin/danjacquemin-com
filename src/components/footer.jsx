@@ -5,12 +5,12 @@ import * as styles from "./footer.module.scss";
 
 const socialMedia = [
   {
-    name: "GitHub",
-    url: "https://github.com/danjacquemin",
-  },
-  {
     name: "LinkedIn",
     url: "https://www.linkedin.com/in/dan-jacquemin/",
+  },
+  {
+    name: "GitHub",
+    url: "https://github.com/danjacquemin",
   },
   {
     name: "Twitter",
@@ -41,6 +41,7 @@ const Footer = ({ children }) => {
             </div>
           ))}
       </div>
+      <div className={styles.wrapContents}>footer</div>
     </footer>
   );
 };

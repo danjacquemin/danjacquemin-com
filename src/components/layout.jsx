@@ -1,7 +1,10 @@
-import * as React from 'react'
-import Footer from './footer'
+import * as React from "react";
+import Footer from "./footer";
 
-const Layout = ({ pageTitle, children }) => {
+import "../styles/reset.scss";
+import "../styles/page.scss";
+
+function Layout({ pageTitle, children }) {
   return (
     <div>
       <main>
@@ -10,7 +13,7 @@ const Layout = ({ pageTitle, children }) => {
       </main>
       <Footer />
     </div>
-  )
+  );
 }
 
-export default Layout
+export default Layout;

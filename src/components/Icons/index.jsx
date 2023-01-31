@@ -7,7 +7,7 @@ import IconInstagram from "./instagram";
 import IconTumblr from "./tumblr";
 import IconTwitter from "./twitter";
 
-import * as styles from "./icons.module.css";
+import * as styles from "./icons.module.scss";
 
 function Icons({ name, additionalClasses }) {
   switch (name) {
