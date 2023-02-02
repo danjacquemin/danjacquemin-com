@@ -90,7 +90,7 @@ dist
 
 # vuepress build output
 .vuepress/dist
-
+/InternetH0F/status/1619377467592179712/photo/1
 # Serverless directories
 .serverless/
 
@@ -105,3 +105,4 @@ dist
 
 # DHJ adds
 .DS_Store
+public
