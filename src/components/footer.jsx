@@ -1,5 +1,6 @@
 import * as React from "react";
 import Icons from "./Icons";
+import { Link } from "gatsby";
 
 import * as styles from "./footer.module.scss";
 
@@ -30,6 +31,7 @@ const Footer = ({ children }) => {
   return (
     <footer>
       <hr />
+
       {children}
       <div className={styles.wrapSocial}>
         {socialMedia &&
@@ -46,6 +48,11 @@ const Footer = ({ children }) => {
           Seasoned UI/UX developer with a passion for <tt>#a11y</tt> and
           standards. I enjoy problem solving for large and small projects that
           make beautiful sites.
+        </p>
+        <p>
+          <Link to="/hire-me" className="btn">
+            Hire Me
+          </Link>
         </p>
       </div>
     </footer>

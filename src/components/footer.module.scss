@@ -2,9 +2,21 @@
 
 // -- -- -- -- --
 footer {
+  position: relative;
   display: flex;
   flex-direction: column;
-  border: 1px dashed green;
+  border-top: 8px solid var(--tank-green);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 8px;
+    width: calc(100% - 16px);
+    height: 8px;
+    background-color: var(--tank-light-400);
+    padding: 4px;
+  }
 
   hr {
     display: none;
@@ -12,10 +24,15 @@ footer {
 
   .wrapContents {
     order: 1;
+    padding-top: 2em;
+    font-size: 0.875em;
+    max-width: 31.25rem; // 500px
   }
 
   .wrapSocial {
     order: 2;
+    margin-top: 0;
+    z-index: 200;
   }
 
   @media screen and (min-width: 768px) {
@@ -51,7 +68,7 @@ footer {
   @media screen and (min-width: 768px) {
     display: inline-flex;
     flex-direction: column;
-    padding: 1rem;
+    padding: 2rem 1rem 1rem;
     &::before {
       content: "";
       position: absolute;
@@ -61,7 +78,7 @@ footer {
       display: block;
       padding: 1px;
       width: 2px;
-      height: 100%;
+      height: calc(100% - 2em);
       background-color: var(--tank-green);
     }
   }
@@ -72,6 +89,7 @@ footer {
     display: inline-flex;
     justify-items: center;
     align-items: center;
+    margin: 0;
     padding: 0.5em;
     min-width: var(--icon-size);
     min-height: var(--icon-size);
@@ -85,11 +103,21 @@ footer {
       fill: var(--body-text);
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: var(--tank-green);
       svg {
         fill: white;
       }
+    }
+
+    &:active {
+      box-shadow: none;
+    }
+
+    &:focus-visible {
+      outline-offset: 2px;
+      box-shadow: none;
     }
   }
 
