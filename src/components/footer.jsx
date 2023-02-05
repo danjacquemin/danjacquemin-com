@@ -41,7 +41,13 @@ const Footer = ({ children }) => {
             </div>
           ))}
       </div>
-      <div className={styles.wrapContents}>footer</div>
+      <div className={styles.wrapContents}>
+        <p>
+          Seasoned UI/UX developer with a passion for <tt>#a11y</tt> and
+          standards. I enjoy problem solving for large and small projects that
+          make beautiful sites.
+        </p>
+      </div>
     </footer>
   );
 };
