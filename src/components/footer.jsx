@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { useEffect, useState } from "react";
 import Icons from "./Icons";
 import { Link } from "gatsby";
 
@@ -43,9 +43,11 @@ const socialMedia = [
 // -- -- --
 
 const Footer = ({ children }) => {
-  const randomReminder = () => {
-    return reminders[Math.floor(Math.random() * reminders.length)];
-  };
+  const [reminder, setReminder] = useState("");
+
+  useEffect(() => {
+    setReminder(reminders[Math.floor(Math.random() * reminders.length)]);
+  }, []);
 
   return (
     <footer>
@@ -76,7 +78,7 @@ const Footer = ({ children }) => {
         <div className={styles.wrapCya}>
           <p>
             Important reminder:{" "}
-            <span dangerouslySetInnerHTML={{ __html: randomReminder() }}></span>
+            <span dangerouslySetInnerHTML={{ __html: reminder }}></span>
           </p>
           <p>
             Copyright <span aria-hidden="true">&copy;</span> Dan Jacquemin.
