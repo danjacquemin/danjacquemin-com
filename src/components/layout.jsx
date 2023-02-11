@@ -6,13 +6,11 @@ import "../styles/page.scss";
 
 function Layout({ pageTitle, children }) {
   return (
-    <div>
-      <main>
-        <h1>{pageTitle}</h1>
-        {children}
-      </main>
+    <>
+      <header>{pageTitle}</header>
+      <main>{children}</main>
       <Footer />
-    </div>
+    </>
   );
 }
 
