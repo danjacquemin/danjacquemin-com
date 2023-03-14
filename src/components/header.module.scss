@@ -1,0 +1,44 @@
+@use "../styles/variables.scss";
+
+// -- -- -- -- --
+
+header {
+  position: relative;
+  margin: 0 0 24px 0;
+
+  border-bottom: 8px solid var(--tank-green);
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -16px;
+    left: 8px;
+    width: calc(100% - 16px);
+    height: 8px;
+    background-color: var(--tank-light-400);
+    padding: 4px;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 auto;
+  padding: var(--px-8);
+  max-width: var(--max-width);
+}
+
+.title {
+  color: var(--tank-green);
+  font-family: "Special Elite", serif;
+  font-weight: bold;
+
+  padding-top: 0.2em;
+  font-size: 1rem;
+  line-height: 1.1rem;
+
+  @media screen and (min-width: 768px) {
+    font-size: 1.3rem;
+    line-height: 1.4;
+  }
+}
