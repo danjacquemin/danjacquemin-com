@@ -1,9 +1,15 @@
 :root {
+  --font-code: Fira Code;
+
+  --type-smaller-font-size: 0.833rem;
+
   --transition-duration: 0.2s;
   --transition-timing: ease-in;
 
   --px-8: 0.5rem;
   --px-10: 0.625rem;
+
+  --elem-radius: 0.25rem;
 
   --max-width: 1200px;
 
@@ -23,4 +29,6 @@
   --tank-light-700: #caccc9;
   --tank-light-800: #dcdddb;
   --tank-light-900: #edeeed;
+
+  --code-background-inline: #f2f1f1;
 }
