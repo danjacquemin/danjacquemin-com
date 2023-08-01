@@ -34,13 +34,14 @@ body {
 
   .wrapContents {
     flex: 1;
+    padding-right: 1em;
   }
 
   .wrapAside {
     flex: 1;
     max-width: 420px;
-    padding: var(--px-8);
-    // background-color: var(--tank-light-800);
+    padding: var(--px-16);
+    background-color: var(--tank-light-800);
   }
 }
 
@@ -74,6 +75,32 @@ h6 {
 
 p {
   margin: 0 0 1em 0;
+}
+
+table {
+  margin: 0 0 1em;
+  padding: 0;
+  border-collapse: collapse;
+  border: 1px solid var(--tank-light-800);
+  width: 100%;
+
+  thead {
+    border-bottom: 2px solid var(--tank-green);
+  }
+
+  th,
+  td {
+    padding: 0.5em;
+    vertical-align: top;
+    text-align: left;
+    border: 1px solid var(--tank-light-800);
+  }
+
+  tbody {
+    th {
+      font-weight: normal;
+    }
+  }
 }
 
 main {
