@@ -41,6 +41,12 @@ const AboutPage = () => {
             strong focus on standards, #a11y, and usability. Sadly we got to
             2023 and my role got outsourced. It was fun while it lasted.
           </p>
+          <p>
+            Good news though, the great folks at the Asplundh Digital
+            Innovations group have opted to fund my adventures.
+            <br />
+            [heart-hands image goes here]
+          </p>
         </div>
         <h2>Okay, so what exactly are you doing&hellip;</h2>
         <div className="px-4 pb-6">
@@ -58,7 +64,8 @@ const AboutPage = () => {
 
         <div className="px-4 pb-6">
           <p>
-            If you need a senior type developer, hit me up.
+            If you need a senior type developer I'm always happy to listen, so
+            hit me up.
             <br />
             Deets on LinkedIn &mdash;{" "}
             <a href="https://www.linkedin.com/in/dan-jacquemin/">
