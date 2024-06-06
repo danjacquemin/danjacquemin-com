@@ -1,0 +1,153 @@
+/** fonts
+ *  https://fonts.google.com/specimen/Playfair+Display/tester?query=Playfair
+ *  https://fonts.google.com/specimen/Raleway?query=Raleway 
+ */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --text-decoration-offset: 0.25em;
+  }
+
+  html[data-theme="default"] {
+    --color-bodytext: 23, 23, 23;
+    --color-bg-primary: 255, 255, 255;
+    --color-button-primary-bg: 255, 255, 255;
+    --color-button-primary-bg-hover: 23, 23, 23;
+    --color-button-primary-fill: 23, 23, 23;
+    --color-button-primary-fill-hover: 255, 255, 255;
+    --color-button-primary-border: 23, 23, 23;
+    --color-button-primary-border-hover: 23, 23, 23;
+  }
+
+  html[data-theme="dark"] {
+    --color-bodytext: 255, 255, 255;
+    --color-bg-primary: 23, 23, 23;
+    --color-button-primary-bg: 23, 23, 23;
+    --color-button-primary-bg-hover: 255, 255, 255;
+    --color-button-primary-fill: 255, 255, 255;
+    --color-button-primary-fill-hover: 23, 23, 23;
+    --color-button-primary-border: 255, 255, 255;
+    --color-button-primary-border-hover: 255, 255, 255;
+  }
+
+  * {
+    text-underline-offset: var(--text-decoration-offset, 0.2em);
+  }
+
+  html,
+  body {
+    @apply bg-skin-primary font-body font-light text-skin-bodytext;
+  }
+
+  body {
+    overflow-y: scroll;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply mb-2 font-display;
+  }
+
+  h1 {
+    @apply text-4xl font-semibold;
+  }
+
+  h2 {
+    @apply text-2xl;
+  }
+
+  h3 {
+    @apply text-xl;
+  }
+
+  ul {
+  }
+
+  main ul > li {
+    @apply ml-5 list-disc;
+  }
+
+  a {
+    @apply underline;
+    @apply hover:text-skin-button-primary-hover;
+  }
+}
+
+@layer components {
+  body:has(.home-page) hr.footer-hr {
+    display: none;
+  }
+
+  .wrap-footer {
+    @apply flex flex-col;
+    @apply md:flex-row;
+  }
+
+  .wrap-footer strong {
+    @apply font-bold;
+  }
+
+  .wrap-social,
+  .wrap-selflove,
+  .wrap-quirk,
+  .wrap-cya {
+    @apply p-4 pb-1;
+  }
+
+  .wrap-cruft {
+    @apply flex max-w-[600px] flex-col justify-between text-sm;
+    @apply md:py-4;
+  }
+
+  body:has(.home-page) .wrap-cruft {
+    @apply text-base;
+  }
+
+  .wrap-social {
+    @apply relative flex flex-wrap justify-center p-0 pt-4;
+    @apply pl-4 md:w-24;
+
+    & > div {
+      z-index: 9999;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 2em;
+      left: calc(50% + 7px);
+      z-index: 0;
+      display: block;
+      padding: 1px;
+      width: 2px;
+      height: calc(100% - 4em);
+      background-color: rgb(var(--color-button-primary-fill));
+    }
+  }
+
+  .wrap-social a {
+    @apply mx-2 block overflow-hidden rounded-full border-2 border-skin-primary bg-skin-primary p-2 no-underline duration-200 ease-in-out;
+    @apply hover:bg-skin-button-primary-hover hover:no-underline hover:drop-shadow-xl;
+    @apply md:mx-0 md:my-1;
+
+    & svg {
+      fill: rgb(var(--color-button-primary-fill));
+    }
+
+    &:hover svg {
+      fill: rgb(var(--color-button-primary-fill-hover));
+    }
+  }
+}
+
+@layer utilities {
+}
