@@ -1,0 +1,103 @@
+.wrap-swag-pin {
+  --swag-width: 5.5in;
+  --swag-height: 3.5in;
+  --border-radius: 18px;
+  --gap: 4px;
+
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: var(--swag-width);
+}
+
+.wrap-lyrics {
+  flex: 1;
+  padding: 3rem;
+}
+
+select {
+  width: 100%;
+  background-color: #f1f1f1;
+  height: 3rem;
+  text-indent: 0.5rem;
+}
+
+.button-area {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--gap);
+  width: var(--swag-width);
+  height: var(--swag-height);
+  border: 1px solid #f1f1f1;
+}
+
+.swag-panel {
+  display: flex;
+  column-gap: var(--gap);
+
+  height: calc(50% - var(--gap) / 2);
+}
+
+.swag-img {
+  aspect-ratio: 1/1;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & img {
+    border-radius: var(--border-radius);
+  }
+}
+
+.swag-content {
+  width: 100%;
+}
+
+.swag-top-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.hello-my-name-is {
+  display: flex;
+  flex-direction: column;
+
+  flex: 0 0 50%;
+
+  padding: 0.05in;
+  height: 50%;
+  color: white;
+  line-height: 1;
+
+  text-align: center;
+  background-color: red;
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+
+.hello {
+  flex: 0 0 66.666%;
+  padding: 0.05in;
+  font-size: 2.5em;
+  font-weight: 600;
+}
+
+.my-name-is {
+  flex: 1 0 auto;
+  padding: 0.05in;
+  font-weight: 600;
+}
+
+.signature {
+  flex: 1;
+
+  &:before {
+    content: "";
+    display: block;
+    height: 100%;
+    border: 10px solid red;
+    border-top: 0;
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
+  }
+}
