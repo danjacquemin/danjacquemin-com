@@ -10,6 +10,10 @@
   max-width: var(--swag-width);
 }
 
+.select {
+  margin-bottom: 1rem;
+}
+
 .wrap-lyrics {
   flex: 1;
   padding: 3rem;
@@ -55,10 +59,30 @@ select {
   width: 100%;
 }
 
+.swag-bottom-content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 1rem;
+  font-weight: 600;
+}
+
+.wrap-lyric {
+  font-size: 44px;
+  text-wrap: balance;
+  text-align: center;
+  font-family: "Swanky and Moo Moo";
+  line-height: 1;
+}
+
 .swag-top-content {
   display: flex;
   flex-direction: column;
 }
+
+/* 
 
 .hello-my-name-is {
   display: flex;
@@ -89,6 +113,39 @@ select {
   font-weight: 600;
 }
 
+*/
+
+.hello-my-name-is {
+  display: flex;
+  flex-direction: column;
+
+  flex: 0 0 50%;
+
+  padding: 0.05in;
+  height: 50%;
+  color: red;
+  line-height: 1;
+
+  text-align: center;
+  border: 10px solid red;
+  border-bottom: 0;
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+
+.hello {
+  flex: 0 0 66.666%;
+  padding: 0.05in;
+  font-size: 2.5em;
+  font-weight: 600;
+}
+
+.my-name-is {
+  flex: 1 0 auto;
+  margin-top: -0.1in;
+  padding: 0.05in;
+  font-weight: 600;
+}
+
 .signature {
   flex: 1;
 
@@ -99,5 +156,26 @@ select {
     border: 10px solid red;
     border-top: 0;
     border-radius: 0 0 var(--border-radius) var(--border-radius);
+  }
+}
+
+.dave-speak {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  padding: 1rem;
+  font-size: 14px;
+  width: 70%;
+
+  & > div:nth-child(2) {
+    font-size: 2.5em;
+    line-height: 1.8;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  & > div:nth-child(3) {
+    text-align: right;
   }
 }

@@ -3,6 +3,7 @@ import { useState } from "react";
 import styles from "./swag-pin.module.css";
 
 import logoShow from "./img/logo-dave-tim-2024.png";
+import logoDave from "./img/dave.jpg";
 import albumAwayFromTheWorld from "./img/album-away-from-the-world.jpg";
 import albumBigWhiskey from "./img/album-big-whiskey.jpg";
 import albumBustedStuff from "./img/album-busted-stuff.jpg";
@@ -31,7 +32,7 @@ const albumList: Album[] = [
       "Could I have been a dancing Nancy?",
       "And I remember being small",
       "Could I love you? Could you love me?",
-      "[and] If you could keep me floating just for a while",
+      "If you could keep me floating just for a while",
       "I'll  Leave all the lights on",
     ],
   },
@@ -51,7 +52,7 @@ const albumList: Album[] = [
     src: albumCrowdedStreets,
     lyrics: [
       "Don't burn the day away",
-      "Am I right side up or upside down, is this real...",
+      "Am I right side up or upside down",
       // "I've this creeping / Suspicion that things here are not as they seem",
       "I'll do my best for you, I do",
       "Come and relax now, put your troubles down",
@@ -62,8 +63,8 @@ const albumList: Album[] = [
     src: albumEveryday,
     lyrics: [
       "I take my chances on everyday",
-      "Oh I sleep just to dream her",
-      "Stay up and make some memories here, with us now",
+      "I sleep just to dream her",
+      // "Stay up and make some memories here, with us now",
       "You cannot quit me so quickly",
       "I'm gonna love you / When the world ends",
     ],
@@ -74,7 +75,7 @@ const albumList: Album[] = [
     lyrics: [
       "Bartender please, fill my glass for me",
       "I am the captain of this ship",
-      "Excuse me please one more drink",
+      "Excuse me please, one more drink",
       "But I do know one thing",
     ],
   },
@@ -87,8 +88,8 @@ const albumList: Album[] = [
     name: "Stand Up",
     src: albumStandUp,
     lyrics: [
-      "[and the] First time I saw you, you did me that way",
-      "Can't catch me ride my bike down the old dirt hill,",
+      "First time I saw you, you did me that way",
+      "Can't catch me riding my bike down the old dirt hill,",
       "'Cause you might die trying",
     ],
   },
@@ -117,19 +118,18 @@ const albumList: Album[] = [
 ];
 
 const SwagPin = () => {
-  const [album, setAlbum] = useState<Album>();
+  // const [album, setAlbum] = useState<Album>();
   const [lyrics, setLyrics] = useState<string[]>([]);
+  const [selectedLyric, setSelectedLyric] = useState<string>();
 
   const handleSelectAlbum = (event: React.ChangeEvent<HTMLSelectElement>) => {
-    const selectedAlbum = albumList.find((album) => {
-      album.name === event.target.value;
-      album.lyrics ? setLyrics(album.lyrics) : setLyrics([]);
-    });
-    setAlbum(selectedAlbum);
+    // setAlbum(albumList[parseInt(event.target.value)]);
+    setLyrics(albumList[parseInt(event.target.value)].lyrics || []);
+    setSelectedLyric("");
   };
 
   const handleSelectLyrics = (event: React.ChangeEvent<HTMLSelectElement>) => {
-    console.log(event.target.value);
+    setSelectedLyric(event.target.value);
   };
 
   return (
@@ -142,39 +142,65 @@ const SwagPin = () => {
           <div
             className={`${styles["swag-content"]} ${styles["swag-top-content"]}`}
           >
-            <div className={styles["hello-my-name-is"]}>
-              <div className={styles["hello"]}>Hello</div>
-              <div className={styles["my-name-is"]}>my name is</div>
+            {/**
+             * <div className={styles["hello-my-name-is"]}>
+             *   <div className={styles["hello"]}>Hello</div>
+             *   <div className={styles["my-name-is"]}>my name is</div>
+             * </div>
+             * <div className={styles["signature"]}></div>
+             */}
+            <div className={styles["dave-speak"]}>
+              <div>&lt;Dave-Speak&gt;</div>
+              <div>Hello&hellip;</div>
+              <div>&lt;/Dave-Speak&gt;</div>
             </div>
-            <div className={styles["signature"]}></div>
           </div>
         </div>
         <div className={styles["swag-panel"]}>
-          <div className={styles["swag-img"]}>
-            {album && <img src={album.src} />}
+          {/**
+           * <div className={styles["swag-img"]}>
+           * {album && <img src={album.src} />}
+           * </div>
+           **/}
+          <div
+            className={`${styles["swag-content"]} ${styles["swag-bottom-content"]}`}
+          >
+            <div className={styles["wrap-lyric"]}>{selectedLyric}</div>
           </div>
-          <div className={styles["swag-content"]}>{lyrics}</div>
         </div>
       </div>
 
       <div className={styles["wrap-lyrics"]}>
-        <div>
-          <select onChange={handleSelectAlbum}>
-            <option value="-1">-</option>
-            {albumList.map((album) => {
+        <label htmlFor="select-album">Album</label>
+        <select
+          onChange={handleSelectAlbum}
+          className={styles["select"]}
+          id="select-album"
+        >
+          <option value="-1">-</option>
+          {albumList.map((album, ii) => {
+            return (
+              <option key={album.name} value={ii}>
+                {album.name}
+              </option>
+            );
+          })}
+        </select>
+        <label htmlFor="select-lyrics">Lyrics</label>
+        <select onChange={handleSelectLyrics} id="select-lyrics">
+          <option value="-1">{lyrics.length} Choices</option>
+          {lyrics.length > 0 ? (
+            lyrics.map((lyric) => {
               return (
-                <option key={album.name} value={album.name}>
-                  {album.name}
+                <option key={lyric} value={lyric}>
+                  {lyric}
                 </option>
               );
-            })}
-          </select>
-        </div>
-        <div>
-          <select onChange={handleSelectLyrics}>
-            <option value="-1">-</option>
-          </select>
-        </div>
+            })
+          ) : (
+            <option value="-1">&mdash;</option>
+          )}
+        </select>
       </div>
     </div>
   );
