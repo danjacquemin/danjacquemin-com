@@ -15,6 +15,7 @@ export default {
     fontFamily: {
       display: ["Playfair Display", "serif"],
       body: ["Raleway", "sans-serif"],
+      mono: ["Inconsolata", "monospace"],
     },
     extend: {
       textColor: {

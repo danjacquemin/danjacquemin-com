@@ -1,8 +1,9 @@
 /** fonts
- *  https://fonts.google.com/specimen/Playfair+Display/tester?query=Playfair
- *  https://fonts.google.com/specimen/Raleway?query=Raleway 
+ *  https://fonts.google.com/specimen/Playfair+Display
+ *  https://fonts.google.com/specimen/Raleway
+ *  https://fonts.google.com/specimen/Inconsolata
  */
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Inconsolata:wght@200..900&display=swap");
 
 /** 
  * https://fonts.google.com/specimen/Swanky+and+Moo+Moo?query=Swanky+and+Moo+Moo
@@ -85,9 +86,11 @@
 }
 
 @layer components {
-  body:has(.home-page) hr.footer-hr {
+  body:has(.no-innards) hr.footer-hr {
     display: none;
   }
+
+  /* -- -- -- */
 
   .wrap-footer {
     @apply flex flex-col;
@@ -147,6 +150,46 @@
 
     &:hover svg {
       fill: rgb(var(--color-button-primary-fill-hover));
+    }
+  }
+
+  /* -- -- -- */
+
+  .haspopup {
+    position: relative;
+
+    & > button {
+      padding: 0 0.25em;
+      border: 1px solid transparent;
+      border-radius: 5px 5px 0px 0px;
+      text-decoration: underline;
+    }
+
+    & > [role="menu"] {
+      display: none;
+      position: absolute;
+      margin: -3px 0;
+      width: 100%;
+      background-color: rgb(var(--color-bg-primary));
+    }
+
+    & > button[aria-expanded="true"] {
+      text-decoration: none;
+    }
+
+    & > button[aria-expanded="true"] + [role="menu"] {
+      display: block;
+    }
+
+    & > [role="menu"] [role="menuitem"] {
+      display: block;
+      padding: 0 0.25em;
+      border: 1px solid transparent;
+      border-top: 0;
+    }
+
+    & > [role="menu"] li:last-of-type [role="menuitem"] {
+      border-radius: 0px 0px 5px 5px;
     }
   }
 }

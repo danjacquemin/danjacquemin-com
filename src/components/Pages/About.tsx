@@ -9,6 +9,9 @@ const AboutPage = () => {
     <>
       <section className="min-w-[700px] basis-1/2">
         <h1 className="mb-6 italic">Hello World!</h1>
+      </section>
+      <hr className="-mx-4 mb-4" />
+      <section className="min-w-[700px] basis-1/2">
         <h2>The story so far&hellip;</h2>
         <div className="px-4 pb-6">
           <p>
