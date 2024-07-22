@@ -13,18 +13,18 @@ const FlotsamPage = () => {
       <hr className="-mx-4 mb-4" />
       <section className="min-w-[700px] basis-1/2">
         <div>
-          <span className="mr-4 font-semibold">flot·sam</span>
+          <span className="mr-4 font-semibold">flot · sam</span>
           <span className="font-mono">/ˈflätsəm/</span>
         </div>
-        <div className="italic text-zinc-500">noun</div>
+        <div className="italic text-gray-500">noun</div>
         <ul>
           <li>
-            the wreckage of a ship or its cargo found floating on or washed up
-            by the sea.
+            debris in the water that was not deliberately thrown overboard,
+            often as a result from a shipwreck or accident.
           </li>
           <li>
-            people or things that have been rejected and are regarded as
-            worthless.
+            aka, junk that I'm pondering that doesn't fall into other
+            categories.
           </li>
         </ul>
         <hr className="-mx-4 mb-4 mt-4" />

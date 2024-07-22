@@ -4,6 +4,7 @@ import SwagPage from "./components/Pages/Swag";
 import AboutPage from "./components/Pages/About";
 import JetsamPage from "./components/Pages/Jetsam";
 import FlotsamPage from "./components/Pages/Flotsam";
+import NFLPickem from "./components/Pages/NFLPickem";
 
 const AppRoutes = () => {
   return (
@@ -13,6 +14,7 @@ const AppRoutes = () => {
       <Route path="/flotsam" element={<FlotsamPage />} />
       <Route path="/swag" element={<SwagPage />} />
       <Route path="/about" element={<AboutPage />} />
+      <Route path="/nfl-pickem-2024" element={<NFLPickem />} />
     </Routes>
   );
 };

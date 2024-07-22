@@ -1,0 +1,164 @@
+{
+  "teams": {
+    "ARI": {
+      "team": "Arizona Cardinals",
+      "conference": "NFC",
+      "nickname": "Cards"
+    },
+    "ATL": {
+      "team": "Atlanta Falcons",
+      "conference": "NFC",
+      "nickname": "Falcons"
+    },
+    "BAL": {
+      "team": "Baltimore Ravens",
+      "conference": "AFC",
+      "nickname": "Ravens"
+    },
+    "BUF": {
+      "team": "Buffalo Bills",
+      "conference": "AFC",
+      "nickname": "Bills"
+    },
+    "CAR": {
+      "team": "Carolina Panthers",
+      "conference": "NFC",
+      "nickname": "Panthers"
+    },
+    "CHI": {
+      "team": "Chicago Bears",
+      "conference": "NFC",
+      "nickname": "Bears"
+    },
+    "CIN": {
+      "team": "Cincinnati Bengals",
+      "conference": "AFC",
+      "nickname": "Bengals"
+    },
+    "CLE": {
+      "team": "Cleveland Browns",
+      "conference": "AFC",
+      "nickname": "Browns"
+    },
+    "DAL": {
+      "team": "Dallas Cowboys",
+      "conference": "NFC",
+      "nickname": "Cowboys"
+    },
+    "DEN": {
+      "team": "Denver Broncos",
+      "conference": "AFC",
+      "nickname": "Broncos"
+    },
+    "DET": {
+      "team": "Detroit Lions",
+      "conference": "NFC",
+      "nickname": "Lions"
+    },
+    "GB": {
+      "team": "Green Bay Packers",
+      "conference": "NFC",
+      "nickname": "Packers"
+    },
+    "HOU": {
+      "team": "Houston Texans",
+      "conference": "AFC",
+      "nickname": "Texans"
+    },
+    "IND": {
+      "team": "Indianapolis Colts",
+      "conference": "AFC",
+      "nickname": "Colts"
+    },
+    "JAX": {
+      "team": "Jacksonville Jaguars",
+      "conference": "AFC",
+      "nickname": "Jaguars"
+    },
+    "KC": {
+      "team": "Kansas City Chiefs",
+      "conference": "AFC",
+      "nickname": "Chiefs"
+    },
+    "LAC": {
+      "team": "Los Angeles Chargers",
+      "conference": "AFC",
+      "nickname": "Chargers"
+    },
+    "LAR": {
+      "team": "Los Angeles Rams",
+      "conference": "NFC",
+      "nickname": "Rams"
+    },
+    "LV": {
+      "team": "Las Vegas Raiders",
+      "conference": "AFC",
+      "nickname": "Raiders"
+    },
+    "MIA": {
+      "team": "Miami Dolphins",
+      "conference": "AFC",
+      "nickname": "Dolphins"
+    },
+    "MIN": {
+      "team": "Minnesota Vikings",
+      "conference": "NFC",
+      "nickname": "Vikings"
+    },
+    "NE": {
+      "team": "New England Patriots",
+      "conference": "AFC",
+      "nickname": "Patriots"
+    },
+    "NO": {
+      "team": "New Orleans Saints",
+      "conference": "NFC",
+      "nickname": "Saints"
+    },
+    "NYG": {
+      "team": "New York Giants",
+      "conference": "NFC",
+      "nickname": "Giants"
+    },
+    "NYJ": {
+      "team": "New York Jets",
+      "conference": "AFC",
+      "nickname": "Jets"
+    },
+    "PHI": {
+      "team": "Philadelphia Eagles",
+      "conference": "NFC",
+      "nickname": "Eagles"
+    },
+    "PIT": {
+      "team": "Pittsburgh Steelers",
+      "conference": "AFC",
+      "nickname": "Steelers"
+    },
+    "SF": {
+      "team": "San Francisco 49ers",
+      "conference": "NFC",
+      "nickname": "49ers"
+    },
+    "SEA": {
+      "team": "Seattle Seahawks",
+      "conference": "NFC",
+      "nickname": "Seahawks"
+    },
+    "TB": {
+      "team": "Tampa Bay Buccaneers",
+      "conference": "NFC",
+      "nickname": "Buccaneers"
+    },
+    "TEN": {
+      "team": "Tennessee Titans",
+      "conference": "AFC",
+      "nickname": "Titans"
+    },
+    "WAS": {
+      "team": "Washington Commanders",
+      "conference": "NFC",
+      "nickname": "Football Team"
+    }
+  }
+}

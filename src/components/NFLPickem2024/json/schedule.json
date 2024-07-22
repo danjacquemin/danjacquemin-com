@@ -1,0 +1,108 @@
+{
+  "week-1": [
+    {
+      "away": "BAL",
+      "home": "KC",
+      "date": "2024-09-05",
+      "time": "8:20 PM"
+    },
+    {
+      "away": "GB",
+      "home": "PHI",
+      "date": "2024-09-06",
+      "time": "8:15 PM"
+    },
+    {
+      "away": "PIT",
+      "home": "ATL",
+      "date": "2024-09-08",
+      "time": "1:00 PM"
+    },
+    {
+      "away": "ARI",
+      "home": "BUF",
+      "date": "2024-09-08",
+      "time": "1:00 PM"
+    },
+    {
+      "away": "TEN",
+      "home": "CHI",
+      "date": "2024-09-08",
+      "time": "1:00 PM"
+    },
+    {
+      "away": "NE",
+      "home": "CIN",
+      "date": "2024-09-08",
+      "time": "1:00 PM"
+    },
+    {
+      "away": "HOU",
+      "home": "IND",
+      "date": "2024-09-08",
+      "time": "1:00 PM"
+    },
+    {
+      "away": "JAX",
+      "home": "MIA",
+      "date": "2024-09-08",
+      "time": "1:00 PM"
+    },
+    {
+      "away": "CAR",
+      "home": "NO",
+      "date": "2024-09-08",
+      "time": "1:00 PM"
+    },
+    {
+      "away": "MIN",
+      "home": "NYG",
+      "date": "2024-09-08",
+      "time": "1:00 PM"
+    },
+    {
+      "away": "LV",
+      "home": "LAC",
+      "date": "2024-09-08",
+      "time": "4:05 PM"
+    },
+    {
+      "away": "DEN",
+      "home": "SEA",
+      "date": "2024-09-08",
+      "time": "4:05 PM"
+    },
+    {
+      "away": "DAL",
+      "home": "CLE",
+      "date": "2024-09-08",
+      "time": "4:25 PM"
+    },
+    {
+      "away": "WAS",
+      "home": "TB",
+      "date": "2024-09-08",
+      "time": "4:25 PM"
+    },
+    {
+      "away": "LAR",
+      "home": "DET",
+      "date": "2024-09-08",
+      "time": "8:20 PM"
+    },
+    {
+      "away": "NYJ",
+      "home": "SF",
+      "date": "2024-09-09",
+      "time": "8:20 PM"
+    }
+  ],
+  "week-2": [
+    {
+      "away": "",
+      "home": "",
+      "date": "",
+      "time": ""
+    }
+  ]
+}
