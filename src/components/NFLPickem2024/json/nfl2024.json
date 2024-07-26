@@ -1,0 +1,3032 @@
+[
+  {
+    "week": 1,
+    "date": "Thursday, September 05, 2024",
+    "time": "8:20 PM",
+    "away": "Baltimore Ravens",
+    "home": "Kansas City Chiefs",
+    "stadium": "GEHA Field at Arrowhead Stadium",
+    "city": "Kansas City",
+    "state": "MO"
+  },
+  {
+    "week": 1,
+    "date": "Friday, September 06, 2024",
+    "time": "8:15 PM",
+    "away": "Green Bay Packers",
+    "home": "Philadelphia Eagles",
+    "stadium": "Corinthians Arena",
+    "city": "Sao Paulo",
+    "state": ""
+  },
+  {
+    "week": 1,
+    "date": "Sunday, September 08, 2024",
+    "time": "1:00 PM",
+    "away": "Pittsburgh Steelers",
+    "home": "Atlanta Falcons",
+    "stadium": "Mercedes-Benz Stadium",
+    "city": "Atlanta",
+    "state": "GA"
+  },
+  {
+    "week": 1,
+    "date": "Sunday, September 08, 2024",
+    "time": "1:00 PM",
+    "away": "Arizona Cardinals",
+    "home": "Buffalo Bills",
+    "stadium": "Highmark Stadium",
+    "city": "Orchard Park",
+    "state": "NY"
+  },
+  {
+    "week": 1,
+    "date": "Sunday, September 08, 2024",
+    "time": "1:00 PM",
+    "away": "Tennessee Titans",
+    "home": "Chicago Bears",
+    "stadium": "Soldier Field",
+    "city": "Chicago",
+    "state": "IL"
+  },
+  {
+    "week": 1,
+    "date": "Sunday, September 08, 2024",
+    "time": "1:00 PM",
+    "away": "New England Patriots",
+    "home": "Cincinnati Bengals",
+    "stadium": "Paycor Stadium",
+    "city": "Cincinnati",
+    "state": "OH"
+  },
+  {
+    "week": 1,
+    "date": "Sunday, September 08, 2024",
+    "time": "1:00 PM",
+    "away": "Houston Texans",
+    "home": "Indianapolis Colts",
+    "stadium": "Lucas Oil Stadium",
+    "city": "Indianapolis",
+    "state": "IN"
+  },
+  {
+    "week": 1,
+    "date": "Sunday, September 08, 2024",
+    "time": "1:00 PM",
+    "away": "Jacksonville Jaguars",
+    "home": "Miami Dolphins",
+    "stadium": "Hard Rock Stadium",
+    "city": "Miami Gardens",
+    "state": "FL"
+  },
+  {
+    "week": 1,
+    "date": "Sunday, September 08, 2024",
+    "time": "1:00 PM",
+    "away": "Carolina Panthers",
+    "home": "New Orleans Saints",
+    "stadium": "Caesars Superdome",
+    "city": "New Orleans",
+    "state": "LA"
+  },
+  {
+    "week": 1,
+    "date": "Sunday, September 08, 2024",
+    "time": "1:00 PM",
+    "away": "Minnesota Vikings",
+    "home": "New York Giants",
+    "stadium": "MetLife Stadium",
+    "city": "East Rutherford",
+    "state": "NJ"
+  },
+  {
+    "week": 1,
+    "date": "Sunday, September 08, 2024",
+    "time": "4:05 PM",
+    "away": "Las Vegas Raiders",
+    "home": "Los Angeles Chargers",
+    "stadium": "SoFi Stadium",
+    "city": "Inglewood",
+    "state": "CA"
+  },
+  {
+    "week": 1,
+    "date": "Sunday, September 08, 2024",
+    "time": "4:05 PM",
+    "away": "Denver Broncos",
+    "home": "Seattle Seahawks",
+    "stadium": "Lumen Field",
+    "city": "Seattle",
+    "state": "WA"
+  },
+  {
+    "week": 1,
+    "date": "Sunday, September 08, 2024",
+    "time": "4:25 PM",
+    "away": "Dallas Cowboys",
+    "home": "Cleveland Browns",
+    "stadium": "Cleveland Browns Stadium",
+    "city": "Cleveland",
+    "state": "OH"
+  },
+  {
+    "week": 1,
+    "date": "Sunday, September 08, 2024",
+    "time": "4:25 PM",
+    "away": "Washington Commanders",
+    "home": "Tampa Bay Buccaneers",
+    "stadium": "Raymond James Stadium",
+    "city": "Tampa",
+    "state": "FL"
+  },
+  {
+    "week": 1,
+    "date": "Sunday, September 08, 2024",
+    "time": "8:20 PM",
+    "away": "Los Angeles Rams",
+    "home": "Detroit Lions",
+    "stadium": "Ford Field",
+    "city": "Detroit",
+    "state": "MI"
+  },
+  {
+    "week": 1,
+    "date": "Monday, September 09, 2024",
+    "time": "8:20 PM",
+    "away": "New York Jets",
+    "home": "San Francisco 49ers",
+    "stadium": "Levi's Stadium",
+    "city": "Santa Clara",
+    "state": "CA"
+  },
+  {
+    "week": 2,
+    "date": "Thursday, September 12, 2024",
+    "time": "8:15 PM",
+    "away": "Buffalo Bills",
+    "home": "Miami Dolphins",
+    "stadium": "Hard Rock Stadium",
+    "city": "Miami Gardens",
+    "state": "FL"
+  },
+  {
+    "week": 2,
+    "date": "Sunday, September 15, 2024",
+    "time": "1:00 PM",
+    "away": "New Orleans Saints",
+    "home": "Dallas Cowboys",
+    "stadium": "AT&T Stadium",
+    "city": "Arlington",
+    "state": "TX"
+  },
+  {
+    "week": 2,
+    "date": "Sunday, September 15, 2024",
+    "time": "1:00 PM",
+    "away": "Tampa Bay Buccaneers",
+    "home": "Detroit Lions",
+    "stadium": "Ford Field",
+    "city": "Detroit",
+    "state": "MI"
+  },
+  {
+    "week": 2,
+    "date": "Sunday, September 15, 2024",
+    "time": "1:00 PM",
+    "away": "Indianapolis Colts",
+    "home": "Green Bay Packers",
+    "stadium": "Lambeau Field",
+    "city": "Green Bay",
+    "state": "WI"
+  },
+  {
+    "week": 2,
+    "date": "Sunday, September 15, 2024",
+    "time": "1:00 PM",
+    "away": "New York Jets",
+    "home": "Tennessee Titans",
+    "stadium": "Nissan Stadium",
+    "city": "Nashville",
+    "state": "TN"
+  },
+  {
+    "week": 2,
+    "date": "Sunday, September 15, 2024",
+    "time": "1:00 PM",
+    "away": "San Francisco 49ers",
+    "home": "Minnesota Vikings",
+    "stadium": "U.S. Bank Stadium",
+    "city": "Minneapolis",
+    "state": "MN"
+  },
+  {
+    "week": 2,
+    "date": "Sunday, September 15, 2024",
+    "time": "1:00 PM",
+    "away": "Seattle Seahawks",
+    "home": "New England Patriots",
+    "stadium": "Gillette Stadium",
+    "city": "Foxborough",
+    "state": "MA"
+  },
+  {
+    "week": 2,
+    "date": "Sunday, September 15, 2024",
+    "time": "1:00 PM",
+    "away": "New York Giants",
+    "home": "Washington Commanders",
+    "stadium": "FedExField",
+    "city": "Landover",
+    "state": "MD"
+  },
+  {
+    "week": 2,
+    "date": "Sunday, September 15, 2024",
+    "time": "1:00 PM",
+    "away": "Los Angeles Chargers",
+    "home": "Carolina Panthers",
+    "stadium": "Bank of America Stadium",
+    "city": "Charlotte",
+    "state": "NC"
+  },
+  {
+    "week": 2,
+    "date": "Sunday, September 15, 2024",
+    "time": "1:00 PM",
+    "away": "Cleveland Browns",
+    "home": "Jacksonville Jaguars",
+    "stadium": "EverBank Stadium",
+    "city": "Jacksonville",
+    "state": "FL"
+  },
+  {
+    "week": 2,
+    "date": "Sunday, September 15, 2024",
+    "time": "1:00 PM",
+    "away": "Las Vegas Raiders",
+    "home": "Baltimore Ravens",
+    "stadium": "M&T Bank Stadium",
+    "city": "Baltimore",
+    "state": "MD"
+  },
+  {
+    "week": 2,
+    "date": "Sunday, September 15, 2024",
+    "time": "4:05 PM",
+    "away": "Los Angeles Rams",
+    "home": "Arizona Cardinals",
+    "stadium": "State Farm Stadium",
+    "city": "Glendale",
+    "state": "AZ"
+  },
+  {
+    "week": 2,
+    "date": "Sunday, September 15, 2024",
+    "time": "4:25 PM",
+    "away": "Pittsburgh Steelers",
+    "home": "Denver Broncos",
+    "stadium": "Empower Field at Mile High",
+    "city": "Denver",
+    "state": "CO"
+  },
+  {
+    "week": 2,
+    "date": "Sunday, September 15, 2024",
+    "time": "4:25 PM",
+    "away": "Cincinnati Bengals",
+    "home": "Kansas City Chiefs",
+    "stadium": "GEHA Field at Arrowhead Stadium",
+    "city": "Kansas City",
+    "state": "MO"
+  },
+  {
+    "week": 2,
+    "date": "Sunday, September 15, 2024",
+    "time": "8:30 PM",
+    "away": "Chicago Bears",
+    "home": "Houston Texans",
+    "stadium": "NRG Stadium",
+    "city": "Houston",
+    "state": "TX"
+  },
+  {
+    "week": 2,
+    "date": "Monday, September 16, 2024",
+    "time": "8:15 PM",
+    "away": "Atlanta Falcons",
+    "home": "Philadelphia Eagles",
+    "stadium": "Lincoln Financial Field",
+    "city": "Philadelphia",
+    "state": "PA"
+  },
+  {
+    "week": 3,
+    "date": "Thursday, September 19, 2024",
+    "time": "8:15 PM",
+    "away": "New England Patriots",
+    "home": "New York Jets",
+    "stadium": "MetLife Stadium",
+    "city": "East Rutherford",
+    "state": "NJ"
+  },
+  {
+    "week": 3,
+    "date": "Sunday, September 22, 2024",
+    "time": "1:00 PM",
+    "away": "New York Giants",
+    "home": "Cleveland Browns",
+    "stadium": "Cleveland Browns Stadium",
+    "city": "Cleveland",
+    "state": "OH"
+  },
+  {
+    "week": 3,
+    "date": "Sunday, September 22, 2024",
+    "time": "1:00 PM",
+    "away": "Green Bay Packers",
+    "home": "Tennessee Titans",
+    "stadium": "Nissan Stadium",
+    "city": "Nashville",
+    "state": "TN"
+  },
+  {
+    "week": 3,
+    "date": "Sunday, September 22, 2024",
+    "time": "1:00 PM",
+    "away": "Chicago Bears",
+    "home": "Indianapolis Colts",
+    "stadium": "Lucas Oil Stadium",
+    "city": "Indianapolis",
+    "state": "IN"
+  },
+  {
+    "week": 3,
+    "date": "Sunday, September 22, 2024",
+    "time": "1:00 PM",
+    "away": "Houston Texans",
+    "home": "Minnesota Vikings",
+    "stadium": "U.S. Bank Stadium",
+    "city": "Minneapolis",
+    "state": "MN"
+  },
+  {
+    "week": 3,
+    "date": "Sunday, September 22, 2024",
+    "time": "1:00 PM",
+    "away": "Philadelphia Eagles",
+    "home": "New Orleans Saints",
+    "stadium": "Caesars Superdome",
+    "city": "New Orleans",
+    "state": "LA"
+  },
+  {
+    "week": 3,
+    "date": "Sunday, September 22, 2024",
+    "time": "1:00 PM",
+    "away": "Los Angeles Chargers",
+    "home": "Pittsburgh Steelers",
+    "stadium": "Acrisure Stadium",
+    "city": "Pittsburgh",
+    "state": "PA"
+  },
+  {
+    "week": 3,
+    "date": "Sunday, September 22, 2024",
+    "time": "1:00 PM",
+    "away": "Denver Broncos",
+    "home": "Tampa Bay Buccaneers",
+    "stadium": "Raymond James Stadium",
+    "city": "Tampa",
+    "state": "FL"
+  },
+  {
+    "week": 3,
+    "date": "Sunday, September 22, 2024",
+    "time": "4:05 PM",
+    "away": "Carolina Panthers",
+    "home": "Las Vegas Raiders",
+    "stadium": "Allegiant Stadium",
+    "city": "Las Vegas",
+    "state": "NV"
+  },
+  {
+    "week": 3,
+    "date": "Sunday, September 22, 2024",
+    "time": "4:05 PM",
+    "away": "Miami Dolphins",
+    "home": "Seattle Seahawks",
+    "stadium": "Lumen Field",
+    "city": "Seattle",
+    "state": "WA"
+  },
+  {
+    "week": 3,
+    "date": "Sunday, September 22, 2024",
+    "time": "4:25 PM",
+    "away": "Baltimore Ravens",
+    "home": "Dallas Cowboys",
+    "stadium": "AT&T Stadium",
+    "city": "Arlington",
+    "state": "TX"
+  },
+  {
+    "week": 3,
+    "date": "Sunday, September 22, 2024",
+    "time": "4:25 PM",
+    "away": "San Francisco 49ers",
+    "home": "Los Angeles Rams",
+    "stadium": "SoFi Stadium",
+    "city": "Inglewood",
+    "state": "CA"
+  },
+  {
+    "week": 3,
+    "date": "Sunday, September 22, 2024",
+    "time": "4:25 PM",
+    "away": "Detroit Lions",
+    "home": "Arizona Cardinals",
+    "stadium": "State Farm Stadium",
+    "city": "Glendale",
+    "state": "AZ"
+  },
+  {
+    "week": 3,
+    "date": "Sunday, September 22, 2024",
+    "time": "8:20 PM",
+    "away": "Kansas City Chiefs",
+    "home": "Atlanta Falcons",
+    "stadium": "Mercedes-Benz Stadium",
+    "city": "Atlanta",
+    "state": "GA"
+  },
+  {
+    "week": 3,
+    "date": "Monday, September 23, 2024",
+    "time": "7:30 PM",
+    "away": "Jacksonville Jaguars",
+    "home": "Buffalo Bills",
+    "stadium": "Highmark Stadium",
+    "city": "Orchard Park",
+    "state": "NY"
+  },
+  {
+    "week": 3,
+    "date": "Monday, September 23, 2024",
+    "time": "8:15 PM",
+    "away": "Washington Commanders",
+    "home": "Cincinnati Bengals",
+    "stadium": "Paycor Stadium",
+    "city": "Cincinnati",
+    "state": "OH"
+  },
+  {
+    "week": 4,
+    "date": "Thursday, September 26, 2024",
+    "time": "8:15 PM",
+    "away": "Dallas Cowboys",
+    "home": "New York Giants",
+    "stadium": "MetLife Stadium",
+    "city": "East Rutherford",
+    "state": "NJ"
+  },
+  {
+    "week": 4,
+    "date": "Saturday, September 28, 2024",
+    "time": "1:00 PM",
+    "away": "New Orleans Saints",
+    "home": "Atlanta Falcons",
+    "stadium": "Mercedes-Benz Stadium",
+    "city": "Atlanta",
+    "state": "GA"
+  },
+  {
+    "week": 4,
+    "date": "Saturday, September 28, 2024",
+    "time": "1:00 PM",
+    "away": "Los Angeles Rams",
+    "home": "Chicago Bears",
+    "stadium": "Soldier Field",
+    "city": "Chicago",
+    "state": "IL"
+  },
+  {
+    "week": 4,
+    "date": "Saturday, September 28, 2024",
+    "time": "1:00 PM",
+    "away": "Minnesota Vikings",
+    "home": "Green Bay Packers",
+    "stadium": "Lambeau Field",
+    "city": "Green Bay",
+    "state": "WI"
+  },
+  {
+    "week": 4,
+    "date": "Saturday, September 28, 2024",
+    "time": "1:00 PM",
+    "away": "Pittsburgh Steelers",
+    "home": "Indianapolis Colts",
+    "stadium": "Lucas Oil Stadium",
+    "city": "Indianapolis",
+    "state": "IN"
+  },
+  {
+    "week": 4,
+    "date": "Saturday, September 28, 2024",
+    "time": "1:00 PM",
+    "away": "Denver Broncos",
+    "home": "New York Jets",
+    "stadium": "MetLife Stadium",
+    "city": "East Rutherford",
+    "state": "NJ"
+  },
+  {
+    "week": 4,
+    "date": "Saturday, September 28, 2024",
+    "time": "1:00 PM",
+    "away": "Philadelphia Eagles",
+    "home": "Tampa Bay Buccaneers",
+    "stadium": "Raymond James Stadium",
+    "city": "Tampa",
+    "state": "FL"
+  },
+  {
+    "week": 4,
+    "date": "Saturday, September 28, 2024",
+    "time": "1:00 PM",
+    "away": "Cincinnati Bengals",
+    "home": "Carolina Panthers",
+    "stadium": "Bank of America Stadium",
+    "city": "Charlotte",
+    "state": "NC"
+  },
+  {
+    "week": 4,
+    "date": "Saturday, September 28, 2024",
+    "time": "1:00 PM",
+    "away": "Jacksonville Jaguars",
+    "home": "Houston Texans",
+    "stadium": "NRG Stadium",
+    "city": "Houston",
+    "state": "TX"
+  },
+  {
+    "week": 4,
+    "date": "Saturday, September 28, 2024",
+    "time": "4:05 PM",
+    "away": "Washington Commanders",
+    "home": "Arizona Cardinals",
+    "stadium": "State Farm Stadium",
+    "city": "Glendale",
+    "state": "AZ"
+  },
+  {
+    "week": 4,
+    "date": "Saturday, September 28, 2024",
+    "time": "4:05 PM",
+    "away": "New England Patriots",
+    "home": "San Francisco 49ers",
+    "stadium": "Levi's Stadium",
+    "city": "Santa Clara",
+    "state": "CA"
+  },
+  {
+    "week": 4,
+    "date": "Saturday, September 28, 2024",
+    "time": "4:25 PM",
+    "away": "Cleveland Browns",
+    "home": "Las Vegas Raiders",
+    "stadium": "Allegiant Stadium",
+    "city": "Las Vegas",
+    "state": "NV"
+  },
+  {
+    "week": 4,
+    "date": "Saturday, September 28, 2024",
+    "time": "4:25 PM",
+    "away": "Kansas City Chiefs",
+    "home": "Los Angeles Chargers",
+    "stadium": "SoFi Stadium",
+    "city": "Inglewood",
+    "state": "CA"
+  },
+  {
+    "week": 4,
+    "date": "Saturday, September 28, 2024",
+    "time": "8:20 PM",
+    "away": "Buffalo Bills",
+    "home": "Baltimore Ravens",
+    "stadium": "M&T Bank Stadium",
+    "city": "Baltimore",
+    "state": "MD"
+  },
+  {
+    "week": 4,
+    "date": "Monday, September 30, 2024",
+    "time": "7:30 PM",
+    "away": "Tennessee Titans",
+    "home": "Miami Dolphins",
+    "stadium": "Hard Rock Stadium",
+    "city": "Miami Gardens",
+    "state": "FL"
+  },
+  {
+    "week": 4,
+    "date": "Monday, September 30, 2024",
+    "time": "8:15 PM",
+    "away": "Seattle Seahawks",
+    "home": "Detroit Lions",
+    "stadium": "Ford Field",
+    "city": "Detroit",
+    "state": "MI"
+  },
+  {
+    "week": 5,
+    "date": "Thursday, October 03, 2024",
+    "time": "8:15 PM",
+    "away": "Tampa Bay Buccaneers",
+    "home": "Atlanta Falcons",
+    "stadium": "Mercedes-Benz Stadium",
+    "city": "Atlanta",
+    "state": "GA"
+  },
+  {
+    "week": 5,
+    "date": "Sunday, October 06, 2024",
+    "time": "9:30 AM",
+    "away": "New York Jets",
+    "home": "Minnesota Vikings",
+    "stadium": "Tottenham Hotspur Stadium",
+    "city": "London",
+    "state": ""
+  },
+  {
+    "week": 5,
+    "date": "Sunday, October 06, 2024",
+    "time": "1:00 PM",
+    "away": "Carolina Panthers",
+    "home": "Chicago Bears",
+    "stadium": "Soldier Field",
+    "city": "Chicago",
+    "state": "IL"
+  },
+  {
+    "week": 5,
+    "date": "Sunday, October 06, 2024",
+    "time": "1:00 PM",
+    "away": "Baltimore Ravens",
+    "home": "Cincinnati Bengals",
+    "stadium": "Paycor Stadium",
+    "city": "Cincinnati",
+    "state": "OH"
+  },
+  {
+    "week": 5,
+    "date": "Sunday, October 06, 2024",
+    "time": "1:00 PM",
+    "away": "Miami Dolphins",
+    "home": "New England Patriots",
+    "stadium": "Gillette Stadium",
+    "city": "Foxborough",
+    "state": "MA"
+  },
+  {
+    "week": 5,
+    "date": "Sunday, October 06, 2024",
+    "time": "1:00 PM",
+    "away": "Cleveland Browns",
+    "home": "Washington Commanders",
+    "stadium": "FedExField",
+    "city": "Landover",
+    "state": "MD"
+  },
+  {
+    "week": 5,
+    "date": "Sunday, October 06, 2024",
+    "time": "1:00 PM",
+    "away": "Indianapolis Colts",
+    "home": "Jacksonville Jaguars",
+    "stadium": "EverBank Stadium",
+    "city": "Jacksonville",
+    "state": "FL"
+  },
+  {
+    "week": 5,
+    "date": "Sunday, October 06, 2024",
+    "time": "1:00 PM",
+    "away": "Buffalo Bills",
+    "home": "Houston Texans",
+    "stadium": "NRG Stadium",
+    "city": "Houston",
+    "state": "TX"
+  },
+  {
+    "week": 5,
+    "date": "Sunday, October 06, 2024",
+    "time": "4:05 PM",
+    "away": "Las Vegas Raiders",
+    "home": "Denver Broncos",
+    "stadium": "Empower Field at Mile High",
+    "city": "Denver",
+    "state": "CO"
+  },
+  {
+    "week": 5,
+    "date": "Sunday, October 06, 2024",
+    "time": "4:05 PM",
+    "away": "Arizona Cardinals",
+    "home": "San Francisco 49ers",
+    "stadium": "Levi's Stadium",
+    "city": "Santa Clara",
+    "state": "CA"
+  },
+  {
+    "week": 5,
+    "date": "Sunday, October 06, 2024",
+    "time": "4:25 PM",
+    "away": "Green Bay Packers",
+    "home": "Los Angeles Rams",
+    "stadium": "SoFi Stadium",
+    "city": "Inglewood",
+    "state": "CA"
+  },
+  {
+    "week": 5,
+    "date": "Sunday, October 06, 2024",
+    "time": "4:25 PM",
+    "away": "New York Giants",
+    "home": "Seattle Seahawks",
+    "stadium": "Lumen Field",
+    "city": "Seattle",
+    "state": "WA"
+  },
+  {
+    "week": 5,
+    "date": "Sunday, October 06, 2024",
+    "time": "8:20 PM",
+    "away": "Dallas Cowboys",
+    "home": "Pittsburgh Steelers",
+    "stadium": "Acrisure Stadium",
+    "city": "Pittsburgh",
+    "state": "PA"
+  },
+  {
+    "week": 5,
+    "date": "Monday, October 07, 2024",
+    "time": "8:15 PM",
+    "away": "New Orleans Saints",
+    "home": "Kansas City Chiefs",
+    "stadium": "GEHA Field at Arrowhead Stadium",
+    "city": "Kansas City",
+    "state": "MO"
+  },
+  {
+    "week": 5,
+    "date": "Bye",
+    "time": "",
+    "away": "",
+    "home": "Detroit",
+    "stadium": "",
+    "city": "",
+    "state": ""
+  },
+  {
+    "week": 5,
+    "date": "Bye",
+    "time": "",
+    "away": "",
+    "home": "Tennessee",
+    "stadium": "",
+    "city": "",
+    "state": ""
+  },
+  {
+    "week": 5,
+    "date": "Bye",
+    "time": "",
+    "away": "",
+    "home": "Philadelphia",
+    "stadium": "",
+    "city": "",
+    "state": ""
+  },
+  {
+    "week": 5,
+    "date": "Bye",
+    "time": "",
+    "away": "",
+    "home": "Los Angeles Chargers",
+    "stadium": "",
+    "city": "",
+    "state": ""
+  },
+  {
+    "week": 6,
+    "date": "Thursday, October 10, 2024",
+    "time": "8:15 PM",
+    "away": "San Francisco 49ers",
+    "home": "Seattle Seahawks",
+    "stadium": "Lumen Field",
+    "city": "Seattle",
+    "state": "WA"
+  },
+  {
+    "week": 6,
+    "date": "Sunday, October 13, 2024",
+    "time": "9:30 AM",
+    "away": "Jacksonville Jaguars",
+    "home": "Chicago Bears",
+    "stadium": "Tottenham Hotspur Stadium",
+    "city": "London",
+    "state": ""
+  },
+  {
+    "week": 6,
+    "date": "Sunday, October 13, 2024",
+    "time": "1:00 PM",
+    "away": "Arizona Cardinals",
+    "home": "Green Bay Packers",
+    "stadium": "Lambeau Field",
+    "city": "Green Bay",
+    "state": "WI"
+  },
+  {
+    "week": 6,
+    "date": "Sunday, October 13, 2024",
+    "time": "1:00 PM",
+    "away": "Indianapolis Colts",
+    "home": "Tennessee Titans",
+    "stadium": "Nissan Stadium",
+    "city": "Nashville",
+    "state": "TN"
+  },
+  {
+    "week": 6,
+    "date": "Sunday, October 13, 2024",
+    "time": "1:00 PM",
+    "away": "Houston Texans",
+    "home": "New England Patriots",
+    "stadium": "Gillette Stadium",
+    "city": "Foxborough",
+    "state": "MA"
+  },
+  {
+    "week": 6,
+    "date": "Sunday, October 13, 2024",
+    "time": "1:00 PM",
+    "away": "Tampa Bay Buccaneers",
+    "home": "New Orleans Saints",
+    "stadium": "Caesars Superdome",
+    "city": "New Orleans",
+    "state": "LA"
+  },
+  {
+    "week": 6,
+    "date": "Sunday, October 13, 2024",
+    "time": "1:00 PM",
+    "away": "Cleveland Browns",
+    "home": "Philadelphia Eagles",
+    "stadium": "Lincoln Financial Field",
+    "city": "Philadelphia",
+    "state": "PA"
+  },
+  {
+    "week": 6,
+    "date": "Sunday, October 13, 2024",
+    "time": "1:00 PM",
+    "away": "Washington Commanders",
+    "home": "Baltimore Ravens",
+    "stadium": "M&T Bank Stadium",
+    "city": "Baltimore",
+    "state": "MD"
+  },
+  {
+    "week": 6,
+    "date": "Sunday, October 13, 2024",
+    "time": "4:05 PM",
+    "away": "Los Angeles Chargers",
+    "home": "Denver Broncos",
+    "stadium": "Empower Field at Mile High",
+    "city": "Denver",
+    "state": "CO"
+  },
+  {
+    "week": 6,
+    "date": "Sunday, October 13, 2024",
+    "time": "4:05 PM",
+    "away": "Pittsburgh Steelers",
+    "home": "Las Vegas Raiders",
+    "stadium": "Allegiant Stadium",
+    "city": "Las Vegas",
+    "state": "NV"
+  },
+  {
+    "week": 6,
+    "date": "Sunday, October 13, 2024",
+    "time": "4:25 PM",
+    "away": "Detroit Lions",
+    "home": "Dallas Cowboys",
+    "stadium": "AT&T Stadium",
+    "city": "Arlington",
+    "state": "TX"
+  },
+  {
+    "week": 6,
+    "date": "Sunday, October 13, 2024",
+    "time": "4:25 PM",
+    "away": "Atlanta Falcons",
+    "home": "Carolina Panthers",
+    "stadium": "Bank of America Stadium",
+    "city": "Charlotte",
+    "state": "NC"
+  },
+  {
+    "week": 6,
+    "date": "Sunday, October 13, 2024",
+    "time": "8:20 PM",
+    "away": "Cincinnati Bengals",
+    "home": "New York Giants",
+    "stadium": "MetLife Stadium",
+    "city": "East Rutherford",
+    "state": "NJ"
+  },
+  {
+    "week": 6,
+    "date": "Monday, October 14, 2024",
+    "time": "8:15 PM",
+    "away": "Buffalo Bills",
+    "home": "New York Jets",
+    "stadium": "MetLife Stadium",
+    "city": "East Rutherford",
+    "state": "NJ"
+  },
+  {
+    "week": 6,
+    "date": "Bye",
+    "time": "",
+    "away": "",
+    "home": "Kansas City",
+    "stadium": "",
+    "city": "",
+    "state": ""
+  },
+  {
+    "week": 6,
+    "date": "Bye",
+    "time": "",
+    "away": "",
+    "home": "Los Angeles Rams",
+    "stadium": "",
+    "city": "",
+    "state": ""
+  },
+  {
+    "week": 6,
+    "date": "Bye",
+    "time": "",
+    "away": "",
+    "home": "Miami",
+    "stadium": "",
+    "city": "",
+    "state": ""
+  },
+  {
+    "week": 6,
+    "date": "Bye",
+    "time": "",
+    "away": "",
+    "home": "Minnesota",
+    "stadium": "",
+    "city": "",
+    "state": ""
+  },
+  {
+    "week": 7,
+    "date": "Thursday, October 17, 2024",
+    "time": "8:15 PM",
+    "away": "Denver Broncos",
+    "home": "New Orleans Saints",
+    "stadium": "Caesars Superdome",
+    "city": "New Orleans",
+    "state": "LA"
+  },
+  {
+    "week": 7,
+    "date": "Sunday, October 20, 2024",
+    "time": "9:30 AM",
+    "away": "New England Patriots",
+    "home": "Jacksonville Jaguars",
+    "stadium": "Wembley Stadium",
+    "city": "London",
+    "state": ""
+  },
+  {
+    "week": 7,
+    "date": "Sunday, October 20, 2024",
+    "time": "1:00 PM",
+    "away": "Seattle Seahawks",
+    "home": "Atlanta Falcons",
+    "stadium": "Mercedes-Benz Stadium",
+    "city": "Atlanta",
+    "state": "GA"
+  },
+  {
+    "week": 7,
+    "date": "Sunday, October 20, 2024",
+    "time": "1:00 PM",
+    "away": "Tennessee Titans",
+    "home": "Buffalo Bills",
+    "stadium": "Highmark Stadium",
+    "city": "Orchard Park",
+    "state": "NY"
+  },
+  {
+    "week": 7,
+    "date": "Sunday, October 20, 2024",
+    "time": "1:00 PM",
+    "away": "Cincinnati Bengals",
+    "home": "Cleveland Browns",
+    "stadium": "Cleveland Browns Stadium",
+    "city": "Cleveland",
+    "state": "OH"
+  },
+  {
+    "week": 7,
+    "date": "Sunday, October 20, 2024",
+    "time": "1:00 PM",
+    "away": "Houston Texans",
+    "home": "Green Bay Packers",
+    "stadium": "Lambeau Field",
+    "city": "Green Bay",
+    "state": "WI"
+  },
+  {
+    "week": 7,
+    "date": "Sunday, October 20, 2024",
+    "time": "1:00 PM",
+    "away": "Miami Dolphins",
+    "home": "Indianapolis Colts",
+    "stadium": "Lucas Oil Stadium",
+    "city": "Indianapolis",
+    "state": "IN"
+  },
+  {
+    "week": 7,
+    "date": "Sunday, October 20, 2024",
+    "time": "1:00 PM",
+    "away": "Detroit Lions",
+    "home": "Minnesota Vikings",
+    "stadium": "U.S. Bank Stadium",
+    "city": "Minneapolis",
+    "state": "MN"
+  },
+  {
+    "week": 7,
+    "date": "Sunday, October 20, 2024",
+    "time": "1:00 PM",
+    "away": "Philadelphia Eagles",
+    "home": "New York Giants",
+    "stadium": "MetLife Stadium",
+    "city": "East Rutherford",
+    "state": "NJ"
+  },
+  {
+    "week": 7,
+    "date": "Sunday, October 20, 2024",
+    "time": "4:05 PM",
+    "away": "Las Vegas Raiders",
+    "home": "Los Angeles Rams",
+    "stadium": "SoFi Stadium",
+    "city": "Inglewood",
+    "state": "CA"
+  },
+  {
+    "week": 7,
+    "date": "Sunday, October 20, 2024",
+    "time": "4:05 PM",
+    "away": "Carolina Panthers",
+    "home": "Washington Commanders",
+    "stadium": "FedExField",
+    "city": "Landover",
+    "state": "MD"
+  },
+  {
+    "week": 7,
+    "date": "Sunday, October 20, 2024",
+    "time": "4:25 PM",
+    "away": "Kansas City Chiefs",
+    "home": "San Francisco 49ers",
+    "stadium": "Levi's Stadium",
+    "city": "Santa Clara",
+    "state": "CA"
+  },
+  {
+    "week": 7,
+    "date": "Sunday, October 20, 2024",
+    "time": "8:20 PM",
+    "away": "New York Jets",
+    "home": "Pittsburgh Steelers",
+    "stadium": "Acrisure Stadium",
+    "city": "Pittsburgh",
+    "state": "PA"
+  },
+  {
+    "week": 7,
+    "date": "Monday, October 21, 2024",
+    "time": "8:15 PM",
+    "away": "Baltimore Ravens",
+    "home": "Tampa Bay Buccaneers",
+    "stadium": "Raymond James Stadium",
+    "city": "Tampa",
+    "state": "FL"
+  },
+  {
+    "week": 7,
+    "date": "Monday, October 21, 2024",
+    "time": "9:00 PM",
+    "away": "Los Angeles Chargers",
+    "home": "Arizona Cardinals",
+    "stadium": "State Farm Stadium",
+    "city": "Glendale",
+    "state": "AZ"
+  },
+  {
+    "week": 7,
+    "date": "Bye",
+    "time": "",
+    "away": "",
+    "home": "Dallas",
+    "stadium": "",
+    "city": "",
+    "state": ""
+  },
+  {
+    "week": 7,
+    "date": "Bye",
+    "time": "",
+    "away": "",
+    "home": "Chicago",
+    "stadium": "",
+    "city": "",
+    "state": ""
+  },
+  {
+    "week": 8,
+    "date": "Thursday, October 24, 2024",
+    "time": "8:15 PM",
+    "away": "Minnesota Vikings",
+    "home": "Los Angeles Rams",
+    "stadium": "SoFi Stadium",
+    "city": "Inglewood",
+    "state": "CA"
+  },
+  {
+    "week": 8,
+    "date": "Sunday, October 27, 2024",
+    "time": "1:00 PM",
+    "away": "Baltimore Ravens",
+    "home": "Cleveland Browns",
+    "stadium": "Cleveland Browns Stadium",
+    "city": "Cleveland",
+    "state": "OH"
+  },
+  {
+    "week": 8,
+    "date": "Sunday, October 27, 2024",
+    "time": "1:00 PM",
+    "away": "Tennessee Titans",
+    "home": "Detroit Lions",
+    "stadium": "Ford Field",
+    "city": "Detroit",
+    "state": "MI"
+  },
+  {
+    "week": 8,
+    "date": "Sunday, October 27, 2024",
+    "time": "1:00 PM",
+    "away": "Arizona Cardinals",
+    "home": "Miami Dolphins",
+    "stadium": "Hard Rock Stadium",
+    "city": "Miami Gardens",
+    "state": "FL"
+  },
+  {
+    "week": 8,
+    "date": "Sunday, October 27, 2024",
+    "time": "1:00 PM",
+    "away": "New York Jets",
+    "home": "New England Patriots",
+    "stadium": "Gillette Stadium",
+    "city": "Foxborough",
+    "state": "MA"
+  },
+  {
+    "week": 8,
+    "date": "Sunday, October 27, 2024",
+    "time": "1:00 PM",
+    "away": "Atlanta Falcons",
+    "home": "Tampa Bay Buccaneers",
+    "stadium": "Raymond James Stadium",
+    "city": "Tampa",
+    "state": "FL"
+  },
+  {
+    "week": 8,
+    "date": "Sunday, October 27, 2024",
+    "time": "1:00 PM",
+    "away": "Chicago Bears",
+    "home": "Washington Commanders",
+    "stadium": "FedExField",
+    "city": "Landover",
+    "state": "MD"
+  },
+  {
+    "week": 8,
+    "date": "Sunday, October 27, 2024",
+    "time": "1:00 PM",
+    "away": "Green Bay Packers",
+    "home": "Jacksonville Jaguars",
+    "stadium": "EverBank Stadium",
+    "city": "Jacksonville",
+    "state": "FL"
+  },
+  {
+    "week": 8,
+    "date": "Sunday, October 27, 2024",
+    "time": "1:00 PM",
+    "away": "Indianapolis Colts",
+    "home": "Houston Texans",
+    "stadium": "NRG Stadium",
+    "city": "Houston",
+    "state": "TX"
+  },
+  {
+    "week": 8,
+    "date": "Sunday, October 27, 2024",
+    "time": "4:05 PM",
+    "away": "New Orleans Saints",
+    "home": "Los Angeles Chargers",
+    "stadium": "SoFi Stadium",
+    "city": "Inglewood",
+    "state": "CA"
+  },
+  {
+    "week": 8,
+    "date": "Sunday, October 27, 2024",
+    "time": "4:05 PM",
+    "away": "Buffalo Bills",
+    "home": "Seattle Seahawks",
+    "stadium": "Lumen Field",
+    "city": "Seattle",
+    "state": "WA"
+  },
+  {
+    "week": 8,
+    "date": "Sunday, October 27, 2024",
+    "time": "4:25 PM",
+    "away": "Philadelphia Eagles",
+    "home": "Cincinnati Bengals",
+    "stadium": "Paycor Stadium",
+    "city": "Cincinnati",
+    "state": "OH"
+  },
+  {
+    "week": 8,
+    "date": "Sunday, October 27, 2024",
+    "time": "4:25 PM",
+    "away": "Carolina Panthers",
+    "home": "Denver Broncos",
+    "stadium": "Empower Field at Mile High",
+    "city": "Denver",
+    "state": "CO"
+  },
+  {
+    "week": 8,
+    "date": "Sunday, October 27, 2024",
+    "time": "4:25 PM",
+    "away": "Kansas City Chiefs",
+    "home": "Las Vegas Raiders",
+    "stadium": "Allegiant Stadium",
+    "city": "Las Vegas",
+    "state": "NV"
+  },
+  {
+    "week": 8,
+    "date": "Sunday, October 27, 2024",
+    "time": "8:20 PM",
+    "away": "Dallas Cowboys",
+    "home": "San Francisco 49ers",
+    "stadium": "Levi's Stadium",
+    "city": "Santa Clara",
+    "state": "CA"
+  },
+  {
+    "week": 8,
+    "date": "Monday, October 28, 2024",
+    "time": "8:15 PM",
+    "away": "New York Giants",
+    "home": "Pittsburgh Steelers",
+    "stadium": "Acrisure Stadium",
+    "city": "Pittsburgh",
+    "state": "PA"
+  },
+  {
+    "week": 9,
+    "date": "Thursday, October 31, 2024",
+    "time": "8:15 PM",
+    "away": "Houston Texans",
+    "home": "New York Jets",
+    "stadium": "MetLife Stadium",
+    "city": "East Rutherford",
+    "state": "NJ"
+  },
+  {
+    "week": 9,
+    "date": "Sunday, November 03, 2024",
+    "time": "1:00 PM",
+    "away": "Dallas Cowboys",
+    "home": "Atlanta Falcons",
+    "stadium": "Mercedes-Benz Stadium",
+    "city": "Atlanta",
+    "state": "GA"
+  },
+  {
+    "week": 9,
+    "date": "Sunday, November 03, 2024",
+    "time": "1:00 PM",
+    "away": "Miami Dolphins",
+    "home": "Buffalo Bills",
+    "stadium": "Highmark Stadium",
+    "city": "Orchard Park",
+    "state": "NY"
+  },
+  {
+    "week": 9,
+    "date": "Sunday, November 03, 2024",
+    "time": "1:00 PM",
+    "away": "Las Vegas Raiders",
+    "home": "Cincinnati Bengals",
+    "stadium": "Paycor Stadium",
+    "city": "Cincinnati",
+    "state": "OH"
+  },
+  {
+    "week": 9,
+    "date": "Sunday, November 03, 2024",
+    "time": "1:00 PM",
+    "away": "Los Angeles Chargers",
+    "home": "Cleveland Browns",
+    "stadium": "Cleveland Browns Stadium",
+    "city": "Cleveland",
+    "state": "OH"
+  },
+  {
+    "week": 9,
+    "date": "Sunday, November 03, 2024",
+    "time": "1:00 PM",
+    "away": "New England Patriots",
+    "home": "Tennessee Titans",
+    "stadium": "Nissan Stadium",
+    "city": "Nashville",
+    "state": "TN"
+  },
+  {
+    "week": 9,
+    "date": "Sunday, November 03, 2024",
+    "time": "1:00 PM",
+    "away": "Indianapolis Colts",
+    "home": "Minnesota Vikings",
+    "stadium": "U.S. Bank Stadium",
+    "city": "Minneapolis",
+    "state": "MN"
+  },
+  {
+    "week": 9,
+    "date": "Sunday, November 03, 2024",
+    "time": "1:00 PM",
+    "away": "Washington Commanders",
+    "home": "New York Giants",
+    "stadium": "MetLife Stadium",
+    "city": "East Rutherford",
+    "state": "NJ"
+  },
+  {
+    "week": 9,
+    "date": "Sunday, November 03, 2024",
+    "time": "1:00 PM",
+    "away": "New Orleans Saints",
+    "home": "Carolina Panthers",
+    "stadium": "Bank of America Stadium",
+    "city": "Charlotte",
+    "state": "NC"
+  },
+  {
+    "week": 9,
+    "date": "Sunday, November 03, 2024",
+    "time": "1:00 PM",
+    "away": "Denver Broncos",
+    "home": "Baltimore Ravens",
+    "stadium": "M&T Bank Stadium",
+    "city": "Baltimore",
+    "state": "MD"
+  },
+  {
+    "week": 9,
+    "date": "Sunday, November 03, 2024",
+    "time": "4:05 PM",
+    "away": "Chicago Bears",
+    "home": "Arizona Cardinals",
+    "stadium": "State Farm Stadium",
+    "city": "Glendale",
+    "state": "AZ"
+  },
+  {
+    "week": 9,
+    "date": "Sunday, November 03, 2024",
+    "time": "4:25 PM",
+    "away": "Detroit Lions",
+    "home": "Green Bay Packers",
+    "stadium": "Lambeau Field",
+    "city": "Green Bay",
+    "state": "WI"
+  },
+  {
+    "week": 9,
+    "date": "Sunday, November 03, 2024",
+    "time": "4:25 PM",
+    "away": "Los Angeles Rams",
+    "home": "Seattle Seahawks",
+    "stadium": "Lumen Field",
+    "city": "Seattle",
+    "state": "WA"
+  },
+  {
+    "week": 9,
+    "date": "Sunday, November 03, 2024",
+    "time": "8:20 PM",
+    "away": "Jacksonville Jaguars",
+    "home": "Philadelphia Eagles",
+    "stadium": "Lincoln Financial Field",
+    "city": "Philadelphia",
+    "state": "PA"
+  },
+  {
+    "week": 9,
+    "date": "Monday, November 04, 2024",
+    "time": "8:15 PM",
+    "away": "Tampa Bay Buccaneers",
+    "home": "Kansas City Chiefs",
+    "stadium": "GEHA Field at Arrowhead Stadium",
+    "city": "Kansas City",
+    "state": "MO"
+  },
+  {
+    "week": 9,
+    "date": "Bye",
+    "time": "",
+    "away": "",
+    "home": "Pittsburgh",
+    "stadium": "",
+    "city": "",
+    "state": ""
+  },
+  {
+    "week": 9,
+    "date": "Bye",
+    "time": "",
+    "away": "",
+    "home": "San Francisco",
+    "stadium": "",
+    "city": "",
+    "state": ""
+  },
+  {
+    "week": 10,
+    "date": "Thursday, November 07, 2024",
+    "time": "8:15 PM",
+    "away": "Cincinnati Bengals",
+    "home": "Baltimore Ravens",
+    "stadium": "M&T Bank Stadium",
+    "city": "Baltimore",
+    "state": "MD"
+  },
+  {
+    "week": 10,
+    "date": "Sunday, November 10, 2024",
+    "time": "9:30 AM",
+    "away": "New York Giants",
+    "home": "Carolina Panthers",
+    "stadium": "Allianz Arena",
+    "city": "Munich",
+    "state": ""
+  },
+  {
+    "week": 10,
+    "date": "Sunday, November 10, 2024",
+    "time": "1:00 PM",
+    "away": "New England Patriots",
+    "home": "Chicago Bears",
+    "stadium": "Soldier Field",
+    "city": "Chicago",
+    "state": "IL"
+  },
+  {
+    "week": 10,
+    "date": "Sunday, November 10, 2024",
+    "time": "1:00 PM",
+    "away": "Buffalo Bills",
+    "home": "Indianapolis Colts",
+    "stadium": "Lucas Oil Stadium",
+    "city": "Indianapolis",
+    "state": "IN"
+  },
+  {
+    "week": 10,
+    "date": "Sunday, November 10, 2024",
+    "time": "1:00 PM",
+    "away": "Denver Broncos",
+    "home": "Kansas City Chiefs",
+    "stadium": "GEHA Field at Arrowhead Stadium",
+    "city": "Kansas City",
+    "state": "MO"
+  },
+  {
+    "week": 10,
+    "date": "Sunday, November 10, 2024",
+    "time": "1:00 PM",
+    "away": "Atlanta Falcons",
+    "home": "New Orleans Saints",
+    "stadium": "Caesars Superdome",
+    "city": "New Orleans",
+    "state": "LA"
+  },
+  {
+    "week": 10,
+    "date": "Sunday, November 10, 2024",
+    "time": "1:00 PM",
+    "away": "San Francisco 49ers",
+    "home": "Tampa Bay Buccaneers",
+    "stadium": "Raymond James Stadium",
+    "city": "Tampa",
+    "state": "FL"
+  },
+  {
+    "week": 10,
+    "date": "Sunday, November 10, 2024",
+    "time": "1:00 PM",
+    "away": "Pittsburgh Steelers",
+    "home": "Washington Commanders",
+    "stadium": "FedExField",
+    "city": "Landover",
+    "state": "MD"
+  },
+  {
+    "week": 10,
+    "date": "Sunday, November 10, 2024",
+    "time": "1:00 PM",
+    "away": "Minnesota Vikings",
+    "home": "Jacksonville Jaguars",
+    "stadium": "EverBank Stadium",
+    "city": "Jacksonville",
+    "state": "FL"
+  },
+  {
+    "week": 10,
+    "date": "Sunday, November 10, 2024",
+    "time": "4:05 PM",
+    "away": "Tennessee Titans",
+    "home": "Los Angeles Chargers",
+    "stadium": "SoFi Stadium",
+    "city": "Inglewood",
+    "state": "CA"
+  },
+  {
+    "week": 10,
+    "date": "Sunday, November 10, 2024",
+    "time": "4:25 PM",
+    "away": "Philadelphia Eagles",
+    "home": "Dallas Cowboys",
+    "stadium": "AT&T Stadium",
+    "city": "Arlington",
+    "state": "TX"
+  },
+  {
+    "week": 10,
+    "date": "Sunday, November 10, 2024",
+    "time": "4:25 PM",
+    "away": "New York Jets",
+    "home": "Arizona Cardinals",
+    "stadium": "State Farm Stadium",
+    "city": "Glendale",
+    "state": "AZ"
+  },
+  {
+    "week": 10,
+    "date": "Sunday, November 10, 2024",
+    "time": "4:25 PM",
+    "away": "Detroit Lions",
+    "home": "Houston Texans",
+    "stadium": "NRG Stadium",
+    "city": "Houston",
+    "state": "TX"
+  },
+  {
+    "week": 10,
+    "date": "Monday, November 11, 2024",
+    "time": "8:15 PM",
+    "away": "Miami Dolphins",
+    "home": "Los Angeles Rams",
+    "stadium": "SoFi Stadium",
+    "city": "Inglewood",
+    "state": "CA"
+  },
+  {
+    "week": 10,
+    "date": "Bye",
+    "time": "",
+    "away": "",
+    "home": "Cleveland",
+    "stadium": "",
+    "city": "",
+    "state": ""
+  },
+  {
+    "week": 10,
+    "date": "Bye",
+    "time": "",
+    "away": "",
+    "home": "Green Bay",
+    "stadium": "",
+    "city": "",
+    "state": ""
+  },
+  {
+    "week": 10,
+    "date": "Bye",
+    "time": "",
+    "away": "",
+    "home": "Las Vegas",
+    "stadium": "",
+    "city": "",
+    "state": ""
+  },
+  {
+    "week": 10,
+    "date": "Bye",
+    "time": "",
+    "away": "",
+    "home": "Seattle",
+    "stadium": "",
+    "city": "",
+    "state": ""
+  },
+  {
+    "week": 11,
+    "date": "Thursday, November 14, 2024",
+    "time": "8:15 PM",
+    "away": "Washington Commanders",
+    "home": "Philadelphia Eagles",
+    "stadium": "Lincoln Financial Field",
+    "city": "Philadelphia",
+    "state": "PA"
+  },
+  {
+    "week": 11,
+    "date": "Sunday, November 17, 2024",
+    "time": "1:00 PM",
+    "away": "Green Bay Packers",
+    "home": "Chicago Bears",
+    "stadium": "Soldier Field",
+    "city": "Chicago",
+    "state": "IL"
+  },
+  {
+    "week": 11,
+    "date": "Sunday, November 17, 2024",
+    "time": "1:00 PM",
+    "away": "Jacksonville Jaguars",
+    "home": "Detroit Lions",
+    "stadium": "Ford Field",
+    "city": "Detroit",
+    "state": "MI"
+  },
+  {
+    "week": 11,
+    "date": "Sunday, November 17, 2024",
+    "time": "1:00 PM",
+    "away": "Minnesota Vikings",
+    "home": "Tennessee Titans",
+    "stadium": "Nissan Stadium",
+    "city": "Nashville",
+    "state": "TN"
+  },
+  {
+    "week": 11,
+    "date": "Sunday, November 17, 2024",
+    "time": "1:00 PM",
+    "away": "Las Vegas Raiders",
+    "home": "Miami Dolphins",
+    "stadium": "Hard Rock Stadium",
+    "city": "Miami Gardens",
+    "state": "FL"
+  },
+  {
+    "week": 11,
+    "date": "Sunday, November 17, 2024",
+    "time": "1:00 PM",
+    "away": "Los Angeles Rams",
+    "home": "New England Patriots",
+    "stadium": "Gillette Stadium",
+    "city": "Foxborough",
+    "state": "MA"
+  },
+  {
+    "week": 11,
+    "date": "Sunday, November 17, 2024",
+    "time": "1:00 PM",
+    "away": "Cleveland Browns",
+    "home": "New Orleans Saints",
+    "stadium": "Caesars Superdome",
+    "city": "New Orleans",
+    "state": "LA"
+  },
+  {
+    "week": 11,
+    "date": "Sunday, November 17, 2024",
+    "time": "1:00 PM",
+    "away": "Baltimore Ravens",
+    "home": "Pittsburgh Steelers",
+    "stadium": "Acrisure Stadium",
+    "city": "Pittsburgh",
+    "state": "PA"
+  },
+  {
+    "week": 11,
+    "date": "Sunday, November 17, 2024",
+    "time": "4:05 PM",
+    "away": "Atlanta Falcons",
+    "home": "Denver Broncos",
+    "stadium": "Empower Field at Mile High",
+    "city": "Denver",
+    "state": "CO"
+  },
+  {
+    "week": 11,
+    "date": "Sunday, November 17, 2024",
+    "time": "4:05 PM",
+    "away": "Seattle Seahawks",
+    "home": "San Francisco 49ers",
+    "stadium": "Levi's Stadium",
+    "city": "Santa Clara",
+    "state": "CA"
+  },
+  {
+    "week": 11,
+    "date": "Sunday, November 17, 2024",
+    "time": "4:25 PM",
+    "away": "Kansas City Chiefs",
+    "home": "Buffalo Bills",
+    "stadium": "Highmark Stadium",
+    "city": "Orchard Park",
+    "state": "NY"
+  },
+  {
+    "week": 11,
+    "date": "Sunday, November 17, 2024",
+    "time": "4:25 PM",
+    "away": "Cincinnati Bengals",
+    "home": "Los Angeles Chargers",
+    "stadium": "SoFi Stadium",
+    "city": "Inglewood",
+    "state": "CA"
+  },
+  {
+    "week": 11,
+    "date": "Sunday, November 17, 2024",
+    "time": "4:25 PM",
+    "away": "Indianapolis Colts",
+    "home": "New York Jets",
+    "stadium": "MetLife Stadium",
+    "city": "East Rutherford",
+    "state": "NJ"
+  },
+  {
+    "week": 11,
+    "date": "Monday, November 18, 2024",
+    "time": "8:20 PM",
+    "away": "Houston Texans",
+    "home": "Dallas Cowboys",
+    "stadium": "AT&T Stadium",
+    "city": "Arlington",
+    "state": "TX"
+  },
+  {
+    "week": 11,
+    "date": "Bye",
+    "time": "",
+    "away": "",
+    "home": "Carolina",
+    "stadium": "",
+    "city": "",
+    "state": ""
+  },
+  {
+    "week": 11,
+    "date": "Bye",
+    "time": "",
+    "away": "",
+    "home": "Tampa Bay",
+    "stadium": "",
+    "city": "",
+    "state": ""
+  },
+  {
+    "week": 11,
+    "date": "Bye",
+    "time": "",
+    "away": "",
+    "home": "Arizona",
+    "stadium": "",
+    "city": "",
+    "state": ""
+  },
+  {
+    "week": 11,
+    "date": "Bye",
+    "time": "",
+    "away": "",
+    "home": "New York Giants",
+    "stadium": "",
+    "city": "",
+    "state": ""
+  },
+  {
+    "week": 12,
+    "date": "Thursday, November 21, 2024",
+    "time": "8:15 PM",
+    "away": "Pittsburgh Steelers",
+    "home": "Cleveland Browns",
+    "stadium": "Cleveland Browns Stadium",
+    "city": "Cleveland",
+    "state": "OH"
+  },
+  {
+    "week": 12,
+    "date": "Sunday, November 24, 2024",
+    "time": "1:00 PM",
+    "away": "Minnesota Vikings",
+    "home": "Chicago Bears",
+    "stadium": "Soldier Field",
+    "city": "Chicago",
+    "state": "IL"
+  },
+  {
+    "week": 12,
+    "date": "Sunday, November 24, 2024",
+    "time": "1:00 PM",
+    "away": "Detroit Lions",
+    "home": "Indianapolis Colts",
+    "stadium": "Lucas Oil Stadium",
+    "city": "Indianapolis",
+    "state": "IN"
+  },
+  {
+    "week": 12,
+    "date": "Sunday, November 24, 2024",
+    "time": "1:00 PM",
+    "away": "New England Patriots",
+    "home": "Miami Dolphins",
+    "stadium": "Hard Rock Stadium",
+    "city": "Miami Gardens",
+    "state": "FL"
+  },
+  {
+    "week": 12,
+    "date": "Sunday, November 24, 2024",
+    "time": "1:00 PM",
+    "away": "Tampa Bay Buccaneers",
+    "home": "New York Giants",
+    "stadium": "MetLife Stadium",
+    "city": "East Rutherford",
+    "state": "NJ"
+  },
+  {
+    "week": 12,
+    "date": "Sunday, November 24, 2024",
+    "time": "1:00 PM",
+    "away": "Dallas Cowboys",
+    "home": "Washington Commanders",
+    "stadium": "FedExField",
+    "city": "Landover",
+    "state": "MD"
+  },
+  {
+    "week": 12,
+    "date": "Sunday, November 24, 2024",
+    "time": "1:00 PM",
+    "away": "Kansas City Chiefs",
+    "home": "Carolina Panthers",
+    "stadium": "Bank of America Stadium",
+    "city": "Charlotte",
+    "state": "NC"
+  },
+  {
+    "week": 12,
+    "date": "Sunday, November 24, 2024",
+    "time": "1:00 PM",
+    "away": "Tennessee Titans",
+    "home": "Houston Texans",
+    "stadium": "NRG Stadium",
+    "city": "Houston",
+    "state": "TX"
+  },
+  {
+    "week": 12,
+    "date": "Sunday, November 24, 2024",
+    "time": "4:05 PM",
+    "away": "Denver Broncos",
+    "home": "Las Vegas Raiders",
+    "stadium": "Allegiant Stadium",
+    "city": "Las Vegas",
+    "state": "NV"
+  },
+  {
+    "week": 12,
+    "date": "Sunday, November 24, 2024",
+    "time": "4:25 PM",
+    "away": "San Francisco 49ers",
+    "home": "Green Bay Packers",
+    "stadium": "Lambeau Field",
+    "city": "Green Bay",
+    "state": "WI"
+  },
+  {
+    "week": 12,
+    "date": "Sunday, November 24, 2024",
+    "time": "4:25 PM",
+    "away": "Arizona Cardinals",
+    "home": "Seattle Seahawks",
+    "stadium": "Lumen Field",
+    "city": "Seattle",
+    "state": "WA"
+  },
+  {
+    "week": 12,
+    "date": "Sunday, November 24, 2024",
+    "time": "8:20 PM",
+    "away": "Philadelphia Eagles",
+    "home": "Los Angeles Chargers",
+    "stadium": "SoFi Stadium",
+    "city": "Inglewood",
+    "state": "CA"
+  },
+  {
+    "week": 12,
+    "date": "Monday, November 25, 2024",
+    "time": "8:15 PM",
+    "away": "Baltimore Ravens",
+    "home": "Los Angeles Rams",
+    "stadium": "SoFi Stadium",
+    "city": "Inglewood",
+    "state": "CA"
+  },
+  {
+    "week": 12,
+    "date": "Bye",
+    "time": "",
+    "away": "",
+    "home": "Jacksonville",
+    "stadium": "",
+    "city": "",
+    "state": ""
+  },
+  {
+    "week": 12,
+    "date": "Bye",
+    "time": "",
+    "away": "",
+    "home": "New York Jets",
+    "stadium": "",
+    "city": "",
+    "state": ""
+  },
+  {
+    "week": 12,
+    "date": "Bye",
+    "time": "",
+    "away": "",
+    "home": "New Orleans",
+    "stadium": "",
+    "city": "",
+    "state": ""
+  },
+  {
+    "week": 12,
+    "date": "Bye",
+    "time": "",
+    "away": "",
+    "home": "Cincinnati",
+    "stadium": "",
+    "city": "",
+    "state": ""
+  },
+  {
+    "week": 12,
+    "date": "Bye",
+    "time": "",
+    "away": "",
+    "home": "Atlanta",
+    "stadium": "",
+    "city": "",
+    "state": ""
+  },
+  {
+    "week": 13,
+    "date": "Thursday, November 28, 2024",
+    "time": "12:30 PM",
+    "away": "Chicago Bears",
+    "home": "Detroit Lions",
+    "stadium": "Ford Field",
+    "city": "Detroit",
+    "state": "MI"
+  },
+  {
+    "week": 13,
+    "date": "Thursday, November 28, 2024",
+    "time": "4:30 PM",
+    "away": "New York Giants",
+    "home": "Dallas Cowboys",
+    "stadium": "AT&T Stadium",
+    "city": "Arlington",
+    "state": "TX"
+  },
+  {
+    "week": 13,
+    "date": "Thursday, November 28, 2024",
+    "time": "8:20 PM",
+    "away": "Miami Dolphins",
+    "home": "Green Bay Packers",
+    "stadium": "Lambeau Field",
+    "city": "Green Bay",
+    "state": "WI"
+  },
+  {
+    "week": 13,
+    "date": "Friday, November 29, 2024",
+    "time": "3:00 PM",
+    "away": "Las Vegas Raiders",
+    "home": "Kansas City Chiefs",
+    "stadium": "GEHA Field at Arrowhead Stadium",
+    "city": "Kansas City",
+    "state": "MO"
+  },
+  {
+    "week": 13,
+    "date": "Sunday, December 01, 2024",
+    "time": "1:00 PM",
+    "away": "Los Angeles Chargers",
+    "home": "Atlanta Falcons",
+    "stadium": "Mercedes-Benz Stadium",
+    "city": "Atlanta",
+    "state": "GA"
+  },
+  {
+    "week": 13,
+    "date": "Sunday, December 01, 2024",
+    "time": "1:00 PM",
+    "away": "Pittsburgh Steelers",
+    "home": "Cincinnati Bengals",
+    "stadium": "Paycor Stadium",
+    "city": "Cincinnati",
+    "state": "OH"
+  },
+  {
+    "week": 13,
+    "date": "Sunday, December 01, 2024",
+    "time": "1:00 PM",
+    "away": "Arizona Cardinals",
+    "home": "Minnesota Vikings",
+    "stadium": "U.S. Bank Stadium",
+    "city": "Minneapolis",
+    "state": "MN"
+  },
+  {
+    "week": 13,
+    "date": "Sunday, December 01, 2024",
+    "time": "1:00 PM",
+    "away": "Indianapolis Colts",
+    "home": "New England Patriots",
+    "stadium": "Gillette Stadium",
+    "city": "Foxborough",
+    "state": "MA"
+  },
+  {
+    "week": 13,
+    "date": "Sunday, December 01, 2024",
+    "time": "1:00 PM",
+    "away": "Seattle Seahawks",
+    "home": "New York Jets",
+    "stadium": "MetLife Stadium",
+    "city": "East Rutherford",
+    "state": "NJ"
+  },
+  {
+    "week": 13,
+    "date": "Sunday, December 01, 2024",
+    "time": "1:00 PM",
+    "away": "Tennessee Titans",
+    "home": "Washington Commanders",
+    "stadium": "FedExField",
+    "city": "Landover",
+    "state": "MD"
+  },
+  {
+    "week": 13,
+    "date": "Sunday, December 01, 2024",
+    "time": "1:00 PM",
+    "away": "Houston Texans",
+    "home": "Jacksonville Jaguars",
+    "stadium": "EverBank Stadium",
+    "city": "Jacksonville",
+    "state": "FL"
+  },
+  {
+    "week": 13,
+    "date": "Sunday, December 01, 2024",
+    "time": "4:05 PM",
+    "away": "Los Angeles Rams",
+    "home": "New Orleans Saints",
+    "stadium": "Caesars Superdome",
+    "city": "New Orleans",
+    "state": "LA"
+  },
+  {
+    "week": 13,
+    "date": "Sunday, December 01, 2024",
+    "time": "4:05 PM",
+    "away": "Tampa Bay Buccaneers",
+    "home": "Carolina Panthers",
+    "stadium": "Bank of America Stadium",
+    "city": "Charlotte",
+    "state": "NC"
+  },
+  {
+    "week": 13,
+    "date": "Sunday, December 01, 2024",
+    "time": "4:25 PM",
+    "away": "Philadelphia Eagles",
+    "home": "Baltimore Ravens",
+    "stadium": "M&T Bank Stadium",
+    "city": "Baltimore",
+    "state": "MD"
+  },
+  {
+    "week": 13,
+    "date": "Sunday, December 01, 2024",
+    "time": "8:20 PM",
+    "away": "San Francisco 49ers",
+    "home": "Buffalo Bills",
+    "stadium": "Highmark Stadium",
+    "city": "Orchard Park",
+    "state": "NY"
+  },
+  {
+    "week": 13,
+    "date": "Monday, December 02, 2024",
+    "time": "8:15 PM",
+    "away": "Cleveland Browns",
+    "home": "Denver Broncos",
+    "stadium": "Empower Field at Mile High",
+    "city": "Denver",
+    "state": "CO"
+  },
+  {
+    "week": 14,
+    "date": "Thursday, December 05, 2024",
+    "time": "8:15 PM",
+    "away": "Green Bay Packers",
+    "home": "Detroit Lions",
+    "stadium": "Ford Field",
+    "city": "Detroit",
+    "state": "MI"
+  },
+  {
+    "week": 14,
+    "date": "Sunday, December 08, 2024",
+    "time": "1:00 PM",
+    "away": "Jacksonville Jaguars",
+    "home": "Tennessee Titans",
+    "stadium": "Nissan Stadium",
+    "city": "Nashville",
+    "state": "TN"
+  },
+  {
+    "week": 14,
+    "date": "Sunday, December 08, 2024",
+    "time": "1:00 PM",
+    "away": "New York Jets",
+    "home": "Miami Dolphins",
+    "stadium": "Hard Rock Stadium",
+    "city": "Miami Gardens",
+    "state": "FL"
+  },
+  {
+    "week": 14,
+    "date": "Sunday, December 08, 2024",
+    "time": "1:00 PM",
+    "away": "Atlanta Falcons",
+    "home": "Minnesota Vikings",
+    "stadium": "U.S. Bank Stadium",
+    "city": "Minneapolis",
+    "state": "MN"
+  },
+  {
+    "week": 14,
+    "date": "Sunday, December 08, 2024",
+    "time": "1:00 PM",
+    "away": "New Orleans Saints",
+    "home": "New York Giants",
+    "stadium": "MetLife Stadium",
+    "city": "East Rutherford",
+    "state": "NJ"
+  },
+  {
+    "week": 14,
+    "date": "Sunday, December 08, 2024",
+    "time": "1:00 PM",
+    "away": "Carolina Panthers",
+    "home": "Philadelphia Eagles",
+    "stadium": "Lincoln Financial Field",
+    "city": "Philadelphia",
+    "state": "PA"
+  },
+  {
+    "week": 14,
+    "date": "Sunday, December 08, 2024",
+    "time": "1:00 PM",
+    "away": "Cleveland Browns",
+    "home": "Pittsburgh Steelers",
+    "stadium": "Acrisure Stadium",
+    "city": "Pittsburgh",
+    "state": "PA"
+  },
+  {
+    "week": 14,
+    "date": "Sunday, December 08, 2024",
+    "time": "1:00 PM",
+    "away": "Las Vegas Raiders",
+    "home": "Tampa Bay Buccaneers",
+    "stadium": "Raymond James Stadium",
+    "city": "Tampa",
+    "state": "FL"
+  },
+  {
+    "week": 14,
+    "date": "Sunday, December 08, 2024",
+    "time": "4:05 PM",
+    "away": "Seattle Seahawks",
+    "home": "Arizona Cardinals",
+    "stadium": "State Farm Stadium",
+    "city": "Glendale",
+    "state": "AZ"
+  },
+  {
+    "week": 14,
+    "date": "Sunday, December 08, 2024",
+    "time": "4:25 PM",
+    "away": "Buffalo Bills",
+    "home": "Los Angeles Rams",
+    "stadium": "SoFi Stadium",
+    "city": "Inglewood",
+    "state": "CA"
+  },
+  {
+    "week": 14,
+    "date": "Sunday, December 08, 2024",
+    "time": "4:25 PM",
+    "away": "Chicago Bears",
+    "home": "San Francisco 49ers",
+    "stadium": "Levi's Stadium",
+    "city": "Santa Clara",
+    "state": "CA"
+  },
+  {
+    "week": 14,
+    "date": "Sunday, December 08, 2024",
+    "time": "8:20 PM",
+    "away": "Los Angeles Chargers",
+    "home": "Kansas City Chiefs",
+    "stadium": "GEHA Field at Arrowhead Stadium",
+    "city": "Kansas City",
+    "state": "MO"
+  },
+  {
+    "week": 14,
+    "date": "Monday, December 09, 2024",
+    "time": "8:15 PM",
+    "away": "Cincinnati Bengals",
+    "home": "Dallas Cowboys",
+    "stadium": "AT&T Stadium",
+    "city": "Arlington",
+    "state": "TX"
+  },
+  {
+    "week": 14,
+    "date": "Bye",
+    "time": "",
+    "away": "",
+    "home": "Denver,",
+    "stadium": "",
+    "city": "",
+    "state": ""
+  },
+  {
+    "week": 14,
+    "date": "Bye",
+    "time": "",
+    "away": "",
+    "home": "Indianapolis",
+    "stadium": "",
+    "city": "",
+    "state": ""
+  },
+  {
+    "week": 14,
+    "date": "Bye",
+    "time": "",
+    "away": "",
+    "home": "New England",
+    "stadium": "",
+    "city": "",
+    "state": ""
+  },
+  {
+    "week": 14,
+    "date": "Bye",
+    "time": "",
+    "away": "",
+    "home": "Washington",
+    "stadium": "",
+    "city": "",
+    "state": ""
+  },
+  {
+    "week": 14,
+    "date": "Bye",
+    "time": "",
+    "away": "",
+    "home": "Baltimore",
+    "stadium": "",
+    "city": "",
+    "state": ""
+  },
+  {
+    "week": 14,
+    "date": "Bye",
+    "time": "",
+    "away": "",
+    "home": "Houston",
+    "stadium": "",
+    "city": "",
+    "state": ""
+  },
+  {
+    "week": 15,
+    "date": "Thursday, December 12, 2024",
+    "time": "8:15 PM",
+    "away": "Los Angeles Rams",
+    "home": "San Francisco 49ers",
+    "stadium": "Levi's Stadium",
+    "city": "Santa Clara",
+    "state": "CA"
+  },
+  {
+    "week": 15,
+    "date": "Sunday, December 15, 2024",
+    "time": "1:00 PM",
+    "away": "Kansas City Chiefs",
+    "home": "Cleveland Browns",
+    "stadium": "Cleveland Browns Stadium",
+    "city": "Cleveland",
+    "state": "OH"
+  },
+  {
+    "week": 15,
+    "date": "Sunday, December 15, 2024",
+    "time": "1:00 PM",
+    "away": "Cincinnati Bengals",
+    "home": "Tennessee Titans",
+    "stadium": "Nissan Stadium",
+    "city": "Nashville",
+    "state": "TN"
+  },
+  {
+    "week": 15,
+    "date": "Sunday, December 15, 2024",
+    "time": "1:00 PM",
+    "away": "Washington Commanders",
+    "home": "New Orleans Saints",
+    "stadium": "Caesars Superdome",
+    "city": "New Orleans",
+    "state": "LA"
+  },
+  {
+    "week": 15,
+    "date": "Sunday, December 15, 2024",
+    "time": "1:00 PM",
+    "away": "Baltimore Ravens",
+    "home": "New York Giants",
+    "stadium": "MetLife Stadium",
+    "city": "East Rutherford",
+    "state": "NJ"
+  },
+  {
+    "week": 15,
+    "date": "Sunday, December 15, 2024",
+    "time": "1:00 PM",
+    "away": "Dallas Cowboys",
+    "home": "Carolina Panthers",
+    "stadium": "Bank of America Stadium",
+    "city": "Charlotte",
+    "state": "NC"
+  },
+  {
+    "week": 15,
+    "date": "Sunday, December 15, 2024",
+    "time": "1:00 PM",
+    "away": "New York Jets",
+    "home": "Jacksonville Jaguars",
+    "stadium": "EverBank Stadium",
+    "city": "Jacksonville",
+    "state": "FL"
+  },
+  {
+    "week": 15,
+    "date": "Sunday, December 15, 2024",
+    "time": "1:00 PM",
+    "away": "Miami Dolphins",
+    "home": "Houston Texans",
+    "stadium": "NRG Stadium",
+    "city": "Houston",
+    "state": "TX"
+  },
+  {
+    "week": 15,
+    "date": "Sunday, December 15, 2024",
+    "time": "4:25 PM",
+    "away": "Indianapolis Colts",
+    "home": "Denver Broncos",
+    "stadium": "Empower Field at Mile High",
+    "city": "Denver",
+    "state": "CO"
+  },
+  {
+    "week": 15,
+    "date": "Sunday, December 15, 2024",
+    "time": "4:25 PM",
+    "away": "Buffalo Bills",
+    "home": "Detroit Lions",
+    "stadium": "Ford Field",
+    "city": "Detroit",
+    "state": "MI"
+  },
+  {
+    "week": 15,
+    "date": "Sunday, December 15, 2024",
+    "time": "4:25 PM",
+    "away": "Pittsburgh Steelers",
+    "home": "Philadelphia Eagles",
+    "stadium": "Lincoln Financial Field",
+    "city": "Philadelphia",
+    "state": "PA"
+  },
+  {
+    "week": 15,
+    "date": "Sunday, December 15, 2024",
+    "time": "4:25 PM",
+    "away": "New England Patriots",
+    "home": "Arizona Cardinals",
+    "stadium": "State Farm Stadium",
+    "city": "Glendale",
+    "state": "AZ"
+  },
+  {
+    "week": 15,
+    "date": "Sunday, December 15, 2024",
+    "time": "4:25 PM",
+    "away": "Tampa Bay Buccaneers",
+    "home": "Los Angeles Chargers",
+    "stadium": "SoFi Stadium",
+    "city": "Inglewood",
+    "state": "CA"
+  },
+  {
+    "week": 15,
+    "date": "Sunday, December 15, 2024",
+    "time": "8:30 PM",
+    "away": "Green Bay Packers",
+    "home": "Seattle Seahawks",
+    "stadium": "Lumen Field",
+    "city": "Seattle",
+    "state": "WA"
+  },
+  {
+    "week": 15,
+    "date": "Monday, December 16, 2024",
+    "time": "8:00 PM",
+    "away": "Chicago Bears",
+    "home": "Minnesota Vikings",
+    "stadium": "U.S. Bank Stadium",
+    "city": "Minneapolis",
+    "state": "MN"
+  },
+  {
+    "week": 15,
+    "date": "Monday, December 16, 2024",
+    "time": "8:30 PM",
+    "away": "Atlanta Falcons",
+    "home": "Las Vegas Raiders",
+    "stadium": "Allegiant Stadium",
+    "city": "Las Vegas",
+    "state": "NV"
+  },
+  {
+    "week": 16,
+    "date": "Thursday, December 19, 2024",
+    "time": "8:15 PM",
+    "away": "Cleveland Browns",
+    "home": "Cincinnati Bengals",
+    "stadium": "Paycor Stadium",
+    "city": "Cincinnati",
+    "state": "OH"
+  },
+  {
+    "week": 16,
+    "date": "Saturday, December 21, 2024",
+    "time": "1:00 PM",
+    "away": "Houston Texans",
+    "home": "Kansas City Chiefs",
+    "stadium": "GEHA Field at Arrowhead Stadium",
+    "city": "Kansas City",
+    "state": "MO"
+  },
+  {
+    "week": 16,
+    "date": "Saturday, December 21, 2024",
+    "time": "4:30 PM",
+    "away": "Pittsburgh Steelers",
+    "home": "Baltimore Ravens",
+    "stadium": "M&T Bank Stadium",
+    "city": "Baltimore",
+    "state": "MD"
+  },
+  {
+    "week": 16,
+    "date": "Sunday, December 22, 2024",
+    "time": "1:00 PM",
+    "away": "New York Giants",
+    "home": "Atlanta Falcons",
+    "stadium": "Mercedes-Benz Stadium",
+    "city": "Atlanta",
+    "state": "GA"
+  },
+  {
+    "week": 16,
+    "date": "Sunday, December 22, 2024",
+    "time": "1:00 PM",
+    "away": "New England Patriots",
+    "home": "Buffalo Bills",
+    "stadium": "Highmark Stadium",
+    "city": "Orchard Park",
+    "state": "NY"
+  },
+  {
+    "week": 16,
+    "date": "Sunday, December 22, 2024",
+    "time": "1:00 PM",
+    "away": "Detroit Lions",
+    "home": "Chicago Bears",
+    "stadium": "Soldier Field",
+    "city": "Chicago",
+    "state": "IL"
+  },
+  {
+    "week": 16,
+    "date": "Sunday, December 22, 2024",
+    "time": "1:00 PM",
+    "away": "Tennessee Titans",
+    "home": "Indianapolis Colts",
+    "stadium": "Lucas Oil Stadium",
+    "city": "Indianapolis",
+    "state": "IN"
+  },
+  {
+    "week": 16,
+    "date": "Sunday, December 22, 2024",
+    "time": "1:00 PM",
+    "away": "Los Angeles Rams",
+    "home": "New York Jets",
+    "stadium": "MetLife Stadium",
+    "city": "East Rutherford",
+    "state": "NJ"
+  },
+  {
+    "week": 16,
+    "date": "Sunday, December 22, 2024",
+    "time": "1:00 PM",
+    "away": "Philadelphia Eagles",
+    "home": "Washington Commanders",
+    "stadium": "FedExField",
+    "city": "Landover",
+    "state": "MD"
+  },
+  {
+    "week": 16,
+    "date": "Sunday, December 22, 2024",
+    "time": "1:00 PM",
+    "away": "Arizona Cardinals",
+    "home": "Carolina Panthers",
+    "stadium": "Bank of America Stadium",
+    "city": "Charlotte",
+    "state": "NC"
+  },
+  {
+    "week": 16,
+    "date": "Sunday, December 22, 2024",
+    "time": "4:05 PM",
+    "away": "Denver Broncos",
+    "home": "Los Angeles Chargers",
+    "stadium": "SoFi Stadium",
+    "city": "Inglewood",
+    "state": "CA"
+  },
+  {
+    "week": 16,
+    "date": "Sunday, December 22, 2024",
+    "time": "4:05 PM",
+    "away": "Minnesota Vikings",
+    "home": "Seattle Seahawks",
+    "stadium": "Lumen Field",
+    "city": "Seattle",
+    "state": "WA"
+  },
+  {
+    "week": 16,
+    "date": "Sunday, December 22, 2024",
+    "time": "4:25 PM",
+    "away": "Jacksonville Jaguars",
+    "home": "Las Vegas Raiders",
+    "stadium": "Allegiant Stadium",
+    "city": "Las Vegas",
+    "state": "NV"
+  },
+  {
+    "week": 16,
+    "date": "Sunday, December 22, 2024",
+    "time": "4:25 PM",
+    "away": "San Francisco 49ers",
+    "home": "Miami Dolphins",
+    "stadium": "Hard Rock Stadium",
+    "city": "Miami Gardens",
+    "state": "FL"
+  },
+  {
+    "week": 16,
+    "date": "Sunday, December 22, 2024",
+    "time": "8:20 PM",
+    "away": "Tampa Bay Buccaneers",
+    "home": "Dallas Cowboys",
+    "stadium": "AT&T Stadium",
+    "city": "Arlington",
+    "state": "TX"
+  },
+  {
+    "week": 16,
+    "date": "Monday, December 23, 2024",
+    "time": "8:15 PM",
+    "away": "New Orleans Saints",
+    "home": "Green Bay Packers",
+    "stadium": "Lambeau Field",
+    "city": "Green Bay",
+    "state": "WI"
+  },
+  {
+    "week": 17,
+    "date": "Wednesday, December 25, 2024",
+    "time": "1:00 PM",
+    "away": "Kansas City Chiefs",
+    "home": "Pittsburgh Steelers",
+    "stadium": "Acrisure Stadium",
+    "city": "Pittsburgh",
+    "state": "PA"
+  },
+  {
+    "week": 17,
+    "date": "Wednesday, December 25, 2024",
+    "time": "4:30 PM",
+    "away": "Baltimore Ravens",
+    "home": "Houston Texans",
+    "stadium": "NRG Stadium",
+    "city": "Houston",
+    "state": "TX"
+  },
+  {
+    "week": 17,
+    "date": "Thursday, December 26, 2024",
+    "time": "8:15 PM",
+    "away": "Seattle Seahawks",
+    "home": "Chicago Bears",
+    "stadium": "Soldier Field",
+    "city": "Chicago",
+    "state": "IL"
+  },
+  {
+    "week": 17,
+    "date": "Sunday, December 29, 2024",
+    "time": "TBD",
+    "away": "Denver Broncos",
+    "home": "Cincinnati Bengals",
+    "stadium": "Paycor Stadium",
+    "city": "Cincinnati",
+    "state": "OH"
+  },
+  {
+    "week": 17,
+    "date": "Sunday, December 29, 2024",
+    "time": "TBD",
+    "away": "Arizona Cardinals",
+    "home": "Los Angeles Rams",
+    "stadium": "SoFi Stadium",
+    "city": "Inglewood",
+    "state": "CA"
+  },
+  {
+    "week": 17,
+    "date": "Sunday, December 29, 2024",
+    "time": "TBD",
+    "away": "Los Angeles Chargers",
+    "home": "New England Patriots",
+    "stadium": "Gillette Stadium",
+    "city": "Foxborough",
+    "state": "MA"
+  },
+  {
+    "week": 17,
+    "date": "Sunday, December 29, 2024",
+    "time": "TBD",
+    "away": "Indianapolis Colts",
+    "home": "New York Giants",
+    "stadium": "MetLife Stadium",
+    "city": "East Rutherford",
+    "state": "NJ"
+  },
+  {
+    "week": 17,
+    "date": "Sunday, December 29, 2024",
+    "time": "TBD",
+    "away": "Atlanta Falcons",
+    "home": "Washington Commanders",
+    "stadium": "FedExField",
+    "city": "Landover",
+    "state": "MD"
+  },
+  {
+    "week": 17,
+    "date": "Sunday, December 29, 2024",
+    "time": "1:00 PM",
+    "away": "New York Jets",
+    "home": "Buffalo Bills",
+    "stadium": "Highmark Stadium",
+    "city": "Orchard Park",
+    "state": "NY"
+  },
+  {
+    "week": 17,
+    "date": "Sunday, December 29, 2024",
+    "time": "1:00 PM",
+    "away": "Green Bay Packers",
+    "home": "Minnesota Vikings",
+    "stadium": "U.S. Bank Stadium",
+    "city": "Minneapolis",
+    "state": "MN"
+  },
+  {
+    "week": 17,
+    "date": "Sunday, December 29, 2024",
+    "time": "1:00 PM",
+    "away": "Las Vegas Raiders",
+    "home": "New Orleans Saints",
+    "stadium": "Caesars Superdome",
+    "city": "New Orleans",
+    "state": "LA"
+  },
+  {
+    "week": 17,
+    "date": "Sunday, December 29, 2024",
+    "time": "1:00 PM",
+    "away": "Carolina Panthers",
+    "home": "Tampa Bay Buccaneers",
+    "stadium": "Raymond James Stadium",
+    "city": "Tampa",
+    "state": "FL"
+  },
+  {
+    "week": 17,
+    "date": "Sunday, December 29, 2024",
+    "time": "1:00 PM",
+    "away": "Tennessee Titans",
+    "home": "Jacksonville Jaguars",
+    "stadium": "EverBank Stadium",
+    "city": "Jacksonville",
+    "state": "FL"
+  },
+  {
+    "week": 17,
+    "date": "Sunday, December 29, 2024",
+    "time": "4:25 PM",
+    "away": "Dallas Cowboys",
+    "home": "Philadelphia Eagles",
+    "stadium": "Lincoln Financial Field",
+    "city": "Philadelphia",
+    "state": "PA"
+  },
+  {
+    "week": 17,
+    "date": "Sunday, December 29, 2024",
+    "time": "8:20 PM",
+    "away": "Miami Dolphins",
+    "home": "Cleveland Browns",
+    "stadium": "Cleveland Browns Stadium",
+    "city": "Cleveland",
+    "state": "OH"
+  },
+  {
+    "week": 17,
+    "date": "Monday, December 30, 2024",
+    "time": "8:15 PM",
+    "away": "Detroit Lions",
+    "home": "San Francisco 49ers",
+    "stadium": "Levi's Stadium",
+    "city": "Santa Clara",
+    "state": "CA"
+  },
+  {
+    "week": 18,
+    "date": "Sunday, January 05, 2025",
+    "time": "TBD",
+    "away": "Carolina Panthers",
+    "home": "Atlanta Falcons",
+    "stadium": "Mercedes-Benz Stadium",
+    "city": "Atlanta",
+    "state": "GA"
+  },
+  {
+    "week": 18,
+    "date": "Sunday, January 05, 2025",
+    "time": "TBD",
+    "away": "Washington Commanders",
+    "home": "Dallas Cowboys",
+    "stadium": "AT&T Stadium",
+    "city": "Arlington",
+    "state": "TX"
+  },
+  {
+    "week": 18,
+    "date": "Sunday, January 05, 2025",
+    "time": "TBD",
+    "away": "Kansas City Chiefs",
+    "home": "Denver Broncos",
+    "stadium": "Empower Field at Mile High",
+    "city": "Denver",
+    "state": "CO"
+  },
+  {
+    "week": 18,
+    "date": "Sunday, January 05, 2025",
+    "time": "TBD",
+    "away": "Minnesota Vikings",
+    "home": "Detroit Lions",
+    "stadium": "Ford Field",
+    "city": "Detroit",
+    "state": "MI"
+  },
+  {
+    "week": 18,
+    "date": "Sunday, January 05, 2025",
+    "time": "TBD",
+    "away": "Chicago Bears",
+    "home": "Green Bay Packers",
+    "stadium": "Lambeau Field",
+    "city": "Green Bay",
+    "state": "WI"
+  },
+  {
+    "week": 18,
+    "date": "Sunday, January 05, 2025",
+    "time": "TBD",
+    "away": "Houston Texans",
+    "home": "Tennessee Titans",
+    "stadium": "Nissan Stadium",
+    "city": "Nashville",
+    "state": "TN"
+  },
+  {
+    "week": 18,
+    "date": "Sunday, January 05, 2025",
+    "time": "TBD",
+    "away": "Jacksonville Jaguars",
+    "home": "Indianapolis Colts",
+    "stadium": "Lucas Oil Stadium",
+    "city": "Indianapolis",
+    "state": "IN"
+  },
+  {
+    "week": 18,
+    "date": "Sunday, January 05, 2025",
+    "time": "TBD",
+    "away": "Los Angeles Chargers",
+    "home": "Las Vegas Raiders",
+    "stadium": "Allegiant Stadium",
+    "city": "Las Vegas",
+    "state": "NV"
+  },
+  {
+    "week": 18,
+    "date": "Sunday, January 05, 2025",
+    "time": "TBD",
+    "away": "Seattle Seahawks",
+    "home": "Los Angeles Rams",
+    "stadium": "SoFi Stadium",
+    "city": "Inglewood",
+    "state": "CA"
+  },
+  {
+    "week": 18,
+    "date": "Sunday, January 05, 2025",
+    "time": "TBD",
+    "away": "Buffalo Bills",
+    "home": "New England Patriots",
+    "stadium": "Gillette Stadium",
+    "city": "Foxborough",
+    "state": "MA"
+  },
+  {
+    "week": 18,
+    "date": "Sunday, January 05, 2025",
+    "time": "TBD",
+    "away": "Miami Dolphins",
+    "home": "New York Jets",
+    "stadium": "MetLife Stadium",
+    "city": "East Rutherford",
+    "state": "NJ"
+  },
+  {
+    "week": 18,
+    "date": "Sunday, January 05, 2025",
+    "time": "TBD",
+    "away": "New York Giants",
+    "home": "Philadelphia Eagles",
+    "stadium": "Lincoln Financial Field",
+    "city": "Philadelphia",
+    "state": "PA"
+  },
+  {
+    "week": 18,
+    "date": "Sunday, January 05, 2025",
+    "time": "TBD",
+    "away": "San Francisco 49ers",
+    "home": "Arizona Cardinals",
+    "stadium": "State Farm Stadium",
+    "city": "Glendale",
+    "state": "AZ"
+  },
+  {
+    "week": 18,
+    "date": "Sunday, January 05, 2025",
+    "time": "TBD",
+    "away": "Cincinnati Bengals",
+    "home": "Pittsburgh Steelers",
+    "stadium": "Acrisure Stadium",
+    "city": "Pittsburgh",
+    "state": "PA"
+  },
+  {
+    "week": 18,
+    "date": "Sunday, January 05, 2025",
+    "time": "TBD",
+    "away": "New Orleans Saints",
+    "home": "Tampa Bay Buccaneers",
+    "stadium": "Raymond James Stadium",
+    "city": "Tampa",
+    "state": "FL"
+  },
+  {
+    "week": 18,
+    "date": "Sunday, January 05, 2025",
+    "time": "TBD",
+    "away": "Cleveland Browns",
+    "home": "Baltimore Ravens",
+    "stadium": "M&T Bank Stadium",
+    "city": "Baltimore",
+    "state": "MD"
+  }
+]

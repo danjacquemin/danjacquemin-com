@@ -1,7 +1,17 @@
-import scheduleData from "./json/schedule.json";
+import scheduleData from "./json/nfl2024.json";
 
-type Game = { away: string; home: string; date: string; time: string };
-type Schedule = { [key: string]: Game[] };
+interface Game {
+  week: number;
+  date: string;
+  time: string;
+  away: string;
+  home: string;
+  stadium: string;
+  city: string;
+  state: string;
+}
+
+type Schedule = Game[];
 
 /**
  * Renders the NFLPickem2024 component.
@@ -9,69 +19,78 @@ type Schedule = { [key: string]: Game[] };
  * @returns {JSX.Element} The rendered NFLPickem2024 component.
  */
 const NFLPickem2024 = (): JSX.Element => {
-  const weeks = Object.keys(scheduleData);
   const schedule: Schedule = scheduleData;
+  const weeks = Array.from(new Set(schedule.map((game) => game.week)));
 
-  const weekdays = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday",
-  ];
-
-  /**
-   * Formats a string by uppercasing the first letter and replacing dashes with spaces.
-   * @param {string} input - The input string to be formatted.
-   * @returns {string} - The formatted string.
-   */
-  const formatWeek = (input: string): string => {
-    return input.replace(/-/g, " ").replace(/^./, (str) => str.toUpperCase());
+  const handleClickAway = (event: React.MouseEvent<HTMLTableCellElement>) => {
+    const team = event.currentTarget.textContent;
+    const row = event.currentTarget.parentElement;
+    row?.classList.remove("winner-home");
+    row?.classList.add("winner-away");
+  };
+  const handleClickHome = (event: React.MouseEvent<HTMLTableCellElement>) => {
+    const team = event.currentTarget.textContent;
+    const row = event.currentTarget.parentElement;
+    row?.classList.remove("winner-away");
+    row?.classList.add("winner-home");
   };
 
-  /**
-   * Creates a new Date object from a string in the format YYYY-MM-DD.
-   * @param {string} dateString - The date string in the format YYYY-MM-DD.
-   * @returns {string} - The day of the week as a string
-   */
-  const getDay = (dateString: string): string => {
-    const [year, month, day] = dateString.split("-").map(Number);
-    const dateObj = new Date(year, month - 1, day); // Month is 0-indexed
-    const dayIndex = dateObj.getDay();
-    return weekdays[dayIndex] || "";
-  };
-
-  const teamClassNames =
-    "w-12 rounded text-center hover:bg-gray-400 hover:font-bold cursor-pointer";
+  const teamClassNames = "rounded hover:bg-gray-200 px-2 focus:bg-gray-200";
 
   return (
     <section className="no-innards min-w-[700px] basis-1/2">
       <div>
         {weeks.map((week) => (
           <table key={week}>
-            <tr>
-              <th colSpan={6} className="text-left">
-                {formatWeek(week)} :: 0 of {schedule[week].length} games
-              </th>
-            </tr>
-            {schedule[week].map((game, index) => {
-              return (
-                <tr key={`${index}-${game.home}`}>
-                  <td className={teamClassNames} tabIndex={0}>
-                    {game.away}
-                  </td>
-                  <td className="w-6 text-center">at</td>
-                  <td className={teamClassNames} tabIndex={0}>
-                    {game.home}
-                  </td>
-                  <td className="text-right">{getDay(game.date)}</td>
-                  <td className="w-6">at</td>
-                  <td>{game.time}</td>
-                </tr>
-              );
-            })}
+            <thead>
+              <tr>
+                <th colSpan={3} className="text-left" scope="col">
+                  Week: {week}
+                </th>
+              </tr>
+              <tr>
+                <th className="w-20 text-left" scope="col">
+                  Day
+                </th>
+                <th className="w-20 text-left" scope="col">
+                  Time
+                </th>
+                <th className="w-8"></th>
+                <th className="w-52 text-left" scope="col">
+                  Away
+                </th>
+                <th className="w-52 text-left" scope="col">
+                  Home
+                </th>
+                <th className="w-8"></th>
+              </tr>
+            </thead>
+            <tbody>
+              {schedule
+                .filter((game) => game.week === week)
+                .map((game) => (
+                  <tr key={`${game.away}-${game.home}`}>
+                    <td>{game.date.slice(0, 3)}</td>
+                    <td>{game.time}</td>
+                    <td></td>
+                    <td
+                      className={teamClassNames}
+                      tabIndex={0}
+                      onClick={handleClickAway}
+                    >
+                      {game.away}
+                    </td>
+                    <td
+                      className={teamClassNames}
+                      tabIndex={0}
+                      onClick={handleClickHome}
+                    >
+                      {game.home}
+                    </td>
+                    <td></td>
+                  </tr>
+                ))}
+            </tbody>
           </table>
         ))}
       </div>
