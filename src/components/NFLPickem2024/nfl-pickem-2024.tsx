@@ -216,7 +216,7 @@ const NFLPickem2024 = (): JSX.Element => {
   return (
     <>
       <section className="no-innards min-w-[700px] basis-1/2">
-        <div className="flex">
+        <div className="flex pb-32">
           <div className="pr-6 print:hidden">
             <h2>Games</h2>
             {weeks.map((week) => (
@@ -225,7 +225,7 @@ const NFLPickem2024 = (): JSX.Element => {
                   <tr>
                     <th
                       colSpan={5}
-                      className="text-lef bg-gray-200 pl-2"
+                      className="bg-gray-200 pl-2 text-left"
                       scope="col"
                     >
                       Week: {week}
@@ -239,7 +239,7 @@ const NFLPickem2024 = (): JSX.Element => {
                       <tr key={`${game.away}-${game.home}`}>
                         {game.date === "Bye" ? (
                           <>
-                            <td colSpan={2} className="text-right">
+                            <td colSpan={2} className="pr-[18px] text-right">
                               Bye
                             </td>
                             <td colSpan={3} className="pl-[2em]">
@@ -248,10 +248,12 @@ const NFLPickem2024 = (): JSX.Element => {
                           </>
                         ) : (
                           <>
-                            <td className="w-6 pl-2">
+                            <td className="w-8 pl-2">
                               {game.date.slice(0, 3)}
                             </td>
-                            <td className="text-nowrap pl-2">{game.time}</td>
+                            <td className="w-20 text-nowrap pl-2">
+                              {game.time}
+                            </td>
                             <td
                               className={teamClassNames}
                               tabIndex={0}
