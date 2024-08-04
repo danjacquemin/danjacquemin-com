@@ -3,7 +3,7 @@ import { useState } from "react";
 import styles from "./swag-pin.module.css";
 
 import logoShow from "./img/logo-dave-tim-2024.png";
-import logoDave from "./img/dave.jpg";
+// import logoDave from "./img/dave.jpg";
 import albumAwayFromTheWorld from "./img/album-away-from-the-world.jpg";
 import albumBigWhiskey from "./img/album-big-whiskey.jpg";
 import albumBustedStuff from "./img/album-busted-stuff.jpg";

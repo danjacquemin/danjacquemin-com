@@ -30,18 +30,29 @@ type Schedule = {
 
 const schedule: Schedule = scheduleData;
 
-const initialTeams: TeamsData = Object.keys(teamsData).reduce(
-  (acc, key: string) => {
-    acc[key] = {
-      ...teamsData[key],
-      wins: 0,
-      losses: 0,
-      schedule: new Array(19).fill("-"),
-    };
-    return acc;
-  },
-  {} as TeamsData,
-);
+// This is problem because of ...teamsData[key] :(
+// but why?
+// maybe -- https://stackoverflow.com/questions/12710905/how-do-i-dynamically-assign-properties-to-an-object-in-typescript
+// -- -- -- --
+// const initialTeams: TeamsData = Object.keys(teamsData).reduce(
+//   (acc, key: string) => {
+//     acc[key] = {
+//       ...teamsData[key],
+//       wins: 0,
+//       losses: 0,
+//       schedule: new Array(19).fill("-"),
+//     };
+//     return acc;
+//   },
+//   {} as TeamsData,
+// );
+
+// const initialTeams: TeamsData = teamsData;
+// Object.values(initialTeams).forEach((team) => {
+//   team.schedule = new Array(19).fill("-");
+//   team.wins = 0;
+//   team.losses = 0;
+// });
 
 const NFLPickem2024 = (): JSX.Element => {
   const [season, setSeason] = useState<TeamsData>(initialTeams);
