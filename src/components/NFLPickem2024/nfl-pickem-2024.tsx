@@ -47,12 +47,12 @@ const schedule: Schedule = scheduleData;
 //   {} as TeamsData,
 // );
 
-// const initialTeams: TeamsData = teamsData;
-// Object.values(initialTeams).forEach((team) => {
-//   team.schedule = new Array(19).fill("-");
-//   team.wins = 0;
-//   team.losses = 0;
-// });
+const initialTeams: TeamsData = teamsData;
+Object.values(initialTeams).forEach((team) => {
+  team.schedule = new Array(19).fill("-");
+  team.wins = 0;
+  team.losses = 0;
+});
 
 const NFLPickem2024 = (): JSX.Element => {
   const [season, setSeason] = useState<TeamsData>(initialTeams);
