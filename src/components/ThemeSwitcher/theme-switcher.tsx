@@ -14,7 +14,7 @@ const ThemeSwitcher = () => {
   }, [theme]);
 
   return (
-    <div className="px-2 text-right">
+    <div className="px-2 text-right print:hidden">
       <button onClick={toggleTheme} className="text-sm">
         Toggle Theme
       </button>

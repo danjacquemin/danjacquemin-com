@@ -14,7 +14,7 @@ const AppRoutes = () => {
       <Route path="/flotsam" element={<FlotsamPage />} />
       <Route path="/swag" element={<SwagPage />} />
       <Route path="/about" element={<AboutPage />} />
-      <Route path="/nfl-pickem-2024" element={<NFLPickem />} />
+      <Route path="/nfl-pickem/2024" element={<NFLPickem />} />
     </Routes>
   );
 };

@@ -82,7 +82,7 @@ const NFLPickem2024 = (): JSX.Element => {
   // -- -- -- --
   //
   const teamClassNames =
-    "group rounded hover:bg-gray-200 px-2 w-60 flex items-center [&.winner]:bg-green-400 cursor-pointer";
+    "group rounded hover:bg-gray-200 px-2 w-60 flex items-center [&.winner]:bg-green-700 [&.winner]:text-white cursor-pointer";
 
   // -- -- --
 
@@ -174,19 +174,47 @@ const NFLPickem2024 = (): JSX.Element => {
     return;
   };
 
+  /**
+   * Scrolls to the specified week element when clicked.
+   * @param game - The game number of the week element to scroll to.
+   */
+  const handleWeekClick = (game: number) => {
+    const element = document.getElementById(`week-${game}`);
+    element?.scrollIntoView({
+      behavior: "smooth",
+    });
+  };
+
+  /**
+   * Resets the season and clears the winner cells.
+   * @returns {void}
+   */
+  const handleSeasonReset = () => {
+    if (
+      window.confirm(
+        "\nAre you sure you want to reset the season?\n\n!! This is not recoverable !!",
+      )
+    ) {
+      setSeason(initialTeams);
+      document.querySelectorAll("td.winner").forEach((cell) => {
+        cell.classList.remove("winner");
+      });
+    }
+  };
+
   return (
     <>
       <section className="no-innards min-w-[700px] basis-1/2">
         <div className="flex">
-          <div>
+          <div className="pr-6 print:hidden">
             <h2>Games</h2>
             {weeks.map((week) => (
-              <table key={week} className="mt-4">
+              <table key={week} id={`week-${week}`} className="mt-4">
                 <thead>
                   <tr>
                     <th
                       colSpan={5}
-                      className="bg-gray-200 pl-2 text-left"
+                      className="text-lef bg-gray-200 pl-2"
                       scope="col"
                     >
                       Week: {week}
@@ -212,7 +240,7 @@ const NFLPickem2024 = (): JSX.Element => {
                             <td className="w-6 pl-2">
                               {game.date.slice(0, 3)}
                             </td>
-                            <td className="pl-2">{game.time}</td>
+                            <td className="text-nowrap pl-2">{game.time}</td>
                             <td
                               className={teamClassNames}
                               tabIndex={0}
@@ -221,7 +249,7 @@ const NFLPickem2024 = (): JSX.Element => {
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 512 512"
-                                className={`invisible mr-2 inline h-4 w-4 group-[&.winner]:visible`}
+                                className={`invisible mr-2 inline h-4 w-4 fill-white group-[&.winner]:visible`}
                                 aria-hidden="true"
                               >
                                 <path d="M313.4 32.9c26 5.2 42.9 30.5 37.7 56.5l-2.3 11.4c-5.3 26.7-15.1 52.1-28.8 75.2l144 0c26.5 0 48 21.5 48 48c0 18.5-10.5 34.6-25.9 42.6C497 275.4 504 288.9 504 304c0 23.4-16.8 42.9-38.9 47.1c4.4 7.3 6.9 15.8 6.9 24.9c0 21.3-13.9 39.4-33.1 45.6c.7 3.3 1.1 6.8 1.1 10.4c0 26.5-21.5 48-48 48l-97.5 0c-19 0-37.5-5.6-53.3-16.1l-38.5-25.7C176 420.4 160 390.4 160 358.3l0-38.3 0-48 0-24.9c0-29.2 13.3-56.7 36-75l7.4-5.9c26.5-21.2 44.6-51 51.2-84.2l2.3-11.4c5.2-26 30.5-42.9 56.5-37.7zM32 192l64 0c17.7 0 32 14.3 32 32l0 224c0 17.7-14.3 32-32 32l-64 0c-17.7 0-32-14.3-32-32L0 224c0-17.7 14.3-32 32-32z" />
@@ -237,7 +265,7 @@ const NFLPickem2024 = (): JSX.Element => {
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 512 512"
-                                className={`invisible mr-2 inline h-4 w-4 group-[&.winner]:visible`}
+                                className={`invisible mr-2 inline h-4 w-4 fill-white group-[&.winner]:visible`}
                                 aria-hidden="true"
                               >
                                 <path d="M313.4 32.9c26 5.2 42.9 30.5 37.7 56.5l-2.3 11.4c-5.3 26.7-15.1 52.1-28.8 75.2l144 0c26.5 0 48 21.5 48 48c0 18.5-10.5 34.6-25.9 42.6C497 275.4 504 288.9 504 304c0 23.4-16.8 42.9-38.9 47.1c4.4 7.3 6.9 15.8 6.9 24.9c0 21.3-13.9 39.4-33.1 45.6c.7 3.3 1.1 6.8 1.1 10.4c0 26.5-21.5 48-48 48l-97.5 0c-19 0-37.5-5.6-53.3-16.1l-38.5-25.7C176 420.4 160 390.4 160 358.3l0-38.3 0-48 0-24.9c0-29.2 13.3-56.7 36-75l7.4-5.9c26.5-21.2 44.6-51 51.2-84.2l2.3-11.4c5.2-26 30.5-42.9 56.5-37.7zM32 192l64 0c17.7 0 32 14.3 32 32l0 224c0 17.7-14.3 32-32 32l-64 0c-17.7 0-32-14.3-32-32L0 224c0-17.7 14.3-32 32-32z" />
@@ -252,9 +280,20 @@ const NFLPickem2024 = (): JSX.Element => {
               </table>
             ))}
           </div>
-          <div className="relative">
+          <div className="relative border-l">
             <div className="sticky top-0 pl-6 text-sm">
-              <h2>Results</h2>
+              <div className="flex items-center">
+                <h2>Results</h2>
+                <p className="m-0 mx-8 p-0">
+                  <button
+                    type="button"
+                    onClick={handleSeasonReset}
+                    className="rounded-xl border border-black px-4 hover:bg-black hover:text-white print:hidden"
+                  >
+                    Reset
+                  </button>
+                </p>
+              </div>
 
               {Object.entries(teamsByConferenceAndDivision).map(
                 ([conference, divisions]) => (
@@ -285,14 +324,17 @@ const NFLPickem2024 = (): JSX.Element => {
                                         index !== 0 && (
                                           <span
                                             key={index}
-                                            className="inline-block w-6 border text-center text-sm"
+                                            className={`${game === "W" ? "bg-green-700 text-white" : game === "L" ? "bg-red-600 text-white" : ""} inline-block w-6 border text-center text-sm`}
+                                            onClick={() => {
+                                              handleWeekClick(index);
+                                            }}
                                           >
                                             {game}
                                           </span>
                                         ),
                                     )}
                                   </td>
-                                  <td className="px-3 text-sm">
+                                  <td className="text-nowrap px-3 text-sm">
                                     {season[convertTeamNameToAbv(team)].wins! +
                                       season[convertTeamNameToAbv(team)]
                                         .losses!}{" "}

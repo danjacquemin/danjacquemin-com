@@ -168,9 +168,11 @@
     & > [role="menu"] {
       display: none;
       position: absolute;
-      margin: -3px 0;
-      width: 100%;
-      background-color: rgb(var(--color-bg-primary));
+      margin: -5px 0;
+      padding: 0.5em 1em 0.5em 0;
+      width: max-content;
+      background-color: #0f766e;
+      color: white;
     }
 
     & > button[aria-expanded="true"] {

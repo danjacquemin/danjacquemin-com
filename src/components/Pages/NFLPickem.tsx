@@ -3,7 +3,7 @@ import NFLPickem2024 from "../NFLPickem2024";
 
 const NFLPickem = () => {
   useEffect(() => {
-    document.title = "home | dan jacquemin . com";
+    document.title = "NFL 2024 Pick'em | dan jacquemin . com";
   }, []);
 
   return (

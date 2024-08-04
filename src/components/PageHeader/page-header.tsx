@@ -1,11 +1,16 @@
 import { Link } from "react-router-dom";
 import ThemeSwitcher from "../ThemeSwitcher";
 
+type SubNavItem = {
+  text: string;
+  linkto: string;
+};
+
 type NavItem = {
   name: string;
   path: string;
   hasMenu?: boolean;
-  menuLinks?: string[];
+  menuLinks?: SubNavItem[];
 };
 
 const navItems: NavItem[] = [
@@ -20,8 +25,13 @@ const navItems: NavItem[] = [
   {
     name: "Flotsam",
     path: "/flotsam",
-    // hasMenu: true,
-    // menuLinks: ["1", "2"],
+    hasMenu: true,
+    menuLinks: [
+      {
+        text: "NFL Pickem",
+        linkto: "/nfl-pickem/2024",
+      },
+    ],
   },
   {
     name: "Jetsam",
@@ -54,7 +64,7 @@ const PageHeader = () => {
           dan jacquemin . com
         </Link>
       </header>
-      <nav>
+      <nav className="print:hidden">
         <ul className="-mr-2 flex list-none justify-end p-2">
           {navItems.map((item) => (
             <li key={item.name} className="mx-2">
@@ -86,13 +96,14 @@ const PageHeader = () => {
                     </li> */}
                     {item.menuLinks?.map((link) => {
                       return (
-                        <li role="none" key={link}>
+                        <li role="none" key={link.linkto}>
                           <Link
                             role="menuitem"
-                            to={`${link}`}
+                            to={`${link.linkto}`}
                             onClick={handleAnchorClick}
+                            className="no-underline hover:underline"
                           >
-                            {link}
+                            {link.text}
                           </Link>
                         </li>
                       );

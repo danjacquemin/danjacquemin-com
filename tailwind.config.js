@@ -48,6 +48,9 @@ export default {
           "primary-hover": withOpacity("--color-button-primary-fill-hover"),
         },
       },
+      screens: {
+        print: { raw: "print" },
+      },
     },
   },
   plugins: [],

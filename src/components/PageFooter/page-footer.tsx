@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import Icon from "../Icon";
-import { IconProps } from "../../types/icon-types";
 
 // -- -- -- -- --
 
@@ -50,7 +49,7 @@ const PageFooter = () => {
     <>
       <hr className="footer-hr" />
 
-      <footer className="wrap-footer">
+      <footer className="wrap-footer print:hidden">
         <div className="wrap-social">
           {socialMedia &&
             socialMedia.map(({ url, name }, i) => (
@@ -61,10 +60,7 @@ const PageFooter = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <Icon
-                    name={name as IconProps["name"]}
-                    additionalClasses="h-8 w-8"
-                  />
+                  <Icon name={name} additionalClasses="h-8 w-8" />
                 </a>
               </div>
             ))}
