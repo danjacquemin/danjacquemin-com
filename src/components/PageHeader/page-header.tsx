@@ -28,6 +28,10 @@ const navItems: NavItem[] = [
     hasMenu: true,
     menuLinks: [
       {
+        text: "☝",
+        linkto: "/flotsam",
+      },
+      {
         text: "NFL Pickem",
         linkto: "/nfl-pickem/2024",
       },
