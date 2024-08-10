@@ -28,6 +28,7 @@
     --color-button-primary-fill-hover: 255, 255, 255;
     --color-button-primary-border: 23, 23, 23;
     --color-button-primary-border-hover: 23, 23, 23;
+    --color-redskin-burgundy: 124, 20, 21;
   }
 
   html[data-theme="dark"] {
@@ -171,7 +172,7 @@
       margin: -5px 0;
       padding: 0.5em 1em 0.5em 0;
       width: max-content;
-      background-color: #0f766e;
+      background-color: rgb(var(--color-redskin-burgundy));
       color: white;
     }
 

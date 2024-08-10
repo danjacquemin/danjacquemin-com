@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import styles from "./swag-pin.module.css";
 
-import logoShow from "./img/logo-dave-tim-2024.png";
+import logoShow from "./img/logo-dave-tim-2025.png";
 // import logoDave from "./img/dave.jpg";
 import albumAwayFromTheWorld from "./img/album-away-from-the-world.jpg";
 import albumBigWhiskey from "./img/album-big-whiskey.jpg";
@@ -142,13 +142,12 @@ const SwagPin = () => {
           <div
             className={`${styles["swag-content"]} ${styles["swag-top-content"]}`}
           >
-            {/**
-             * <div className={styles["hello-my-name-is"]}>
-             *   <div className={styles["hello"]}>Hello</div>
-             *   <div className={styles["my-name-is"]}>my name is</div>
-             * </div>
-             * <div className={styles["signature"]}></div>
-             */}
+            {/* <div className={styles["hello-my-name-is"]}>
+              <div className={styles["hello"]}>Hello</div>
+              <div className={styles["my-name-is"]}>my name is</div>
+            </div>
+            <div className={styles["signature"]}></div> */}
+
             <div className={styles["dave-speak"]}>
               <div>&lt;Dave-Speak&gt;</div>
               <div>Hello&hellip;</div>
@@ -169,7 +168,6 @@ const SwagPin = () => {
           </div>
         </div>
       </div>
-
       <div className={styles["wrap-lyrics"]}>
         <label htmlFor="select-album">Album</label>
         <select

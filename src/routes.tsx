@@ -12,7 +12,7 @@ const AppRoutes = () => {
       <Route path="/" element={<HomePage />} />
       <Route path="/jetsam" element={<JetsamPage />} />
       <Route path="/flotsam" element={<FlotsamPage />} />
-      <Route path="/swag" element={<SwagPage />} />
+      <Route path="/swag-2025" element={<SwagPage />} />
       <Route path="/about" element={<AboutPage />} />
       <Route path="/nfl-pickem/2024" element={<NFLPickem />} />
     </Routes>

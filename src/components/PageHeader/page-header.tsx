@@ -35,6 +35,10 @@ const navItems: NavItem[] = [
         text: "NFL Pickem",
         linkto: "/nfl-pickem/2024",
       },
+      {
+        text: "Swag 2025",
+        linkto: "/swag-2025",
+      },
     ],
   },
   {

@@ -27,12 +27,43 @@ select {
 }
 
 .button-area {
+  position: relative;
   display: flex;
   flex-direction: column;
   row-gap: var(--gap);
   width: var(--swag-width);
   height: var(--swag-height);
-  border: 1px solid #f1f1f1;
+  border: 1px solid #cdcdcd;
+  background-color: white;
+
+  & > div {
+    z-index: 100;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: block;
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
+    border: 1px solid #cdcdcd;
+    z-index: 50;
+  }
+
+  &::after {
+    content: "bleed";
+    font-size: 8px;
+    text-align: right;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    display: block;
+    width: calc(100% + 40px);
+    height: calc(100% + 40px);
+    border: 1px solid #cdcdcd;
+  }
 }
 
 .swag-panel {
@@ -70,11 +101,11 @@ select {
 }
 
 .wrap-lyric {
-  font-size: 44px;
+  font-size: 54px;
   text-wrap: balance;
   text-align: center;
   font-family: "Swanky and Moo Moo";
-  line-height: 1;
+  line-height: 0.9;
 }
 
 .swag-top-content {
