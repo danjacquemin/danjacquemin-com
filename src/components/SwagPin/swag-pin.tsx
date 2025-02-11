@@ -142,17 +142,17 @@ const SwagPin = () => {
           <div
             className={`${styles["swag-content"]} ${styles["swag-top-content"]}`}
           >
-            {/* <div className={styles["hello-my-name-is"]}>
+            <div className={styles["hello-my-name-is"]}>
               <div className={styles["hello"]}>Hello</div>
               <div className={styles["my-name-is"]}>my name is</div>
             </div>
-            <div className={styles["signature"]}></div> */}
+            <div className={styles["signature"]}></div>
 
-            <div className={styles["dave-speak"]}>
+            {/* <div className={styles["dave-speak"]}>
               <div>&lt;Dave-Speak&gt;</div>
               <div>Hello&hellip;</div>
               <div>&lt;/Dave-Speak&gt;</div>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className={styles["swag-panel"]}>
