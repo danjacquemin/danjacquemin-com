@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import ThemeSwitcher from "../ThemeSwitcher";
+// import ThemeSwitcher from "../ThemeSwitcher";
 
 type SubNavItem = {
   text: string;
@@ -125,7 +125,7 @@ const PageHeader = () => {
           ))}
         </ul>
       </nav>
-      <ThemeSwitcher />
+      {/* <ThemeSwitcher /> */}
     </>
   );
 };

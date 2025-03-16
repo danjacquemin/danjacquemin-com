@@ -7,10 +7,12 @@ const ThemeSwitcher = () => {
 
   const toggleTheme = () => {
     setTheme(theme === "default" ? "dark" : "default");
+    return (localStorage.getItem("theme") as Theme) || "default";
   };
 
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme);
+    localStorage.setItem("theme", theme); // Persist choice
   }, [theme]);
 
   return (

@@ -1,31 +1,54 @@
-# danjacquemin . com
+# React + TypeScript + Vite
 
-## The story so far...
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Universe created.  
-Some time passes.  
-Dinosaurs. Rawr!  
-Romans invent concrete.  
-2001. v1 of this site.  
-2001-2023. Various updates.
-2024: Again?! Yes. But, this time with React + Vite + Tailwind.
+Currently, two official plugins are available:
 
-## Your timeline is vague...
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-Well, yeah.
+## Expanding the ESLint configuration
 
-## Seriously though...
+If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-I've been a web developer for a long time. Like, I got started on [Gopher](<https://en.wikipedia.org/wiki/Gopher_(protocol)>) and the first
-web page I built was for [Netscape Navigator](<https://en.wikipedia.org/wiki/Netscape_(web_browser)#Netscape-based_(versions_1.0%E2%80%934.8)_releases>). It had an image. I was very proud.
+```js
+export default tseslint.config({
+  extends: [
+    // Remove ...tseslint.configs.recommended and replace with this
+    ...tseslint.configs.recommendedTypeChecked,
+    // Alternatively, use this for stricter rules
+    ...tseslint.configs.strictTypeChecked,
+    // Optionally, add this for stylistic rules
+    ...tseslint.configs.stylisticTypeChecked,
+  ],
+  languageOptions: {
+    // other options...
+    parserOptions: {
+      project: ['./tsconfig.node.json', './tsconfig.app.json'],
+      tsconfigRootDir: import.meta.dirname,
+    },
+  },
+})
+```
 
-Then I spent a decade or two doing doing Web Development eventually working my
-way to to Lead Front-end Developer at [ETS](https://www.ets.org/) with strong focus on standards, #a11y, and usability. Sadly we get to 2023 and my role is getting outsourced. It was fun while it lasted.
+You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-Good news though, the great folks at the Asplundh Digital Innovations group have opted to fund my adventures.
+```js
+// eslint.config.js
+import reactX from 'eslint-plugin-react-x'
+import reactDom from 'eslint-plugin-react-dom'
 
-[heart-hands image goes here]
-
-## Obtw...
-
-If you need a senior type developer I'm always happy to listen so hit me up. Deets on LinkedIn -- [linkedin.com/in/dan-jacquemin/](https://www.linkedin.com/in/dan-jacquemin/)
+export default tseslint.config({
+  plugins: {
+    // Add the react-x and react-dom plugins
+    'react-x': reactX,
+    'react-dom': reactDom,
+  },
+  rules: {
+    // other rules...
+    // Enable its recommended typescript rules
+    ...reactX.configs['recommended-typescript'].rules,
+    ...reactDom.configs.recommended.rules,
+  },
+})
+```
