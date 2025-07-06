@@ -1,4 +1,4 @@
-import { Box, Link, Divider, Typography } from '@mui/material';
+import { Box, Link, Typography } from '@mui/material';
 
 import Page from '../../templates/Page';
 
@@ -6,12 +6,10 @@ function About() {
   return (
     <Page title="About">
       <Box component="section" sx={{ flex: '1 1 50%', minWidth: 700 }}>
-        <Typography variant="h1" sx={{ fontStyle: 'italic', mb: 6 }}>
+        <Typography variant="h1" fontStyle="italic" sx={{ pb: 4 }}>
           Hello World!
         </Typography>
       </Box>
-
-      <Divider sx={{ mb: 4, mx: -4 }} />
 
       <Box component="section" sx={{ flex: '1 1 50%', minWidth: 700 }}>
         <Typography variant="h2" gutterBottom>

@@ -6,6 +6,21 @@ export const baseTheme = {
           lineHeight: 1.2,
           textWrap: 'balance',
         },
+        a: {
+          color: 'inherit',
+          textUnderlineOffset: '6px',
+        },
+        'a.nav-link': {
+          '&:hover': {
+            textDecoration: 'underline',
+          },
+          color: 'inherit',
+          textDecoration: 'none',
+        },
+        body: {
+          color: '#151515',
+          minHeight: 'calc(100vh + 1px)',
+        },
       },
     },
     MuiTypography: {
@@ -49,6 +64,6 @@ export const baseTheme = {
       fontSize: '1rem',
       lineHeight: 1.1,
     },
-    htmlFontSize: 16, // Ensures 1rem = 16px for consistency
+    htmlFontSize: 16, // force 1rem = 16px for consistency (mui default is 14px)
   },
 };

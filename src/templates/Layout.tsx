@@ -17,7 +17,7 @@ function Layout({ children, isDarkMode, toggleTheme }: LayoutProps) {
     <Box
       sx={{
         display: 'grid',
-        gridTemplateRows: '40px 1fr auto',
+        gridTemplateRows: '64px 1fr auto',
         minHeight: '100vh',
       }}
     >
