@@ -8,6 +8,7 @@ This is the personal website of Dan Jacquemin, a seasoned UI/UX developer with a
 
 A SPA with following stack: React 19; Vite; React Router v7; React 19 Native Forms; Zod 4; Material UI; ESLint; eslint-plugin-perfectionist;
 
-```npm install
+```
+npm install
 npm run dev
 ```
