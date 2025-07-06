@@ -96,7 +96,7 @@ function PageFooter() {
           spacing={2}
           sx={{ maxWidth: 'sm', p: 2 }}
         >
-          <div>
+          <Box component={'div'} sx={{ lineHeight: 1.3 }}>
             <Typography
               fontSize="inherit"
               fontWeight="bold"
@@ -121,9 +121,9 @@ function PageFooter() {
             and standards. Slowly coming to terms to geospatial mapping and
             analysis. I enjoy problem solving for large and small projects.
             Let&apos;s make beautiful sites.
-          </div>
+          </Box>
 
-          <div>
+          <Box component={'div'} sx={{ lineHeight: 1.3 }}>
             <Typography
               fontSize="inherit"
               fontWeight="bold"
@@ -136,9 +136,9 @@ function PageFooter() {
               fontSize="inherit"
               dangerouslySetInnerHTML={{ __html: reminder }}
             />
-          </div>
+          </Box>
 
-          <div>
+          <Box component={'div'} sx={{ lineHeight: 1.3 }}>
             <Typography
               fontSize="inherit"
               fontWeight="bold"
@@ -154,7 +154,7 @@ function PageFooter() {
             figures, incorrect addresses, inclement weather, mange, poor
             nutrition on race day, your team being blacked-out on TV, or
             anything else that you do not like or disagree with.
-          </div>
+          </Box>
         </Stack>
       </Container>
     </Box>
