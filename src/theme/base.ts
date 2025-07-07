@@ -33,6 +33,7 @@ export const baseTheme = {
           h4: 'h4',
           h5: 'h5',
           h6: 'h6',
+          p: 'p',
           subtitle1: 'span',
           subtitle2: 'span',
         },
@@ -45,6 +46,7 @@ export const baseTheme = {
     fontSize: 16, // base font size to 1rem (16px vs MUI's [stupid] 14px)
     h1: {
       fontFamily: '"Playfair Display", serif',
+      fontStyle: 'italic',
       LineHeight: 1.2,
       marginBottom: '1rem',
     },
@@ -64,5 +66,6 @@ export const baseTheme = {
       lineHeight: 1.1,
     },
     htmlFontSize: 16, // force 1rem = 16px for consistency (mui default is 14px)
+    p: {},
   },
 };

@@ -46,16 +46,14 @@ const ThemedChip = styled(Chip)<ThemedChipProps>(({ theme }) => ({
 function Home() {
   return (
     <Page title="Home">
-      <Typography variant="h1" fontStyle="italic" sx={{ pb: 4 }}>
-        Hello World!
-      </Typography>
+      <Typography variant="h1">Hello World!</Typography>
 
       <Card sx={{ maxWidth: 360, minWidth: 250 }} elevation={3}>
         <CardContent>
-          <Typography variant="h2" component="div" sx={{ pb: 1 }}>
+          <Typography variant="h2" component="h2" sx={{ pb: 1 }}>
             flot{bull}sam
           </Typography>
-          <Box>
+          <div>
             <Typography
               sx={{ color: 'text.secondary', display: 'block', pb: 1 }}
               fontSize={'0.875rem'}
@@ -64,9 +62,9 @@ function Home() {
               <br />
               noun
             </Typography>
-          </Box>
+          </div>
           <div>
-            <Typography variant="body2">
+            <Typography component="p">
               people or things that have been rejected and are regarded as
               worthless.
             </Typography>

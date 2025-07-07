@@ -6,17 +6,15 @@ function About() {
   return (
     <Page title="About">
       <Box component="section" sx={{ flex: '1 1 50%' }}>
-        <Typography variant="h1" sx={{ fontStyle: 'italic', mb: 4 }}>
-          Hello World!
-        </Typography>
+        <Typography variant="h1">Hello World!</Typography>
       </Box>
 
       <Box component="section" sx={{ flex: '1 1 50%' }}>
         <Typography variant="h2" gutterBottom>
           The story so far&hellip;
         </Typography>
-        <Box sx={{ pb: 6, px: 4 }}>
-          <Typography variant="body1">
+        <Box component="div" sx={{ pb: 6, px: 4 }}>
+          <Typography component="p">
             Universe created. <br />
             Some time passes. <br />
             Dinosaurs. <em>Rawr!</em> <br />
@@ -24,13 +22,9 @@ function About() {
             2001. v1 of this site. <br />
             2001-2023. Various updates. <br />
             2024: Again?! Yes. But, this time with React + Vite +{' '}
-            <Link
-              href="https://tailwindcss.com/"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer">
               Tailwind
-            </Link>
+            </a>
             .
             <br />
             2025: And <em>again</em> with{' '}
@@ -44,15 +38,15 @@ function About() {
         <Typography variant="h2" gutterBottom>
           Your timeline is vague&hellip;
         </Typography>
-        <Box sx={{ pb: 6, px: 4 }}>
-          <Typography variant="body1">Well, yeah.</Typography>
+        <Box component="div" sx={{ pb: 6, px: 4 }}>
+          <Typography component="p">Well, yeah.</Typography>
         </Box>
 
         <Typography variant="h2" gutterBottom>
           Seriously though&hellip;
         </Typography>
-        <Box sx={{ pb: 6, px: 4 }}>
-          <Typography variant="body1" paragraph>
+        <Box component="div" sx={{ pb: 6, px: 4 }}>
+          <Typography component="p">
             I&lsquo;ve been a web developer for a long time. Like, I got started
             on{' '}
             <Link
@@ -79,7 +73,7 @@ function About() {
             with strong focus on standards, #a11y, and usability. Sadly we got
             to 2023 and my role got outsourced. It was fun while it lasted.
           </Typography>
-          <Typography variant="body1">
+          <Typography component="p">
             Good news though, the great folks at the Asplundh Digital
             Innovations group have opted to fund my adventures.
             <br />
@@ -90,15 +84,13 @@ function About() {
         <Typography variant="h2" gutterBottom>
           Okay, so what exactly are you doing&hellip;
         </Typography>
-        <Box sx={{ pb: 6, px: 4 }}>
-          <Typography variant="body1">
+        <Box component="div" sx={{ pb: 6, px: 4 }}>
+          <Typography component="p">
             We&lsquo;re going to work through building out a site using:
           </Typography>
-          <Box component="ul" sx={{ mt: 1 }}>
-            <Typography component="li" variant="body1">
-              React + Vite + Tailwind
-            </Typography>
-            <Typography component="li" variant="body1">
+          <Box component="ul">
+            <Typography component="li">React + Vite + Tailwind</Typography>
+            <Typography component="li">
               Redo the Tailwind version using{' '}
               <Link href="https://mui.com/" target="_blank" rel="noreferrer">
                 MUI
@@ -110,15 +102,15 @@ function About() {
         <Typography variant="h2" gutterBottom>
           Sounds like fun&hellip;
         </Typography>
-        <Box sx={{ pb: 6, px: 4 }}>
-          <Typography variant="body1">It does, doesn&lsquo;t it?!</Typography>
+        <Box component="div" sx={{ pb: 6, px: 4 }}>
+          <Typography component="p">It does, doesn&lsquo;t it?!</Typography>
         </Box>
 
         <Typography variant="h2" gutterBottom>
           Obtw&hellip;
         </Typography>
-        <Box sx={{ pb: 6, px: 4 }}>
-          <Typography variant="body1">
+        <Box component="div" sx={{ pb: 6, px: 4 }}>
+          <Typography component="p">
             If you need a senior type developer I&lsquo;m always happy to
             listen, so hit me up.
             <br />
