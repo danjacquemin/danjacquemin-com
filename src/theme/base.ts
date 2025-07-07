@@ -18,7 +18,6 @@ export const baseTheme = {
           textDecoration: 'none',
         },
         body: {
-          color: '#151515',
           minHeight: 'calc(100vh + 1px)',
         },
       },
@@ -43,7 +42,7 @@ export const baseTheme = {
   typography: {
     fontFamily: '"Raleway", sans-serif',
     fontFamilyMonospace: '"Inconsolata", monospace',
-    fontSize: 16, // Sets base font size to 1rem (16px)
+    fontSize: 16, // base font size to 1rem (16px vs MUI's [stupid] 14px)
     h1: {
       fontFamily: '"Playfair Display", serif',
       LineHeight: 1.2,
