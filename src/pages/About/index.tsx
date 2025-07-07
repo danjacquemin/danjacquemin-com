@@ -5,13 +5,13 @@ import Page from '../../templates/Page';
 function About() {
   return (
     <Page title="About">
-      <Box component="section" sx={{ flex: '1 1 50%', minWidth: 700 }}>
-        <Typography variant="h1" fontStyle="italic" sx={{ pb: 4 }}>
+      <Box component="section" sx={{ flex: '1 1 50%' }}>
+        <Typography variant="h1" sx={{ fontStyle: 'italic', mb: 4 }}>
           Hello World!
         </Typography>
       </Box>
 
-      <Box component="section" sx={{ flex: '1 1 50%', minWidth: 700 }}>
+      <Box component="section" sx={{ flex: '1 1 50%' }}>
         <Typography variant="h2" gutterBottom>
           The story so far&hellip;
         </Typography>
