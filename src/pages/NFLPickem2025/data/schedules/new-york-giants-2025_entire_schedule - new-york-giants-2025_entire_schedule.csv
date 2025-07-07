@@ -1,0 +1,19 @@
+week,date,time,home_team,away_team,venue,city
+1,2025-09-07,1:00 PM EDT,Washington Commanders,New York Giants,Northwest Stadium,Landover
+2,2025-09-14,1:00 PM EDT,Dallas Cowboys,New York Giants,AT&T Stadium,Arlington
+3,2025-09-21,8:20 PM EDT,New York Giants,Kansas City Chiefs,MetLife Stadium,East Rutherford
+4,2025-09-28,1:00 PM EDT,New York Giants,Los Angeles Chargers,MetLife Stadium,East Rutherford
+5,2025-10-05,1:00 PM EDT,New Orleans Saints,New York Giants,Caesars Superdome,New Orleans
+6,2025-10-09,8:15 PM EDT,New York Giants,Philadelphia Eagles,MetLife Stadium,East Rutherford
+7,2025-10-19,4:05 PM EDT,Denver Broncos,New York Giants,Empower Field at Mile High,Denver
+8,2025-10-26,1:00 PM EDT,Philadelphia Eagles,New York Giants,Lincoln Financial Field,Philadelphia
+9,2025-11-02,1:00 PM EST,New York Giants,San Francisco 49ers,MetLife Stadium,East Rutherford
+10,2025-11-09,1:00 PM EST,Chicago Bears,New York Giants,Soldier Field,Chicago
+11,2025-11-16,1:00 PM EST,New York Giants,Green Bay Packers,MetLife Stadium,East Rutherford
+12,2025-11-23,1:00 PM EST,Detroit Lions,New York Giants,Ford Field,Detroit
+13,2025-12-01,8:15 PM EST,New England Patriots,New York Giants,Gillette Stadium,Foxborough
+14,,BYE WEEK,,,,
+15,2025-12-14,1:00 PM EST,New York Giants,Washington Commanders,MetLife Stadium,East Rutherford
+16,2025-12-21,1:00 PM EST,New York Giants,Minnesota Vikings,MetLife Stadium,East Rutherford
+17,,TBD,Las Vegas Raiders,New York Giants,,
+18,,TBD,New York Giants,Dallas Cowboys,,

@@ -1,0 +1,19 @@
+week,date,time,home_team,away_team,venue,city
+1,2025-09-07,1:00 PM EDT,New Orleans Saints,Arizona Cardinals,Caesars Superdome,New Orleans
+2,2025-09-14,1:00 PM EDT,New Orleans Saints,San Francisco 49ers,Caesars Superdome,New Orleans
+3,2025-09-21,4:05 PM EDT,Seattle Seahawks,New Orleans Saints,Lumen Field,Seattle
+4,2025-09-28,1:00 PM EDT,Buffalo Bills,New Orleans Saints,Highmark Stadium,Orchard Park
+5,2025-10-05,1:00 PM EDT,New Orleans Saints,New York Giants,Caesars Superdome,New Orleans
+6,2025-10-12,4:25 PM EDT,New Orleans Saints,New England Patriots,Caesars Superdome,New Orleans
+7,2025-10-19,1:00 PM EDT,Chicago Bears,New Orleans Saints,Soldier Field,Chicago
+8,2025-10-26,4:05 PM EDT,New Orleans Saints,Tampa Bay Buccaneers,Caesars Superdome,New Orleans
+9,2025-11-02,4:05 PM EST,Los Angeles Rams,New Orleans Saints,SoFi Stadium,Inglewood
+10,2025-11-09,1:00 PM EST,Carolina Panthers,New Orleans Saints,Bank of America Stadium,Charlotte
+11,,BYE WEEK,,,,
+12,2025-11-23,4:25 PM EST,New Orleans Saints,Atlanta Falcons,Caesars Superdome,New Orleans
+13,2025-11-30,1:00 PM EST,Miami Dolphins,New Orleans Saints,Hard Rock Stadium,Opa Locka
+14,2025-12-07,1:00 PM EST,Tampa Bay Buccaneers,New Orleans Saints,Raymond James Stadium,Tampa
+15,2025-12-14,4:25 PM EST,New Orleans Saints,Carolina Panthers,Caesars Superdome,New Orleans
+16,2025-12-21,1:00 PM EST,New Orleans Saints,New York Jets,Caesars Superdome,New Orleans
+17,2025-12-28,1:00 PM EST,Tennessee Titans,New Orleans Saints,Nissan Stadium,Nashville
+18,,TBD,Atlanta Falcons,New Orleans Saints,,
