@@ -1,5 +1,6 @@
+import { CircularProgress } from '@mui/material';
 import React from 'react';
-import { useMemo, useCallback } from 'react';
+import { useMemo, useCallback, useState } from 'react';
 
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
@@ -11,20 +12,22 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Typography from '@mui/material/Typography';
 
-import type { Team, ScheduleCSVRow } from './types';
+import type { Team, ScheduleCSVRow, UserPicks } from './types';
 
 import TeamWithLogo from './components/TeamWithLogo';
 import scheduleCSV from './data/NFLSchedule2025.csv?raw';
 import teamsCSV from './data/NFLTeamsByConfAndDiv.csv?raw';
 import { useCSVData } from './hooks/useCSVData';
+import { HiddenRadioInput, TeamLabel } from './nflPickem2025.styled';
 import {
   createTeamAbbreviationMap,
   groupGamesByWeek,
 } from './utils/scheduleUtils';
 
 function NFLPickem2025() {
-  const [teams] = useCSVData<Team>(teamsCSV);
-  const [schedule] = useCSVData<ScheduleCSVRow>(scheduleCSV);
+  const [teams, teamsLoading] = useCSVData<Team>(teamsCSV);
+  const [schedule, scheduleLoading] = useCSVData<ScheduleCSVRow>(scheduleCSV);
+  const [userPicks, setUserPicks] = useState<UserPicks>({});
 
   const teamAbbreviationMap = useMemo(
     () => createTeamAbbreviationMap(teams),
@@ -76,9 +79,23 @@ function NFLPickem2025() {
     'TBD',
   ];
 
+  const handlePickChange = useCallback(
+    (event: React.ChangeEvent<HTMLInputElement>) => {
+      const { name, value } = event.target;
+      setUserPicks((prev) => ({
+        ...prev,
+        [name]: value,
+      }));
+    },
+    [],
+  );
+
   return (
     <>
       <Typography variant="h1">NFL 2025 Schedule</Typography>
+
+      {teamsLoading || (scheduleLoading && <CircularProgress />)}
+
       <Box component="div" sx={{ padding: (theme) => theme.spacing(2) }}>
         {weeks.map((weekNum) => (
           <Box key={weekNum} sx={{ mb: 4 }}>
@@ -88,7 +105,7 @@ function NFLPickem2025() {
 
             <Paper sx={{ mb: 2 }}>
               <TableContainer>
-                <Table size="small">
+                <Table size="small" aria-label={`Week ${weekNum} NFL games`}>
                   <TableHead>
                     <TableRow
                       sx={{
@@ -99,9 +116,10 @@ function NFLPickem2025() {
                         component="th"
                         scope="col"
                         sx={{
+                          border: '1px solid white',
                           color: 'white',
                           fontWeight: 'bold',
-                          width: '12%',
+                          width: '5em',
                         }}
                       >
                         Time (ET)
@@ -110,9 +128,10 @@ function NFLPickem2025() {
                         component="th"
                         scope="col"
                         sx={{
+                          border: '1px solid white',
                           color: 'white',
                           fontWeight: 'bold',
-                          width: '25%',
+                          width: '20em',
                         }}
                       >
                         Away Team
@@ -121,9 +140,22 @@ function NFLPickem2025() {
                         component="th"
                         scope="col"
                         sx={{
+                          border: '1px solid white',
                           color: 'white',
                           fontWeight: 'bold',
-                          width: '25%',
+                          width: '1em',
+                        }}
+                      >
+                        vs
+                      </TableCell>
+                      <TableCell
+                        component="th"
+                        scope="col"
+                        sx={{
+                          border: '1px solid white',
+                          color: 'white',
+                          fontWeight: 'bold',
+                          width: '20em',
                         }}
                       >
                         Home Team
@@ -143,7 +175,7 @@ function NFLPickem2025() {
                             <TableCell
                               component="th"
                               scope="colgroup"
-                              colSpan={4}
+                              colSpan={5}
                               sx={{
                                 fontWeight: 'bold',
                                 paddingBottom: '1rem',
@@ -154,26 +186,67 @@ function NFLPickem2025() {
                             </TableCell>
                           </TableRow>
                           {/* Games for this day */}
-                          {dayGames.map((game, index) => (
-                            <TableRow key={`${day}-${index}`}>
-                              <TableCell sx={{ paddingLeft: 8, width: '12%' }}>
-                                {formatGameTime(game.utcDateTime)}
-                              </TableCell>
-                              <TableCell>
-                                <TeamWithLogo
-                                  teamName={game.awayTeam}
-                                  abbr={getTeamAbbr(game.awayTeam)}
-                                />
-                              </TableCell>
-                              <TableCell>
-                                <TeamWithLogo
-                                  teamName={game.homeTeam}
-                                  abbr={getTeamAbbr(game.homeTeam)}
-                                />
-                              </TableCell>
-                              <TableCell></TableCell>
-                            </TableRow>
-                          ))}
+                          {dayGames.map((game, index) => {
+                            const gameId = `w-${weekNum}-${getTeamAbbr(game.awayTeam)}-vs-${getTeamAbbr(game.homeTeam)}`;
+                            const homeTeamAbbr = getTeamAbbr(game.homeTeam);
+                            const awayTeamAbbr = getTeamAbbr(game.awayTeam);
+
+                            return (
+                              <TableRow key={`${day}-${index}`}>
+                                <TableCell
+                                  sx={{ paddingLeft: 8, width: '12%' }}
+                                >
+                                  {formatGameTime(game.utcDateTime)}
+                                </TableCell>
+                                <TableCell>
+                                  <TeamLabel
+                                    checked={userPicks[gameId] === awayTeamAbbr}
+                                    htmlFor={`${gameId}-away`}
+                                  >
+                                    <HiddenRadioInput
+                                      type="radio"
+                                      id={`${gameId}-away`}
+                                      name={gameId}
+                                      value={awayTeamAbbr}
+                                      onChange={handlePickChange}
+                                      checked={
+                                        userPicks[gameId] === awayTeamAbbr
+                                      }
+                                      style={{ marginRight: 8 }}
+                                    />
+                                    <TeamWithLogo
+                                      teamName={game.awayTeam}
+                                      abbr={awayTeamAbbr}
+                                    />
+                                  </TeamLabel>
+                                </TableCell>
+                                <TableCell>vs</TableCell>
+                                <TableCell>
+                                  <TeamLabel
+                                    checked={userPicks[gameId] === homeTeamAbbr}
+                                    htmlFor={`${gameId}-home`}
+                                  >
+                                    <HiddenRadioInput
+                                      type="radio"
+                                      id={`${gameId}-home`}
+                                      name={gameId}
+                                      value={homeTeamAbbr}
+                                      onChange={handlePickChange}
+                                      checked={
+                                        userPicks[gameId] === homeTeamAbbr
+                                      }
+                                      style={{ marginRight: 8 }}
+                                    />
+                                    <TeamWithLogo
+                                      teamName={game.homeTeam}
+                                      abbr={homeTeamAbbr}
+                                    />
+                                  </TeamLabel>
+                                </TableCell>
+                                <TableCell></TableCell>
+                              </TableRow>
+                            );
+                          })}
                         </React.Fragment>
                       );
                     })}

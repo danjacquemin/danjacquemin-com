@@ -1,3 +1,7 @@
+export type UserPicks = {
+  [gameId: string]: string; // "1-KC-vs-DEN": "KC"
+};
+
 export type Team = {
   Conference: string;
   Division: string;
