@@ -11,7 +11,7 @@ type TeamWithLogoProps = {
 function TeamWithLogo({
   abbr,
   fontSize = 'inherit',
-  logoSize = 48,
+  logoSize = 42,
   teamName,
 }: TeamWithLogoProps) {
   return (

@@ -98,24 +98,37 @@ function NFLPickem2025() {
                       <TableCell
                         component="th"
                         scope="col"
-                        sx={{ color: 'white', fontWeight: 'bold' }}
+                        sx={{
+                          color: 'white',
+                          fontWeight: 'bold',
+                          width: '12%',
+                        }}
                       >
                         Time (ET)
                       </TableCell>
                       <TableCell
                         component="th"
                         scope="col"
-                        sx={{ color: 'white', fontWeight: 'bold' }}
+                        sx={{
+                          color: 'white',
+                          fontWeight: 'bold',
+                          width: '25%',
+                        }}
                       >
                         Away Team
                       </TableCell>
                       <TableCell
                         component="th"
                         scope="col"
-                        sx={{ color: 'white', fontWeight: 'bold' }}
+                        sx={{
+                          color: 'white',
+                          fontWeight: 'bold',
+                          width: '25%',
+                        }}
                       >
                         Home Team
                       </TableCell>
+                      <th></th>
                     </TableRow>
                   </TableHead>
                   <TableBody>
@@ -130,9 +143,11 @@ function NFLPickem2025() {
                             <TableCell
                               component="th"
                               scope="colgroup"
-                              colSpan={3}
+                              colSpan={4}
                               sx={{
                                 fontWeight: 'bold',
+                                paddingBottom: '1rem',
+                                paddingTop: '1rem',
                               }}
                             >
                               {day}
@@ -141,7 +156,7 @@ function NFLPickem2025() {
                           {/* Games for this day */}
                           {dayGames.map((game, index) => (
                             <TableRow key={`${day}-${index}`}>
-                              <TableCell sx={{ paddingLeft: 8 }}>
+                              <TableCell sx={{ paddingLeft: 8, width: '12%' }}>
                                 {formatGameTime(game.utcDateTime)}
                               </TableCell>
                               <TableCell>
@@ -156,6 +171,7 @@ function NFLPickem2025() {
                                   abbr={getTeamAbbr(game.homeTeam)}
                                 />
                               </TableCell>
+                              <TableCell></TableCell>
                             </TableRow>
                           ))}
                         </React.Fragment>
