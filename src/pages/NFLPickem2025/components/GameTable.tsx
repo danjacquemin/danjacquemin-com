@@ -12,10 +12,10 @@ import React, { memo } from 'react';
 
 import type { UserPicks, WeekData } from '../types';
 
-import { dayOrder, VALID_WEEKS } from '../consts';
+import { dayOrder } from '../consts';
 import { HiddenRadioInput, TeamLabel } from '../nflPickem2025.styled';
 import TeamWithLogo from './TeamWithLogo';
-import { createGameId } from '../utils/gameUtils';
+import { createGameId, isValidWeek } from '../utils/gameUtils';
 
 interface GameTableProps {
   weekNum: number;
@@ -25,13 +25,6 @@ interface GameTableProps {
   formatGameTime: (utcDateTime: string) => string;
   handlePickChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
 }
-
-/**
- * Validates week number
- */
-const isValidWeek = (weekNum: number): boolean => {
-  return Number.isInteger(weekNum) && VALID_WEEKS.includes(weekNum);
-};
 
 /**
  * Validates week data

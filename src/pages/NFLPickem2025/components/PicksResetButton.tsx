@@ -1,8 +1,13 @@
-import { Button } from '@mui/material';
+import { Box, Button } from '@mui/material';
+import { memo } from 'react';
 
 import type { UserPicks } from '../types';
 
-import { hasPicksForWeek, removePicksForWeek } from '../utils/gameUtils';
+import {
+  hasPicksForWeek,
+  removePicksForWeek,
+  isValidWeek,
+} from '../utils/gameUtils';
 
 interface PicksResetButtonProps {
   weekNum: number;
@@ -10,38 +15,60 @@ interface PicksResetButtonProps {
   setUserPicks: (picks: UserPicks) => void;
 }
 
-export default function PicksResetButton({
-  setUserPicks,
-  userPicks,
-  weekNum,
-}: PicksResetButtonProps) {
-  return (
-    <div
-      style={{
-        display: 'flex',
-        justifyContent: 'flex-end',
-        padding: '0 0 1rem 0',
-      }}
-    >
-      <Button
-        variant="outlined"
-        size="small"
-        disabled={!hasPicksForWeek(userPicks, weekNum)}
-        onClick={(e) => {
-          e.stopPropagation();
-          setUserPicks(removePicksForWeek(userPicks, weekNum));
-        }}
+/**
+ * Validates user picks
+ */
+const isValidUserPicks = (userPicks: UserPicks): boolean => {
+  return userPicks !== null && typeof userPicks === 'object';
+};
+
+/**
+ * Button to reset picks for a specific week
+ */
+const PicksResetButton = memo(
+  ({ setUserPicks, userPicks, weekNum }: PicksResetButtonProps) => {
+    // Validate inputs
+    if (!isValidWeek(weekNum)) {
+      console.warn(`Invalid week number: ${weekNum}`);
+      return null;
+    }
+    if (!isValidUserPicks(userPicks)) {
+      console.warn('Invalid userPicks');
+      return null;
+    }
+
+    return (
+      <Box
         sx={{
-          backgroundColor: '#f5f5f5',
-          borderRadius: 2,
-          fontWeight: 'bold',
-          padding: '0.2em 1em',
-          textTransform: 'none',
+          display: 'flex',
+          justifyContent: 'flex-end',
+          paddingBottom: 2,
         }}
-        aria-label={`Reset picks for week ${weekNum}`}
       >
-        Reset Week {weekNum}
-      </Button>
-    </div>
-  );
-}
+        <Button
+          variant="outlined"
+          size="small"
+          disabled={!hasPicksForWeek(userPicks, weekNum)}
+          onClick={(e) => {
+            e.stopPropagation();
+            setUserPicks(removePicksForWeek(userPicks, weekNum));
+          }}
+          sx={{
+            backgroundColor: (theme) => theme.palette.grey[100],
+            borderRadius: 2,
+            fontWeight: 'bold',
+            padding: '0.2em 1em',
+            textTransform: 'none',
+          }}
+          aria-label={`Reset picks for week ${weekNum}`}
+        >
+          Reset Week {weekNum}
+        </Button>
+      </Box>
+    );
+  },
+);
+
+PicksResetButton.displayName = 'PicksResetButton';
+
+export default PicksResetButton;

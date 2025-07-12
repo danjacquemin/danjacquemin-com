@@ -8,13 +8,10 @@ import type {
   TeamGameInfo,
 } from '../types';
 
-import { PICKEM, VALID_WEEKS, TBD_DATE, BYE_TEAM } from '../consts';
+import { PICKEM, TBD_DATE, BYE_TEAM } from '../consts';
+import { isValidWeek } from './gameUtils';
 
 // -- -- --
-
-const isValidWeek = (week: number): boolean => {
-  return !isNaN(week) && VALID_WEEKS.includes(week);
-};
 
 const isValidDate = (dateStr: string): boolean => {
   return dateStr !== TBD_DATE && !isNaN(new Date(dateStr).getTime());
