@@ -1,5 +1,10 @@
 export const baseTheme = {
   components: {
+    MuiButtonBase: {
+      defaultProps: {
+        disableRipple: true,
+      },
+    },
     MuiCssBaseline: {
       styleOverrides: {
         '*': {
@@ -38,6 +43,17 @@ export const baseTheme = {
           subtitle2: 'span',
         },
       },
+    },
+  },
+  transitions: {
+    duration: {
+      complex: 250,
+      enteringScreen: 150,
+      leavingScreen: 100,
+      short: 200,
+      shorter: 150,
+      shortest: 100,
+      standard: 200, // default is 300
     },
   },
   typography: {

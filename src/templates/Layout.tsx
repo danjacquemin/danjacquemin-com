@@ -1,4 +1,4 @@
-import { Box, Container } from '@mui/material';
+import { Box } from '@mui/material';
 
 import PageFooter from '../components/PageFooter';
 import PageHeader from '../components/PageHeader';
@@ -22,18 +22,15 @@ function Layout({ children, isDarkMode, toggleTheme }: LayoutProps) {
       }}
     >
       <PageHeader />
-      <Container
-        maxWidth="xl"
-        disableGutters
+      <Box
         sx={{
           display: 'flex',
           flexDirection: 'column',
           flexGrow: 1, // takes up remaining space
-          p: 1,
         }}
       >
         {children}
-      </Container>
+      </Box>
       <PageFooter />
       <ThemeSwitcher isDarkMode={isDarkMode} toggleTheme={toggleTheme} />
     </Box>

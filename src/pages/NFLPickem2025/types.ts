@@ -27,6 +27,11 @@ export type ScheduleGame = {
   isTBD?: boolean; // true when utcDateTime is "TBD"
 };
 
+export type WeekData = {
+  gamesByDay: { [day: string]: ScheduleGame[] };
+  byes: string[];
+};
+
 export type WeeklySchedule = {
   week: number;
   games: ScheduleGame[];
@@ -53,3 +58,18 @@ export type TeamMap = {
 export type TeamAbbreviationMap = {
   [teamName: string]: string;
 };
+
+export type WeeklyScheduleData = {
+  [weekNum: number]: WeekData;
+};
+
+export type TeamGameInfo =
+  | null
+  | { type: 'bye' }
+  | {
+      type: 'game';
+      game: ScheduleGame;
+      isHome: boolean;
+      opponent: string;
+      weekNum: number;
+    };
