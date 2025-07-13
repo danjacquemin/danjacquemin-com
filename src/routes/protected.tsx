@@ -1,7 +1,9 @@
-import { Route } from 'react-router-dom';
+import type { RouteObject } from 'react-router-dom';
 
-export const protectedRoutes = (
-  <>
-    <Route path="/hidden" element={<div>Hidden Page</div>} />
-  </>
-);
+/**
+ * Private routes for the app
+ */
+export const protectedRoutes: RouteObject[] = [
+  // Add your protected routes here
+  // Example: { element: <ProtectedComponent />, path: '/protected' },
+];

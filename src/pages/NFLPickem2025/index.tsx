@@ -13,6 +13,8 @@ import {
 } from '@mui/material';
 import React, { useMemo, useCallback, useState } from 'react';
 
+import { useNavigate } from 'react-router-dom';
+
 import type {
   Team,
   ScheduleCSVRow,
@@ -21,7 +23,6 @@ import type {
 } from './types';
 
 import TeamStandings from './components/TeamStandings';
-// Component imports
 import WeekAccordion from './components/WeekAccordion';
 import { PICKEM } from './consts';
 import scheduleCSV from './data/NFLSchedule2025.csv?raw';
@@ -36,6 +37,7 @@ import {
 } from './utils/scheduleUtils';
 
 function NFLPickem2025() {
+  const navigate = useNavigate();
   const [teams, teamsLoading] = useCSVData<Team>(teamsCSV);
   const [schedule, scheduleLoading] = useCSVData<ScheduleCSVRow>(scheduleCSV);
   const [userPicks, setUserPicks] = useLocalStorage<UserPicks>('userPicks', {});
@@ -189,6 +191,23 @@ function NFLPickem2025() {
               aria-label="Reset schedule"
             >
               Reset Schedule
+            </Button>
+            <Button
+              variant="outlined"
+              size="small"
+              onClick={() =>
+                navigate('/nfl/create-qr', { state: { userPicks } })
+              }
+              aria-label="Save user picks as QR code"
+              sx={{
+                backgroundColor: '#f5f5f5',
+                borderRadius: 2,
+                fontWeight: 'bold',
+                padding: '0.2em 1em',
+                textTransform: 'none',
+              }}
+            >
+              Save to QR
             </Button>
           </Box>
 

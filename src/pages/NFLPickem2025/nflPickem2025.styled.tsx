@@ -1,3 +1,5 @@
+import { TableCell, TableBody } from '@mui/material';
+
 import { styled } from '@mui/material/styles';
 
 export const HiddenRadioInput = styled('input')(() => ({
@@ -37,3 +39,39 @@ export const TeamLabel = styled('label')<{ checked?: boolean }>(
     }),
   }),
 );
+
+/**
+ * Styled TableBody to remove bottom border from last team row per division
+ */
+export const StyledTableBody = styled(TableBody)`
+  & > :not(:first-of-type) > td,
+  & > tr:not(:has(th)):last-of-type > td {
+    border-bottom: none;
+  }
+`;
+
+/**
+ * Styled TableCell for division headers
+ */
+export const StyledDivisionHeaderCell = styled(TableCell)(({ theme }) => ({
+  backgroundColor: theme.palette.grey[100],
+  fontSize: '0.875rem',
+  fontWeight: 'bold',
+}));
+
+/**
+ * Styled TableCell for game cells
+ */
+export const StyledGameCell = styled(TableCell)({
+  fontSize: '0.625rem',
+  padding: '4px 2px',
+  textAlign: 'center',
+});
+
+/**
+ * Styled TableCell for team cells
+ */
+export const StyledTeamCell = styled(TableCell)({
+  fontSize: '0.75rem',
+  textAlign: 'center',
+});

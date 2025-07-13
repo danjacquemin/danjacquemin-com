@@ -1,18 +1,20 @@
 import { Box } from '@mui/material';
 
+import { Outlet } from 'react-router-dom';
+
 import PageFooter from '../components/PageFooter';
 import PageHeader from '../components/PageHeader';
 import ThemeSwitcher from '../components/ThemeSwitcher';
 
-import type { ReactNode } from 'react';
-
 type LayoutProps = {
-  children: ReactNode;
   isDarkMode: boolean;
   toggleTheme: () => void;
 };
 
-function Layout({ children, isDarkMode, toggleTheme }: LayoutProps) {
+/**
+ * Layout component for app with header, footer, and theme switcher
+ */
+function Layout({ isDarkMode, toggleTheme }: LayoutProps) {
   return (
     <Box
       sx={{
@@ -29,7 +31,7 @@ function Layout({ children, isDarkMode, toggleTheme }: LayoutProps) {
           flexGrow: 1, // takes up remaining space
         }}
       >
-        {children}
+        <Outlet />
       </Box>
       <PageFooter />
       <ThemeSwitcher isDarkMode={isDarkMode} toggleTheme={toggleTheme} />

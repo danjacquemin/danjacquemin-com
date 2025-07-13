@@ -1,21 +1,25 @@
-import { Routes } from 'react-router-dom';
-
 import { protectedRoutes } from './protected';
 import { publicRoutes } from './public';
 import Layout from '../templates/Layout';
+
+import type { RouteObject } from 'react-router-dom';
 
 interface AppRoutesProps {
   toggleTheme: () => void;
   isDarkMode: boolean;
 }
 
-export default function AppRoutes({ isDarkMode, toggleTheme }: AppRoutesProps) {
-  return (
-    <Layout toggleTheme={toggleTheme} isDarkMode={isDarkMode}>
-      <Routes>
-        {publicRoutes}
-        {protectedRoutes}
-      </Routes>
-    </Layout>
-  );
+/**
+ * Defines app routes for createBrowserRouter
+ */
+export function appRoutes({
+  isDarkMode,
+  toggleTheme,
+}: AppRoutesProps): RouteObject[] {
+  return [
+    {
+      children: [...publicRoutes, ...protectedRoutes],
+      element: <Layout toggleTheme={toggleTheme} isDarkMode={isDarkMode} />,
+    },
+  ];
 }

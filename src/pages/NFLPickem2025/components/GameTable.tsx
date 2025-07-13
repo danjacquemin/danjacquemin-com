@@ -1,7 +1,6 @@
 import {
   Paper,
   Table,
-  TableBody,
   TableCell,
   TableContainer,
   TableHead,
@@ -13,7 +12,11 @@ import React, { memo } from 'react';
 import type { UserPicks, WeekData } from '../types';
 
 import { dayOrder } from '../consts';
-import { HiddenRadioInput, TeamLabel } from '../nflPickem2025.styled';
+import {
+  HiddenRadioInput,
+  TeamLabel,
+  StyledTableBody,
+} from '../nflPickem2025.styled';
 import TeamWithLogo from './TeamWithLogo';
 import { createGameId, isValidWeek } from '../utils/gameUtils';
 
@@ -120,7 +123,7 @@ const GameTable = memo(
                 </TableCell>
               </TableRow>
             </TableHead>
-            <TableBody role="rowgroup">
+            <StyledTableBody role="rowgroup">
               {dayOrder.map((day) => {
                 const dayGames = weekData.gamesByDay[day];
                 if (!dayGames || dayGames.length === 0) return null;
@@ -128,7 +131,7 @@ const GameTable = memo(
                 return (
                   <React.Fragment key={day}>
                     {/* Day header row */}
-                    <TableRow>
+                    <TableRow className="day-header">
                       <TableCell
                         component="th"
                         scope="colgroup"
@@ -136,7 +139,7 @@ const GameTable = memo(
                         sx={{
                           fontWeight: 'bold',
                           paddingBottom: '1rem',
-                          paddingTop: '1rem',
+                          paddingTop: '3rem',
                         }}
                       >
                         {day}
@@ -235,7 +238,7 @@ const GameTable = memo(
                   </React.Fragment>
                 );
               })}
-            </TableBody>
+            </StyledTableBody>
           </Table>
         </TableContainer>
       </Paper>
