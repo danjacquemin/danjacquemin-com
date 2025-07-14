@@ -1,5 +1,4 @@
 import { Button, TextField, Box, Typography } from '@mui/material';
-import pako from 'pako';
 import { QRCodeSVG } from 'qrcode.react';
 import { useState } from 'react';
 
@@ -7,6 +6,7 @@ import { useNavigate, useLocation } from 'react-router-dom';
 
 import type { UserPicks } from '../types';
 
+import gameSchedule from '../data/NFLScheduleOfGames.json';
 import Page from '../../../templates/Page';
 
 /**
@@ -32,12 +32,9 @@ const CreateNFLQR2025 = () => {
     Object.keys(userPicks).length >= FULL_SCHEDULE_SIZE;
 
   const qrData = () => {
-    if (!isValidEmail(email)) {
-      setError('Please enter a valid email address');
-      return '';
-    }
-    const optimizedPicks: { [key: string]: string } = {};
-    const keyRegex = /^w-(\d+)-(.+)-vs-(.+)$/; // Matches w-<week>-<homeTeam>-vs-<awayTeam>
+    const picksArray = new Array(272).fill('');
+    const keyRegex = /^w-(\d+)-(.+)-vs-(.+)$/; // userPicks uses w-Week-HomeTeam-vs-AwayTeam
+
     for (const key in userPicks) {
       if (Object.prototype.hasOwnProperty.call(userPicks, key)) {
         const match = key.match(keyRegex);
@@ -46,7 +43,12 @@ const CreateNFLQR2025 = () => {
           continue;
         }
         const [, week, homeTeam, awayTeam] = match;
-        const finalKey = `${week}-${homeTeam}-${awayTeam}`;
+        const gameID = `${week}-${awayTeam}-vs-${homeTeam}`; // Convert to schedule format
+        const index = gameSchedule.indexOf(gameID);
+        if (index === -1) {
+          console.warn(`Game ID ${gameID} not found in schedule`);
+          continue;
+        }
         const value =
           userPicks[key] === homeTeam
             ? '0'
@@ -57,43 +59,33 @@ const CreateNFLQR2025 = () => {
           console.warn(`Invalid value for key ${key}: ${userPicks[key]}`);
           continue;
         }
-        optimizedPicks[finalKey] = value;
+        picksArray[index] = value;
       }
     }
-    const data = {
-      dateCreated: new Date().toISOString(),
-      email,
-      userPicks: optimizedPicks,
-    };
-    const compressed = pako.gzip(JSON.stringify(data));
-    return `danjacqumein.com/nfl/read-qr?picks=${encodeURIComponent(
-      btoa(String.fromCharCode(...compressed)),
-    )}`;
+
+    console.log(`picksArray:`, picksArray.join(''));
+    return `${email};${picksArray.join('')}`; // Include email in QR data
   };
 
   const downloadQR = () => {
     const svg = document.querySelector('svg');
 
     if (svg) {
-      // Serialize SVG to string
       const serializer = new XMLSerializer();
       const svgString = serializer.serializeToString(svg);
 
-      const canvas = document.createElement('canvas');
-      canvas.width = 200;
-      canvas.height = 200;
-      const ctx = canvas.getContext('2d');
-      if (ctx) {
-        const img = new Image();
-        img.onload = () => {
-          ctx.drawImage(img, 0, 0);
-          const link = document.createElement('a');
-          link.download = `nfl-picks-${email}-${new Date().toISOString().split('T')[0]}.png`;
-          link.href = canvas.toDataURL('image/png');
-          link.click();
-        };
-        img.src = `data:image/svg+xml;base64,${btoa(svgString)}`;
-      }
+      // Create a Blob from the SVG string
+      const blob = new Blob([svgString], { type: 'image/svg+xml' });
+
+      // Create a download link
+      const link = document.createElement('a');
+      const dateStr = new Date().toISOString().split('T')[0];
+      link.download = `nfl-picks-${email}-${dateStr}.svg`;
+      link.href = URL.createObjectURL(blob);
+      link.click();
+
+      // Clean up the URL object
+      URL.revokeObjectURL(link.href);
     }
   };
 
@@ -137,8 +129,8 @@ const CreateNFLQR2025 = () => {
             </Typography>
             <QRCodeSVG
               value={qrData()}
-              size={400}
-              aria-label="QR code containing user picks and email"
+              size={300}
+              aria-label="QR code containing user picks"
             />
           </Box>
         ) : !isScheduleComplete && email && isValidEmail(email) ? (
