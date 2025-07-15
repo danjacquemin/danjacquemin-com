@@ -157,14 +157,19 @@ const TeamStandings = memo(
         >
           <TableHead>
             <TableRow>
-              <TableCell sx={{ fontWeight: 'bold', minWidth: '120px' }}>
+              <TableCell
+                component="th"
+                sx={{ fontWeight: 'bold', minWidth: '120px' }}
+              >
                 Team
               </TableCell>
               <TableCell
+                component="th"
                 sx={{
                   fontWeight: 'bold',
                   minWidth: '60px',
                   textAlign: 'center',
+                  whiteSpace: 'nowrap',
                 }}
               >
                 W-L
@@ -172,6 +177,7 @@ const TeamStandings = memo(
               {weeks.map((weekNum) => (
                 <TableCell
                   key={weekNum}
+                  component="th"
                   sx={{
                     fontSize: '0.75rem',
                     fontWeight: 'bold',

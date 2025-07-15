@@ -38,7 +38,11 @@ const TeamWithLogo = memo(
           }}
           role="presentation"
         />
-        <Typography fontSize={fontSize} component="span">
+        <Typography
+          fontSize={fontSize}
+          component="span"
+          sx={{ whiteSpace: 'nowrap' }}
+        >
           {teamName}
         </Typography>
       </Box>
