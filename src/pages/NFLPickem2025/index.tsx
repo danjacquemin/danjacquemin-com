@@ -212,6 +212,21 @@ function NFLPickem2025() {
             >
               Save to QR
             </Button>
+            <Button
+              variant="outlined"
+              size="small"
+              onClick={() => navigate('/nfl/read-qr', { state: { userPicks } })}
+              aria-label="Import a QR code"
+              sx={{
+                backgroundColor: '#f5f5f5',
+                borderRadius: 2,
+                fontWeight: 'bold',
+                padding: '0.2em 1em',
+                textTransform: 'none',
+              }}
+            >
+              Import
+            </Button>
           </Box>
 
           <Tabs
