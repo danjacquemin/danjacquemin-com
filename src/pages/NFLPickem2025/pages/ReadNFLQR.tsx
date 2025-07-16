@@ -1,8 +1,11 @@
+import jsQR from 'jsqr';
 import { Button, Box, Typography } from '@mui/material';
 import { useTheme } from '@mui/material';
 import { useState, useEffect } from 'react';
 
 import { useNavigate, useSearchParams } from 'react-router-dom';
+
+import CircularProgress from '@mui/material/CircularProgress';
 
 import type { UserPicks } from '../types';
 
@@ -16,27 +19,32 @@ const isValidEmail = (email: string): boolean => {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 };
 
+const FULL_SCHEDULE_SIZE = 272;
+
 /**
  * Page to import user picks from QR code URL
  */
 const ReadNFLQR2025 = () => {
   const navigate = useNavigate();
   const theme = useTheme();
-
   const [searchParams] = useSearchParams();
+
   const [error, setError] = useState<string | null>(null);
-  const FULL_SCHEDULE_SIZE = 272;
+  const [qrData, setQrData] = useState<string | null>(null);
+  const [loading, setLoading] = useState(false);
 
   // handle query data
   const queryData = searchParams.get('data');
-  const processQueryData = () => {
-    if (!queryData) {
+  const processQueryData = (data?: string) => {
+    const inputData = data || queryData; // Use qrData if provided, else queryData
+
+    if (!inputData) {
       setError('No data provided in URL.');
       return;
     }
 
     try {
-      const [emailPart = '', picksPart] = queryData.split(';');
+      const [emailPart = '', picksPart] = inputData.split(';');
       if (!picksPart) throw new Error('No picks data provided.');
 
       const email = emailPart.trim();
@@ -62,7 +70,7 @@ const ReadNFLQR2025 = () => {
         }
       });
 
-      // Save valid email to localStorage if present and valid
+      // save valid email to localStorage if present and valid
       if (email && isValidEmail(email)) {
         localStorage.setItem('userEmail', email);
       }
@@ -72,6 +80,59 @@ const ReadNFLQR2025 = () => {
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Error processing data.');
     }
+  };
+
+  const handleImageUpload = async (
+    event: React.ChangeEvent<HTMLInputElement>,
+  ) => {
+    const file = event.target.files?.[0];
+    if (!file) {
+      setQrData('No file selected.');
+      return;
+    }
+
+    setLoading(true); // start loading
+
+    // The setTimeout hack forces a render cycle after setting loading to true,
+    // giving the spinner a chance to display before the heavy image processing blocks the thread.
+    // This prevents the premature setLoading(false) from hiding it.
+    await new Promise((resolve) => setTimeout(resolve, 0)); // force render cycle
+
+    const reader = new FileReader();
+    reader.onload = (e) => {
+      const img = new window.Image();
+      img.onload = () => {
+        const canvas = document.createElement('canvas');
+        canvas.width = img.width;
+        canvas.height = img.height;
+        const ctx = canvas.getContext('2d');
+        if (!ctx) {
+          setQrData('Could not get canvas context.');
+          setLoading(false); // end loading on error
+          return;
+        }
+        ctx.drawImage(img, 0, 0, img.width, img.height);
+        const imageData = ctx.getImageData(0, 0, img.width, img.height);
+        const code = jsQR(imageData.data, imageData.width, imageData.height);
+        setQrData(code ? code.data : 'No QR code found in the image.');
+        setLoading(false); // end loading on completion
+      };
+      img.onerror = () => {
+        setQrData('Error loading image.');
+        setLoading(false); // end loading on error
+      };
+      if (typeof e.target?.result === 'string') {
+        img.src = e.target.result;
+      } else {
+        setQrData('Could not read image file.');
+        setLoading(false); // end loading on error
+      }
+    };
+    reader.onerror = () => {
+      setQrData('Error reading file.');
+      setLoading(false); // end loading on error
+    };
+    reader.readAsDataURL(file);
   };
 
   const handleNavigateOnError = () => {
@@ -87,6 +148,13 @@ const ReadNFLQR2025 = () => {
     }
   }, [queryData]);
 
+  // process QR data when available
+  useEffect(() => {
+    if (qrData) {
+      processQueryData(qrData); // Pass qrData to processQueryData
+    }
+  }, [qrData, processQueryData]);
+
   return (
     <Page title="NFL Pick'em 2025" maxWidth="xl">
       <Typography variant="h1" sx={{ margin: 'auto', mb: 4 }}>
@@ -97,8 +165,21 @@ const ReadNFLQR2025 = () => {
       </Typography>
       <Box maxWidth="sm" sx={{ mx: 'auto' }}>
         <Typography component="p" sx={{ mb: 2 }}>
-          Import your picks: <code>/nfl/read-qr?data=&hellip;</code>
+          Import your picks:
         </Typography>
+        <Box component={'div'} sx={{ mb: 8 }}>
+          <input type="file" accept="image/*" onChange={handleImageUpload} />
+          {loading ? (
+            <Box sx={{ border: '1px solid #ccc', m: 2, p: 2 }}>
+              <CircularProgress size={16} color="inherit" /> Processing
+              Image&hellip;
+            </Box>
+          ) : qrData ? (
+            <Box component={'p'} sx={{ mt: 2, wordBreak: 'break-all' }}>
+              Decoded QR Data: {qrData}
+            </Box>
+          ) : null}
+        </Box>
         {error && (
           <Typography
             color="error"
@@ -115,31 +196,34 @@ const ReadNFLQR2025 = () => {
             {error}
           </Typography>
         )}
-        {!error && (
-          <Typography
-            sx={{
-              border: `1px solid ${theme.palette.primary.main}`,
-              fontWeight: 'bold',
-              mb: 3,
-              p: 2,
-              textAlign: 'center',
-            }}
-            role="alert"
-            component={'p'}
-          >
-            Successfully imported your picks!
-          </Typography>
+        {qrData && (
+          <>
+            <Typography
+              sx={{
+                border: `1px solid ${theme.palette.primary.main}`,
+                fontWeight: 'bold',
+                mb: 3,
+                p: 2,
+                textAlign: 'center',
+              }}
+              role="alert"
+              component={'p'}
+            >
+              Successfully imported your picks!
+            </Typography>
+            <Box
+              sx={{ display: 'flex', gap: 2, justifyContent: 'center', mb: 8 }}
+            >
+              <Button
+                variant="outlined"
+                onClick={error ? handleNavigateOnError : () => navigate('/nfl')}
+                aria-label="Return to main page"
+              >
+                {error ? `Return to Pick'em` : `View Picks`}
+              </Button>
+            </Box>
+          </>
         )}
-
-        <Box sx={{ display: 'flex', gap: 2, justifyContent: 'center', mb: 8 }}>
-          <Button
-            variant="outlined"
-            onClick={error ? handleNavigateOnError : () => navigate('/nfl')}
-            aria-label="Return to main page"
-          >
-            {error ? `Return to Pick'em` : `View Picks`}
-          </Button>
-        </Box>
       </Box>
     </Page>
   );
