@@ -139,7 +139,7 @@ const CreateNFLQR2025 = () => {
             aria-label="QR code containing user picks"
           />
           <br />
-          [qr code &emdash; variable import results... save the URL below]
+          [qr code &mdash; variable import results... save the URL below]
         </Box>
         <Box sx={{ mb: 3, p: 4, textAlign: 'center' }}>
           <Typography component="p" sx={{ wordBreak: 'break-all' }}>
