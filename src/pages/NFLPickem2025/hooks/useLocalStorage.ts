@@ -1,31 +1,41 @@
-import { useState } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 
-// localStorage persistence
-export function useLocalStorage<T>(
-  key: string,
-  defaultValue: T,
-): [T, (value: T) => void] {
-  // initialize state from localStorage, fallback to defaultValue
+function useLocalStorage<T>(key: string, initialValue: T) {
   const [value, setValue] = useState<T>(() => {
-    try {
-      const item = window.localStorage.getItem(key);
-      return item ? JSON.parse(item) : defaultValue;
-    } catch (error) {
-      // warn if localStorage is unavailable or JSON is invalid
-      console.warn(`Error reading localStorage key "${key}":`, error);
-      return defaultValue;
-    }
+    const storedValue = localStorage.getItem(key);
+    return storedValue ? JSON.parse(storedValue) : initialValue;
   });
 
-  // setter updates both state and localStorage
-  const setStoredValue = (newValue: T) => {
-    try {
-      setValue(newValue);
-      window.localStorage.setItem(key, JSON.stringify(newValue));
-    } catch (error) {
-      console.warn(`Error setting localStorage key "${key}":`, error);
-    }
-  };
+  useEffect(() => {
+    // save to localStorage whenever value changes
+    localStorage.setItem(key, JSON.stringify(value));
 
-  return [value, setStoredValue];
+    // listen for storage events (e.g., changes from other tabs)
+    const handleStorageChange = (e: StorageEvent) => {
+      if (e.key === key && e.newValue) {
+        setValue(JSON.parse(e.newValue));
+      }
+    };
+    window.addEventListener('storage', handleStorageChange);
+
+    // cleanup
+    return () => window.removeEventListener('storage', handleStorageChange);
+  }, [key, value]);
+
+  // rehydrate on mount or when key changes
+  const rehydrate = useCallback(() => {
+    const storedValue = localStorage.getItem(key);
+    if (storedValue) {
+      setValue(JSON.parse(storedValue));
+    }
+  }, [key]);
+
+  // optional: Call rehydrate on mount if needed
+  useEffect(() => {
+    rehydrate();
+  }, [rehydrate]);
+
+  return [value, setValue, rehydrate] as const;
 }
+
+export default useLocalStorage;

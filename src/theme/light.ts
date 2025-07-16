@@ -17,6 +17,9 @@ export const lightTheme = createTheme({
     },
   },
   palette: {
+    custom: {
+      backgroundLightGrey: '#f9fafb', // A light grey suitable for light mode
+    },
     mode: 'light',
     primary: {
       main: 'rgb(18, 87, 64)', // ny jet green #125740

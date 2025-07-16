@@ -9,6 +9,7 @@ import {
   Typography,
   Box,
 } from '@mui/material';
+import { useTheme } from '@mui/material';
 import { memo, useMemo, Fragment } from 'react';
 
 import type { Team, UserPicks, WeeklyScheduleData } from '../types';
@@ -101,6 +102,8 @@ const TeamStandings = memo(
       console.error('getTeamAbbr is not a function');
       return <Typography>Error: Invalid team abbreviation function</Typography>;
     }
+
+    const theme = useTheme();
 
     // pre-calculate all team records to avoid recalculation
     const teamRecords = useMemo(() => {
@@ -228,6 +231,7 @@ const TeamStandings = memo(
                               team,
                               userPicks,
                               getTeamAbbr,
+                              theme,
                             )
                           : 'inherit';
 

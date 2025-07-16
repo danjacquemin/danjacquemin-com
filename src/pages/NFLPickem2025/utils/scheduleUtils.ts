@@ -275,6 +275,7 @@ export const getGameCellBackgroundColor = (
   team: Team,
   userPicks: UserPicks,
   getTeamAbbr: (teamName: string) => string,
+  theme: import('@mui/material/styles').Theme,
 ) => {
   if (!gameInfo || gameInfo.type !== 'game') {
     return 'inherit';
@@ -293,7 +294,7 @@ export const getGameCellBackgroundColor = (
     return userPick === teamAbbr ? PICKEM.COLOR_WINNER : PICKEM.COLOR_LOSER;
   }
 
-  return PICKEM.COLOR_UNDECIDED;
+  return theme.palette.custom?.backgroundLightGrey ?? 'transparent';
 };
 
 /**

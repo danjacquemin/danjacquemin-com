@@ -17,6 +17,9 @@ export const darkTheme = createTheme({
     },
   },
   palette: {
+    custom: {
+      backgroundLightGrey: '#2E2E2E', // A dark grey suitable for dark mode
+    },
     mode: 'dark',
     primary: {
       main: 'rgb(18, 87, 64)', // ny jet green #125740

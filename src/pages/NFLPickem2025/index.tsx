@@ -28,7 +28,7 @@ import { PICKEM } from './consts';
 import scheduleCSV from './data/NFLSchedule2025.csv?raw';
 import teamsCSV from './data/NFLTeamsByConfAndDiv.csv?raw';
 import { useCSVData } from './hooks/useCSVData';
-import { useLocalStorage } from './hooks/useLocalStorage';
+import useLocalStorage from './hooks/useLocalStorage';
 import Page from '../../templates/Page';
 import {
   createTeamAbbreviationMap,
@@ -40,7 +40,10 @@ function NFLPickem2025() {
   const navigate = useNavigate();
   const [teams, teamsLoading] = useCSVData<Team>(teamsCSV);
   const [schedule, scheduleLoading] = useCSVData<ScheduleCSVRow>(scheduleCSV);
-  const [userPicks, setUserPicks] = useLocalStorage<UserPicks>('userPicks', {});
+  const [userPicks, setUserPicks] = useLocalStorage<UserPicks>(
+    'nflPicks2025',
+    {},
+  );
   const [confirmOpen, setConfirmOpen] = useState(false);
   const [selectedConference, setSelectedConference] = useState<'AFC' | 'NFC'>(
     'AFC',

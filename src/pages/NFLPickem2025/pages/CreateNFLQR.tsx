@@ -1,7 +1,8 @@
 import { Button, TextField, Box, Typography } from '@mui/material';
 import { QRCodeSVG } from 'qrcode.react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
+import { Link } from 'react-router-dom';
 import { useNavigate, useLocation } from 'react-router-dom';
 
 import type { UserPicks } from '../types';
@@ -31,9 +32,17 @@ const CreateNFLQR2025 = () => {
   const isScheduleComplete =
     Object.keys(userPicks).length >= FULL_SCHEDULE_SIZE;
 
+  // Set initial email from localStorage if valid
+  useEffect(() => {
+    const storedEmail = localStorage.getItem('userEmail');
+    if (storedEmail && isValidEmail(storedEmail)) {
+      setEmail(storedEmail);
+    }
+  }, []);
+
   const qrData = () => {
     const picksArray = new Array(272).fill('');
-    const keyRegex = /^w-(\d+)-(.+)-vs-(.+)$/; // userPicks uses w-Week-HomeTeam-vs-AwayTeam
+    const keyRegex = /^w-(\d+)-(.+)-vs-(.+)$/; // userPicks uses w-Week-AwayTeam-vs-HomeTeam
 
     for (const key in userPicks) {
       if (Object.prototype.hasOwnProperty.call(userPicks, key)) {
@@ -42,8 +51,8 @@ const CreateNFLQR2025 = () => {
           console.warn(`Invalid key format: ${key}`);
           continue;
         }
-        const [, week, homeTeam, awayTeam] = match;
-        const gameID = `${week}-${awayTeam}-vs-${homeTeam}`; // Convert to schedule format
+        const [, week, awayTeam, homeTeam] = match; // [key], week, awayTeam, homeTeam
+        const gameID = `${week}-${awayTeam}-vs-${homeTeam}`; // convert to schedule format
         const index = gameSchedule.indexOf(gameID);
         if (index === -1) {
           console.warn(`Game ID ${gameID} not found in schedule`);
@@ -51,10 +60,10 @@ const CreateNFLQR2025 = () => {
         }
         const value =
           userPicks[key] === homeTeam
-            ? '0'
+            ? '1'
             : userPicks[key] === awayTeam
-              ? '1'
-              : '';
+              ? '0'
+              : 'x';
         if (!value) {
           console.warn(`Invalid value for key ${key}: ${userPicks[key]}`);
           continue;
@@ -62,9 +71,7 @@ const CreateNFLQR2025 = () => {
         picksArray[index] = value;
       }
     }
-
-    console.log(`picksArray:`, picksArray.join(''));
-    return `${email};${picksArray.join('')}`; // Include email in QR data
+    return `${email};${picksArray.join('')}`; // include email in QR data
   };
 
   const downloadQR = () => {
@@ -113,44 +120,40 @@ const CreateNFLQR2025 = () => {
           fullWidth
           sx={{ mb: 3 }}
           aria-label="Enter email for QR code"
-          aria-describedby={isScheduleComplete ? undefined : 'schedule-warning'}
+          autoComplete="new-password"
         />
-        {isScheduleComplete && email && isValidEmail(email) ? (
-          <Box sx={{ mb: 3, p: 4, textAlign: 'center' }}>
-            <Typography
-              component="p"
-              display="block"
-              sx={{ mb: 2 }}
-              fontSize={'0.875rem'}
-            >
-              Save this QR code.
-              <br />
-              It can be used to import your picks
-            </Typography>
-            <QRCodeSVG
-              value={qrData()}
-              size={300}
-              aria-label="QR code containing user picks"
-            />
-          </Box>
-        ) : !isScheduleComplete && email && isValidEmail(email) ? (
+        <Box sx={{ mb: 3, p: 4, textAlign: 'center' }}>
           <Typography
-            id="schedule-warning"
-            color="error"
-            sx={{
-              border: '1px solid red',
-              fontWeight: 'bold',
-              mb: 3,
-              p: 2,
-              textAlign: 'center',
-            }}
-            role="alert"
-            component={'p'}
+            component="p"
+            display="block"
+            sx={{ mb: 2 }}
+            fontSize={'0.875rem'}
           >
-            You didn&rsquo;t pick all {FULL_SCHEDULE_SIZE} games. Go Back. Try
-            harder!
+            Save this QR code.
+            <br />
+            It can be used to import your picks
           </Typography>
-        ) : null}
+          <QRCodeSVG
+            value={qrData()}
+            size={300}
+            aria-label="QR code containing user picks"
+          />
+          <br />
+          [qr code placeholder]
+        </Box>
+        <Box sx={{ mb: 3, p: 4, textAlign: 'center' }}>
+          <Typography component="p" sx={{ wordBreak: 'break-all' }}>
+            <Link
+              to={`/nfl/read-qr?data=${qrData()}`}
+              rel="noopener noreferrer"
+              aria-label="Link to import QR code"
+              style={{ color: 'inherit', textDecoration: 'none' }}
+            >
+              {qrData()}
+            </Link>
+          </Typography>
+        </Box>
+
         <Box sx={{ display: 'flex', gap: 2, justifyContent: 'center', mb: 8 }}>
           <Button
             variant="outlined"
