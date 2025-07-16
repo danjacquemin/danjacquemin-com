@@ -29,7 +29,7 @@ const ReadNFLQR2025 = () => {
   const theme = useTheme();
   const [searchParams] = useSearchParams();
 
-  const [error, setError] = useState<string | null>(null);
+  const [error, setError] = useState<string | boolean | null>(null);
   const [qrData, setQrData] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
 
@@ -47,17 +47,19 @@ const ReadNFLQR2025 = () => {
       const [emailPart = '', picksPart] = inputData.split(';');
       if (!picksPart) throw new Error('No picks data provided.');
 
-      const email = emailPart.trim();
+      const [, email] = emailPart.split('=');
       const picks = picksPart.trim();
 
       if (picks.length !== FULL_SCHEDULE_SIZE) {
         throw new Error(
           `Expected ${FULL_SCHEDULE_SIZE} picks, got ${picks.length}.`,
         );
+        setError(true);
       }
 
       if (!/^[01]*$/.test(picks)) {
         throw new Error('Picks must contain only 0s and 1s.');
+        setError(true);
       }
 
       const userPicks: UserPicks = {};
@@ -76,6 +78,7 @@ const ReadNFLQR2025 = () => {
       }
 
       localStorage.setItem('nflPicks2025', JSON.stringify(userPicks));
+      setError(false);
       // navigate('/nfl', { state: { userPicks } });
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Error processing data.');
@@ -163,65 +166,66 @@ const ReadNFLQR2025 = () => {
           NFL 2025 Schedule
         </Box>
       </Typography>
-      <Box maxWidth="sm" sx={{ mx: 'auto' }}>
-        <Typography component="p" sx={{ mb: 2 }}>
-          Import your picks:
-        </Typography>
-        <Box component={'div'} sx={{ mb: 8 }}>
-          <input type="file" accept="image/*" onChange={handleImageUpload} />
+      <Box maxWidth="sm" sx={{ mx: 'auto', pb: 8 }}>
+        <Box component={'div'} sx={{}}>
+          {!loading && error === null && (
+            <>
+              <Typography component="p" sx={{ mb: 2 }}>
+                Import your picks:
+              </Typography>
+              <input
+                type="file"
+                accept="image/*"
+                onChange={handleImageUpload}
+              />
+            </>
+          )}
           {loading ? (
-            <Box sx={{ border: '1px solid #ccc', m: 2, p: 2 }}>
-              <CircularProgress size={16} color="inherit" /> Processing
-              Image&hellip;
+            <Box component={'p'}>
+              <CircularProgress size={16} color="inherit" />{' '}
+              <b>Processing Image&hellip;</b>
             </Box>
           ) : qrData ? (
-            <Box component={'p'} sx={{ mt: 2, wordBreak: 'break-all' }}>
-              Decoded QR Data: {qrData}
+            <Box
+              component={'p'}
+              sx={{
+                wordBreak: 'break-all',
+              }}
+            >
+              <p>
+                <b>Image Data:</b>
+              </p>
+              <Box component="p" sx={{ fontStyle: 'italic' }}>
+                {qrData}
+              </Box>
             </Box>
           ) : null}
         </Box>
-        {error && (
-          <Typography
-            color="error"
-            sx={{
-              border: '1px solid red',
-              fontWeight: 'bold',
-              mb: 3,
-              p: 2,
-              textAlign: 'center',
-            }}
-            role="alert"
-            component={'p'}
-          >
-            {error}
-          </Typography>
+
+        {error === false && (
+          <Box component="div" sx={{ color: theme.palette.success.main }}>
+            <p>
+              <b>Success!</b> Your picks have been imported.
+            </p>
+            <Button
+              variant="outlined"
+              onClick={error ? handleNavigateOnError : () => navigate('/nfl')}
+              aria-label="Return to main page"
+            >
+              View Picks
+            </Button>
+          </Box>
         )}
-        {qrData && (
+
+        {error && (
           <>
-            <Typography
-              sx={{
-                border: `1px solid ${theme.palette.primary.main}`,
-                fontWeight: 'bold',
-                mb: 3,
-                p: 2,
-                textAlign: 'center',
-              }}
-              role="alert"
-              component={'p'}
+            <Button
+              variant="outlined"
+              onClick={error ? handleNavigateOnError : () => navigate('/nfl')}
+              aria-label="Return to main page"
             >
-              Successfully imported your picks!
-            </Typography>
-            <Box
-              sx={{ display: 'flex', gap: 2, justifyContent: 'center', mb: 8 }}
-            >
-              <Button
-                variant="outlined"
-                onClick={error ? handleNavigateOnError : () => navigate('/nfl')}
-                aria-label="Return to main page"
-              >
-                {error ? `Return to Pick'em` : `View Picks`}
-              </Button>
-            </Box>
+              Return to Pick&lsquo;em
+            </Button>
           </>
         )}
       </Box>
