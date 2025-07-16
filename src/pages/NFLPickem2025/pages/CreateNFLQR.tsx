@@ -81,17 +81,17 @@ const CreateNFLQR2025 = () => {
       const serializer = new XMLSerializer();
       const svgString = serializer.serializeToString(svg);
 
-      // Create a Blob from the SVG string
+      // create a Blob from the SVG string
       const blob = new Blob([svgString], { type: 'image/svg+xml' });
 
-      // Create a download link
+      // create a download link
       const link = document.createElement('a');
       const dateStr = new Date().toISOString().split('T')[0];
-      link.download = `nfl-picks-${email}-${dateStr}.svg`;
+      link.download = `nfl-picks-${email.replace(/@/, '[at]')}-${dateStr}.svg`;
       link.href = URL.createObjectURL(blob);
       link.click();
 
-      // Clean up the URL object
+      // clean up the URL object
       URL.revokeObjectURL(link.href);
     }
   };
@@ -134,12 +134,12 @@ const CreateNFLQR2025 = () => {
             It can be used to import your picks
           </Typography>
           <QRCodeSVG
-            value={qrData()}
+            value={`danjacquemin.com/nfl/read-qr?data=` + qrData()}
             size={300}
             aria-label="QR code containing user picks"
           />
           <br />
-          [qr code placeholder]
+          [qr code &emdash; variable import results... save the URL below]
         </Box>
         <Box sx={{ mb: 3, p: 4, textAlign: 'center' }}>
           <Typography component="p" sx={{ wordBreak: 'break-all' }}>
@@ -149,7 +149,7 @@ const CreateNFLQR2025 = () => {
               aria-label="Link to import QR code"
               style={{ color: 'inherit', textDecoration: 'none' }}
             >
-              {qrData()}
+              danjacquemin.com/nfl/read-qr?data={qrData()}
             </Link>
           </Typography>
         </Box>
