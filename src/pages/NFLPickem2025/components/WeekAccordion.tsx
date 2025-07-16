@@ -83,12 +83,14 @@ const WeekAccordion = memo(
         sx={{ mb: 3 }}
         disableGutters
         defaultExpanded={defaultExpanded}
+        slotProps={{ heading: { component: 'div' } }}
       >
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls={`week-${weekNum}-content`}
           id={`week-${weekNum}-header`}
           sx={{ alignItems: 'center', display: 'flex', gap: 2 }}
+          component="div"
         >
           <Box
             sx={{
@@ -99,7 +101,7 @@ const WeekAccordion = memo(
               width: '100%',
             }}
           >
-            <Typography variant="h4">
+            <Typography variant="h3" component="h2">
               Week {weekNum} {getWeekDateRange(weekData)}
             </Typography>
             <Typography
