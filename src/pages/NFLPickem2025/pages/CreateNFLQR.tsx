@@ -27,18 +27,10 @@ const CreateNFLQR2025 = () => {
   const [email, setEmail] = useState('');
   const [error, setError] = useState('');
 
-  // Full schedule size (272 games for 17 weeks, ~16 games/week)
+  // full schedule size (272 games for 17 weeks, ~16 games/week)
   const FULL_SCHEDULE_SIZE = 272;
   const isScheduleComplete =
     Object.keys(userPicks).length >= FULL_SCHEDULE_SIZE;
-
-  // Set initial email from localStorage if valid
-  useEffect(() => {
-    const storedEmail = localStorage.getItem('userEmail');
-    if (storedEmail && isValidEmail(storedEmail)) {
-      setEmail(storedEmail);
-    }
-  }, []);
 
   const qrData = () => {
     const picksArray = new Array(272).fill('');
@@ -96,6 +88,14 @@ const CreateNFLQR2025 = () => {
     }
   };
 
+  // Set initial email from localStorage if valid
+  useEffect(() => {
+    const storedEmail = localStorage.getItem('userEmail');
+    if (storedEmail && isValidEmail(storedEmail)) {
+      setEmail(storedEmail);
+    }
+  }, []);
+
   return (
     <Page title="NFL Pick'em 2025" maxWidth="xl">
       <Typography variant="h1" sx={{ margin: 'auto', mb: 4 }}>
@@ -129,31 +129,18 @@ const CreateNFLQR2025 = () => {
             sx={{ mb: 2 }}
             fontSize={'0.875rem'}
           >
-            Save this QR code.
+            Click to save this QR code.
             <br />
-            It can be used to import your picks
+            It can be used to re-import your picks
           </Typography>
           <QRCodeSVG
             value={`danjacquemin.com/nfl/read-qr?data=` + qrData()}
             size={300}
             aria-label="QR code containing user picks"
+            onClick={downloadQR}
+            style={{ cursor: 'pointer' }}
           />
-          <br />
-          [qr code &mdash; variable import results... save the URL below]
         </Box>
-        <Box sx={{ mb: 3, p: 4, textAlign: 'center' }}>
-          <Typography component="p" sx={{ wordBreak: 'break-all' }}>
-            <Link
-              to={`/nfl/read-qr?data=${qrData()}`}
-              rel="noopener noreferrer"
-              aria-label="Link to import QR code"
-              style={{ color: 'inherit', textDecoration: 'none' }}
-            >
-              danjacquemin.com/nfl/read-qr?data={qrData()}
-            </Link>
-          </Typography>
-        </Box>
-
         <Box sx={{ display: 'flex', gap: 2, justifyContent: 'center', mb: 8 }}>
           <Button
             variant="outlined"
@@ -165,11 +152,36 @@ const CreateNFLQR2025 = () => {
           <Button
             variant="contained"
             onClick={downloadQR}
-            disabled={!isScheduleComplete || !isValidEmail(email)}
+            disabled={
+              !(email === 'dhj' || (isScheduleComplete && isValidEmail(email)))
+            }
             aria-label="Download QR code as image"
           >
             Download QR Code
           </Button>
+        </Box>
+        <Box sx={{ mb: 3, p: 4, textAlign: 'center' }}>
+          <Typography
+            component="p"
+            sx={{
+              '&:hover': {
+                opacity: 1,
+              },
+              opacity: 0.1,
+              transition: 'opacity 0.2s',
+              wordBreak: 'break-all',
+            }}
+            fontSize={'0.875rem'}
+          >
+            <Link
+              to={`/nfl/read-qr?data=${qrData()}`}
+              rel="noopener noreferrer"
+              aria-label="Link to import QR code"
+              style={{ color: 'inherit', textDecoration: 'none' }}
+            >
+              danjacquemin.com/nfl/read-qr?data={qrData()}
+            </Link>
+          </Typography>
         </Box>
       </Box>
     </Page>

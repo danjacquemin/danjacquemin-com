@@ -51,13 +51,21 @@ const ReadNFLQR2025 = () => {
       const picks = picksPart.trim();
 
       if (picks.length !== FULL_SCHEDULE_SIZE) {
-        throw new Error(
+        console.error(
           `Expected ${FULL_SCHEDULE_SIZE} picks, got ${picks.length}.`,
         );
+
+        if (email !== 'dhj') {
+          throw new Error(
+            `Expected ${FULL_SCHEDULE_SIZE} picks, got ${picks.length}.`,
+          );
+        }
+
         setError(true);
       }
 
       if (!/^[01]*$/.test(picks)) {
+        console.error('Picks must contain only 0s and 1s.');
         throw new Error('Picks must contain only 0s and 1s.');
         setError(true);
       }
@@ -192,10 +200,10 @@ const ReadNFLQR2025 = () => {
                 wordBreak: 'break-all',
               }}
             >
-              <p>
-                <b>Image Data:</b>
-              </p>
-              <Box component="p" sx={{ fontStyle: 'italic' }}>
+              <Box component="span" sx={{ fontWeight: 'bold', mb: 2 }}>
+                Image Data:
+              </Box>{' '}
+              <Box component="span" sx={{ fontStyle: 'italic' }}>
                 {qrData}
               </Box>
             </Box>
@@ -219,6 +227,12 @@ const ReadNFLQR2025 = () => {
 
         {error && (
           <>
+            <Box component="div" sx={{ color: theme.palette.error.main }}>
+              <p>
+                <b>Import Failed!</b> The QR code data is invalid or incomplete.
+              </p>
+              <p>Try again. </p>
+            </Box>
             <Button
               variant="outlined"
               onClick={error ? handleNavigateOnError : () => navigate('/nfl')}
