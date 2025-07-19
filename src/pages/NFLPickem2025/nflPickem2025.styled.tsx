@@ -1,4 +1,5 @@
 import { TableCell, TableBody } from '@mui/material';
+import { DataGrid } from '@mui/x-data-grid';
 
 import { styled } from '@mui/material/styles';
 
@@ -54,7 +55,7 @@ export const StyledTableBody = styled(TableBody)`
  * Styled TableCell for division headers
  */
 export const StyledDivisionHeaderCell = styled(TableCell)(({ theme }) => ({
-  backgroundColor: theme.palette.grey[100],
+  backgroundColor: theme.palette.grey[200],
   fontSize: '0.875rem',
   fontWeight: 'bold',
 }));
@@ -75,3 +76,47 @@ export const StyledTeamCell = styled(TableCell)({
   fontSize: '0.75rem',
   textAlign: 'center',
 });
+
+export const StyledDataGrid = styled(DataGrid)(() => ({
+  '& .MuiDataGrid-columnHeader': {
+    cursor: 'auto',
+  },
+
+  '& .MuiDataGrid-cell': {
+    padding: '0',
+    borderLeft: '1px solid white',
+  },
+
+  // the text of the header cells
+  '& .MuiDataGrid-columnHeaderTitleContainerContent': {
+    whiteSpace: 'nowrap',
+    fontWeight: '500',
+    padding: '0 0.5em',
+  },
+
+  // always show the vertical header cell menu
+  '& .MuiDataGrid-menuIcon': {
+    visibility: 'visible',
+    width: 'auto',
+  },
+
+  // ensures the sort icon takes up space when not visible
+  '& .MuiDataGrid-iconButtonContainer': {
+    visibility: 'visible ',
+    position: 'absolute',
+    top: '4px',
+    right: '-6px',
+    height: '6px',
+    width: '6px',
+  },
+
+  // remove the column separators
+  '.MuiDataGrid-columnSeparator': {
+    display: 'none',
+  },
+
+  '& .MuiDataGrid-columnHeader:focus, &.MuiDataGrid-root .MuiDataGrid-cell:focus':
+    {
+      outline: 'none',
+    },
+}));

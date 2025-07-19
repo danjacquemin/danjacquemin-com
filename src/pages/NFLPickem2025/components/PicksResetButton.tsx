@@ -54,7 +54,7 @@ const PicksResetButton = memo(
             setUserPicks(removePicksForWeek(userPicks, weekNum));
           }}
           sx={{
-            backgroundColor: (theme) => theme.palette.grey[100],
+            backgroundColor: (theme) => theme.palette.grey[200],
             borderRadius: 2,
             fontWeight: 'bold',
             padding: '0.2em 1em',

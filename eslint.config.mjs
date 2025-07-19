@@ -23,9 +23,9 @@ export default defineConfig([
     settings: { react: { version: '19.0' } },
   },
   {
+    files: ['**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
+    ignores: ['**/*.styled.tsx'], // ignore .styled.tsx for perfectionist rules
     rules: {
-      // 'perfectionist/sort-imports': 'error',
-
       'perfectionist/sort-imports': [
         'error',
         {
@@ -45,7 +45,6 @@ export default defineConfig([
             'internal',
             ['parent-type', 'sibling-type', 'index-type'],
             ['parent', 'sibling', 'index'],
-
             'type',
           ],
           ignoreCase: true,
@@ -54,10 +53,17 @@ export default defineConfig([
           type: 'alphabetical',
         },
       ],
-
       'perfectionist/sort-objects': 'error',
       'prettier/prettier': 'error',
       'react/react-in-jsx-scope': 'off',
+    },
+  },
+  {
+    files: ['**/*.styled.tsx'], // just for .styled.tsx files
+    rules: {
+      // disable perfectionist sorting rules for .styled.tsx files
+      'perfectionist/sort-imports': 'off',
+      'perfectionist/sort-objects': 'off',
     },
   },
 ]);
