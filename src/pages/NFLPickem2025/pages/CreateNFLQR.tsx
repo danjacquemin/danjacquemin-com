@@ -105,8 +105,9 @@ const CreateNFLQR2025 = () => {
         </Box>
       </Typography>
       <Box maxWidth="sm" sx={{ mx: 'auto' }}>
-        <Typography component="p" sx={{ mb: 2 }}>
-          Enter your email to include it in the QR code with your picks.
+        <Typography component="p" sx={{ mb: 4 }}>
+          Make sure you&apos;ve picked all 272 games. Drop your email in the box
+          and the &quot;Download&quot; button will do its dark sorcery. 🧙‍♂️✨
         </Typography>
         <TextField
           label="Email Address"
@@ -123,22 +124,12 @@ const CreateNFLQR2025 = () => {
           autoComplete="new-password"
         />
         <Box sx={{ mb: 3, p: 4, textAlign: 'center' }}>
-          <Typography
-            component="p"
-            display="block"
-            sx={{ mb: 2 }}
-            fontSize={'0.875rem'}
-          >
-            Click to save this QR code.
-            <br />
-            It can be used to re-import your picks
-          </Typography>
           <QRCodeSVG
             value={`danjacquemin.com/nfl/read-qr?data=` + qrData()}
             size={300}
             aria-label="QR code containing user picks"
-            onClick={downloadQR}
-            style={{ cursor: 'pointer' }}
+            // onClick={downloadQR}
+            // style={{ cursor: 'pointer' }}
           />
         </Box>
         <Box sx={{ display: 'flex', gap: 2, justifyContent: 'center', mb: 8 }}>
