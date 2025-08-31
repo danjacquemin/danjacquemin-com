@@ -15,13 +15,13 @@ import type { GridColDef, GridRenderCellParams } from '@mui/x-data-grid';
 
 const pathToQrfiles = '/pickem2025/';
 const qrFiles = [
-  `nfl-picks-all-away-team[at]dhj.com-2025-07-17.svg`,
-  `nfl-picks-all-home-team[at]dhj.com-2025-07-17.svg`,
-  `nfl-picks-zigzag[at]dhj.com-2025-07-19.svg`,
-  `nfl-picks-w1-results-2025-07-17.svg`,
+  `nfl-picks-jacquemin[at]gmail.com-2025-08-30.svg`,
+  'nfl-picks-Rjvredsox[at]msn.com-2025-08-31.svg',
+  'nfl-picks-bquinn1169[at]gmail.com-2025-08-23.svg',
+  'nfl-picks-bill.quinn[at]gmail.com-2025-08-23.svg',
 ];
 
-const RESULTS = true;
+const RESULTS = false;
 const FULL_SCHEDULE_SIZE = 272;
 const WEEKS = Array.from({ length: 18 }, (_, i) => i + 1);
 
@@ -170,9 +170,12 @@ function Results() {
     {
       field: 'user',
       headerName: 'User',
-      renderCell: (params) => (
-        <Typography sx={{ padding: '1rem' }}>{params.value}</Typography>
-      ),
+      renderCell: (params) => {
+        const [user] = params.value.split('@');
+        return (
+          <Typography sx={{ padding: '1rem' }}>{user.toLowerCase()}</Typography>
+        );
+      },
       width: 250,
     },
     {
