@@ -21,6 +21,8 @@ const qrFiles = [
   'nfl-picks-bill.quinn[at]gmail.com-2025-08-23.svg',
   'nfl-picks-jverrochio[at]gmail.com-2025-09-04.svg',
   'nfl-picks-ehtprincipal[at]hotmail.com-2025-09-04.svg',
+  'nfl-picks-Ryansullivan418[at]gmail.com-2025-09-04.svg',
+  'nfl-picks-heatherbeequinn[at]gmail.com-2025-09-04.svg',
 ];
 
 const RESULTS = false;
