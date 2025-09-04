@@ -151,6 +151,9 @@ const CreateNFLQR2025 = () => {
             Download QR Code
           </Button>
         </Box>
+        <Typography component="p" sx={{ mb: 4 }}>
+          Once you have your QR code, fire your email client and send the QR!
+        </Typography>
         <Box sx={{ mb: 3, p: 4, textAlign: 'center' }}>
           <Typography
             component="p"
