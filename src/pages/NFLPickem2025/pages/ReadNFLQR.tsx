@@ -55,7 +55,7 @@ const ReadNFLQR2025 = () => {
           `Expected ${FULL_SCHEDULE_SIZE} picks, got ${picks.length}.`,
         );
 
-        if (email !== 'dhj') {
+        if (email !== 'results') {
           throw new Error(
             `Expected ${FULL_SCHEDULE_SIZE} picks, got ${picks.length}.`,
           );
@@ -64,7 +64,7 @@ const ReadNFLQR2025 = () => {
         setError(true);
       }
 
-      if (!/^[01]*$/.test(picks)) {
+      if (!/^[01-]*$/.test(picks)) {
         console.error('Picks must contain only 0s and 1s.');
         throw new Error('Picks must contain only 0s and 1s.');
         setError(true);
@@ -76,7 +76,8 @@ const ReadNFLQR2025 = () => {
           const gameID = gameSchedule[index];
           const [week, awayTeam, , homeTeam] = gameID.split('-'); // week, away team, [vs], home team
           const key = `w-${week}-${awayTeam}-vs-${homeTeam}`;
-          userPicks[key] = pick === '1' ? homeTeam : awayTeam; // 0 means pick for away team, 1 means pick for home team
+          userPicks[key] =
+            pick === '-' ? '' : pick === '1' ? homeTeam : awayTeam; // '-' is an unpicked game, 0 means pick for away team, 1 means pick for home team
         }
       });
 

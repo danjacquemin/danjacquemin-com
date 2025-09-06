@@ -23,9 +23,11 @@ const qrFiles = [
   'nfl-picks-ehtprincipal[at]hotmail.com-2025-09-04.svg',
   'nfl-picks-Ryansullivan418[at]gmail.com-2025-09-04.svg',
   'nfl-picks-heatherbeequinn[at]gmail.com-2025-09-04.svg',
+  'nfl-picks-gfuller64[at]gmail.com-2025-09-04.svg',
 ];
 
-const RESULTS = false;
+const SHOW_RESULTS = true;
+const RESULTS_SVG = 'nfl-picks-results-2025-09-06.svg';
 const FULL_SCHEDULE_SIZE = 272;
 const WEEKS = Array.from({ length: 18 }, (_, i) => i + 1);
 
@@ -50,7 +52,7 @@ const processQRData = (
       return null;
     }
 
-    if (!/^[01]*$/.test(picks)) {
+    if (!/^[01-]*$/.test(picks)) {
       console.error('Picks must contain only 0s and 1s.');
       setError('Picks must contain only 0s and 1s.');
       return null;
@@ -62,7 +64,9 @@ const processQRData = (
         const gameID = gameSchedule[index];
         const [week, awayTeam, , homeTeam] = gameID.split('-');
         const key = `w-${week}-${awayTeam}-vs-${homeTeam}`;
-        userPicks[key] = pick === '1' ? homeTeam : awayTeam;
+
+        userPicks[key] =
+          pick === '-' ? '-' : pick === '1' ? homeTeam : awayTeam;
       }
     });
 
@@ -77,9 +81,20 @@ const processQRData = (
 // -- -- --
 
 function Results() {
-  const [results, setResults] = useState<{ [key: string]: UserPicks }>({});
+  const [userResults, setUserResults] = useState<{ [key: string]: UserPicks }>(
+    {},
+  );
+  const [seasonResults, setSeasonResults] = useState<UserPicks>({});
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    if (SHOW_RESULTS) {
+      if (!qrFiles.includes(RESULTS_SVG)) {
+        qrFiles.push(RESULTS_SVG);
+      }
+    }
+  }, []);
 
   useEffect(() => {
     const loadQRCodes = async () => {
@@ -90,9 +105,6 @@ function Results() {
         try {
           const response = await fetch(`${pathToQrfiles}${file}`);
           const svgText = await response.text();
-
-          console.log(`Processing QR file: ${file}`);
-
           const canvas = document.createElement('canvas');
           const ctx = canvas.getContext('2d');
           if (!ctx) {
@@ -131,7 +143,7 @@ function Results() {
         }
       }
 
-      // Sort keys to prioritize those containing "results"
+      // Sort keys so the "results" appear first
       const sortedResults: { [key: string]: UserPicks } = {};
       Object.keys(newResults)
         .sort((a, b) => {
@@ -145,7 +157,10 @@ function Results() {
           sortedResults[key] = newResults[key];
         });
 
-      setResults(sortedResults);
+      setUserResults(sortedResults);
+      if (sortedResults['results']) {
+        setSeasonResults(sortedResults['results']);
+      }
       setLoading(false);
     };
 
@@ -153,21 +168,19 @@ function Results() {
   }, []);
 
   // Calculate games played and correct picks
-  const calculateStats = (picks: UserPicks, referencePicks: UserPicks) => {
+  const calculateStats = (picks: UserPicks, seasonResults: UserPicks) => {
     let gamesPlayed = 0;
     let correct = 0;
     Object.keys(picks).forEach((gameId) => {
-      if (referencePicks[gameId]) {
+      if (seasonResults[gameId]) {
         gamesPlayed++;
-        if (picks[gameId] === referencePicks[gameId]) {
+        if (picks[gameId] === seasonResults[gameId]) {
           correct++;
         }
       }
     });
     return { correct, gamesPlayed };
   };
-
-  const referencePicks = results['w1-results'] || {};
 
   // Define DataGrid columns
   const columns: GridColDef[] = [
@@ -181,20 +194,6 @@ function Results() {
         );
       },
       width: 250,
-    },
-    {
-      align: 'center',
-      field: 'gamesPlayed',
-      headerAlign: 'center',
-      renderCell: (params) => params.value,
-      renderHeader: () => (
-        <span>
-          Games
-          <br />
-          Played
-        </span>
-      ),
-      width: 120,
     },
     {
       align: 'center',
@@ -214,18 +213,19 @@ function Results() {
         renderCell: (params: GridRenderCellParams) => {
           const pick = params.value;
           const isCorrect =
-            referencePicks[gameId] && pick === referencePicks[gameId];
+            seasonResults[gameId] && pick === seasonResults[gameId];
+          const isUnplayedGame = seasonResults[gameId] === '-' ? true : false;
           return (
             <Typography
               component="span"
               sx={{
                 alignItems: 'center',
-                backgroundColor: !RESULTS
+                backgroundColor: isUnplayedGame
                   ? 'white'
                   : isCorrect
                     ? PICKEM.COLOR_WINNER
                     : PICKEM.COLOR_LOSER,
-                color: !RESULTS ? 'black' : 'white',
+                color: isUnplayedGame ? 'black' : 'white',
                 display: 'flex',
                 fontSize: `0.75rem`,
                 fontWeight: '500',
@@ -235,7 +235,7 @@ function Results() {
                 width: '100%',
               }}
             >
-              {/*isCorrect ? '✓' : 'x'*/} {pick}
+              {pick}
             </Typography>
           );
         },
@@ -266,22 +266,24 @@ function Results() {
   }));
 
   // Define DataGrid rows
-  const rows = Object.keys(results).map((key, index) => {
-    const { correct, gamesPlayed } = calculateStats(
-      results[key],
-      referencePicks,
-    );
-    const row: { [key: string]: string | number } = {
-      correct,
-      gamesPlayed,
-      id: index,
-      user: key,
-    };
-    Object.keys(results[key]).forEach((gameId) => {
-      row[gameId] = results[key][gameId];
+  const rows = Object.keys(userResults)
+    .filter((key) => key !== 'results') // hide the 'results' row
+    .map((key, index) => {
+      const { correct, gamesPlayed } = calculateStats(
+        userResults[key],
+        seasonResults,
+      );
+      const row: { [key: string]: string | number } = {
+        correct,
+        gamesPlayed,
+        id: index,
+        user: key,
+      };
+      Object.keys(userResults[key]).forEach((gameId) => {
+        row[gameId] = userResults[key][gameId];
+      });
+      return row;
     });
-    return row;
-  });
 
   return (
     <Page title="NFL Pick'em 2025">
@@ -309,7 +311,7 @@ function Results() {
             columns={columns}
             columnGroupingModel={groupedColumns}
             aria-label="NFL Pick'em Results Grid"
-            disableColumnSorting={true}
+            disableColumnSorting={false}
             disableColumnMenu={true}
             disableRowSelectionOnClick
           />

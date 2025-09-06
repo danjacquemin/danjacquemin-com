@@ -36,6 +36,15 @@ const CreateNFLQR2025 = () => {
     const picksArray = new Array(272).fill('');
     const keyRegex = /^w-(\d+)-(.+)-vs-(.+)$/; // userPicks uses w-Week-AwayTeam-vs-HomeTeam
 
+    // if this is the special "results" email
+    // update the picks array to be filled with '-' for all games
+    if (email === 'results') {
+      // fill picksArray with '-' for all games
+      // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/fill#description
+      // -- "The fill() method fills empty slots in sparse arrays with value as well."
+      picksArray.fill('-');
+    }
+
     for (const key in userPicks) {
       if (Object.prototype.hasOwnProperty.call(userPicks, key)) {
         const match = key.match(keyRegex);
@@ -55,7 +64,7 @@ const CreateNFLQR2025 = () => {
             ? '1'
             : userPicks[key] === awayTeam
               ? '0'
-              : 'x';
+              : '-';
         if (!value) {
           console.warn(`Invalid value for key ${key}: ${userPicks[key]}`);
           continue;
@@ -144,7 +153,10 @@ const CreateNFLQR2025 = () => {
             variant="contained"
             onClick={downloadQR}
             disabled={
-              !(email === 'dhj' || (isScheduleComplete && isValidEmail(email)))
+              !(
+                email === 'results' ||
+                (isScheduleComplete && isValidEmail(email))
+              )
             }
             aria-label="Download QR code as image"
           >
