@@ -27,7 +27,7 @@ const qrFiles = [
 ];
 
 const SHOW_RESULTS = true;
-const RESULTS_SVG = 'results/nfl-picks-results-2025-09-08.svg';
+const RESULTS_SVG = 'results/nfl-picks-results-2025-09-09.svg';
 const FULL_SCHEDULE_SIZE = 272;
 const WEEKS = Array.from({ length: 18 }, (_, i) => i + 1);
 
