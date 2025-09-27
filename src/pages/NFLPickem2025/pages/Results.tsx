@@ -1,15 +1,26 @@
 import jsQR from 'jsqr';
+import {
+  MaterialReactTable,
+  type MRT_ColumnDef,
+  type MRT_Cell,
+} from 'material-react-table';
 import { Box, Typography } from '@mui/material';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 
 import type { UserPicks } from '../types';
 
 import { PICKEM } from '../consts';
 import gameSchedule from '../data/NFLScheduleOfGames.json';
-import { StyledDataGrid } from '../nflPickem2025.styled';
 import Page from '../../../templates/Page';
 
-import type { GridColDef, GridRenderCellParams } from '@mui/x-data-grid';
+// Define proper type for table row data
+type TableRowData = {
+  [key: string]: string | number;
+  id: number;
+  user: string;
+  correct: number;
+  gamesPlayed: number;
+};
 
 // -- -- --
 
@@ -182,108 +193,169 @@ function Results() {
     return { correct, gamesPlayed };
   };
 
-  // Define DataGrid columns
-  const columns: GridColDef[] = [
-    {
-      field: 'user',
-      headerName: 'User',
-      renderCell: (params) => {
-        const [user] = params.value.split('@');
-        return (
-          <Typography sx={{ padding: '1rem' }}>{user.toLowerCase()}</Typography>
-        );
-      },
-      width: 250,
-    },
-    {
-      align: 'center',
-      field: 'correct',
-      headerAlign: 'center',
-      headerName: 'Correct',
-      renderCell: (params) => params.value,
-      width: 100,
-    },
-    ...gameSchedule.map((game) => {
-      const [, awayTeam, , homeTeam] = game.split('-');
-      const gameId = game.replace(/(\d+)-([^-]+)-vs-([^-]+)/, 'w-$1-$2-vs-$3');
-      return {
-        align: 'center',
-        field: gameId,
-        headerAlign: 'center',
-        renderCell: (params: GridRenderCellParams) => {
-          const pick = params.value;
-          const isCorrect =
-            seasonResults[gameId] && pick === seasonResults[gameId];
-          const isUnplayedGame = seasonResults[gameId] === '-' ? true : false;
+  const columns = useMemo<MRT_ColumnDef<TableRowData>[]>(
+    () => [
+      // User column (sticky)
+      {
+        accessorKey: 'user',
+        Cell: ({ cell }: { cell: MRT_Cell<TableRowData, unknown> }) => {
+          const userValue = cell.getValue() as string;
+          const [user] = userValue.split('@');
           return (
-            <Typography
-              component="span"
-              sx={{
-                alignItems: 'center',
-                backgroundColor: isUnplayedGame
-                  ? 'white'
-                  : isCorrect
-                    ? PICKEM.COLOR_WINNER
-                    : PICKEM.COLOR_LOSER,
-                color: isUnplayedGame ? 'black' : 'white',
-                display: 'flex',
-                fontSize: `0.75rem`,
-                fontWeight: '500',
-                height: '100%',
-                justifyContent: 'center',
-                textAlign: 'center',
-                width: '100%',
-              }}
-            >
-              {pick}
+            <Typography sx={{ fontWeight: 'bold', padding: '0.5rem' }}>
+              {user.toLowerCase()}
             </Typography>
           );
         },
-        renderHeader: () => (
-          <Typography
-            component="span"
-            sx={{
-              fontSize: '0.75rem',
-              fontWeight: 'inherit',
-              whiteSpace: 'nowrap',
-            }}
-          >
-            {awayTeam} @ {homeTeam}
-          </Typography>
-        ),
-        width: 90,
-      } as GridColDef;
-    }),
-  ];
+        enableColumnActions: false,
+        enableSorting: true,
+        header: 'User',
+        muiTableBodyCellProps: {
+          sx: {
+            backgroundColor: 'white',
+            borderRight: '2px solid #ddd',
+            left: 0,
+            position: 'sticky',
+            zIndex: 2,
+          },
+        },
+        muiTableHeadCellProps: {
+          sx: {
+            backgroundColor: '#1976d2',
+            color: 'white',
+            fontWeight: 'bold',
+            left: 0,
+            position: 'sticky',
+            zIndex: 3,
+          },
+        },
+        size: 200,
+      },
+      // Correct picks column (sticky)
+      {
+        accessorKey: 'correct',
+        Cell: ({ cell }: { cell: MRT_Cell<TableRowData, unknown> }) => {
+          const correctValue = cell.getValue() as number;
+          return (
+            <Box sx={{ fontWeight: 'bold', textAlign: 'center' }}>
+              {correctValue}
+            </Box>
+          );
+        },
+        enableColumnActions: false,
+        header: 'Correct',
+        muiTableBodyCellProps: {
+          sx: {
+            backgroundColor: 'white',
+            borderRight: '2px solid #ddd',
+            left: 200,
+            position: 'sticky',
+            zIndex: 2,
+          },
+        },
+        muiTableHeadCellProps: {
+          sx: {
+            backgroundColor: '#1976d2',
+            color: 'white',
+            fontWeight: 'bold',
+            left: 200,
+            position: 'sticky',
+            zIndex: 3,
+          },
+        },
+        size: 80,
+      },
+      // Weekly grouped columns
+      ...WEEKS.map((week) => ({
+        columns: gameSchedule
+          .filter((game) => game.startsWith(`${week}-`))
+          .map((game) => {
+            const [, awayTeam, , homeTeam] = game.split('-');
+            const gameId = game.replace(
+              /(\d+)-([^-]+)-vs-([^-]+)/,
+              'w-$1-$2-vs-$3',
+            );
 
-  // Group columns by week for header grouping
-  const groupedColumns = WEEKS.map((week) => ({
-    children: columns
-      .filter((col) => col.field.startsWith(`w-${week}-`))
-      .map((col) => ({ field: col.field })),
-    groupId: `week-${week}`,
-    headerName: `Week ${week}`,
-  }));
+            return {
+              accessorKey: gameId,
+              Cell: ({ cell }: { cell: MRT_Cell<TableRowData, unknown> }) => {
+                const pick = cell.getValue() as string;
+                const isCorrect =
+                  seasonResults[gameId] && pick === seasonResults[gameId];
+                const isUnplayedGame = seasonResults[gameId] === '-';
 
-  // Define DataGrid rows
-  const rows = Object.keys(userResults)
-    .filter((key) => key !== 'results') // hide the 'results' row
-    .map((key, index) => {
-      const { correct, gamesPlayed } = calculateStats(
-        userResults[key],
-        seasonResults,
-      );
-      const row: { [key: string]: string | number } = {
-        correct,
-        gamesPlayed,
-        id: index,
-        user: key,
-      };
-      Object.keys(userResults[key]).forEach((gameId) => {
-        row[gameId] = userResults[key][gameId];
+                return (
+                  <Box
+                    sx={{
+                      alignItems: 'center',
+                      backgroundColor: isUnplayedGame
+                        ? 'white'
+                        : isCorrect
+                          ? PICKEM.COLOR_WINNER
+                          : PICKEM.COLOR_LOSER,
+                      color: isUnplayedGame ? 'black' : 'white',
+                      display: 'flex',
+                      fontSize: '0.75rem',
+                      fontWeight: '500',
+                      height: '100%',
+                      justifyContent: 'center',
+                      minHeight: '32px',
+                      textAlign: 'center',
+                      width: '100%',
+                    }}
+                  >
+                    {pick}
+                  </Box>
+                );
+              },
+              enableColumnActions: false,
+              enableSorting: false,
+              header: `${awayTeam} @ ${homeTeam}`,
+              muiTableBodyCellProps: {
+                sx: {
+                  borderLeft: '1px solid white',
+                  padding: '0',
+                },
+              },
+              muiTableHeadCellProps: {
+                sx: {
+                  backgroundColor: week % 2 === 0 ? '#f5f5f5' : '#fff',
+                  fontSize: '0.75rem',
+                  padding: '4px',
+                  textAlign: 'center',
+                  whiteSpace: 'nowrap',
+                },
+              },
+              size: 90,
+            };
+          }),
+        header: `Week ${week}`,
+      })),
+    ],
+    [seasonResults],
+  );
+
+  // Define table data
+  const tableData = useMemo<TableRowData[]>(() => {
+    return Object.keys(userResults)
+      .filter((key) => key !== 'results') // hide the 'results' row
+      .map((key, index) => {
+        const { correct, gamesPlayed } = calculateStats(
+          userResults[key],
+          seasonResults,
+        );
+        const row: TableRowData = {
+          correct,
+          gamesPlayed,
+          id: index,
+          user: key,
+        };
+        Object.keys(userResults[key]).forEach((gameId) => {
+          row[gameId] = userResults[key][gameId];
+        });
+        return row;
       });
-      return row;
-    });
+  }, [userResults, seasonResults]);
 
   return (
     <Page title="NFL Pick'em 2025">
@@ -294,7 +366,7 @@ function Results() {
       >
         Results:{' '}
         <Box component="span" sx={{ whiteSpace: 'nowrap' }}>
-          NFL 2025 Pick’em
+          NFL 2025 Pick&apos;em
         </Box>
       </Typography>
       <Box sx={{ height: 'auto', mx: 'auto', pb: 8 }}>
@@ -304,16 +376,69 @@ function Results() {
             {error}
           </Typography>
         )}
-        {!loading && rows.length > 0 && (
-          <StyledDataGrid
-            hideFooter
-            rows={rows}
+        {!loading && tableData.length > 0 && (
+          <MaterialReactTable<TableRowData>
             columns={columns}
-            columnGroupingModel={groupedColumns}
-            aria-label="NFL Pick'em Results Grid"
-            disableColumnSorting={false}
-            disableColumnMenu={true}
-            disableRowSelectionOnClick
+            data={tableData}
+            enableColumnOrdering={false}
+            enableGrouping={false}
+            enableStickyHeader
+            enableColumnResizing={false}
+            enableDensityToggle={false}
+            enableFullScreenToggle={true}
+            enableHiding={false}
+            enablePagination={false}
+            enableBottomToolbar={false}
+            enableTopToolbar={false}
+            enableRowSelection={false}
+            enableColumnActions={false}
+            enableColumnFilters={false}
+            enableGlobalFilter={false}
+            enableSorting={false}
+            muiTableContainerProps={{
+              sx: {
+                '&::-webkit-scrollbar': {
+                  height: 8,
+                  width: 8,
+                },
+                '&::-webkit-scrollbar-thumb': {
+                  backgroundColor: '#1976d2',
+                  borderRadius: 4,
+                },
+                '&::-webkit-scrollbar-track': {
+                  backgroundColor: '#f1f1f1',
+                },
+                border: '1px solid #ddd',
+                borderRadius: 1,
+                maxHeight: '80vh',
+                overflow: 'auto',
+              },
+            }}
+            muiTableProps={{
+              sx: {
+                '& .MuiTableBody-root': {
+                  '& .MuiTableRow-root:hover': {
+                    backgroundColor: 'rgba(0, 0, 0, 0.04)',
+                  },
+                },
+                '& .MuiTableCell-root': {
+                  borderRight: '1px solid #ddd',
+                  fontSize: '0.75rem',
+                },
+                '& .MuiTableHead-root': {
+                  '& .MuiTableCell-root': {
+                    backgroundColor: '#f5f5f5',
+                    fontSize: '0.75rem',
+                    fontWeight: 'bold',
+                    padding: '8px 4px',
+                  },
+                },
+              },
+            }}
+            initialState={{
+              density: 'compact',
+              sorting: [{ desc: true, id: 'correct' }],
+            }}
           />
         )}
       </Box>
