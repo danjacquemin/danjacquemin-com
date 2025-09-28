@@ -1,26 +1,15 @@
 import jsQR from 'jsqr';
-import {
-  MaterialReactTable,
-  type MRT_ColumnDef,
-  type MRT_Cell,
-} from 'material-react-table';
+import { MaterialReactTable } from 'material-react-table';
 import { Box, Typography } from '@mui/material';
-import { useState, useEffect, useMemo } from 'react';
+import { useState, useEffect, useMemo, useRef } from 'react';
 
-import type { UserPicks } from '../types';
+import type { UserPicks, TableRowData } from '../types';
 
 import { PICKEM } from '../consts';
 import gameSchedule from '../data/NFLScheduleOfGames.json';
 import Page from '../../../templates/Page';
 
-// Define proper type for table row data
-type TableRowData = {
-  [key: string]: string | number;
-  id: number;
-  user: string;
-  correct: number;
-  gamesPlayed: number;
-};
+import type { MRT_ColumnDef, MRT_Cell } from 'material-react-table';
 
 // -- -- --
 
@@ -37,14 +26,29 @@ const qrFiles = [
   'nfl-picks-gfuller64[at]gmail.com-2025-09-04.svg',
 ];
 
-const SHOW_RESULTS = true;
 const RESULTS_SVG = 'results/nfl-picks-results-2025-09-23.svg';
+const CURRENT_WEEK = 4; // 1-18
+
+const SHOW_RESULTS = true;
 const FULL_SCHEDULE_SIZE = 272;
 const WEEKS = Array.from({ length: 18 }, (_, i) => i + 1);
 
-/**
- * Processes QR code SVG data to extract user picks
- */
+const commonCellStyles = {
+  padding: `0`,
+};
+
+const commonHeaderCellStyles = {
+  ...commonCellStyles,
+  borderBottom: 0,
+};
+
+const commonBodyCellStyles = {
+  ...commonCellStyles,
+  borderTop: `1px solid lightgray`,
+  borderBottom: 0,
+};
+
+// processes QR code SVG data to extract user picks
 const processQRData = (
   qrData: string,
   setError: (error: string | null) => void,
@@ -99,6 +103,12 @@ function Results() {
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
 
+  // refs for scrolling to current week
+  const tableContainerRef = useRef<HTMLDivElement | null>(null);
+  const weekRefs = useRef<{ [key: number]: HTMLElement | null }>({});
+
+  // show or hide results
+  // used before the season when there are no results
   useEffect(() => {
     if (SHOW_RESULTS) {
       if (!qrFiles.includes(RESULTS_SVG)) {
@@ -107,6 +117,7 @@ function Results() {
     }
   }, []);
 
+  // load and process the qr codes
   useEffect(() => {
     const loadQRCodes = async () => {
       setLoading(true);
@@ -154,7 +165,7 @@ function Results() {
         }
       }
 
-      // Sort keys so the "results" appear first
+      // sort keys so the "results" players appears first
       const sortedResults: { [key: string]: UserPicks } = {};
       Object.keys(newResults)
         .sort((a, b) => {
@@ -178,7 +189,39 @@ function Results() {
     loadQRCodes();
   }, []);
 
-  // Calculate games played and correct picks
+  // auto-scroll to current week after data loads
+  useEffect(() => {
+    if (!loading && Object.keys(userResults).length > 0) {
+      const currentWeek = CURRENT_WEEK;
+      const targetRef = weekRefs.current[currentWeek];
+      const tableContainer = tableContainerRef.current;
+
+      if (targetRef && tableContainer) {
+        // small delay to ensure table is fully rendered
+        setTimeout(() => {
+          const targetRect = targetRef.getBoundingClientRect();
+          const containerRect = tableContainer.getBoundingClientRect();
+          // scroll to the current week in the container
+          const currentScrollLeft = tableContainer.scrollLeft;
+          // target position
+          const stickyColumnsWidth = 280; // 200 (user) + 80 (correct)
+          const desiredOffsetFromLeft = stickyColumnsWidth + 0;
+          // where the target element is relative to the container
+          const targetOffsetFromContainer =
+            targetRect.left - containerRect.left + currentScrollLeft;
+          const newScrollLeft =
+            targetOffsetFromContainer - desiredOffsetFromLeft;
+          // you go scroll now!
+          tableContainer.scrollTo({
+            left: newScrollLeft,
+            behavior: 'smooth',
+          });
+        }, 100);
+      }
+    }
+  }, [loading, userResults]);
+
+  // calculate games played and correct picks
   const calculateStats = (picks: UserPicks, seasonResults: UserPicks) => {
     let gamesPlayed = 0;
     let correct = 0;
@@ -195,81 +238,75 @@ function Results() {
 
   const columns = useMemo<MRT_ColumnDef<TableRowData>[]>(
     () => [
-      // User column (sticky)
+      // user column (sticky)
       {
         accessorKey: 'user',
+        size: 200,
+        enableSorting: false, // overrides initialState
+        header: 'User',
+        muiTableHeadCellProps: {
+          sx: {
+            ...commonHeaderCellStyles,
+            position: 'sticky', // fixes the columns header
+            left: 0, // to the left
+            zIndex: 2, // and on top of other cells while scrolling
+          },
+        },
         Cell: ({ cell }: { cell: MRT_Cell<TableRowData, unknown> }) => {
           const userValue = cell.getValue() as string;
           const [user] = userValue.split('@');
-          return (
-            <Typography sx={{ fontWeight: 'bold', padding: '0.5rem' }}>
-              {user.toLowerCase()}
-            </Typography>
-          );
+          return <Typography sx={{}}>{user.toLowerCase()}</Typography>;
         },
-        enableColumnActions: false,
-        enableSorting: true,
-        header: 'User',
         muiTableBodyCellProps: {
           sx: {
-            backgroundColor: 'white',
-            borderRight: '2px solid #ddd',
-            left: 0,
-            position: 'sticky',
-            zIndex: 2,
+            ...commonBodyCellStyles,
+            position: 'sticky', // fixes the columns header
+            left: 0, // to the left
+            zIndex: 2, // and on top of other cells while scrolling
           },
         },
-        muiTableHeadCellProps: {
-          sx: {
-            backgroundColor: '#1976d2',
-            color: 'white',
-            fontWeight: 'bold',
-            left: 0,
-            position: 'sticky',
-            zIndex: 3,
-          },
-        },
-        size: 200,
       },
-      // Correct picks column (sticky)
+      // correct picks column (sticky)
       {
         accessorKey: 'correct',
-        Cell: ({ cell }: { cell: MRT_Cell<TableRowData, unknown> }) => {
-          const correctValue = cell.getValue() as number;
-          return (
-            <Box sx={{ fontWeight: 'bold', textAlign: 'center' }}>
-              {correctValue}
-            </Box>
-          );
-        },
-        enableColumnActions: false,
+        size: 80,
         header: 'Correct',
-        muiTableBodyCellProps: {
-          sx: {
-            backgroundColor: 'white',
-            borderRight: '2px solid #ddd',
-            left: 200,
-            position: 'sticky',
-            zIndex: 2,
-          },
-        },
         muiTableHeadCellProps: {
           sx: {
-            backgroundColor: '#1976d2',
-            color: 'white',
-            fontWeight: 'bold',
-            left: 200,
-            position: 'sticky',
-            zIndex: 3,
+            ...commonHeaderCellStyles,
+            position: 'sticky', // fixes the columns header
+            left: 200, // to the right of the user column
+            zIndex: 2, // and on top of other cells while scrolling
+            // (badly) hide the sort trigger and center the header text
+            '& .Mui-TableHeadCell-Content-Labels': {
+              flexBasis: '100%',
+            },
+            '& .Mui-TableHeadCell-Content-Wrapper': {
+              margin: '0 auto',
+            },
+            '& .MuiBadge-root': {
+              display: 'none',
+            },
           },
         },
-        size: 80,
+        Cell: ({ cell }: { cell: MRT_Cell<TableRowData, unknown> }) => {
+          const correctValue = cell.getValue() as number;
+          return <Box sx={{ textAlign: 'center' }}>{correctValue}</Box>;
+        },
+        muiTableBodyCellProps: {
+          sx: {
+            ...commonBodyCellStyles,
+            position: 'sticky', // fixes the columns header
+            left: 200, // to the right of the user column
+            zIndex: 2, // and on top of other cells while scrolling
+          },
+        },
       },
       // Weekly grouped columns
       ...WEEKS.map((week) => ({
         columns: gameSchedule
           .filter((game) => game.startsWith(`${week}-`))
-          .map((game) => {
+          .map((game, gameIndex) => {
             const [, awayTeam, , homeTeam] = game.split('-');
             const gameId = game.replace(
               /(\d+)-([^-]+)-vs-([^-]+)/,
@@ -278,6 +315,31 @@ function Results() {
 
             return {
               accessorKey: gameId,
+              size: 90,
+              enableSorting: false, // overrides initialState
+              header: `${awayTeam} @ ${homeTeam}`,
+              muiTableHeadCellProps: {
+                sx: {
+                  ...commonHeaderCellStyles,
+                  fontSize: '0.75rem',
+                  // (badly) hide the sort trigger and center the header text
+                  '& .Mui-TableHeadCell-Content-Labels': {
+                    flexBasis: '100%',
+                  },
+                  '& .Mui-TableHeadCell-Content-Wrapper': {
+                    margin: '0 auto',
+                  },
+                  '& .MuiBadge-root': {
+                    display: 'none',
+                  },
+                },
+                // ref on the first game column of each week
+                ...(gameIndex === 0 && {
+                  ref: (el: HTMLElement | null) => {
+                    weekRefs.current[week] = el;
+                  },
+                }),
+              },
               Cell: ({ cell }: { cell: MRT_Cell<TableRowData, unknown> }) => {
                 const pick = cell.getValue() as string;
                 const isCorrect =
@@ -287,49 +349,51 @@ function Results() {
                 return (
                   <Box
                     sx={{
+                      display: 'flex',
+                      justifyContent: 'center',
                       alignItems: 'center',
+                      margin: '1px',
+                      width: '100%',
+                      height: '100%',
+                      minHeight: '32px',
+                      color: isUnplayedGame ? 'black' : 'white',
                       backgroundColor: isUnplayedGame
                         ? 'white'
                         : isCorrect
                           ? PICKEM.COLOR_WINNER
                           : PICKEM.COLOR_LOSER,
-                      color: isUnplayedGame ? 'black' : 'white',
-                      display: 'flex',
+                      textAlign: 'center',
                       fontSize: '0.75rem',
                       fontWeight: '500',
-                      height: '100%',
-                      justifyContent: 'center',
-                      minHeight: '32px',
-                      textAlign: 'center',
-                      width: '100%',
                     }}
                   >
                     {pick}
                   </Box>
                 );
               },
-              enableColumnActions: false,
-              enableSorting: false,
-              header: `${awayTeam} @ ${homeTeam}`,
               muiTableBodyCellProps: {
                 sx: {
-                  borderLeft: '1px solid white',
-                  padding: '0',
+                  ...commonBodyCellStyles,
                 },
               },
-              muiTableHeadCellProps: {
-                sx: {
-                  backgroundColor: week % 2 === 0 ? '#f5f5f5' : '#fff',
-                  fontSize: '0.75rem',
-                  padding: '4px',
-                  textAlign: 'center',
-                  whiteSpace: 'nowrap',
-                },
-              },
-              size: 90,
             };
           }),
         header: `Week ${week}`,
+        muiTableHeadCellProps: {
+          sx: {
+            ...commonHeaderCellStyles,
+            '& .Mui-TableHeadCell-Content-Labels': {
+              flexBasis: '100%',
+              paddingLeft: '1em',
+            },
+            '& .Mui-TableHeadCell-Content-Wrapper': {},
+          },
+        },
+        muiTableBodyCellProps: {
+          sx: {
+            ...commonBodyCellStyles,
+          },
+        },
       })),
     ],
     [seasonResults],
@@ -380,65 +444,20 @@ function Results() {
           <MaterialReactTable<TableRowData>
             columns={columns}
             data={tableData}
-            enableColumnOrdering={false}
-            enableGrouping={false}
-            enableStickyHeader
-            enableColumnResizing={false}
-            enableDensityToggle={false}
-            enableFullScreenToggle={true}
-            enableHiding={false}
-            enablePagination={false}
-            enableBottomToolbar={false}
-            enableTopToolbar={false}
-            enableRowSelection={false}
-            enableColumnActions={false}
-            enableColumnFilters={false}
-            enableGlobalFilter={false}
-            enableSorting={false}
-            muiTableContainerProps={{
-              sx: {
-                '&::-webkit-scrollbar': {
-                  height: 8,
-                  width: 8,
-                },
-                '&::-webkit-scrollbar-thumb': {
-                  backgroundColor: '#1976d2',
-                  borderRadius: 4,
-                },
-                '&::-webkit-scrollbar-track': {
-                  backgroundColor: '#f1f1f1',
-                },
-                border: '1px solid #ddd',
-                borderRadius: 1,
-                maxHeight: '80vh',
-                overflow: 'auto',
-              },
-            }}
-            muiTableProps={{
-              sx: {
-                '& .MuiTableBody-root': {
-                  '& .MuiTableRow-root:hover': {
-                    backgroundColor: 'rgba(0, 0, 0, 0.04)',
-                  },
-                },
-                '& .MuiTableCell-root': {
-                  borderRight: '1px solid #ddd',
-                  fontSize: '0.75rem',
-                },
-                '& .MuiTableHead-root': {
-                  '& .MuiTableCell-root': {
-                    backgroundColor: '#f5f5f5',
-                    fontSize: '0.75rem',
-                    fontWeight: 'bold',
-                    padding: '8px 4px',
-                  },
-                },
-              },
-            }}
             initialState={{
               density: 'compact',
               sorting: [{ desc: true, id: 'correct' }],
             }}
+            enableHiding={false}
+            enableTopToolbar={false}
+            enableBottomToolbar={false}
+            enableColumnActions={false}
+            enableSorting={true}
+            muiTableContainerProps={{
+              ref: tableContainerRef,
+            }}
+            muiTablePaperProps={{ elevation: 0, sx: { border: 0 } }}
+            muiTableHeadRowProps={{ sx: { boxShadow: 0, border: 0 } }}
           />
         )}
       </Box>
