@@ -107,6 +107,21 @@ function Results() {
   const tableContainerRef = useRef<HTMLDivElement | null>(null);
   const weekRefs = useRef<{ [key: number]: HTMLElement | null }>({});
 
+  // calculate games played and correct picks
+  const calculateStats = (picks: UserPicks, seasonResults: UserPicks) => {
+    let gamesPlayed = 0;
+    let correct = 0;
+    Object.keys(picks).forEach((gameId) => {
+      if (seasonResults[gameId]) {
+        gamesPlayed++;
+        if (picks[gameId] === seasonResults[gameId]) {
+          correct++;
+        }
+      }
+    });
+    return { correct, gamesPlayed };
+  };
+
   // show or hide results
   // used before the season when there are no results
   useEffect(() => {
@@ -205,7 +220,7 @@ function Results() {
           const currentScrollLeft = tableContainer.scrollLeft;
           // target position
           const stickyColumnsWidth = 280; // 200 (user) + 80 (correct)
-          const desiredOffsetFromLeft = stickyColumnsWidth + 0;
+          const desiredOffsetFromLeft = stickyColumnsWidth + 5;
           // where the target element is relative to the container
           const targetOffsetFromContainer =
             targetRect.left - containerRect.left + currentScrollLeft;
@@ -220,21 +235,6 @@ function Results() {
       }
     }
   }, [loading, userResults]);
-
-  // calculate games played and correct picks
-  const calculateStats = (picks: UserPicks, seasonResults: UserPicks) => {
-    let gamesPlayed = 0;
-    let correct = 0;
-    Object.keys(picks).forEach((gameId) => {
-      if (seasonResults[gameId]) {
-        gamesPlayed++;
-        if (picks[gameId] === seasonResults[gameId]) {
-          correct++;
-        }
-      }
-    });
-    return { correct, gamesPlayed };
-  };
 
   const columns = useMemo<MRT_ColumnDef<TableRowData>[]>(
     () => [
