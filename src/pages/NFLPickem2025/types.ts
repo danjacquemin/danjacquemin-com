@@ -2,6 +2,15 @@ export type UserPicks = {
   [gameId: string]: string; // "1-KC-vs-DEN": "KC"
 };
 
+// material-react-table (used for results)
+export type TableRowData = {
+  [key: string]: string | number;
+  id: number;
+  user: string;
+  correct: number;
+  gamesPlayed: number;
+};
+
 export type Team = {
   Conference: string;
   Division: string;

@@ -1,15 +1,15 @@
 import jsQR from 'jsqr';
+import { MaterialReactTable } from 'material-react-table';
 import { Box, Typography } from '@mui/material';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo, useRef } from 'react';
 
-import type { UserPicks } from '../types';
+import type { UserPicks, TableRowData } from '../types';
 
 import { PICKEM } from '../consts';
 import gameSchedule from '../data/NFLScheduleOfGames.json';
-import { StyledDataGrid } from '../nflPickem2025.styled';
 import Page from '../../../templates/Page';
 
-import type { GridColDef, GridRenderCellParams } from '@mui/x-data-grid';
+import type { MRT_ColumnDef, MRT_Cell } from 'material-react-table';
 
 // -- -- --
 
@@ -26,14 +26,29 @@ const qrFiles = [
   'nfl-picks-gfuller64[at]gmail.com-2025-09-04.svg',
 ];
 
-const SHOW_RESULTS = true;
 const RESULTS_SVG = 'results/nfl-picks-results-2025-09-23.svg';
+const CURRENT_WEEK = 4; // 1-18
+
+const SHOW_RESULTS = true;
 const FULL_SCHEDULE_SIZE = 272;
 const WEEKS = Array.from({ length: 18 }, (_, i) => i + 1);
 
-/**
- * Processes QR code SVG data to extract user picks
- */
+const commonCellStyles = {
+  padding: `0`,
+};
+
+const commonHeaderCellStyles = {
+  ...commonCellStyles,
+  borderBottom: 0,
+};
+
+const commonBodyCellStyles = {
+  ...commonCellStyles,
+  borderTop: `1px solid lightgray`,
+  borderBottom: 0,
+};
+
+// processes QR code SVG data to extract user picks
 const processQRData = (
   qrData: string,
   setError: (error: string | null) => void,
@@ -88,6 +103,12 @@ function Results() {
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
 
+  // refs for scrolling to current week
+  const tableContainerRef = useRef<HTMLDivElement | null>(null);
+  const weekRefs = useRef<{ [key: number]: HTMLElement | null }>({});
+
+  // show or hide results
+  // used before the season when there are no results
   useEffect(() => {
     if (SHOW_RESULTS) {
       if (!qrFiles.includes(RESULTS_SVG)) {
@@ -96,6 +117,7 @@ function Results() {
     }
   }, []);
 
+  // load and process the qr codes
   useEffect(() => {
     const loadQRCodes = async () => {
       setLoading(true);
@@ -143,7 +165,7 @@ function Results() {
         }
       }
 
-      // Sort keys so the "results" appear first
+      // sort keys so the "results" players appears first
       const sortedResults: { [key: string]: UserPicks } = {};
       Object.keys(newResults)
         .sort((a, b) => {
@@ -167,7 +189,39 @@ function Results() {
     loadQRCodes();
   }, []);
 
-  // Calculate games played and correct picks
+  // auto-scroll to current week after data loads
+  useEffect(() => {
+    if (!loading && Object.keys(userResults).length > 0) {
+      const currentWeek = CURRENT_WEEK;
+      const targetRef = weekRefs.current[currentWeek];
+      const tableContainer = tableContainerRef.current;
+
+      if (targetRef && tableContainer) {
+        // small delay to ensure table is fully rendered
+        setTimeout(() => {
+          const targetRect = targetRef.getBoundingClientRect();
+          const containerRect = tableContainer.getBoundingClientRect();
+          // scroll to the current week in the container
+          const currentScrollLeft = tableContainer.scrollLeft;
+          // target position
+          const stickyColumnsWidth = 280; // 200 (user) + 80 (correct)
+          const desiredOffsetFromLeft = stickyColumnsWidth + 0;
+          // where the target element is relative to the container
+          const targetOffsetFromContainer =
+            targetRect.left - containerRect.left + currentScrollLeft;
+          const newScrollLeft =
+            targetOffsetFromContainer - desiredOffsetFromLeft;
+          // you go scroll now!
+          tableContainer.scrollTo({
+            left: newScrollLeft,
+            behavior: 'smooth',
+          });
+        }, 100);
+      }
+    }
+  }, [loading, userResults]);
+
+  // calculate games played and correct picks
   const calculateStats = (picks: UserPicks, seasonResults: UserPicks) => {
     let gamesPlayed = 0;
     let correct = 0;
@@ -182,108 +236,190 @@ function Results() {
     return { correct, gamesPlayed };
   };
 
-  // Define DataGrid columns
-  const columns: GridColDef[] = [
-    {
-      field: 'user',
-      headerName: 'User',
-      renderCell: (params) => {
-        const [user] = params.value.split('@');
-        return (
-          <Typography sx={{ padding: '1rem' }}>{user.toLowerCase()}</Typography>
-        );
-      },
-      width: 250,
-    },
-    {
-      align: 'center',
-      field: 'correct',
-      headerAlign: 'center',
-      headerName: 'Correct',
-      renderCell: (params) => params.value,
-      width: 100,
-    },
-    ...gameSchedule.map((game) => {
-      const [, awayTeam, , homeTeam] = game.split('-');
-      const gameId = game.replace(/(\d+)-([^-]+)-vs-([^-]+)/, 'w-$1-$2-vs-$3');
-      return {
-        align: 'center',
-        field: gameId,
-        headerAlign: 'center',
-        renderCell: (params: GridRenderCellParams) => {
-          const pick = params.value;
-          const isCorrect =
-            seasonResults[gameId] && pick === seasonResults[gameId];
-          const isUnplayedGame = seasonResults[gameId] === '-' ? true : false;
-          return (
-            <Typography
-              component="span"
-              sx={{
-                alignItems: 'center',
-                backgroundColor: isUnplayedGame
-                  ? 'white'
-                  : isCorrect
-                    ? PICKEM.COLOR_WINNER
-                    : PICKEM.COLOR_LOSER,
-                color: isUnplayedGame ? 'black' : 'white',
-                display: 'flex',
-                fontSize: `0.75rem`,
-                fontWeight: '500',
-                height: '100%',
-                justifyContent: 'center',
-                textAlign: 'center',
-                width: '100%',
-              }}
-            >
-              {pick}
-            </Typography>
-          );
+  const columns = useMemo<MRT_ColumnDef<TableRowData>[]>(
+    () => [
+      // user column (sticky)
+      {
+        accessorKey: 'user',
+        size: 200,
+        enableSorting: false, // overrides initialState
+        header: 'User',
+        muiTableHeadCellProps: {
+          sx: {
+            ...commonHeaderCellStyles,
+            position: 'sticky', // fixes the columns header
+            left: 0, // to the left
+            zIndex: 2, // and on top of other cells while scrolling
+          },
         },
-        renderHeader: () => (
-          <Typography
-            component="span"
-            sx={{
-              fontSize: '0.75rem',
-              fontWeight: 'inherit',
-              whiteSpace: 'nowrap',
-            }}
-          >
-            {awayTeam} @ {homeTeam}
-          </Typography>
-        ),
-        width: 90,
-      } as GridColDef;
-    }),
-  ];
+        Cell: ({ cell }: { cell: MRT_Cell<TableRowData, unknown> }) => {
+          const userValue = cell.getValue() as string;
+          const [user] = userValue.split('@');
+          return <Typography sx={{}}>{user.toLowerCase()}</Typography>;
+        },
+        muiTableBodyCellProps: {
+          sx: {
+            ...commonBodyCellStyles,
+            position: 'sticky', // fixes the columns header
+            left: 0, // to the left
+            zIndex: 2, // and on top of other cells while scrolling
+          },
+        },
+      },
+      // correct picks column (sticky)
+      {
+        accessorKey: 'correct',
+        size: 80,
+        header: 'Correct',
+        muiTableHeadCellProps: {
+          sx: {
+            ...commonHeaderCellStyles,
+            position: 'sticky', // fixes the columns header
+            left: 200, // to the right of the user column
+            zIndex: 2, // and on top of other cells while scrolling
+            // (badly) hide the sort trigger and center the header text
+            '& .Mui-TableHeadCell-Content-Labels': {
+              flexBasis: '100%',
+            },
+            '& .Mui-TableHeadCell-Content-Wrapper': {
+              margin: '0 auto',
+            },
+            '& .MuiBadge-root': {
+              display: 'none',
+            },
+          },
+        },
+        Cell: ({ cell }: { cell: MRT_Cell<TableRowData, unknown> }) => {
+          const correctValue = cell.getValue() as number;
+          return <Box sx={{ textAlign: 'center' }}>{correctValue}</Box>;
+        },
+        muiTableBodyCellProps: {
+          sx: {
+            ...commonBodyCellStyles,
+            position: 'sticky', // fixes the columns header
+            left: 200, // to the right of the user column
+            zIndex: 2, // and on top of other cells while scrolling
+          },
+        },
+      },
+      // Weekly grouped columns
+      ...WEEKS.map((week) => ({
+        columns: gameSchedule
+          .filter((game) => game.startsWith(`${week}-`))
+          .map((game, gameIndex) => {
+            const [, awayTeam, , homeTeam] = game.split('-');
+            const gameId = game.replace(
+              /(\d+)-([^-]+)-vs-([^-]+)/,
+              'w-$1-$2-vs-$3',
+            );
 
-  // Group columns by week for header grouping
-  const groupedColumns = WEEKS.map((week) => ({
-    children: columns
-      .filter((col) => col.field.startsWith(`w-${week}-`))
-      .map((col) => ({ field: col.field })),
-    groupId: `week-${week}`,
-    headerName: `Week ${week}`,
-  }));
+            return {
+              accessorKey: gameId,
+              size: 90,
+              enableSorting: false, // overrides initialState
+              header: `${awayTeam} @ ${homeTeam}`,
+              muiTableHeadCellProps: {
+                sx: {
+                  ...commonHeaderCellStyles,
+                  fontSize: '0.75rem',
+                  // (badly) hide the sort trigger and center the header text
+                  '& .Mui-TableHeadCell-Content-Labels': {
+                    flexBasis: '100%',
+                  },
+                  '& .Mui-TableHeadCell-Content-Wrapper': {
+                    margin: '0 auto',
+                  },
+                  '& .MuiBadge-root': {
+                    display: 'none',
+                  },
+                },
+                // ref on the first game column of each week
+                ...(gameIndex === 0 && {
+                  ref: (el: HTMLElement | null) => {
+                    weekRefs.current[week] = el;
+                  },
+                }),
+              },
+              Cell: ({ cell }: { cell: MRT_Cell<TableRowData, unknown> }) => {
+                const pick = cell.getValue() as string;
+                const isCorrect =
+                  seasonResults[gameId] && pick === seasonResults[gameId];
+                const isUnplayedGame = seasonResults[gameId] === '-';
 
-  // Define DataGrid rows
-  const rows = Object.keys(userResults)
-    .filter((key) => key !== 'results') // hide the 'results' row
-    .map((key, index) => {
-      const { correct, gamesPlayed } = calculateStats(
-        userResults[key],
-        seasonResults,
-      );
-      const row: { [key: string]: string | number } = {
-        correct,
-        gamesPlayed,
-        id: index,
-        user: key,
-      };
-      Object.keys(userResults[key]).forEach((gameId) => {
-        row[gameId] = userResults[key][gameId];
+                return (
+                  <Box
+                    sx={{
+                      display: 'flex',
+                      justifyContent: 'center',
+                      alignItems: 'center',
+                      margin: '1px',
+                      width: '100%',
+                      height: '100%',
+                      minHeight: '32px',
+                      color: isUnplayedGame ? 'black' : 'white',
+                      backgroundColor: isUnplayedGame
+                        ? 'white'
+                        : isCorrect
+                          ? PICKEM.COLOR_WINNER
+                          : PICKEM.COLOR_LOSER,
+                      textAlign: 'center',
+                      fontSize: '0.75rem',
+                      fontWeight: '500',
+                    }}
+                  >
+                    {pick}
+                  </Box>
+                );
+              },
+              muiTableBodyCellProps: {
+                sx: {
+                  ...commonBodyCellStyles,
+                },
+              },
+            };
+          }),
+        header: `Week ${week}`,
+        muiTableHeadCellProps: {
+          sx: {
+            ...commonHeaderCellStyles,
+            '& .Mui-TableHeadCell-Content-Labels': {
+              flexBasis: '100%',
+              paddingLeft: '1em',
+            },
+            '& .Mui-TableHeadCell-Content-Wrapper': {},
+          },
+        },
+        muiTableBodyCellProps: {
+          sx: {
+            ...commonBodyCellStyles,
+          },
+        },
+      })),
+    ],
+    [seasonResults],
+  );
+
+  // Define table data
+  const tableData = useMemo<TableRowData[]>(() => {
+    return Object.keys(userResults)
+      .filter((key) => key !== 'results') // hide the 'results' row
+      .map((key, index) => {
+        const { correct, gamesPlayed } = calculateStats(
+          userResults[key],
+          seasonResults,
+        );
+        const row: TableRowData = {
+          correct,
+          gamesPlayed,
+          id: index,
+          user: key,
+        };
+        Object.keys(userResults[key]).forEach((gameId) => {
+          row[gameId] = userResults[key][gameId];
+        });
+        return row;
       });
-      return row;
-    });
+  }, [userResults, seasonResults]);
 
   return (
     <Page title="NFL Pick'em 2025">
@@ -294,7 +430,7 @@ function Results() {
       >
         Results:{' '}
         <Box component="span" sx={{ whiteSpace: 'nowrap' }}>
-          NFL 2025 Pick’em
+          NFL 2025 Pick&apos;em
         </Box>
       </Typography>
       <Box sx={{ height: 'auto', mx: 'auto', pb: 8 }}>
@@ -304,16 +440,24 @@ function Results() {
             {error}
           </Typography>
         )}
-        {!loading && rows.length > 0 && (
-          <StyledDataGrid
-            hideFooter
-            rows={rows}
+        {!loading && tableData.length > 0 && (
+          <MaterialReactTable<TableRowData>
             columns={columns}
-            columnGroupingModel={groupedColumns}
-            aria-label="NFL Pick'em Results Grid"
-            disableColumnSorting={false}
-            disableColumnMenu={true}
-            disableRowSelectionOnClick
+            data={tableData}
+            initialState={{
+              density: 'compact',
+              sorting: [{ desc: true, id: 'correct' }],
+            }}
+            enableHiding={false}
+            enableTopToolbar={false}
+            enableBottomToolbar={false}
+            enableColumnActions={false}
+            enableSorting={true}
+            muiTableContainerProps={{
+              ref: tableContainerRef,
+            }}
+            muiTablePaperProps={{ elevation: 0, sx: { border: 0 } }}
+            muiTableHeadRowProps={{ sx: { boxShadow: 0, border: 0 } }}
           />
         )}
       </Box>
