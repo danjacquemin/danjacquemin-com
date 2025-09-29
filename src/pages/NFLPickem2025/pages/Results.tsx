@@ -26,7 +26,7 @@ const qrFiles = [
   'nfl-picks-gfuller64[at]gmail.com-2025-09-04.svg',
 ];
 
-const RESULTS_SVG = 'results/nfl-picks-results-2025-09-23.svg';
+const RESULTS_SVG = 'results/nfl-picks-results-2025-09-29.svg';
 const CURRENT_WEEK = 4; // 1-18
 
 const SHOW_RESULTS = true;
