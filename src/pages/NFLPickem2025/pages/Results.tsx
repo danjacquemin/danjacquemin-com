@@ -5,6 +5,7 @@ import { useState, useEffect, useMemo, useRef } from 'react';
 
 import type { UserPicks, TableRowData } from '../types';
 
+import CorrectPerWeek from '../components/CorrectPerWeek';
 import { PICKEM } from '../consts';
 import gameSchedule from '../data/NFLScheduleOfGames.json';
 import Page from '../../../templates/Page';
@@ -26,8 +27,8 @@ const qrFiles = [
   'nfl-picks-gfuller64[at]gmail.com-2025-09-04.svg',
 ];
 
-const RESULTS_SVG = 'results/nfl-picks-results-2025-09-29.svg';
-const CURRENT_WEEK = 4; // 1-18
+const RESULTS_SVG = 'results/nfl-picks-results-2025-10-07.svg';
+const CURRENT_WEEK = 5; // 1-18
 
 const SHOW_RESULTS = true;
 const FULL_SCHEDULE_SIZE = 272;
@@ -243,13 +244,14 @@ function Results() {
         accessorKey: 'user',
         size: 200,
         enableSorting: false, // overrides initialState
-        header: 'User',
+        header: '',
         muiTableHeadCellProps: {
           sx: {
             ...commonHeaderCellStyles,
             position: 'sticky', // fixes the columns header
             left: 0, // to the left
             zIndex: 2, // and on top of other cells while scrolling
+            paddingLeft: '0.2rem',
           },
         },
         Cell: ({ cell }: { cell: MRT_Cell<TableRowData, unknown> }) => {
@@ -263,6 +265,7 @@ function Results() {
             position: 'sticky', // fixes the columns header
             left: 0, // to the left
             zIndex: 2, // and on top of other cells while scrolling
+            paddingLeft: '0.2rem',
           },
         },
       },
@@ -441,24 +444,36 @@ function Results() {
           </Typography>
         )}
         {!loading && tableData.length > 0 && (
-          <MaterialReactTable<TableRowData>
-            columns={columns}
-            data={tableData}
-            initialState={{
-              density: 'compact',
-              sorting: [{ desc: true, id: 'correct' }],
-            }}
-            enableHiding={false}
-            enableTopToolbar={false}
-            enableBottomToolbar={false}
-            enableColumnActions={false}
-            enableSorting={true}
-            muiTableContainerProps={{
-              ref: tableContainerRef,
-            }}
-            muiTablePaperProps={{ elevation: 0, sx: { border: 0 } }}
-            muiTableHeadRowProps={{ sx: { boxShadow: 0, border: 0 } }}
-          />
+          <>
+            <CorrectPerWeek
+              userResults={userResults}
+              seasonResults={seasonResults}
+            />
+
+            <Box sx={{ mt: 8 }}>
+              <Typography variant="h2" sx={{ mb: 2 }}>
+                Individual Games
+              </Typography>
+              <MaterialReactTable<TableRowData>
+                columns={columns}
+                data={tableData}
+                initialState={{
+                  density: 'compact',
+                  sorting: [{ desc: true, id: 'correct' }],
+                }}
+                enableHiding={false}
+                enableTopToolbar={false}
+                enableBottomToolbar={false}
+                enableColumnActions={false}
+                enableSorting={true}
+                muiTableContainerProps={{
+                  ref: tableContainerRef,
+                }}
+                muiTablePaperProps={{ elevation: 0, sx: { border: 0 } }}
+                muiTableHeadRowProps={{ sx: { boxShadow: 0, border: 0 } }}
+              />
+            </Box>
+          </>
         )}
       </Box>
     </Page>
