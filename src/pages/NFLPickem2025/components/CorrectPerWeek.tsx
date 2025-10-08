@@ -88,14 +88,19 @@ function CorrectPerWeek({ userResults, seasonResults }: CorrectPerWeekProps) {
       {
         accessorKey: 'user',
         size: 200,
-        enableSorting: false,
-        header: '',
+        header: 'User',
+        Header: () => <span>&nbsp;</span>, // create something to enable the click-sort (cannot be empty)
+        'aria-label': 'User', // but we still need an accessible label
         muiTableHeadCellProps: {
           sx: {
             ...commonHeaderCellStyles,
             position: 'sticky', // fixes the columns header
             left: 0, // to the left
             zIndex: 2, // and on top of other cells while scrolling
+            '& .MuiBadge-root': {
+              display: 'none',
+            },
+            cursor: `pointer`,
           },
         },
         Cell: ({ cell }: { cell: MRT_Cell<CorrectPerWeekData, unknown> }) => {
@@ -153,7 +158,6 @@ function CorrectPerWeek({ userResults, seasonResults }: CorrectPerWeekProps) {
       ...WEEKS.map((week) => ({
         accessorKey: `week${week}`,
         size: 80,
-        enableSorting: false,
         header: `Week ${week}`,
         muiTableHeadCellProps: {
           sx: {
