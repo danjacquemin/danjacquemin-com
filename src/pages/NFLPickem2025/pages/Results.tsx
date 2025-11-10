@@ -27,8 +27,8 @@ const qrFiles = [
   'nfl-picks-gfuller64[at]gmail.com-2025-09-04.svg',
 ];
 
-const RESULTS_SVG = 'results/nfl-picks-results-2025-10-21.svg';
-const CURRENT_WEEK = 7; // 1-18
+const RESULTS_SVG = 'results/nfl-picks-results-2025-11-10.svg';
+const CURRENT_WEEK = 10; // 1-18
 
 const SHOW_RESULTS = true;
 const FULL_SCHEDULE_SIZE = 272;
