@@ -1,84 +1,75 @@
-import { Link } from 'react-router-dom';
+import { Box } from '@mui/material';
 
-import { styled } from '@mui/material/styles';
-
-import Box from '@mui/material/Box';
-import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
-import Chip from '@mui/material/Chip';
 import Typography from '@mui/material/Typography';
 
-import Page from '../../templates/Page';
+import type { HomeCardData } from '../../components/HomeCard';
 
-import type { ChipProps } from '@mui/material/Chip';
+import HomeCard from '../../components/HomeCard';
+import Page from '../../templates/Page';
 
 // the bullet between syllables in the card titles
 const bull = (
   <Box
     component="span"
-    sx={{ display: 'inline-block', mx: '2px', transform: 'scale(0.8)' }}
+    sx={{ display: 'inline-block', mx: '0.125em', transform: 'scale(0.8)' }}
   >
     •
   </Box>
 );
 
-// styled chip with theme primary color and white text on hover
+// -- -- --
+// render
+//
 
-// Extend ChipProps to include anchor element props
-interface ThemedChipProps extends ChipProps {
-  href?: string;
-  to?: string; // for react-router Link compatibility
-}
-
-const ThemedChip = styled(Chip)<ThemedChipProps>(({ theme }) => ({
-  '&:focus': {
-    outline: `2px solid ${theme.palette.primary.dark}`,
+const cards: readonly HomeCardData[] = [
+  {
+    title: <>flot{bull}sam</>,
+    pronunciation: '/ˈflätsəm/',
+    partOfSpeech: 'noun',
+    definition:
+      'debris in the water that was not deliberately thrown overboard',
+    // no chip for now
   },
-  '&:hover': {
-    backgroundColor: theme.palette.primary.main,
-    borderColor: theme.palette.common.white,
-    color: theme.palette.common.white,
-    textShadow: '0 0 1px white', // make the text appear bold
+  {
+    title: <>jet{bull}sam</>,
+    pronunciation: '/ˈjetsəm/',
+    partOfSpeech: 'noun',
+    definition:
+      "debris that was deliberately thrown overboard by a crew of a ship in distress, most often to lighten the ship's load",
+    chipLabel: "2025 NFL Pick'em",
+    chipTo: '/nfl',
   },
-}));
+  {
+    title: (
+      <>
+        con{bull}coc{bull}tions
+      </>
+    ),
+    pronunciation: '/kənˈkäkSHəns/',
+    partOfSpeech: 'noun',
+    definition: 'a mixture of various ingredients or elements',
+    chipLabel: '2oz of what?',
+    chipTo: '/concoctions',
+  },
+] as const;
 
 function Home() {
   return (
     <Page title="Home">
       <Typography variant="h1">Hello World!</Typography>
 
-      <Card sx={{ maxWidth: 360, minWidth: 250 }} elevation={3}>
-        <CardContent>
-          <Typography variant="h2" component="h2" sx={{ pb: 1 }}>
-            flot{bull}sam
-          </Typography>
-          <div>
-            <Typography
-              sx={{ color: 'text.secondary', display: 'block', pb: 1 }}
-              fontSize={'0.875rem'}
-            >
-              /ˈflätsəm/
-              <br />
-              noun
-            </Typography>
-          </div>
-          <div>
-            <Typography component="p">
-              people or things that have been rejected and are regarded as
-              worthless.
-            </Typography>
-          </div>
-        </CardContent>
-        <CardActions sx={{ p: 2, pt: 0 }}>
-          <ThemedChip
-            label="NFL Pick'em"
-            variant="outlined"
-            component={Link}
-            to="/nfl"
-          />
-        </CardActions>
-      </Card>
+      <Box
+        sx={{
+          display: 'flex',
+          justifyContent: 'center',
+          flexWrap: 'wrap',
+          gap: 4,
+        }}
+      >
+        {cards.map((card, index) => (
+          <HomeCard key={index} {...card} />
+        ))}
+      </Box>
     </Page>
   );
 }
