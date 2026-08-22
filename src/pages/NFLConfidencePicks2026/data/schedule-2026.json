@@ -1,0 +1,176 @@
+{
+  "id": "9bd1eed5-e5cc-4494-ad31-67d90d5b20e6",
+  "year": 2026,
+  "games": [
+    {
+      "weekNumber": 1,
+      "games": [
+        {
+          "id": "7a9efe59-6100-4f0a-abd4-7b19b4c6547a",
+          "season": 2026,
+          "week": 1,
+          "gameDateTimeUTC": "2026-09-10T00:20:00.000Z",
+          "stadiumId": "c66f4cc4-afc0-4bd4-bdd7-d5adbfc3679b",
+          "homeTeamId": "sea",
+          "awayTeamId": "ne",
+          "_summary": "NE @ SEA, Lumen Field, Wed Sep 9 8:20 PM ET"
+        },
+        {
+          "id": "baeed6f6-8d95-4692-8ccc-9c7e3c20da2c",
+          "season": 2026,
+          "week": 1,
+          "gameDateTimeUTC": "2026-09-11T00:35:00.000Z",
+          "stadiumId": "c491455e-5d3a-433c-b2f2-bbc328916626",
+          "homeTeamId": "lar",
+          "awayTeamId": "sf",
+          "_summary": "SF @ LAR, Melbourne Cricket Ground, Thu Sep 10 8:35 PM ET"
+        },
+        {
+          "id": "736566a5-d253-4d84-9581-7ad7d7ebccda",
+          "season": 2026,
+          "week": 1,
+          "gameDateTimeUTC": "2026-09-13T17:00:00.000Z",
+          "stadiumId": "765f8f02-7887-4707-8552-1de9b492cddd",
+          "homeTeamId": "pit",
+          "awayTeamId": "atl",
+          "_summary": "ATL @ PIT, Acrisure Stadium, Sun Sep 13 1:00 PM ET"
+        },
+        {
+          "id": "5437c94b-ae40-4976-a230-5426c63a18de",
+          "season": 2026,
+          "week": 1,
+          "gameDateTimeUTC": "2026-09-13T17:00:00.000Z",
+          "stadiumId": "4ddefd70-a6a6-4734-983a-83d76ef15135",
+          "homeTeamId": "cin",
+          "awayTeamId": "tb",
+          "_summary": "TB @ CIN, Paycor Stadium, Sun Sep 13 1:00 PM ET"
+        },
+        {
+          "id": "78718693-72c2-407e-bcef-d1b1b13dc6c0",
+          "season": 2026,
+          "week": 1,
+          "gameDateTimeUTC": "2026-09-13T17:00:00.000Z",
+          "stadiumId": "f96aa25d-d2bb-43c2-9a28-7034296f681b",
+          "homeTeamId": "det",
+          "awayTeamId": "no",
+          "_summary": "NO @ DET, Ford Field, Sun Sep 13 1:00 PM ET"
+        },
+        {
+          "id": "620fd580-db15-4e50-9c34-c6861a685c5a",
+          "season": 2026,
+          "week": 1,
+          "gameDateTimeUTC": "2026-09-13T17:00:00.000Z",
+          "stadiumId": "de14a887-e38f-427b-b02e-49396efa36c9",
+          "homeTeamId": "car",
+          "awayTeamId": "chi",
+          "_summary": "CHI @ CAR, Bank of America Stadium, Sun Sep 13 1:00 PM ET"
+        },
+        {
+          "id": "4e2b0677-d0e7-4626-8ea9-46f56aabaecd",
+          "season": 2026,
+          "week": 1,
+          "gameDateTimeUTC": "2026-09-13T17:00:00.000Z",
+          "stadiumId": "d8acdc51-58d8-409a-8668-0f5fc2f9dca0",
+          "homeTeamId": "ind",
+          "awayTeamId": "bal",
+          "_summary": "BAL @ IND, Lucas Oil Stadium, Sun Sep 13 1:00 PM ET"
+        },
+        {
+          "id": "9659da47-8a8b-419e-b858-bee98bf892f0",
+          "season": 2026,
+          "week": 1,
+          "gameDateTimeUTC": "2026-09-13T17:00:00.000Z",
+          "stadiumId": "892f31af-c29f-435a-bb0a-60ef8595bd10",
+          "homeTeamId": "hou",
+          "awayTeamId": "buf",
+          "_summary": "BUF @ HOU, NRG Stadium, Sun Sep 13 1:00 PM ET"
+        },
+        {
+          "id": "1545a231-7298-4b30-aa07-98248e0a16e9",
+          "season": 2026,
+          "week": 1,
+          "gameDateTimeUTC": "2026-09-13T17:00:00.000Z",
+          "stadiumId": "d1affb15-18a8-4c49-b336-7e809c0d8aeb",
+          "homeTeamId": "ten",
+          "awayTeamId": "nyj",
+          "_summary": "NYJ @ TEN, Nissan Stadium, Sun Sep 13 1:00 PM ET"
+        },
+        {
+          "id": "f9264af3-2954-4399-8829-867298d5c7c6",
+          "season": 2026,
+          "week": 1,
+          "gameDateTimeUTC": "2026-09-13T17:00:00.000Z",
+          "stadiumId": "51406146-153c-40d7-9c5a-8df5a113840c",
+          "homeTeamId": "jax",
+          "awayTeamId": "cle",
+          "_summary": "CLE @ JAX, EverBank Stadium, Sun Sep 13 1:00 PM ET"
+        },
+        {
+          "id": "714be817-d06c-43a5-ba4e-acf50bedde89",
+          "season": 2026,
+          "week": 1,
+          "gameDateTimeUTC": "2026-09-13T17:00:00.000Z",
+          "stadiumId": "d9f34167-daed-46bb-8221-ba00135747d3",
+          "homeTeamId": "lac",
+          "awayTeamId": "ari",
+          "_summary": "ARI @ LAC, SoFi Stadium, Sun Sep 13 1:00 PM ET"
+        },
+        {
+          "id": "86e5bced-48d2-4879-9536-255dd0370b2e",
+          "season": 2026,
+          "week": 1,
+          "gameDateTimeUTC": "2026-09-13T17:00:00.000Z",
+          "stadiumId": "2a38b03f-d1cc-48c1-8c90-dd5b1db23c2a",
+          "homeTeamId": "lv",
+          "awayTeamId": "mia",
+          "_summary": "MIA @ LV, Allegiant Stadium, Sun Sep 13 1:00 PM ET"
+        }
+      ]
+    },
+    {
+      "weekNumber": 2,
+      "games": [
+        {
+          "id": "424adfe9-d616-4b24-ab05-ea6f75fd2989",
+          "season": 2026,
+          "week": 2,
+          "gameDateTimeUTC": "2026-09-17T23:15:00.000Z",
+          "stadiumId": "e3819f6b-1c18-4083-b70d-9f978be60b09",
+          "homeTeamId": "kc",
+          "awayTeamId": "sea",
+          "_summary": "SEA @ KC, Arrowhead Stadium, Thu Sep 17 7:15 PM ET"
+        },
+        {
+          "id": "0eeff0d0-aea3-4acb-909d-756b62eb9fe0",
+          "season": 2026,
+          "week": 2,
+          "gameDateTimeUTC": "2026-09-20T17:00:00.000Z",
+          "stadiumId": "b6a483c4-11ea-4874-985e-c4c9bdfb6171",
+          "homeTeamId": "atl",
+          "awayTeamId": "chi",
+          "_summary": "CHI @ ATL, Mercedes-Benz Stadium, Sun Sep 20 1:00 PM ET"
+        },
+        {
+          "id": "26421763-58d4-4d04-9d78-2a54b283014b",
+          "season": 2026,
+          "week": 2,
+          "gameDateTimeUTC": "2026-09-20T17:00:00.000Z",
+          "stadiumId": "363bcc94-57e8-4c9a-a4f6-6ef6948d4ee8",
+          "homeTeamId": "phi",
+          "awayTeamId": "tb",
+          "_summary": "TB @ PHI, Lincoln Financial Field, Sun Sep 20 1:00 PM ET"
+        },
+        {
+          "id": "99a55b97-978c-41c1-aa76-d1e82d5bc4a4",
+          "season": 2026,
+          "week": 2,
+          "gameDateTimeUTC": "2026-09-21T20:20:00.000Z",
+          "stadiumId": "d9f34167-daed-46bb-8221-ba00135747d3",
+          "homeTeamId": "lar",
+          "awayTeamId": "sf",
+          "_summary": "SF @ LAR, SoFi Stadium, Mon Sep 21 8:20 PM ET"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,801 @@
+[
+  {
+    "id": "4038828a-bb7d-46c2-81ce-da1b2270c293",
+    "stadiumName": "State Farm Stadium",
+    "previousNames": [
+      "Cardinals Stadium",
+      "University of Phoenix Stadium"
+    ],
+    "stadiumNickname": null,
+    "homeTeamIds": [
+      "ari"
+    ],
+    "capacity": 63400,
+    "playingSurface": "Bermuda grass",
+    "roofType": "Retractable",
+    "yearOpened": 2006,
+    "yearClosed": null,
+    "address": "1 Cardinals Drive",
+    "city": "Glendale",
+    "state": "AZ",
+    "zip": "85305",
+    "country": "United States",
+    "visited": false,
+    "visitDeets": null
+  },
+  {
+    "id": "b6a483c4-11ea-4874-985e-c4c9bdfb6171",
+    "stadiumName": "Mercedes-Benz Stadium",
+    "previousNames": null,
+    "stadiumNickname": "The Benz",
+    "homeTeamIds": [
+      "atl"
+    ],
+    "capacity": 71000,
+    "playingSurface": "Turf",
+    "roofType": "Retractable",
+    "yearOpened": 2017,
+    "yearClosed": null,
+    "address": "1 AMB Drive Northwest",
+    "city": "Atlanta",
+    "state": "GA",
+    "zip": "30313",
+    "country": "United States",
+    "visited": false,
+    "visitDeets": null
+  },
+  {
+    "id": "ebbfa6d5-3a14-415c-93a6-a1b80eef17bf",
+    "stadiumName": "M&T Bank Stadium",
+    "previousNames": [
+      "PSINet Stadium",
+      "Ravens Stadium",
+      "M&T Bank Stadium"
+    ],
+    "stadiumNickname": null,
+    "homeTeamIds": [
+      "bal"
+    ],
+    "capacity": 71008,
+    "playingSurface": "Kentucky bluegrass",
+    "roofType": "Open-air",
+    "yearOpened": 1998,
+    "yearClosed": null,
+    "address": "1101 Russell Street",
+    "city": "Baltimore",
+    "state": "MD",
+    "country": "United States",
+    "zip": "21230",
+    "visited": false,
+    "visitDeets": null
+  },
+  {
+    "id": "b1ea911d-5a1b-41fc-8425-6503ab256157",
+    "stadiumName": "Highmark Stadium",
+    "previousNames": null,
+    "stadiumNickname": "Highmark",
+    "homeTeamIds": [
+      "buf"
+    ],
+    "capacity": 62000,
+    "playingSurface": "Kentucky bluegrass",
+    "roofType": "Open-air with canopy",
+    "yearOpened": 2026,
+    "yearClosed": null,
+    "address": "10 Bills Plaza",
+    "city": "Orchard Park",
+    "state": "NY",
+    "zip": "14127",
+    "country": "United States",
+    "visited": false,
+    "visitDeets": null
+  },
+  {
+    "id": "de14a887-e38f-427b-b02e-49396efa36c9",
+    "stadiumName": "Bank of America Stadium",
+    "previousNames": [
+      "Ericsson Stadium",
+      "Bank of America Stadium"
+    ],
+    "stadiumNickname": "The BOA",
+    "homeTeamIds": [
+      "car"
+    ],
+    "capacity": 74867,
+    "playingSurface": "Bermuda grass",
+    "roofType": "Open-air",
+    "yearOpened": 1996,
+    "yearClosed": null,
+    "address": "800 South Mint Street",
+    "city": "Charlotte",
+    "state": "NC",
+    "zip": "28202",
+    "country": "United States",
+    "visited": false,
+    "visitDeets": null
+  },
+  {
+    "id": "cfdd7c54-a855-4ab2-a22b-f930f438892c",
+    "stadiumName": "Soldier Field",
+    "previousNames": null,
+    "stadiumNickname": null,
+    "homeTeamIds": [
+      "chi"
+    ],
+    "capacity": 61500,
+    "playingSurface": "Kentucky bluegrass",
+    "roofType": "Open-air",
+    "yearOpened": 1924,
+    "yearClosed": null,
+    "address": "1410 Special Olympics Drive",
+    "city": "Chicago",
+    "state": "IL",
+    "zip": "60605",
+    "country": "United States",
+    "visited": false,
+    "visitDeets": null
+  },
+  {
+    "id": "4ddefd70-a6a6-4734-983a-83d76ef15135",
+    "stadiumName": "Paycor Stadium",
+    "previousNames": [
+      "Paul Brown Stadium"
+    ],
+    "stadiumNickname": "The Jungle",
+    "homeTeamIds": [
+      "cin"
+    ],
+    "capacity": 65515,
+    "playingSurface": "FieldTurf",
+    "roofType": "Open-air",
+    "yearOpened": 2000,
+    "yearClosed": null,
+    "address": "1 Paul Brown Stadium",
+    "city": "Cincinnati",
+    "state": "OH",
+    "zip": "45202",
+    "country": "United States",
+    "visited": false,
+    "visitDeets": null
+  },
+  {
+    "id": "f33bef4e-cb13-4fef-9eff-90603c07c31b",
+    "stadiumName": "Huntington Bank Field",
+    "previousNames": [
+      "Cleveland Browns Stadium",
+      "FirstEnergy Stadium"
+    ],
+    "stadiumNickname": "Dawg Pound",
+    "homeTeamIds": [
+      "cle"
+    ],
+    "capacity": 67895,
+    "playingSurface": "Kentucky bluegrass",
+    "roofType": "Open-air",
+    "yearOpened": 1999,
+    "yearClosed": null,
+    "address": "100 Alfred Lerner Way",
+    "city": "Cleveland",
+    "state": "OH",
+    "zip": "44114",
+    "country": "United States",
+    "visited": false,
+    "visitDeets": null
+  },
+  {
+    "id": "69a00dd6-575b-4c5b-a00d-2b174e40bb9d",
+    "stadiumName": "AT&T Stadium",
+    "previousNames": [
+      "Cowboys Stadium"
+    ],
+    "stadiumNickname": "Jerry World",
+    "homeTeamIds": [
+      "dal"
+    ],
+    "capacity": 80000,
+    "playingSurface": "FieldTurf",
+    "roofType": "Retractable",
+    "yearOpened": 2009,
+    "yearClosed": null,
+    "address": "1 AT&T Way",
+    "city": "Arlington",
+    "state": "TX",
+    "zip": "76011",
+    "country": "United States",
+    "visited": false,
+    "visitDeets": null
+  },
+  {
+    "id": "47e6a7ba-e1d8-45a8-a365-b131ec1de1ca",
+    "stadiumName": "Empower Field at Mile High",
+    "previousNames": [
+      "Invesco Field at Mile High",
+      "Sports Authority Field at Mile High"
+    ],
+    "stadiumNickname": "Mile High",
+    "homeTeamIds": [
+      "den"
+    ],
+    "capacity": 76125,
+    "playingSurface": "Kentucky bluegrass",
+    "roofType": "Open-air",
+    "yearOpened": 2001,
+    "yearClosed": null,
+    "address": "1701 Bryant Street",
+    "city": "Denver",
+    "state": "CO",
+    "zip": "80204",
+    "country": "United States",
+    "visited": false,
+    "visitDeets": null
+  },
+  {
+    "id": "f96aa25d-d2bb-43c2-9a28-7034296f681b",
+    "stadiumName": "Ford Field",
+    "previousNames": null,
+    "stadiumNickname": "The Lions' Den",
+    "homeTeamIds": [
+      "det"
+    ],
+    "capacity": 65000,
+    "playingSurface": "FieldTurf",
+    "roofType": "Dome",
+    "yearOpened": 2002,
+    "yearClosed": null,
+    "address": "2000 Brush Street",
+    "city": "Detroit",
+    "state": "MI",
+    "zip": "48226",
+    "country": "United States",
+    "visited": false,
+    "visitDeets": null
+  },
+  {
+    "id": "66fcf716-1af3-444f-b28f-89615fdb6518",
+    "stadiumName": "Lambeau Field",
+    "previousNames": [
+      "City Stadium"
+    ],
+    "stadiumNickname": "The Frozen Tundra",
+    "homeTeamIds": [
+      "gb"
+    ],
+    "capacity": 81441,
+    "playingSurface": "Kentucky bluegrass",
+    "roofType": "Open-air",
+    "yearOpened": 1957,
+    "yearClosed": null,
+    "address": "1265 Lombardi Avenue",
+    "city": "Green Bay",
+    "state": "WI",
+    "zip": "54304",
+    "country": "United States",
+    "visited": false,
+    "visitDeets": null
+  },
+  {
+    "id": "892f31af-c29f-435a-bb0a-60ef8595bd10",
+    "stadiumName": "NRG Stadium",
+    "previousNames": [
+      "Reliant Stadium"
+    ],
+    "stadiumNickname": "The House of Pain",
+    "homeTeamIds": [
+      "hou"
+    ],
+    "capacity": 72220,
+    "playingSurface": "FieldTurf",
+    "roofType": "Retractable",
+    "yearOpened": 2002,
+    "yearClosed": null,
+    "address": "1 NRG Parkway",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77054",
+    "country": "United States",
+    "visited": false,
+    "visitDeets": null
+  },
+  {
+    "id": "d8acdc51-58d8-409a-8668-0f5fc2f9dca0",
+    "stadiumName": "Lucas Oil Stadium",
+    "previousNames": null,
+    "stadiumNickname": null,
+    "homeTeamIds": [
+      "ind"
+    ],
+    "capacity": 67000,
+    "playingSurface": "FieldTurf",
+    "roofType": "Retractable",
+    "yearOpened": 2008,
+    "yearClosed": null,
+    "address": "500 South Capitol Avenue",
+    "city": "Indianapolis",
+    "state": "IN",
+    "zip": "46225",
+    "country": "United States",
+    "visited": false,
+    "visitDeets": null
+  },
+  {
+    "id": "51406146-153c-40d7-9c5a-8df5a113840c",
+    "stadiumName": "EverBank Stadium",
+    "previousNames": [
+      "Alltel Stadium",
+      "EverBank Field",
+      "TIAA Bank Field"
+    ],
+    "stadiumNickname": "The Bank",
+    "homeTeamIds": [
+      "jax"
+    ],
+    "capacity": 67264,
+    "playingSurface": "Bermuda grass",
+    "roofType": "Open-air",
+    "yearOpened": 1995,
+    "yearClosed": null,
+    "address": "1 EverBank Stadium Drive",
+    "city": "Jacksonville",
+    "state": "FL",
+    "zip": "32202",
+    "country": "United States",
+    "visited": false,
+    "visitDeets": null
+  },
+  {
+    "id": "e3819f6b-1c18-4083-b70d-9f978be60b09",
+    "stadiumName": "Arrowhead Stadium",
+    "previousNames": null,
+    "stadiumNickname": "Arrowhead",
+    "homeTeamIds": [
+      "kc"
+    ],
+    "capacity": 76416,
+    "playingSurface": "Bermuda grass",
+    "roofType": "Open-air",
+    "yearOpened": 1972,
+    "yearClosed": null,
+    "address": "1 Arrowhead Drive",
+    "city": "Kansas City",
+    "state": "MO",
+    "zip": "64129",
+    "country": "United States",
+    "visited": false,
+    "visitDeets": null
+  },
+  {
+    "id": "d9f34167-daed-46bb-8221-ba00135747d3",
+    "stadiumName": "SoFi Stadium",
+    "previousNames": null,
+    "stadiumNickname": "Sofi",
+    "homeTeamIds": [
+      "lac",
+      "lar"
+    ],
+    "capacity": 70000,
+    "playingSurface": "FieldTurf",
+    "roofType": "Fixed roof",
+    "yearOpened": 2020,
+    "yearClosed": null,
+    "address": "1000 S Prairie Ave",
+    "city": "Inglewood",
+    "state": "CA",
+    "zip": "90301",
+    "country": "United States",
+    "visited": false,
+    "visitDeets": null
+  },
+  {
+    "id": "2a38b03f-d1cc-48c1-8c90-dd5b1db23c2a",
+    "stadiumName": "Allegiant Stadium",
+    "previousNames": null,
+    "stadiumNickname": "The Death Star",
+    "homeTeamIds": [
+      "lv"
+    ],
+    "capacity": 65000,
+    "playingSurface": "Bermuda grass",
+    "roofType": "Fixed translucent roof",
+    "yearOpened": 2020,
+    "yearClosed": null,
+    "address": "3333 Al Davis Way",
+    "city": "Las Vegas",
+    "state": "NV",
+    "zip": "89118",
+    "country": "United States",
+    "visited": false,
+    "visitDeets": null
+  },
+  {
+    "id": "6688fdf0-a943-4bbf-bd43-87a130122e03",
+    "stadiumName": "Hard Rock Stadium",
+    "previousNames": [
+      "Joe Robbie Stadium",
+      "Pro Player Stadium",
+      "Dolphin Stadium",
+      "Land Shark Stadium",
+      "Sun Life Stadium"
+    ],
+    "stadiumNickname": "The Rock",
+    "homeTeamIds": [
+      "mia"
+    ],
+    "capacity": 65326,
+    "playingSurface": "Bermuda grass",
+    "roofType": "Open-air",
+    "yearOpened": 1987,
+    "yearClosed": null,
+    "address": "347 Don Shula Drive",
+    "city": "Miami Gardens",
+    "state": "FL",
+    "zip": "33056",
+    "country": "United States",
+    "visited": false,
+    "visitDeets": null
+  },
+  {
+    "id": "e57f2fba-2e6b-4d5a-8b40-d3a14eef4b7c",
+    "stadiumName": "U.S. Bank Stadium",
+    "previousNames": [
+      "Hubert H. Humphrey Metrodome"
+    ],
+    "stadiumNickname": "The Bank",
+    "homeTeamIds": [
+      "min"
+    ],
+    "capacity": 66655,
+    "playingSurface": "FieldTurf",
+    "roofType": "Fixed roof",
+    "yearOpened": 2016,
+    "yearClosed": null,
+    "address": "401 Chicago Avenue South",
+    "city": "Minneapolis",
+    "state": "MN",
+    "zip": "55415",
+    "country": "United States",
+    "visited": false,
+    "visitDeets": null
+  },
+  {
+    "id": "8d81bd51-ac13-4f12-b5b4-ccfbdde7a4c5",
+    "stadiumName": "Gillette Stadium",
+    "previousNames": null,
+    "stadiumNickname": null,
+    "homeTeamIds": [
+      "ne"
+    ],
+    "capacity": 65878,
+    "playingSurface": "FieldTurf",
+    "roofType": "Open-air",
+    "yearOpened": 2002,
+    "yearClosed": null,
+    "address": "1 Patriot Place",
+    "city": "Foxborough",
+    "state": "MA",
+    "country": "United States",
+    "zip": "02035",
+    "visited": false,
+    "visitDeets": null
+  },
+  {
+    "id": "0e8ff099-ca06-45b2-b730-16f69705962a",
+    "stadiumName": "Caesars Superdome",
+    "previousNames": [
+      "Louisiana Superdome",
+      "Mercedes-Benz Superdome"
+    ],
+    "stadiumNickname": "Superdome",
+    "homeTeamIds": [
+      "no"
+    ],
+    "capacity": 73208,
+    "playingSurface": "FieldTurf",
+    "roofType": "Dome",
+    "yearOpened": 1975,
+    "yearClosed": null,
+    "address": "1500 Sugar Bowl Drive",
+    "city": "New Orleans",
+    "state": "LA",
+    "zip": "70112",
+    "country": "United States",
+    "visited": false,
+    "visitDeets": null
+  },
+  {
+    "id": "363bcc94-57e8-4c9a-a4f6-6ef6948d4ee8",
+    "stadiumName": "Lincoln Financial Field",
+    "previousNames": null,
+    "stadiumNickname": "The Linc",
+    "homeTeamIds": [
+      "phi"
+    ],
+    "capacity": 69796,
+    "playingSurface": "Kentucky bluegrass",
+    "roofType": "Open-air",
+    "yearOpened": 2003,
+    "yearClosed": null,
+    "address": "1 Lincoln Financial Field Way",
+    "city": "Philadelphia",
+    "state": "PA",
+    "zip": "19148",
+    "country": "United States",
+    "visited": false,
+    "visitDeets": null
+  },
+  {
+    "id": "765f8f02-7887-4707-8552-1de9b492cddd",
+    "stadiumName": "Acrisure Stadium",
+    "previousNames": [
+      "Three Rivers Stadium",
+      "Heinz Field"
+    ],
+    "stadiumNickname": "Three Rivers",
+    "homeTeamIds": [
+      "pit"
+    ],
+    "capacity": 68400,
+    "playingSurface": "Kentucky bluegrass",
+    "roofType": "Open-air",
+    "yearOpened": 2001,
+    "yearClosed": null,
+    "address": "100 Art Rooney Avenue",
+    "city": "Pittsburgh",
+    "state": "PA",
+    "zip": "15212",
+    "country": "United States",
+    "visited": false,
+    "visitDeets": null
+  },
+  {
+    "id": "c66f4cc4-afc0-4bd4-bdd7-d5adbfc3679b",
+    "stadiumName": "Lumen Field",
+    "previousNames": [
+      "Seahawks Stadium",
+      "Qwest Field",
+      "CenturyLink Field"
+    ],
+    "stadiumNickname": null,
+    "homeTeamIds": [
+      "sea"
+    ],
+    "capacity": 69000,
+    "playingSurface": "FieldTurf",
+    "roofType": "Open-air",
+    "yearOpened": 2002,
+    "yearClosed": null,
+    "address": "800 Occidental Avenue South",
+    "city": "Seattle",
+    "state": "WA",
+    "zip": "98134",
+    "country": "United States",
+    "visited": false,
+    "visitDeets": null
+  },
+  {
+    "id": "39160e46-5670-42f7-b33c-67e3e5ac3697",
+    "stadiumName": "Levi's Stadium",
+    "previousNames": null,
+    "stadiumNickname": "Levis",
+    "homeTeamIds": [
+      "sf"
+    ],
+    "capacity": 68500,
+    "playingSurface": "Bermuda grass",
+    "roofType": "Open-air",
+    "yearOpened": 2014,
+    "yearClosed": null,
+    "address": "4900 Marie P. DeBartolo Way",
+    "city": "Santa Clara",
+    "state": "CA",
+    "zip": "95054",
+    "country": "United States",
+    "visited": false,
+    "visitDeets": null
+  },
+  {
+    "id": "30bc29f2-a45e-4fa1-8d69-5e11d42190a5",
+    "stadiumName": "Raymond James Stadium",
+    "previousNames": null,
+    "stadiumNickname": "Raymond James",
+    "homeTeamIds": [
+      "tb"
+    ],
+    "capacity": 69218,
+    "playingSurface": "Bermuda grass",
+    "roofType": "Open-air",
+    "yearOpened": 1998,
+    "yearClosed": null,
+    "address": "4201 North Dale Mabry Highway",
+    "city": "Tampa",
+    "state": "FL",
+    "zip": "33607",
+    "country": "United States",
+    "visited": false,
+    "visitDeets": null
+  },
+  {
+    "id": "d1affb15-18a8-4c49-b336-7e809c0d8aeb",
+    "stadiumName": "Nissan Stadium",
+    "previousNames": null,
+    "stadiumNickname": "The Jack",
+    "homeTeamIds": [
+      "ten"
+    ],
+    "capacity": 69143,
+    "playingSurface": "Bermuda grass",
+    "roofType": "Open-air",
+    "yearOpened": 1999,
+    "yearClosed": null,
+    "address": "1 Titans Way",
+    "city": "Nashville",
+    "state": "TN",
+    "zip": "37213",
+    "country": "United States",
+    "visited": false,
+    "visitDeets": null
+  },
+  {
+    "id": "7a9efe59-6100-4f0a-abd4-7b19b4c6547a",
+    "stadiumName": "Northwest Stadium",
+    "previousNames": [
+      "FedExField",
+      "Jack Kent Cooke Stadium"
+    ],
+    "stadiumNickname": "FedEx",
+    "homeTeamIds": [
+      "was"
+    ],
+    "capacity": 62000,
+    "playingSurface": "Kentucky bluegrass",
+    "roofType": "Open-air",
+    "yearOpened": 1997,
+    "yearClosed": null,
+    "address": "1600 FedEx Way",
+    "city": "Landover",
+    "state": "MD",
+    "zip": "20785",
+    "country": "United States",
+    "visited": false,
+    "visitDeets": null
+  },
+  {
+    "id": "736566a5-d253-4d84-9581-7ad7d7ebccda",
+    "stadiumName": "MetLife Stadium",
+    "previousNames": null,
+    "stadiumNickname": "The Meadowlands",
+    "homeTeamIds": [
+      "nyg",
+      "nyj"
+    ],
+    "capacity": 82500,
+    "playingSurface": "FieldTurf",
+    "roofType": "Open-air",
+    "yearOpened": 2010,
+    "yearClosed": null,
+    "address": "1 MetLife Stadium Drive",
+    "city": "East Rutherford",
+    "state": "NJ",
+    "zip": "07073",
+    "country": "United States",
+    "visited": false,
+    "visitDeets": null
+  },
+  {
+    "id": "c491455e-5d3a-433c-b2f2-bbc328916626",
+    "stadiumName": "Melbourne Cricket Ground",
+    "previousNames": null,
+    "stadiumNickname": "The G",
+    "homeTeamIds": [],
+    "capacity": 100024,
+    "playingSurface": "Natural grass",
+    "roofType": "Open-air",
+    "yearOpened": 1853,
+    "yearClosed": null,
+    "address": "120 Barassi Way",
+    "city": "Melbourne",
+    "state": "VIC",
+    "zip": "3002",
+    "country": "Australia",
+    "visited": false,
+    "visitDeets": null
+  },
+  {
+    "id": "2135922b-9d6b-4c6b-b652-3c3e64e57087",
+    "stadiumName": "Tottenham Hotspur Stadium",
+    "previousNames": null,
+    "stadiumNickname": "The New Lane",
+    "homeTeamIds": [],
+    "capacity": 62850,
+    "playingSurface": "Hybrid grass",
+    "roofType": "Fixed roof",
+    "yearOpened": 2019,
+    "yearClosed": null,
+    "address": "782 High Road",
+    "city": "London",
+    "state": "ENG",
+    "zip": "N17 0BX",
+    "country": "United Kingdom",
+    "visited": false,
+    "visitDeets": null
+  },
+  {
+    "id": "f1e28e45-0fa6-4759-9bcb-c3497d1046aa",
+    "stadiumName": "Maracanã Stadium",
+    "previousNames": [
+      "Estádio Mário Filho"
+    ],
+    "stadiumNickname": "Maracanã",
+    "homeTeamIds": [],
+    "capacity": 78838,
+    "playingSurface": "Natural grass",
+    "roofType": "Open-air",
+    "yearOpened": 1950,
+    "yearClosed": null,
+    "address": "Av. Maracanã",
+    "city": "Rio de Janeiro",
+    "state": "RJ",
+    "zip": "20271-110",
+    "country": "Brazil",
+    "visited": false,
+    "visitDeets": null
+  },
+  {
+    "id": "a8f3c2e1-9b4d-4a7f-8e2c-1d5b6a9f0e3c",
+    "stadiumName": "Arena Corinthians",
+    "previousNames": [
+      "Neo Química Arena"
+    ],
+    "stadiumNickname": "Itaquerão",
+    "homeTeamIds": [],
+    "capacity": 47252,
+    "playingSurface": "Natural grass",
+    "roofType": "Open-air",
+    "yearOpened": 2014,
+    "yearClosed": null,
+    "address": "Av. Miguel Inácio Muita Ferreira, 7001",
+    "city": "São Paulo",
+    "state": "SP",
+    "zip": "08295-005",
+    "country": "Brazil",
+    "visited": false,
+    "visitDeets": null
+  },
+  {
+    "id": "b7e4d3f2-1c5a-4b8e-9d3f-2e6c7b0a1f4d",
+    "stadiumName": "Wembley Stadium",
+    "previousNames": null,
+    "stadiumNickname": null,
+    "homeTeamIds": [],
+    "capacity": 90000,
+    "playingSurface": "Turf",
+    "roofType": "Retractable",
+    "yearOpened": 2007,
+    "yearClosed": null,
+    "address": "Wembley",
+    "city": "London",
+    "state": "ENG",
+    "zip": "HA9 0WS",
+    "country": "United Kingdom",
+    "visited": false,
+    "visitDeets": null
+  },
+  {
+    "id": "6b25629e-242f-4942-8d2c-3dd97076b851",
+    "stadiumName": "Allianz Arena",
+    "previousNames": null,
+    "stadiumNickname": null,
+    "homeTeamIds": [],
+    "capacity": 75024,
+    "playingSurface": "Natural grass",
+    "roofType": "Fixed roof",
+    "yearOpened": 2005,
+    "yearClosed": null,
+    "address": "Werner-Heisenberg-Allee 25",
+    "city": "Munich",
+    "state": "BAV",
+    "zip": "80939",
+    "country": "Germany",
+    "visited": false,
+    "visitDeets": null
+  }
+]

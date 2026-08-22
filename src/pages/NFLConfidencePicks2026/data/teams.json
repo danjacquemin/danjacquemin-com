@@ -1,0 +1,704 @@
+[
+  {
+    "id": "ari",
+    "teamName": "Cardinals",
+    "teamCity": "Arizona",
+    "teamState": "AZ",
+    "teamAbbreviation": "ARI",
+    "teamNicknames": [
+      "Cardinals",
+      "Cards"
+    ],
+    "logos": [
+      {
+        "id": "d1affb15-18a8-4c49-b336-7e809c0d8aeb",
+        "colorLogo": "/assets/nfl-teams/ari-color.svg",
+        "knockoutLogo": "/assets/nfl-teams/ari-knockout.svg",
+        "altText": "Arizona Cardinals logo"
+      }
+    ],
+    "homeStadium": "4038828a-bb7d-46c2-81ce-da1b2270c293",
+    "conference": "NFC",
+    "division": "West"
+  },
+  {
+    "id": "atl",
+    "teamName": "Falcons",
+    "teamCity": "Atlanta",
+    "teamState": "GA",
+    "teamAbbreviation": "ATL",
+    "teamNicknames": [
+      "Falcons",
+      "The Dirty Birds"
+    ],
+    "logos": [
+      {
+        "id": "7a9efe59-6100-4f0a-abd4-7b19b4c6547a",
+        "colorLogo": "/assets/nfl-teams/atl-color.svg",
+        "knockoutLogo": "/assets/nfl-teams/atl-knockout.svg",
+        "altText": "Atlanta Falcons logo"
+      }
+    ],
+    "homeStadium": "b6a483c4-11ea-4874-985e-c4c9bdfb6171",
+    "conference": "NFC",
+    "division": "South"
+  },
+  {
+    "id": "bal",
+    "teamName": "Ravens",
+    "teamCity": "Baltimore",
+    "teamState": "MD",
+    "teamAbbreviation": "BAL",
+    "teamNicknames": [
+      "Ravens"
+    ],
+    "logos": [
+      {
+        "id": "736566a5-d253-4d84-9581-7ad7d7ebccda",
+        "colorLogo": "/assets/nfl-teams/bal-color.svg",
+        "knockoutLogo": "/assets/nfl-teams/bal-knockout.svg",
+        "altText": "Baltimore Ravens logo"
+      }
+    ],
+    "homeStadium": "ebbfa6d5-3a14-415c-93a6-a1b80eef17bf",
+    "conference": "AFC",
+    "division": "North"
+  },
+  {
+    "id": "buf",
+    "teamName": "Bills",
+    "teamCity": "Buffalo",
+    "teamState": "NY",
+    "teamAbbreviation": "BUF",
+    "teamNicknames": [
+      "Bills"
+    ],
+    "logos": [
+      {
+        "id": "5437c94b-ae40-4976-a230-5426c63a18de",
+        "colorLogo": "/assets/nfl-teams/buf-color.svg",
+        "knockoutLogo": "/assets/nfl-teams/buf-knockout.svg",
+        "altText": "Buffalo Bills logo"
+      }
+    ],
+    "homeStadium": "b1ea911d-5a1b-41fc-8425-6503ab256157",
+    "conference": "AFC",
+    "division": "East"
+  },
+  {
+    "id": "car",
+    "teamName": "Panthers",
+    "teamCity": "Carolina",
+    "teamState": "NC",
+    "teamAbbreviation": "CAR",
+    "teamNicknames": [
+      "Panthers"
+    ],
+    "logos": [
+      {
+        "id": "78718693-72c2-407e-bcef-d1b1b13dc6c0",
+        "colorLogo": "/assets/nfl-teams/car-color.svg",
+        "knockoutLogo": "/assets/nfl-teams/car-knockout.svg",
+        "altText": "Carolina Panthers logo"
+      }
+    ],
+    "homeStadium": "de14a887-e38f-427b-b02e-49396efa36c9",
+    "conference": "NFC",
+    "division": "South"
+  },
+  {
+    "id": "chi",
+    "teamName": "Bears",
+    "teamCity": "Chicago",
+    "teamState": "IL",
+    "teamAbbreviation": "CHI",
+    "teamNicknames": [
+      "Bears",
+      "Da Bears"
+    ],
+    "logos": [
+      {
+        "id": "620fd580-db15-4e50-9c34-c6861a685c5a",
+        "colorLogo": "/assets/nfl-teams/chi-color.svg",
+        "knockoutLogo": "/assets/nfl-teams/chi-knockout.svg",
+        "altText": "Chicago Bears logo"
+      }
+    ],
+    "homeStadium": "cfdd7c54-a855-4ab2-a22b-f930f438892c",
+    "conference": "NFC",
+    "division": "North"
+  },
+  {
+    "id": "cin",
+    "teamName": "Bengals",
+    "teamCity": "Cincinnati",
+    "teamState": "OH",
+    "teamAbbreviation": "CIN",
+    "teamNicknames": [
+      "Bengals",
+      "Bungles"
+    ],
+    "logos": [
+      {
+        "id": "4e2b0677-d0e7-4626-8ea9-46f56aabaecd",
+        "colorLogo": "/assets/nfl-teams/cin-color.svg",
+        "knockoutLogo": "/assets/nfl-teams/cin-knockout.svg",
+        "altText": "Cincinnati Bengals logo"
+      }
+    ],
+    "homeStadium": "4ddefd70-a6a6-4734-983a-83d76ef15135",
+    "conference": "AFC",
+    "division": "North"
+  },
+  {
+    "id": "cle",
+    "teamName": "Browns",
+    "teamCity": "Cleveland",
+    "teamState": "OH",
+    "teamAbbreviation": "CLE",
+    "teamNicknames": [
+      "Browns",
+      "Brownies",
+      "Mistake by the Lake"
+    ],
+    "logos": [
+      {
+        "id": "9659da47-8a8b-419e-b858-bee98bf892f0",
+        "colorLogo": "/assets/nfl-teams/cle-color.svg",
+        "knockoutLogo": "/assets/nfl-teams/cle-knockout.svg",
+        "altText": "Cleveland Browns logo"
+      }
+    ],
+    "homeStadium": "f33bef4e-cb13-4fef-9eff-90603c07c31b",
+    "conference": "AFC",
+    "division": "North"
+  },
+  {
+    "id": "dal",
+    "teamName": "Cowboys",
+    "teamCity": "Dallas",
+    "teamState": "TX",
+    "teamAbbreviation": "DAL",
+    "teamNicknames": [
+      "Cowboys",
+      "Pukes",
+      "Cowgirls"
+    ],
+    "logos": [
+      {
+        "id": "1545a231-7298-4b30-aa07-98248e0a16e9",
+        "colorLogo": "/assets/nfl-teams/dal-color.svg",
+        "knockoutLogo": "/assets/nfl-teams/dal-knockout.svg",
+        "altText": "Dallas Cowboys logo"
+      }
+    ],
+    "homeStadium": "69a00dd6-575b-4c5b-a00d-2b174e40bb9d",
+    "conference": "NFC",
+    "division": "East"
+  },
+  {
+    "id": "den",
+    "teamName": "Broncos",
+    "teamCity": "Denver",
+    "teamState": "CO",
+    "teamAbbreviation": "DEN",
+    "teamNicknames": [
+      "Broncos"
+    ],
+    "logos": [
+      {
+        "id": "f9264af3-2954-4399-8829-867298d5c7c6",
+        "colorLogo": "/assets/nfl-teams/den-color.svg",
+        "knockoutLogo": "/assets/nfl-teams/den-knockout.svg",
+        "altText": "Denver Broncos logo"
+      }
+    ],
+    "homeStadium": "47e6a7ba-e1d8-45a8-a365-b131ec1de1ca",
+    "conference": "AFC",
+    "division": "West"
+  },
+  {
+    "id": "det",
+    "teamName": "Lions",
+    "teamCity": "Detroit",
+    "teamState": "MI",
+    "teamAbbreviation": "DET",
+    "teamNicknames": [
+      "Lions"
+    ],
+    "logos": [
+      {
+        "id": "714be817-d06c-43a5-ba4e-acf50bedde89",
+        "colorLogo": "/assets/nfl-teams/det-color.svg",
+        "knockoutLogo": "/assets/nfl-teams/det-knockout.svg",
+        "altText": "Detroit Lions logo"
+      }
+    ],
+    "homeStadium": "f96aa25d-d2bb-43c2-9a28-7034296f681b",
+    "conference": "NFC",
+    "division": "North"
+  },
+  {
+    "id": "gb",
+    "teamName": "Packers",
+    "teamCity": "Green Bay",
+    "teamState": "WI",
+    "teamAbbreviation": "GB",
+    "teamNicknames": [
+      "Packers",
+      "The Pack"
+    ],
+    "logos": [
+      {
+        "id": "86e5bced-48d2-4879-9536-255dd0370b2e",
+        "colorLogo": "/assets/nfl-teams/gb-color.svg",
+        "knockoutLogo": "/assets/nfl-teams/gb-knockout.svg",
+        "altText": "Green Bay Packers logo"
+      }
+    ],
+    "homeStadium": "66fcf716-1af3-444f-b28f-89615fdb6518",
+    "conference": "NFC",
+    "division": "North"
+  },
+  {
+    "id": "hou",
+    "teamName": "Texans",
+    "teamCity": "Houston",
+    "teamState": "TX",
+    "teamAbbreviation": "HOU",
+    "teamNicknames": [
+      "Texans"
+    ],
+    "logos": [
+      {
+        "id": "424adfe9-d616-4b24-ab05-ea6f75fd2989",
+        "colorLogo": "/assets/nfl-teams/hou-color.svg",
+        "knockoutLogo": "/assets/nfl-teams/hou-knockout.svg",
+        "altText": "Houston Texans logo"
+      }
+    ],
+    "homeStadium": "892f31af-c29f-435a-bb0a-60ef8595bd10",
+    "conference": "AFC",
+    "division": "South"
+  },
+  {
+    "id": "ind",
+    "teamName": "Colts",
+    "teamCity": "Indianapolis",
+    "teamState": "IN",
+    "teamAbbreviation": "IND",
+    "teamNicknames": [
+      "Colts"
+    ],
+    "logos": [
+      {
+        "id": "0eeff0d0-aea3-4acb-909d-756b62eb9fe0",
+        "colorLogo": "/assets/nfl-teams/ind-color.svg",
+        "knockoutLogo": "/assets/nfl-teams/ind-knockout.svg",
+        "altText": "Indianapolis Colts logo"
+      }
+    ],
+    "homeStadium": "d8acdc51-58d8-409a-8668-0f5fc2f9dca0",
+    "conference": "AFC",
+    "division": "South"
+  },
+  {
+    "id": "jax",
+    "teamName": "Jaguars",
+    "teamCity": "Jacksonville",
+    "teamState": "FL",
+    "teamAbbreviation": "JAX",
+    "teamNicknames": [
+      "Jaguars",
+      "Jags"
+    ],
+    "logos": [
+      {
+        "id": "26421763-58d4-4d04-9d78-2a54b283014b",
+        "colorLogo": "/assets/nfl-teams/jax-color.svg",
+        "knockoutLogo": "/assets/nfl-teams/jax-knockout.svg",
+        "altText": "Jacksonville Jaguars logo"
+      }
+    ],
+    "homeStadium": "51406146-153c-40d7-9c5a-8df5a113840c",
+    "conference": "AFC",
+    "division": "South"
+  },
+  {
+    "id": "kc",
+    "teamName": "Chiefs",
+    "teamCity": "Kansas City",
+    "teamState": "MO",
+    "teamAbbreviation": "KC",
+    "teamNicknames": [
+      "Chiefs"
+    ],
+    "logos": [
+      {
+        "id": "99a55b97-978c-41c1-aa76-d1e82d5bc4a4",
+        "colorLogo": "/assets/nfl-teams/kc-color.svg",
+        "knockoutLogo": "/assets/nfl-teams/kc-knockout.svg",
+        "altText": "Kansas City Chiefs logo"
+      }
+    ],
+    "homeStadium": "e3819f6b-1c18-4083-b70d-9f978be60b09",
+    "conference": "AFC",
+    "division": "West"
+  },
+  {
+    "id": "lac",
+    "teamName": "Chargers",
+    "teamCity": "Los Angeles",
+    "teamState": "CA",
+    "teamAbbreviation": "LAC",
+    "teamNicknames": [
+      "Chargers",
+      "Bolts"
+    ],
+    "logos": [
+      {
+        "id": "03d9d5d5-5175-4e2b-ada7-d425d362e3b1",
+        "colorLogo": "/assets/nfl-teams/lac-color.svg",
+        "knockoutLogo": "/assets/nfl-teams/lac-knockout.svg",
+        "altText": "Los Angeles Chargers logo"
+      }
+    ],
+    "homeStadium": "d9f34167-daed-46bb-8221-ba00135747d3",
+    "conference": "AFC",
+    "division": "West"
+  },
+  {
+    "id": "lar",
+    "teamName": "Rams",
+    "teamCity": "Los Angeles",
+    "teamState": "CA",
+    "teamAbbreviation": "LAR",
+    "teamNicknames": [
+      "Rams"
+    ],
+    "logos": [
+      {
+        "id": "8ed8fef6-0bcd-4b7e-b0a9-d018f2c7ccdf",
+        "colorLogo": "/assets/nfl-teams/lar-color.svg",
+        "knockoutLogo": "/assets/nfl-teams/lar-knockout.svg",
+        "altText": "Los Angeles Rams logo"
+      }
+    ],
+    "homeStadium": "d9f34167-daed-46bb-8221-ba00135747d3",
+    "conference": "NFC",
+    "division": "West"
+  },
+  {
+    "id": "lv",
+    "teamName": "Raiders",
+    "teamCity": "Las Vegas",
+    "teamState": "NV",
+    "teamAbbreviation": "LV",
+    "teamNicknames": [
+      "Raiders",
+      "The Silver and Black"
+    ],
+    "logos": [
+      {
+        "id": "950d60f2-3d2c-483c-910f-6a427e610a62",
+        "colorLogo": "/assets/nfl-teams/lv-color.svg",
+        "knockoutLogo": "/assets/nfl-teams/lv-knockout.svg",
+        "altText": "Las Vegas Raiders logo"
+      }
+    ],
+    "homeStadium": "2a38b03f-d1cc-48c1-8c90-dd5b1db23c2a",
+    "conference": "AFC",
+    "division": "West"
+  },
+  {
+    "id": "mia",
+    "teamName": "Dolphins",
+    "teamCity": "Miami",
+    "teamState": "FL",
+    "teamAbbreviation": "MIA",
+    "teamNicknames": [
+      "Dolphins",
+      "Fins",
+      "Miami Marine Mammals"
+    ],
+    "logos": [
+      {
+        "id": "6ff48ee8-cb0a-4f49-a4b3-b3dc39d4154e",
+        "colorLogo": "/assets/nfl-teams/mia-color.svg",
+        "knockoutLogo": "/assets/nfl-teams/mia-knockout.svg",
+        "altText": "Miami Dolphins logo"
+      }
+    ],
+    "homeStadium": "6688fdf0-a943-4bbf-bd43-87a130122e03",
+    "conference": "AFC",
+    "division": "East"
+  },
+  {
+    "id": "min",
+    "teamName": "Vikings",
+    "teamCity": "Minnesota",
+    "teamState": "MN",
+    "teamAbbreviation": "MIN",
+    "teamNicknames": [
+      "Vikings",
+      "Vikes"
+    ],
+    "logos": [
+      {
+        "id": "40124a66-b784-40d4-a55c-1be1bbea0fbe",
+        "colorLogo": "/assets/nfl-teams/min-color.svg",
+        "knockoutLogo": "/assets/nfl-teams/min-knockout.svg",
+        "altText": "Minnesota Vikings logo"
+      }
+    ],
+    "homeStadium": "e57f2fba-2e6b-4d5a-8b40-d3a14eef4b7c",
+    "conference": "NFC",
+    "division": "North"
+  },
+  {
+    "id": "ne",
+    "teamName": "Patriots",
+    "teamCity": "New England",
+    "teamState": "MA",
+    "teamAbbreviation": "NE",
+    "teamNicknames": [
+      "Patriots",
+      "Pats"
+    ],
+    "logos": [
+      {
+        "id": "0c719ca2-ebc2-4f45-8ec1-a2aa60098503",
+        "colorLogo": "/assets/nfl-teams/ne-color.svg",
+        "knockoutLogo": "/assets/nfl-teams/ne-knockout.svg",
+        "altText": "New England Patriots logo"
+      }
+    ],
+    "homeStadium": "8d81bd51-ac13-4f12-b5b4-ccfbdde7a4c5",
+    "conference": "AFC",
+    "division": "East"
+  },
+  {
+    "id": "no",
+    "teamName": "Saints",
+    "teamCity": "New Orleans",
+    "teamState": "LA",
+    "teamAbbreviation": "NO",
+    "teamNicknames": [
+      "Saints",
+      "Aints"
+    ],
+    "logos": [
+      {
+        "id": "98bafe6f-415a-49a5-a569-6cd598a56fa0",
+        "colorLogo": "/assets/nfl-teams/no-color.svg",
+        "knockoutLogo": "/assets/nfl-teams/no-knockout.svg",
+        "altText": "New Orleans Saints logo"
+      }
+    ],
+    "homeStadium": "0e8ff099-ca06-45b2-b730-16f69705962a",
+    "conference": "NFC",
+    "division": "South"
+  },
+  {
+    "id": "nyg",
+    "teamName": "Giants",
+    "teamCity": "New York",
+    "teamState": "NY",
+    "teamAbbreviation": "NYG",
+    "teamNicknames": [
+      "Giants",
+      "Big Blue",
+      "G-Men"
+    ],
+    "logos": [
+      {
+        "id": "477dd098-7216-430d-bdb6-3f15457efe1b",
+        "colorLogo": "/assets/nfl-teams/nyg-color.svg",
+        "knockoutLogo": "/assets/nfl-teams/nyg-knockout.svg",
+        "altText": "New York Giants logo"
+      }
+    ],
+    "homeStadium": "736566a5-d253-4d84-9581-7ad7d7ebccda",
+    "conference": "NFC",
+    "division": "East"
+  },
+  {
+    "id": "nyj",
+    "teamName": "Jets",
+    "teamCity": "New York",
+    "teamState": "NY",
+    "teamAbbreviation": "NYJ",
+    "teamNicknames": [
+      "Jets",
+      "Gang Green",
+      "J-E-T-S Jets Jets Jets"
+    ],
+    "logos": [
+      {
+        "id": "79142547-c97e-4a71-8f43-fc7c9701515b",
+        "colorLogo": "/assets/nfl-teams/nyj-color.svg",
+        "knockoutLogo": "/assets/nfl-teams/nyj-knockout.svg",
+        "altText": "New York Jets logo"
+      }
+    ],
+    "homeStadium": "736566a5-d253-4d84-9581-7ad7d7ebccda",
+    "conference": "AFC",
+    "division": "East"
+  },
+  {
+    "id": "phi",
+    "teamName": "Eagles",
+    "teamCity": "Philadelphia",
+    "teamState": "PA",
+    "teamAbbreviation": "PHI",
+    "teamNicknames": [
+      "Eagles",
+      "Iggles"
+    ],
+    "logos": [
+      {
+        "id": "1f0cce17-9ba4-458b-b718-2b5d4ed10360",
+        "colorLogo": "/assets/nfl-teams/phi-color.svg",
+        "knockoutLogo": "/assets/nfl-teams/phi-knockout.svg",
+        "altText": "Philadelphia Eagles logo"
+      }
+    ],
+    "homeStadium": "363bcc94-57e8-4c9a-a4f6-6ef6948d4ee8",
+    "conference": "NFC",
+    "division": "East"
+  },
+  {
+    "id": "pit",
+    "teamName": "Steelers",
+    "teamCity": "Pittsburgh",
+    "teamState": "PA",
+    "teamAbbreviation": "PIT",
+    "teamNicknames": [
+      "Steelers",
+      "Black and Gold"
+    ],
+    "logos": [
+      {
+        "id": "1c24e81c-d9b7-41d8-8e49-b32dfc320c20",
+        "colorLogo": "/assets/nfl-teams/pit-color.svg",
+        "knockoutLogo": "/assets/nfl-teams/pit-knockout.svg",
+        "altText": "Pittsburgh Steelers logo"
+      }
+    ],
+    "homeStadium": "765f8f02-7887-4707-8552-1de9b492cddd",
+    "conference": "AFC",
+    "division": "North"
+  },
+  {
+    "id": "sea",
+    "teamName": "Seahawks",
+    "teamCity": "Seattle",
+    "teamState": "WA",
+    "teamAbbreviation": "SEA",
+    "teamNicknames": [
+      "Seahawks",
+      "Hawks",
+      "She-gulls"
+    ],
+    "logos": [
+      {
+        "id": "899c8201-61a6-4362-a503-c6bb37ebcf3e",
+        "colorLogo": "/assets/nfl-teams/sea-color.svg",
+        "knockoutLogo": "/assets/nfl-teams/sea-knockout.svg",
+        "altText": "Seattle Seahawks logo"
+      }
+    ],
+    "homeStadium": "c66f4cc4-afc0-4bd4-bdd7-d5adbfc3679b",
+    "conference": "NFC",
+    "division": "West"
+  },
+  {
+    "id": "sf",
+    "teamName": "49ers",
+    "teamCity": "San Francisco",
+    "teamState": "CA",
+    "teamAbbreviation": "SF",
+    "teamNicknames": [
+      "49ers",
+      "Niners"
+    ],
+    "logos": [
+      {
+        "id": "6964a602-5c42-4519-83b2-f4f15df93d32",
+        "colorLogo": "/assets/nfl-teams/sf-color.svg",
+        "knockoutLogo": "/assets/nfl-teams/sf-knockout.svg",
+        "altText": "San Francisco 49ers logo"
+      }
+    ],
+    "homeStadium": "39160e46-5670-42f7-b33c-67e3e5ac3697",
+    "conference": "NFC",
+    "division": "West"
+  },
+  {
+    "id": "tb",
+    "teamName": "Buccaneers",
+    "teamCity": "Tampa Bay",
+    "teamState": "FL",
+    "teamAbbreviation": "TB",
+    "teamNicknames": [
+      "Buccaneers",
+      "Bucs"
+    ],
+    "logos": [
+      {
+        "id": "4f81c7c8-10de-49ca-acfc-e0e708b13b0a",
+        "colorLogo": "/assets/nfl-teams/tb-color.svg",
+        "knockoutLogo": "/assets/nfl-teams/tb-knockout.svg",
+        "altText": "Tampa Bay Buccaneers logo"
+      }
+    ],
+    "homeStadium": "30bc29f2-a45e-4fa1-8d69-5e11d42190a5",
+    "conference": "NFC",
+    "division": "South"
+  },
+  {
+    "id": "ten",
+    "teamName": "Titans",
+    "teamCity": "Tennessee",
+    "teamState": "TN",
+    "teamAbbreviation": "TEN",
+    "teamNicknames": [
+      "Titans"
+    ],
+    "logos": [
+      {
+        "id": "ec8e6ff2-45ee-4a8c-b891-e75caaee0d37",
+        "colorLogo": "/assets/nfl-teams/ten-color.svg",
+        "knockoutLogo": "/assets/nfl-teams/ten-knockout.svg",
+        "altText": "Tennessee Titans logo"
+      }
+    ],
+    "homeStadium": "d1affb15-18a8-4c49-b336-7e809c0d8aeb",
+    "conference": "AFC",
+    "division": "South"
+  },
+  {
+    "id": "was",
+    "teamName": "Commanders",
+    "teamCity": "Washington",
+    "teamState": "DC",
+    "teamAbbreviation": "WAS",
+    "teamNicknames": [
+      "Commanders",
+      "The Burgundy and Gold",
+      "Redskins",
+      "Skins"
+    ],
+    "logos": [
+      {
+        "id": "4f9f9b9a-f347-492f-8e83-f4d2242e1740",
+        "colorLogo": "/assets/nfl-teams/was-color.svg",
+        "knockoutLogo": "/assets/nfl-teams/was-knockout.svg",
+        "altText": "Washington Commanders logo"
+      }
+    ],
+    "homeStadium": "7a9efe59-6100-4f0a-abd4-7b19b4c6547a",
+    "conference": "NFC",
+    "division": "East"
+  }
+]
