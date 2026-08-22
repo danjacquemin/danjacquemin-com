@@ -22,12 +22,12 @@ function About() {
             2001. v1 of this site. <br />
             2001-2023. Various updates. <br />
             2024: Again?! Yes. But, this time with React + Vite +{' '}
-            <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer">
-              Tailwind
-            </a>
+            <Link href="https://mui.com/" target="_blank" rel="noreferrer">
+              MUI
+            </Link>
             .
             <br />
-            2025: And <em>again</em> with{' '}
+            2025: And <em>again</em>. Still{' '}
             <Link href="https://mui.com/" target="_blank" rel="noreferrer">
               MUI
             </Link>
@@ -89,9 +89,8 @@ function About() {
             We&lsquo;re going to work through building out a site using:
           </Typography>
           <Box component="ul">
-            <Typography component="li">React + Vite + Tailwind</Typography>
+            <Typography component="li">React + Vite</Typography>
             <Typography component="li">
-              Redo the Tailwind version using{' '}
               <Link href="https://mui.com/" target="_blank" rel="noreferrer">
                 MUI
               </Link>
