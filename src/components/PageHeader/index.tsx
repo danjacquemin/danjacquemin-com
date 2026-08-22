@@ -1,4 +1,4 @@
-import { Box, Container, Typography, List, ListItem } from '@mui/material';
+import { Box, Container, Typography } from '@mui/material';
 
 import { Link } from 'react-router-dom';
 
@@ -28,7 +28,7 @@ function PageHeader() {
             </Typography>
           </Link>
         </Box>
-        <Box
+        {/* <Box
           component="nav"
           aria-label="main navigation"
           sx={{ display: 'flex', justifyContent: 'flex-end' }}
@@ -58,7 +58,7 @@ function PageHeader() {
               </Link>
             </ListItem>
           </List>
-        </Box>
+        </Box> */}
       </Box>
     </Container>
   );
