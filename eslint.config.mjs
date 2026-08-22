@@ -33,6 +33,7 @@ export default defineConfig([
             value: {
               'mui-material': '^@mui/material/(?!styles)',
               'mui-styles': '@mui/material/styles',
+              'path-alias': '^@/',
               'react-router-dom': 'react-router-dom',
             },
           },
@@ -41,6 +42,7 @@ export default defineConfig([
             'react-router-dom',
             'mui-styles',
             'mui-material',
+            'path-alias',
             'internal',
             ['parent-type', 'sibling-type', 'index-type'],
             ['parent', 'sibling', 'index'],
