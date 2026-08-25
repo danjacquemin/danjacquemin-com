@@ -1,5 +1,9 @@
 # Agent notes
 
+## Plans
+
+PR and product plans live in `docs/plans/` — one markdown file per effort, not a single `docs/plan`. Include a `## PR Plan` section with `### PR N:` headings if `/execute-plan` should run it.
+
 ## Comments
 
 Comments explain **why** or give context the code cannot: constraints, data quirks, domain rules. They do not narrate how.
