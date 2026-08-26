@@ -6,7 +6,7 @@
       "weekNumber": 1,
       "games": [
         {
-          "id": "7a9efe59-6100-4f0a-abd4-7b19b4c6547a",
+          "id": "d7f229f7-a0f9-409e-831e-a4053027b1d8",
           "season": 2026,
           "week": 1,
           "gameDateTimeUTC": "2026-09-10T00:20:00.000Z",
@@ -26,7 +26,7 @@
           "_summary": "SF @ LAR, Melbourne Cricket Ground, Thu Sep 10 8:35 PM ET"
         },
         {
-          "id": "736566a5-d253-4d84-9581-7ad7d7ebccda",
+          "id": "fad36d3e-102d-43f8-960f-14f83b319b40",
           "season": 2026,
           "week": 1,
           "gameDateTimeUTC": "2026-09-13T17:00:00.000Z",
@@ -36,7 +36,7 @@
           "_summary": "ATL @ PIT, Acrisure Stadium, Sun Sep 13 1:00 PM ET"
         },
         {
-          "id": "5437c94b-ae40-4976-a230-5426c63a18de",
+          "id": "bde8effd-ba74-43f5-b9f5-7be8f5b07bcf",
           "season": 2026,
           "week": 1,
           "gameDateTimeUTC": "2026-09-13T17:00:00.000Z",
@@ -46,7 +46,7 @@
           "_summary": "TB @ CIN, Paycor Stadium, Sun Sep 13 1:00 PM ET"
         },
         {
-          "id": "78718693-72c2-407e-bcef-d1b1b13dc6c0",
+          "id": "2012a711-312a-4912-a18a-ceab10269885",
           "season": 2026,
           "week": 1,
           "gameDateTimeUTC": "2026-09-13T17:00:00.000Z",
@@ -56,7 +56,7 @@
           "_summary": "NO @ DET, Ford Field, Sun Sep 13 1:00 PM ET"
         },
         {
-          "id": "620fd580-db15-4e50-9c34-c6861a685c5a",
+          "id": "e815c535-ff9c-49e7-8508-d733dc9a4080",
           "season": 2026,
           "week": 1,
           "gameDateTimeUTC": "2026-09-13T17:00:00.000Z",
@@ -66,7 +66,7 @@
           "_summary": "CHI @ CAR, Bank of America Stadium, Sun Sep 13 1:00 PM ET"
         },
         {
-          "id": "4e2b0677-d0e7-4626-8ea9-46f56aabaecd",
+          "id": "4a4aabcb-4882-45b3-84e4-28495484f753",
           "season": 2026,
           "week": 1,
           "gameDateTimeUTC": "2026-09-13T17:00:00.000Z",
@@ -76,7 +76,7 @@
           "_summary": "BAL @ IND, Lucas Oil Stadium, Sun Sep 13 1:00 PM ET"
         },
         {
-          "id": "9659da47-8a8b-419e-b858-bee98bf892f0",
+          "id": "db178afd-8ce8-4762-9ab0-d515e8c8c79c",
           "season": 2026,
           "week": 1,
           "gameDateTimeUTC": "2026-09-13T17:00:00.000Z",
@@ -86,17 +86,17 @@
           "_summary": "BUF @ HOU, NRG Stadium, Sun Sep 13 1:00 PM ET"
         },
         {
-          "id": "1545a231-7298-4b30-aa07-98248e0a16e9",
+          "id": "b0680560-bc25-4620-8757-7ab957b87aee",
           "season": 2026,
           "week": 1,
           "gameDateTimeUTC": "2026-09-13T17:00:00.000Z",
-          "stadiumId": "d1affb15-18a8-4c49-b336-7e809c0d8aeb",
+          "stadiumId": "deb48462-3e78-4609-9210-36363c678e8d",
           "homeTeamId": "ten",
           "awayTeamId": "nyj",
           "_summary": "NYJ @ TEN, Nissan Stadium, Sun Sep 13 1:00 PM ET"
         },
         {
-          "id": "f9264af3-2954-4399-8829-867298d5c7c6",
+          "id": "2e3adb95-e4ea-4ce8-a8b4-bf90cf54596f",
           "season": 2026,
           "week": 1,
           "gameDateTimeUTC": "2026-09-13T17:00:00.000Z",
@@ -106,7 +106,7 @@
           "_summary": "CLE @ JAX, EverBank Stadium, Sun Sep 13 1:00 PM ET"
         },
         {
-          "id": "714be817-d06c-43a5-ba4e-acf50bedde89",
+          "id": "c30b8a81-9b45-4fed-b853-838bb302cd24",
           "season": 2026,
           "week": 1,
           "gameDateTimeUTC": "2026-09-13T17:00:00.000Z",
@@ -116,7 +116,7 @@
           "_summary": "ARI @ LAC, SoFi Stadium, Sun Sep 13 1:00 PM ET"
         },
         {
-          "id": "86e5bced-48d2-4879-9536-255dd0370b2e",
+          "id": "4ce4195e-0ce1-4147-9539-ae3929d3de78",
           "season": 2026,
           "week": 1,
           "gameDateTimeUTC": "2026-09-13T17:00:00.000Z",
@@ -131,7 +131,7 @@
       "weekNumber": 2,
       "games": [
         {
-          "id": "424adfe9-d616-4b24-ab05-ea6f75fd2989",
+          "id": "2fcdd8d5-c69a-43ef-816a-84e6d0ed8f15",
           "season": 2026,
           "week": 2,
           "gameDateTimeUTC": "2026-09-17T23:15:00.000Z",
@@ -141,7 +141,7 @@
           "_summary": "SEA @ KC, Arrowhead Stadium, Thu Sep 17 7:15 PM ET"
         },
         {
-          "id": "0eeff0d0-aea3-4acb-909d-756b62eb9fe0",
+          "id": "fe31ec65-e527-44be-a57c-570f1e497b20",
           "season": 2026,
           "week": 2,
           "gameDateTimeUTC": "2026-09-20T17:00:00.000Z",
@@ -151,7 +151,7 @@
           "_summary": "CHI @ ATL, Mercedes-Benz Stadium, Sun Sep 20 1:00 PM ET"
         },
         {
-          "id": "26421763-58d4-4d04-9d78-2a54b283014b",
+          "id": "bbe9218e-82bf-45bb-8ec7-b184fcfcbc56",
           "season": 2026,
           "week": 2,
           "gameDateTimeUTC": "2026-09-20T17:00:00.000Z",
@@ -161,7 +161,7 @@
           "_summary": "TB @ PHI, Lincoln Financial Field, Sun Sep 20 1:00 PM ET"
         },
         {
-          "id": "99a55b97-978c-41c1-aa76-d1e82d5bc4a4",
+          "id": "aaaaf5ae-b2b6-4bf0-9d62-1d5e4cbecc89",
           "season": 2026,
           "week": 2,
           "gameDateTimeUTC": "2026-09-21T20:20:00.000Z",

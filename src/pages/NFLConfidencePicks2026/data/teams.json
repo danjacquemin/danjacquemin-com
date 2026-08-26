@@ -11,7 +11,7 @@
     ],
     "logos": [
       {
-        "id": "d1affb15-18a8-4c49-b336-7e809c0d8aeb",
+        "id": "3f274792-9b4a-446b-ba0b-d07168fb6441",
         "colorLogo": "/assets/nfl-teams/ari-color.svg",
         "knockoutLogo": "/assets/nfl-teams/ari-knockout.svg",
         "altText": "Arizona Cardinals logo"
@@ -33,7 +33,7 @@
     ],
     "logos": [
       {
-        "id": "7a9efe59-6100-4f0a-abd4-7b19b4c6547a",
+        "id": "73ebdd99-1c38-413b-b65d-190d5dbe9dad",
         "colorLogo": "/assets/nfl-teams/atl-color.svg",
         "knockoutLogo": "/assets/nfl-teams/atl-knockout.svg",
         "altText": "Atlanta Falcons logo"
@@ -54,7 +54,7 @@
     ],
     "logos": [
       {
-        "id": "736566a5-d253-4d84-9581-7ad7d7ebccda",
+        "id": "763ecc64-0760-4694-a9e2-47ae3dbbb111",
         "colorLogo": "/assets/nfl-teams/bal-color.svg",
         "knockoutLogo": "/assets/nfl-teams/bal-knockout.svg",
         "altText": "Baltimore Ravens logo"
@@ -75,7 +75,7 @@
     ],
     "logos": [
       {
-        "id": "5437c94b-ae40-4976-a230-5426c63a18de",
+        "id": "91f666ec-bb35-411e-b717-5dca543532fc",
         "colorLogo": "/assets/nfl-teams/buf-color.svg",
         "knockoutLogo": "/assets/nfl-teams/buf-knockout.svg",
         "altText": "Buffalo Bills logo"
@@ -96,7 +96,7 @@
     ],
     "logos": [
       {
-        "id": "78718693-72c2-407e-bcef-d1b1b13dc6c0",
+        "id": "e226a318-3066-4fd1-8079-6bda59dcbea6",
         "colorLogo": "/assets/nfl-teams/car-color.svg",
         "knockoutLogo": "/assets/nfl-teams/car-knockout.svg",
         "altText": "Carolina Panthers logo"
@@ -118,7 +118,7 @@
     ],
     "logos": [
       {
-        "id": "620fd580-db15-4e50-9c34-c6861a685c5a",
+        "id": "05085bdc-9c56-4e72-ada6-2caef762b46c",
         "colorLogo": "/assets/nfl-teams/chi-color.svg",
         "knockoutLogo": "/assets/nfl-teams/chi-knockout.svg",
         "altText": "Chicago Bears logo"
@@ -140,7 +140,7 @@
     ],
     "logos": [
       {
-        "id": "4e2b0677-d0e7-4626-8ea9-46f56aabaecd",
+        "id": "65c11eac-358a-4f75-90f9-552672e5bf20",
         "colorLogo": "/assets/nfl-teams/cin-color.svg",
         "knockoutLogo": "/assets/nfl-teams/cin-knockout.svg",
         "altText": "Cincinnati Bengals logo"
@@ -163,7 +163,7 @@
     ],
     "logos": [
       {
-        "id": "9659da47-8a8b-419e-b858-bee98bf892f0",
+        "id": "9d2b14b8-7c27-4cdb-b318-2dd62224ab63",
         "colorLogo": "/assets/nfl-teams/cle-color.svg",
         "knockoutLogo": "/assets/nfl-teams/cle-knockout.svg",
         "altText": "Cleveland Browns logo"
@@ -186,7 +186,7 @@
     ],
     "logos": [
       {
-        "id": "1545a231-7298-4b30-aa07-98248e0a16e9",
+        "id": "e2acb256-6341-41d4-98a6-a8d1edc356a0",
         "colorLogo": "/assets/nfl-teams/dal-color.svg",
         "knockoutLogo": "/assets/nfl-teams/dal-knockout.svg",
         "altText": "Dallas Cowboys logo"
@@ -207,7 +207,7 @@
     ],
     "logos": [
       {
-        "id": "f9264af3-2954-4399-8829-867298d5c7c6",
+        "id": "842e6821-ba5e-4df4-9c13-eadea2adc4cd",
         "colorLogo": "/assets/nfl-teams/den-color.svg",
         "knockoutLogo": "/assets/nfl-teams/den-knockout.svg",
         "altText": "Denver Broncos logo"
@@ -228,7 +228,7 @@
     ],
     "logos": [
       {
-        "id": "714be817-d06c-43a5-ba4e-acf50bedde89",
+        "id": "b8ce0c2a-b4e0-4bc6-9868-bb1e4ae024de",
         "colorLogo": "/assets/nfl-teams/det-color.svg",
         "knockoutLogo": "/assets/nfl-teams/det-knockout.svg",
         "altText": "Detroit Lions logo"
@@ -250,7 +250,7 @@
     ],
     "logos": [
       {
-        "id": "86e5bced-48d2-4879-9536-255dd0370b2e",
+        "id": "9edabce5-3189-4b50-8c2e-47bf6ec5217f",
         "colorLogo": "/assets/nfl-teams/gb-color.svg",
         "knockoutLogo": "/assets/nfl-teams/gb-knockout.svg",
         "altText": "Green Bay Packers logo"
@@ -271,7 +271,7 @@
     ],
     "logos": [
       {
-        "id": "424adfe9-d616-4b24-ab05-ea6f75fd2989",
+        "id": "602f8fa4-13e6-4ce6-a0b7-2e4899e768d1",
         "colorLogo": "/assets/nfl-teams/hou-color.svg",
         "knockoutLogo": "/assets/nfl-teams/hou-knockout.svg",
         "altText": "Houston Texans logo"
@@ -292,7 +292,7 @@
     ],
     "logos": [
       {
-        "id": "0eeff0d0-aea3-4acb-909d-756b62eb9fe0",
+        "id": "0262569c-8921-4b41-852e-ee2798b40802",
         "colorLogo": "/assets/nfl-teams/ind-color.svg",
         "knockoutLogo": "/assets/nfl-teams/ind-knockout.svg",
         "altText": "Indianapolis Colts logo"
@@ -314,7 +314,7 @@
     ],
     "logos": [
       {
-        "id": "26421763-58d4-4d04-9d78-2a54b283014b",
+        "id": "de900cb0-aff2-46d2-8d03-6abe0b53225d",
         "colorLogo": "/assets/nfl-teams/jax-color.svg",
         "knockoutLogo": "/assets/nfl-teams/jax-knockout.svg",
         "altText": "Jacksonville Jaguars logo"
@@ -335,7 +335,7 @@
     ],
     "logos": [
       {
-        "id": "99a55b97-978c-41c1-aa76-d1e82d5bc4a4",
+        "id": "2359c729-99a4-4c2d-bb2e-1fb9ce9c6caf",
         "colorLogo": "/assets/nfl-teams/kc-color.svg",
         "knockoutLogo": "/assets/nfl-teams/kc-knockout.svg",
         "altText": "Kansas City Chiefs logo"
@@ -518,7 +518,7 @@
         "altText": "New York Giants logo"
       }
     ],
-    "homeStadium": "736566a5-d253-4d84-9581-7ad7d7ebccda",
+    "homeStadium": "c3d7f0d4-1288-416d-8047-c77c7579722e",
     "conference": "NFC",
     "division": "East"
   },
@@ -541,7 +541,7 @@
         "altText": "New York Jets logo"
       }
     ],
-    "homeStadium": "736566a5-d253-4d84-9581-7ad7d7ebccda",
+    "homeStadium": "c3d7f0d4-1288-416d-8047-c77c7579722e",
     "conference": "AFC",
     "division": "East"
   },
@@ -673,7 +673,7 @@
         "altText": "Tennessee Titans logo"
       }
     ],
-    "homeStadium": "d1affb15-18a8-4c49-b336-7e809c0d8aeb",
+    "homeStadium": "deb48462-3e78-4609-9210-36363c678e8d",
     "conference": "AFC",
     "division": "South"
   },
@@ -697,7 +697,7 @@
         "altText": "Washington Commanders logo"
       }
     ],
-    "homeStadium": "7a9efe59-6100-4f0a-abd4-7b19b4c6547a",
+    "homeStadium": "698f9855-ac75-45d3-bbb9-0aa83b187a53",
     "conference": "NFC",
     "division": "East"
   }
