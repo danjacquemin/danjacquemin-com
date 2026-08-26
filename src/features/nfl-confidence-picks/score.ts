@@ -137,7 +137,7 @@ export function scoreWeek({
     }
 
     const rank = n - index;
-    // Ties score 0 until a push rule exists.
+    // Ties score 0.
     const correct =
       result.status === 'final' && result.winnerId === row.winnerId;
     const points = correct ? rank : 0;

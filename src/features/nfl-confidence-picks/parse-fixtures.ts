@@ -257,6 +257,25 @@ const scoreCases: ScoreCase[] = [
   },
   {
     expect: { status: 'not-posted' },
+    name: 'scoreWeek extra matchup is not posted',
+    week: {
+      games: [
+        resultsValidWeek.games[0],
+        resultsValidWeek.games[1],
+        {
+          awayScore: 10,
+          awayTeamId: 'kc',
+          homeScore: 17,
+          homeTeamId: 'buf',
+          status: 'final',
+          winnerId: 'buf',
+        },
+      ],
+      weekNumber: 1,
+    },
+  },
+  {
+    expect: { status: 'not-posted' },
     name: 'scoreWeek swapped home/away is not posted',
     week: {
       games: [
