@@ -45,19 +45,8 @@ function WeekPicks({ results, season, stadiums, teams }: WeekPicksProps) {
   const [weekNumber, setWeekNumber] = useState(() =>
     defaultWeekNumber(season, new Date()),
   );
-  const [liveRows, setLiveRows] = useState<WeekCardRow[] | null>(null);
-  const seasonPoints = thisPlayerSeasonTotal({
-    currentRows: liveRows ?? undefined,
-    currentWeekNumber: weekNumber,
-    results,
-    season,
-    teams,
-  });
-
-  function handleWeekChange(_: unknown, value: number) {
-    setLiveRows(null);
-    setWeekNumber(value);
-  }
+  const [, setCardRevision] = useState(0);
+  const seasonPoints = thisPlayerSeasonTotal({ results, season, teams });
 
   return (
     <Box>
@@ -71,7 +60,7 @@ function WeekPicks({ results, season, stadiums, teams }: WeekPicksProps) {
       </Typography>
       <Tabs
         value={weekNumber}
-        onChange={handleWeekChange}
+        onChange={(_, value: number) => setWeekNumber(value)}
         variant="scrollable"
         scrollButtons="auto"
         allowScrollButtonsMobile
@@ -84,7 +73,7 @@ function WeekPicks({ results, season, stadiums, teams }: WeekPicksProps) {
       </Tabs>
       <WeekView
         key={weekNumber}
-        onRowsChange={setLiveRows}
+        onStoredCardChange={() => setCardRevision((n) => n + 1)}
         results={results}
         season={season}
         stadiums={stadiums}
@@ -96,7 +85,7 @@ function WeekPicks({ results, season, stadiums, teams }: WeekPicksProps) {
 }
 
 type WeekViewProps = {
-  onRowsChange: (rows: WeekCardRow[]) => void;
+  onStoredCardChange: () => void;
   results: NFLConfidenceResults | null;
   season: NFLSeason;
   stadiums: NFLStadiumList;
@@ -105,7 +94,7 @@ type WeekViewProps = {
 };
 
 function WeekView({
-  onRowsChange,
+  onStoredCardChange,
   results,
   season,
   stadiums,
@@ -193,7 +182,7 @@ function WeekView({
     if (reloadIfClosed()) return;
     writeWeekCard({ rows: next, weekNumber });
     setRows(next);
-    onRowsChange(next);
+    onStoredCardChange();
   }
 
   function handlePick(gameId: string, winnerId: string) {
@@ -279,7 +268,7 @@ function WeekView({
     writeUserEmail(parsed.email);
     setRows(applied.rows);
     setEmail(parsed.email);
-    onRowsChange(applied.rows);
+    onStoredCardChange();
   }
 
   return (

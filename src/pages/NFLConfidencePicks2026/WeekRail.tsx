@@ -168,11 +168,9 @@ function WeekRail({
               color="text.secondary"
               fontSize="0.875rem"
             >
-              {n === 0
-                ? 'No games to export this week.'
-                : picked < n
-                  ? 'Pick a winner for every game to export.'
-                  : 'Enter a valid email to export.'}
+              {picked < n
+                ? 'Pick a winner for every game to export.'
+                : 'Enter a valid email to export.'}
             </Typography>
           ) : null}
         </>

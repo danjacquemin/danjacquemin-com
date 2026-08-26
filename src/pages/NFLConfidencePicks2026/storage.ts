@@ -1,11 +1,6 @@
 import { scoreWeek } from '@/features/nfl-confidence-picks';
 
-import {
-  hydrateRows,
-  realGames,
-  type WeekCard,
-  type WeekCardRow,
-} from './week';
+import { hydrateRows, realGames, type WeekCard } from './week';
 
 import type { NFLConfidenceResults } from '@/features/nfl-confidence-picks';
 import type { NFLGame, NFLSeason } from '@/features/nfl-schedule';
@@ -62,14 +57,10 @@ export function loadWeekRows(
 }
 
 export function thisPlayerSeasonTotal({
-  currentRows,
-  currentWeekNumber,
   results,
   season,
   teams,
 }: {
-  currentRows?: WeekCardRow[];
-  currentWeekNumber?: number;
   results: NFLConfidenceResults | null;
   season: NFLSeason;
   teams: NFLTeamList;
@@ -80,17 +71,12 @@ export function thisPlayerSeasonTotal({
     const games = realGames(week.games);
     if (games.length === 0) continue;
 
-    const card =
-      week.weekNumber === currentWeekNumber && currentRows
-        ? currentRows
-        : loadWeekRows(week.weekNumber, week.games, teams);
-    const resultsWeek = results?.weeks.find(
-      (entry) => entry.weekNumber === week.weekNumber,
-    );
     const scored = scoreWeek({
-      card,
+      card: loadWeekRows(week.weekNumber, week.games, teams),
       games,
-      resultsWeek,
+      resultsWeek: results?.weeks.find(
+        (entry) => entry.weekNumber === week.weekNumber,
+      ),
       weekNumber: week.weekNumber,
     });
 
