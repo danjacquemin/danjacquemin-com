@@ -50,7 +50,6 @@ function formatKickoff(gameDateTimeUTC: string): string {
 function gamePrimary(game: NFLGame, teams: NFLTeamList): string {
   const home = resolveTeamName(teams, game.homeTeamId);
 
-  // Bye rows are not ranked later; they still appear in this read-only list.
   if (game.awayTeamId === BYE_MARKER) {
     return `${home} — bye`;
   }

@@ -1,6 +1,11 @@
 import { z } from 'zod';
 
-import { AwayTeamIdSchema, BYE_MARKER, TeamAbbrSchema } from '@/features/base';
+import {
+  AwayTeamIdSchema,
+  BYE_MARKER,
+  IdGuidSchema,
+  TeamAbbrSchema,
+} from '@/features/base';
 import { NFLSeasonFormSchema, NFLSeasonSchema } from '@/features/nfl-schedule';
 import {
   NFLStadiumFormSchema,
@@ -241,6 +246,16 @@ function unusableScheduleShape(data: unknown): IngestIssue[] | null {
           path: `${gamePath}.gameDateTimeUTC`,
         });
       }
+
+      if (
+        game.stadiumId !== null &&
+        !IdGuidSchema.safeParse(game.stadiumId).success
+      ) {
+        issues.push({
+          message: 'Stadium id must be a UUID, or null for a bye',
+          path: `${gamePath}.stadiumId`,
+        });
+      }
     });
   });
 
@@ -267,39 +282,65 @@ function referentialIssues(
   teams: NFLTeamList,
   stadiums: NFLStadiumList,
   season: NFLSeason,
-): IngestIssue[] {
+): Partial<Record<SourceFile, IngestIssue[]>> {
   const teamIds = new Set(teams.map((team) => team.id));
   const stadiumIds = new Set(stadiums.map((stadium) => stadium.id));
-  const issues: IngestIssue[] = [];
+  const files: Partial<Record<SourceFile, IngestIssue[]>> = {};
 
+  const scheduleIssues: IngestIssue[] = [];
   season.games.forEach((week, weekIndex) => {
     week.games.forEach((game, gameIndex) => {
       const gamePath = `games.${weekIndex}.games.${gameIndex}`;
 
       if (!teamIds.has(game.homeTeamId)) {
-        issues.push({
+        scheduleIssues.push({
           message: `Unknown team '${game.homeTeamId}'`,
           path: `${gamePath}.homeTeamId`,
         });
       }
 
       if (game.awayTeamId !== BYE_MARKER && !teamIds.has(game.awayTeamId)) {
-        issues.push({
+        scheduleIssues.push({
           message: `Unknown team '${game.awayTeamId}'`,
           path: `${gamePath}.awayTeamId`,
         });
       }
 
       if (game.stadiumId !== null && !stadiumIds.has(game.stadiumId)) {
-        issues.push({
+        scheduleIssues.push({
           message: `Unknown stadium '${game.stadiumId}'`,
           path: `${gamePath}.stadiumId`,
         });
       }
     });
   });
+  if (scheduleIssues.length > 0) files.schedule = scheduleIssues;
 
-  return issues;
+  const teamIssues: IngestIssue[] = [];
+  teams.forEach((team, index) => {
+    if (!stadiumIds.has(team.homeStadium)) {
+      teamIssues.push({
+        message: `Unknown stadium '${team.homeStadium}'`,
+        path: `${index}.homeStadium`,
+      });
+    }
+  });
+  if (teamIssues.length > 0) files.teams = teamIssues;
+
+  const stadiumIssues: IngestIssue[] = [];
+  stadiums.forEach((stadium, index) => {
+    stadium.homeTeamIds.forEach((id, teamIndex) => {
+      if (!teamIds.has(id)) {
+        stadiumIssues.push({
+          message: `Unknown team '${id}'`,
+          path: `${index}.homeTeamIds.${teamIndex}`,
+        });
+      }
+    });
+  });
+  if (stadiumIssues.length > 0) files.stadiums = stadiumIssues;
+
+  return files;
 }
 
 export function ingestSeason(sources: SeasonSources): SeasonIngest {
@@ -340,8 +381,8 @@ export function ingestSeason(sources: SeasonSources): SeasonIngest {
   }
 
   const refs = referentialIssues(teams.data, stadiums.data, schedule.data);
-  if (refs.length > 0) {
-    return { files: { schedule: refs }, status: 'unusable' };
+  if (Object.keys(refs).length > 0) {
+    return { files: refs, status: 'unusable' };
   }
 
   return {
