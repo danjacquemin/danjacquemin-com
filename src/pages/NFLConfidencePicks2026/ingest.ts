@@ -6,6 +6,10 @@ import {
   IdGuidSchema,
   TeamAbbrSchema,
 } from '@/features/base';
+import {
+  NFLConfidenceResultsFormSchema,
+  NFLConfidenceResultsSchema,
+} from '@/features/nfl-confidence-picks';
 import { NFLSeasonFormSchema, NFLSeasonSchema } from '@/features/nfl-schedule';
 import {
   NFLStadiumFormSchema,
@@ -13,11 +17,12 @@ import {
 } from '@/features/nfl-stadiums';
 import { NFLTeamFormSchema, NFLTeamListSchema } from '@/features/nfl-teams';
 
+import type { NFLConfidenceResults } from '@/features/nfl-confidence-picks';
 import type { NFLSeason } from '@/features/nfl-schedule';
 import type { NFLStadiumList } from '@/features/nfl-stadiums';
 import type { NFLTeamList } from '@/features/nfl-teams';
 
-export type SourceFile = 'teams' | 'stadiums' | 'schedule';
+export type SourceFile = 'teams' | 'stadiums' | 'schedule' | 'results';
 
 export type IngestIssue = {
   message: string;
@@ -49,7 +54,13 @@ export type SeasonIngest =
       status: 'unusable';
     };
 
+export type ResultsIngest =
+  | { results: NFLConfidenceResults; status: 'valid' }
+  | { data: unknown; issues: IngestIssue[]; status: 'fixable' }
+  | { issues: IngestIssue[]; status: 'unusable' };
+
 const SOURCE_FILE_NAME: Record<SourceFile, string> = {
+  results: 'results-2026.json',
   schedule: 'schedule-2026.json',
   stadiums: 'stadiums.json',
   teams: 'teams.json',
@@ -391,4 +402,171 @@ export function ingestSeason(sources: SeasonSources): SeasonIngest {
     status: 'valid',
     teams: teams.data,
   };
+}
+
+function unusableResultsShape(data: unknown): IngestIssue[] | null {
+  if (!isPlainObject(data)) {
+    return [
+      {
+        message: 'results-2026.json must be a season object',
+        path: '(root)',
+      },
+    ];
+  }
+
+  if (!Array.isArray(data.weeks)) {
+    return [
+      {
+        message: 'Season weeks must be an array',
+        path: 'weeks',
+      },
+    ];
+  }
+
+  const issues: IngestIssue[] = [];
+
+  data.weeks.forEach((week, weekIndex) => {
+    if (!isPlainObject(week)) {
+      issues.push({
+        message: 'Each week must be an object',
+        path: `weeks.${weekIndex}`,
+      });
+      return;
+    }
+
+    if (!Array.isArray(week.games)) {
+      issues.push({
+        message: 'Week games must be an array',
+        path: `weeks.${weekIndex}.games`,
+      });
+      return;
+    }
+
+    week.games.forEach((game, gameIndex) => {
+      const gamePath = `weeks.${weekIndex}.games.${gameIndex}`;
+
+      if (!isPlainObject(game)) {
+        issues.push({
+          message: 'Each game must be an object',
+          path: gamePath,
+        });
+        return;
+      }
+
+      if (!TeamAbbrSchema.safeParse(game.awayTeamId).success) {
+        issues.push({
+          message: `Unknown team '${String(game.awayTeamId)}'`,
+          path: `${gamePath}.awayTeamId`,
+        });
+      }
+
+      if (!TeamAbbrSchema.safeParse(game.homeTeamId).success) {
+        issues.push({
+          message: `Unknown team '${String(game.homeTeamId)}'`,
+          path: `${gamePath}.homeTeamId`,
+        });
+      }
+
+      if (
+        game.winnerId != null &&
+        !TeamAbbrSchema.safeParse(game.winnerId).success
+      ) {
+        issues.push({
+          message: `Unknown team '${String(game.winnerId)}'`,
+          path: `${gamePath}.winnerId`,
+        });
+      }
+    });
+  });
+
+  return issues.length > 0 ? issues : null;
+}
+
+function parseResults(data: unknown): FileParse<NFLConfidenceResults> {
+  const shapeIssues = unusableResultsShape(data);
+  if (shapeIssues) {
+    return { issues: shapeIssues, status: 'unusable' };
+  }
+
+  const core = NFLConfidenceResultsSchema.safeParse(data);
+  if (core.success) return { data: core.data, status: 'valid' };
+
+  return {
+    data,
+    issues: formOrCoreIssues(
+      NFLConfidenceResultsFormSchema.safeParse(data),
+      core.error,
+    ),
+    status: 'fixable',
+  };
+}
+
+function resultsReferentialIssues(
+  results: NFLConfidenceResults,
+  seasonYear: number,
+  teamIds: ReadonlySet<string>,
+): IngestIssue[] {
+  const issues: IngestIssue[] = [];
+
+  if (results.season !== seasonYear) {
+    issues.push({
+      message: `Results season ${results.season} does not match schedule year ${seasonYear}`,
+      path: 'season',
+    });
+  }
+
+  results.weeks.forEach((week, weekIndex) => {
+    week.games.forEach((game, gameIndex) => {
+      const gamePath = `weeks.${weekIndex}.games.${gameIndex}`;
+
+      if (!teamIds.has(game.awayTeamId)) {
+        issues.push({
+          message: `Unknown team '${game.awayTeamId}'`,
+          path: `${gamePath}.awayTeamId`,
+        });
+      }
+
+      if (!teamIds.has(game.homeTeamId)) {
+        issues.push({
+          message: `Unknown team '${game.homeTeamId}'`,
+          path: `${gamePath}.homeTeamId`,
+        });
+      }
+
+      if (game.winnerId !== null && !teamIds.has(game.winnerId)) {
+        issues.push({
+          message: `Unknown team '${game.winnerId}'`,
+          path: `${gamePath}.winnerId`,
+        });
+      }
+    });
+  });
+
+  return issues;
+}
+
+export function ingestResults(
+  data: unknown,
+  refs: { seasonYear: number; teamIds: ReadonlySet<string> },
+): ResultsIngest {
+  const parsed = parseResults(data);
+
+  if (parsed.status === 'unusable') {
+    return { issues: parsed.issues, status: 'unusable' };
+  }
+
+  if (parsed.status === 'fixable') {
+    return { data: parsed.data, issues: parsed.issues, status: 'fixable' };
+  }
+
+  const refIssues = resultsReferentialIssues(
+    parsed.data,
+    refs.seasonYear,
+    refs.teamIds,
+  );
+  if (refIssues.length > 0) {
+    return { issues: refIssues, status: 'unusable' };
+  }
+
+  return { results: parsed.data, status: 'valid' };
 }

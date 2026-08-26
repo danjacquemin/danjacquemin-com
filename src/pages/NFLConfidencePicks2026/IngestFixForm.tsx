@@ -16,11 +16,15 @@ type IngestFixFormProps = {
 
 function FileJsonField({
   file,
+  helperText = 'The schedule stays hidden until this parses.',
+  intro = 'Correct the issues below. This file will not drive the schedule until it parses.',
   issues,
   onParsed,
   value,
 }: {
   file: SourceFile;
+  helperText?: string;
+  intro?: string;
   issues: IngestIssue[];
   onParsed: (parsed: unknown) => void;
   value: unknown;
@@ -34,8 +38,7 @@ function FileJsonField({
         {sourceFileName(file)}
       </Typography>
       <Typography component="p" sx={{ mb: 2 }}>
-        Correct the issues below. This file will not drive the schedule until it
-        parses.
+        {intro}
       </Typography>
       <Box component="ul" sx={{ mb: 2, pl: 3 }}>
         {issues.map((issue) => (
@@ -59,7 +62,7 @@ function FileJsonField({
         }}
         error
         fullWidth
-        helperText={jsonError ?? 'The schedule stays hidden until this parses.'}
+        helperText={jsonError ?? helperText}
         minRows={16}
         multiline
         spellCheck={false}
@@ -74,8 +77,41 @@ function FileJsonField({
   );
 }
 
+export function ResultsFixForm({
+  issues,
+  onChange,
+  value,
+}: {
+  issues: IngestIssue[];
+  onChange: (results: unknown) => void;
+  value: unknown;
+}) {
+  return (
+    <Stack spacing={2} sx={{ mt: 2 }}>
+      <Alert severity="warning">
+        The results file has fixable issues. Scores are not shown until it
+        parses.
+      </Alert>
+      <FileJsonField
+        file="results"
+        helperText="Scores stay hidden until this parses."
+        intro="Correct the issues below. This file will not drive scores until it parses."
+        issues={issues}
+        value={value}
+        onParsed={onChange}
+      />
+    </Stack>
+  );
+}
+
+type SeasonFile = Exclude<SourceFile, 'results'>;
+
 function IngestFixForm({ files, onChange, sources }: IngestFixFormProps) {
-  const fileEntries = Object.entries(files) as [SourceFile, IngestIssue[]][];
+  const fileEntries = (
+    Object.entries(files) as [SourceFile, IngestIssue[]][]
+  ).filter((entry): entry is [SeasonFile, IngestIssue[]] => {
+    return entry[0] !== 'results';
+  });
 
   return (
     <Stack spacing={2} sx={{ mt: 2 }}>

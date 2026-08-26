@@ -2,7 +2,7 @@ import { arrayMove } from '@dnd-kit/sortable';
 import { Box, Tab, Tabs, Typography } from '@mui/material';
 import { useMemo, useRef, useState } from 'react';
 
-import { withWeek } from '@/features/nfl-confidence-picks';
+import { scoreWeek, withWeek } from '@/features/nfl-confidence-picks';
 
 import GamePickList from './GamePickList';
 import {
@@ -28,17 +28,19 @@ import {
 } from './week';
 import WeekRail, { decodeQrImageFile } from './WeekRail';
 
+import type { NFLConfidenceResults } from '@/features/nfl-confidence-picks';
 import type { NFLGame, NFLSeason } from '@/features/nfl-schedule';
 import type { NFLStadium, NFLStadiumList } from '@/features/nfl-stadiums';
 import type { NFLTeam, NFLTeamList } from '@/features/nfl-teams';
 
 type WeekPicksProps = {
+  results: NFLConfidenceResults | null;
   season: NFLSeason;
   stadiums: NFLStadiumList;
   teams: NFLTeamList;
 };
 
-function WeekPicks({ season, stadiums, teams }: WeekPicksProps) {
+function WeekPicks({ results, season, stadiums, teams }: WeekPicksProps) {
   const [weekNumber, setWeekNumber] = useState(() =>
     defaultWeekNumber(season, new Date()),
   );
@@ -60,6 +62,7 @@ function WeekPicks({ season, stadiums, teams }: WeekPicksProps) {
       </Tabs>
       <WeekView
         key={weekNumber}
+        results={results}
         season={season}
         stadiums={stadiums}
         teams={teams}
@@ -70,13 +73,20 @@ function WeekPicks({ season, stadiums, teams }: WeekPicksProps) {
 }
 
 type WeekViewProps = {
+  results: NFLConfidenceResults | null;
   season: NFLSeason;
   stadiums: NFLStadiumList;
   teams: NFLTeamList;
   weekNumber: number;
 };
 
-function WeekView({ season, stadiums, teams, weekNumber }: WeekViewProps) {
+function WeekView({
+  results,
+  season,
+  stadiums,
+  teams,
+  weekNumber,
+}: WeekViewProps) {
   const week = season.games.find((entry) => entry.weekNumber === weekNumber);
   const games = week ? realGames(week.games) : [];
   const closesAt = weekClosesAt(season, weekNumber);
@@ -108,6 +118,24 @@ function WeekView({ season, stadiums, teams, weekNumber }: WeekViewProps) {
 
   const n = rows.length;
   const picked = rows.filter((row) => row.winnerId).length;
+  const resultsWeek = results?.weeks.find(
+    (week) => week.weekNumber === weekNumber,
+  );
+  const weekScore = scoreWeek({
+    card: rows,
+    games,
+    resultsWeek,
+    weekNumber,
+  });
+  const resultsPosted = weekScore.status === 'posted';
+  const boxScores =
+    frozen && weekScore.status === 'posted'
+      ? Object.fromEntries(
+          weekScore.games.map((game) => [game.gameId, game.boxScore]),
+        )
+      : undefined;
+  const railScore =
+    frozen && weekScore.status === 'posted' ? weekScore.totals : null;
   const winners = rows.map((row) => row.winnerId);
   const complete =
     n > 0 && winners.every((winner): winner is string => winner !== null);
@@ -252,6 +280,7 @@ function WeekView({ season, stadiums, teams, weekNumber }: WeekViewProps) {
             </Typography>
           ) : (
             <GamePickList
+              boxScores={boxScores}
               frozen={frozen}
               gamesById={gamesById}
               onMove={handleMove}
@@ -274,6 +303,8 @@ function WeekView({ season, stadiums, teams, weekNumber }: WeekViewProps) {
           onUploadFile={handleUpload}
           payload={payload}
           picked={picked}
+          resultsPosted={frozen && resultsPosted}
+          score={railScore}
           uploadError={uploadError}
         />
       </Box>

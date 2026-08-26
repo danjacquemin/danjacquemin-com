@@ -18,6 +18,8 @@ type WeekRailProps = {
   onUploadFile: (file: File) => Promise<void>;
   payload: string;
   picked: number;
+  resultsPosted: boolean;
+  score: { correct: number; points: number } | null;
   uploadError: string | null;
 };
 
@@ -32,6 +34,8 @@ function WeekRail({
   onUploadFile,
   payload,
   picked,
+  resultsPosted,
+  score,
   uploadError,
 }: WeekRailProps) {
   const qrRef = useRef<SVGSVGElement>(null);
@@ -79,7 +83,14 @@ function WeekRail({
               This week is closed. Upload a week QR to restore your card.
             </Alert>
           ) : null}
-          <Typography component="p">Results not posted yet</Typography>
+          {score ? (
+            <>
+              <Typography component="p">{score.correct} right</Typography>
+              <Typography component="p">{score.points} points</Typography>
+            </>
+          ) : resultsPosted ? null : (
+            <Typography component="p">Results not posted yet</Typography>
+          )}
           <Button
             variant="outlined"
             component="label"

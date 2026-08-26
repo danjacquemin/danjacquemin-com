@@ -28,6 +28,7 @@ import type { DragEndEvent } from '@dnd-kit/core';
 import type { KeyboardEvent } from 'react';
 
 type GamePickListProps = {
+  boxScores?: Readonly<Record<string, string>>;
   frozen: boolean;
   gamesById: Map<string, NFLGame>;
   onMove: (gameId: string, delta: number) => void;
@@ -39,6 +40,7 @@ type GamePickListProps = {
 };
 
 function GamePickList({
+  boxScores,
   frozen,
   gamesById,
   onMove,
@@ -83,6 +85,7 @@ function GamePickList({
             return (
               <GamePickRow
                 key={row.gameId}
+                boxScore={boxScores?.[row.gameId]}
                 frozen={frozen}
                 game={game}
                 onMove={onMove}
@@ -101,6 +104,7 @@ function GamePickList({
 }
 
 type GamePickRowProps = {
+  boxScore?: string;
   frozen: boolean;
   game: NFLGame;
   onMove: (gameId: string, delta: number) => void;
@@ -112,6 +116,7 @@ type GamePickRowProps = {
 };
 
 function GamePickRow({
+  boxScore,
   frozen,
   game,
   onMove,
@@ -155,14 +160,14 @@ function GamePickRow({
       component="li"
       tabIndex={frozen ? -1 : 0}
       onKeyDown={handleRowKeyDown}
-      aria-label={`${teamPairLabel(game, teamsById)}, rank ${rank}`}
+      aria-label={
+        boxScore
+          ? `${teamPairLabel(game, teamsById)}, rank ${rank}, ${boxScore}`
+          : `${teamPairLabel(game, teamsById)}, rank ${rank}`
+      }
       sx={{
-        alignItems: 'center',
         borderBottom: 1,
         borderColor: 'divider',
-        display: 'flex',
-        flexWrap: 'wrap',
-        gap: 1,
         opacity: isDragging ? 0.6 : 1,
         py: 1,
         transform: CSS.Transform.toString(transform),
@@ -170,79 +175,101 @@ function GamePickRow({
         zIndex: isDragging ? 1 : 0,
       }}
     >
-      {frozen ? (
-        <Box sx={{ flexShrink: 0, width: 32 }} />
-      ) : (
-        <Box
-          ref={setActivatorNodeRef}
-          component="button"
-          type="button"
-          aria-label="Drag to change rank"
-          {...attributes}
-          {...listeners}
+      <Box
+        sx={{
+          alignItems: 'center',
+          display: 'flex',
+          flexWrap: 'wrap',
+          gap: 1,
+        }}
+      >
+        {frozen ? (
+          <Box sx={{ flexShrink: 0, width: 32 }} />
+        ) : (
+          <Box
+            ref={setActivatorNodeRef}
+            component="button"
+            type="button"
+            aria-label="Drag to change rank"
+            {...attributes}
+            {...listeners}
+            sx={{
+              alignItems: 'center',
+              background: 'none',
+              border: 0,
+              color: 'text.secondary',
+              cursor: 'grab',
+              display: 'flex',
+              flexShrink: 0,
+              p: 0.5,
+              touchAction: 'none',
+            }}
+          >
+            <DragIndicator fontSize="small" />
+          </Box>
+        )}
+        <Typography
+          component="span"
+          aria-hidden="true"
           sx={{
-            alignItems: 'center',
-            background: 'none',
-            border: 0,
-            color: 'text.secondary',
-            cursor: 'grab',
-            display: 'flex',
             flexShrink: 0,
-            p: 0.5,
-            touchAction: 'none',
+            fontFamily: '"Inconsolata", ui-monospace, monospace',
+            fontVariantNumeric: 'tabular-nums',
+            fontWeight: 700,
+            minWidth: '2ch',
+            textAlign: 'right',
           }}
         >
-          <DragIndicator fontSize="small" />
-        </Box>
-      )}
-      <Typography
-        component="span"
-        aria-hidden="true"
-        sx={{
-          flexShrink: 0,
-          fontFamily: '"Inconsolata", ui-monospace, monospace',
-          fontVariantNumeric: 'tabular-nums',
-          fontWeight: 700,
-          minWidth: '2ch',
-          textAlign: 'right',
-        }}
-      >
-        {rank}
-      </Typography>
-      <TeamPick
-        frozen={frozen}
-        gameId={game.id}
-        onPick={onPick}
-        selected={winnerId === game.awayTeamId}
-        team={teamsById.get(game.awayTeamId)}
-        teamId={game.awayTeamId}
-        winnerId={winnerId}
-      />
-      <Typography component="span" sx={{ color: 'text.secondary', px: 0.5 }}>
-        vs
-      </Typography>
-      <TeamPick
-        frozen={frozen}
-        gameId={game.id}
-        onPick={onPick}
-        selected={winnerId === game.homeTeamId}
-        team={teamsById.get(game.homeTeamId)}
-        teamId={game.homeTeamId}
-        winnerId={winnerId}
-      />
-      <Typography
-        component="span"
-        sx={{
-          color: 'text.secondary',
-          flex: '1 1 auto',
-          fontSize: '0.875rem',
-          ml: { md: 1 },
-          minWidth: '8rem',
-          textAlign: { md: 'right' },
-        }}
-      >
-        {deets}
-      </Typography>
+          {rank}
+        </Typography>
+        <TeamPick
+          frozen={frozen}
+          gameId={game.id}
+          onPick={onPick}
+          selected={winnerId === game.awayTeamId}
+          team={teamsById.get(game.awayTeamId)}
+          teamId={game.awayTeamId}
+          winnerId={winnerId}
+        />
+        <Typography component="span" sx={{ color: 'text.secondary', px: 0.5 }}>
+          vs
+        </Typography>
+        <TeamPick
+          frozen={frozen}
+          gameId={game.id}
+          onPick={onPick}
+          selected={winnerId === game.homeTeamId}
+          team={teamsById.get(game.homeTeamId)}
+          teamId={game.homeTeamId}
+          winnerId={winnerId}
+        />
+        <Typography
+          component="span"
+          sx={{
+            color: 'text.secondary',
+            flex: '1 1 auto',
+            fontSize: '0.875rem',
+            ml: { md: 1 },
+            minWidth: '8rem',
+            textAlign: { md: 'right' },
+          }}
+        >
+          {deets}
+        </Typography>
+      </Box>
+      {boxScore ? (
+        <Typography
+          component="p"
+          sx={{
+            color: 'text.secondary',
+            fontSize: '0.875rem',
+            m: 0,
+            mt: 0.5,
+          }}
+        >
+          {boxScore}
+        </Typography>
+      ) : null}
     </Box>
   );
 }

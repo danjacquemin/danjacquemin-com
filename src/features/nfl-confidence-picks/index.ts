@@ -13,6 +13,8 @@ export {
   withWeek,
   withWeekForm,
 } from './schema';
+export { scoreWeek } from './score';
+export type { ConfidenceCardRow, WeekGameScore, WeekScore } from './score';
 export type {
   ConfidenceWeekGame,
   NFLConfidencePick,
