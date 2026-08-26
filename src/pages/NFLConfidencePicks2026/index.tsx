@@ -7,8 +7,8 @@ import teamsJson from './data/teams.json';
 import { ingestSeason, type SeasonSources } from './ingest';
 import IngestFixForm from './IngestFixForm';
 import IngestReject from './IngestReject';
-import SeasonWeekList from './SeasonWeekList';
 import Page from '../../templates/Page';
+import WeekPicks from './WeekPicks';
 
 function cloneSources(): SeasonSources {
   return {
@@ -36,7 +36,7 @@ function NFLConfidencePicks2026() {
         />
       ) : null}
       {ingest.status === 'valid' ? (
-        <SeasonWeekList
+        <WeekPicks
           season={ingest.season}
           stadiums={ingest.stadiums}
           teams={ingest.teams}
