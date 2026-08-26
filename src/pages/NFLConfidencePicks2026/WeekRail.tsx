@@ -36,7 +36,8 @@ function WeekRail({
 }: WeekRailProps) {
   const qrRef = useRef<SVGSVGElement>(null);
   const [uploading, setUploading] = useState(false);
-  const emailOk = isValidEmail(email);
+  const trimmedEmail = email.trim();
+  const emailOk = isValidEmail(trimmedEmail);
 
   async function handleUpload(event: ChangeEvent<HTMLInputElement>) {
     const file = event.target.files?.[0];
@@ -109,9 +110,9 @@ function WeekRail({
             label="Email"
             value={email}
             onChange={(event) => onEmailChange(event.target.value)}
-            error={email.length > 0 && !emailOk}
+            error={trimmedEmail.length > 0 && !emailOk}
             helperText={
-              email.length > 0 && !emailOk
+              trimmedEmail.length > 0 && !emailOk
                 ? 'Enter a valid email'
                 : 'Used on the week QR so picks can be told apart'
             }

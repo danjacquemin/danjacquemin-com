@@ -78,7 +78,9 @@ export function sortRealGames(
     if (aTbd !== bTbd) return aTbd ? 1 : -1;
 
     if (!aTbd && !bTbd) {
-      const byTime = a.gameDateTimeUTC.localeCompare(b.gameDateTimeUTC);
+      const byTime =
+        new Date(a.gameDateTimeUTC).getTime() -
+        new Date(b.gameDateTimeUTC).getTime();
       if (byTime !== 0) return byTime;
     }
 
