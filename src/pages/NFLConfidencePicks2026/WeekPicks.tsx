@@ -8,7 +8,7 @@ import GamePickList from './GamePickList';
 import {
   loadWeekRows,
   readUserEmail,
-  thisPlayerSeasonTotal,
+  // thisPlayerSeasonTotal,
   writeUserEmail,
   writeWeekCard,
 } from './storage';
@@ -46,10 +46,14 @@ function WeekPicks({ results, season, stadiums, teams }: WeekPicksProps) {
     defaultWeekNumber(season, new Date()),
   );
   const [, setCardRevision] = useState(0);
-  const seasonPoints = thisPlayerSeasonTotal({ results, season, teams });
+  // const seasonPoints = thisPlayerSeasonTotal({ results, season, teams });
 
   return (
     <Box>
+      {/* 
+      
+      DEBUG: This "off" until we get some results.
+      
       <Typography
         component="p"
         color="text.secondary"
@@ -57,7 +61,9 @@ function WeekPicks({ results, season, stadiums, teams }: WeekPicksProps) {
         sx={{ mb: 2 }}
       >
         Season total: {seasonPoints} {seasonPoints === 1 ? 'point' : 'points'}
-      </Typography>
+      </Typography> 
+      
+      */}
       <Tabs
         value={weekNumber}
         onChange={(_, value: number) => setWeekNumber(value)}

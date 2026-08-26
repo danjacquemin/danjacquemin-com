@@ -9,11 +9,6 @@ function About() {
     <Page title="About">
       <Box component="section" sx={{ flex: '1 1 50%' }}>
         <Typography variant="h1">Hello World!</Typography>
-        <Typography component="p" sx={{ mt: 2 }}>
-          <Link component={RouterLink} to="/nfl/2026">
-            2026 NFL Confidence Picks
-          </Link>
-        </Typography>
       </Box>
 
       <Box component="section" sx={{ flex: '1 1 50%' }}>

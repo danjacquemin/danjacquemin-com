@@ -359,6 +359,10 @@ export function ingestSeason(sources: SeasonSources): SeasonIngest {
   const stadiums = parseStadiumList(sources.stadiums);
   const schedule = parseSeason(sources.schedule);
 
+  // console.log(`teams`, teams);
+  // console.log(`stadiums`, stadiums);
+  // console.log(`schedule`, schedule);
+
   const unusable: Partial<Record<SourceFile, IngestIssue[]>> = {};
   if (teams.status === 'unusable') unusable.teams = teams.issues;
   if (stadiums.status === 'unusable') unusable.stadiums = stadiums.issues;

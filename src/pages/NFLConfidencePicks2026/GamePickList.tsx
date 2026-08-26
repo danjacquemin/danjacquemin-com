@@ -25,7 +25,7 @@ import type { NFLStadium } from '@/features/nfl-stadiums';
 import type { NFLTeam } from '@/features/nfl-teams';
 
 import type { DragEndEvent } from '@dnd-kit/core';
-import type { KeyboardEvent } from 'react';
+import type { KeyboardEvent, ReactNode } from 'react';
 
 type GamePickListProps = {
   boxScores?: Readonly<Record<string, string>>;
@@ -152,7 +152,15 @@ function GamePickRow({
       ? null
       : (stadiumsById.get(game.stadiumId)?.stadiumName ?? null);
   const kickoff = formatKickoffEt(game.gameDateTimeUTC);
-  const deets = stadiumName ? `${kickoff} · ${stadiumName}` : kickoff;
+  const deets: ReactNode = stadiumName ? (
+    <>
+      {kickoff}
+      <br />
+      {stadiumName}
+    </>
+  ) : (
+    kickoff
+  );
 
   return (
     <Box
@@ -201,6 +209,7 @@ function GamePickRow({
               cursor: 'grab',
               display: 'flex',
               flexShrink: 0,
+              flexGrow: 0,
               p: 0.5,
               touchAction: 'none',
             }}
@@ -213,14 +222,12 @@ function GamePickRow({
           aria-hidden="true"
           sx={{
             flexShrink: 0,
-            fontFamily: '"Inconsolata", ui-monospace, monospace',
-            fontVariantNumeric: 'tabular-nums',
-            fontWeight: 700,
-            minWidth: '2ch',
-            textAlign: 'right',
+            display: 'inline-block',
+            minWidth: '7ch',
+            fontWeight: 600,
           }}
         >
-          {rank}
+          {rank} pts
         </Typography>
         <TeamPick
           frozen={frozen}
@@ -231,7 +238,15 @@ function GamePickRow({
           teamId={game.awayTeamId}
           winnerId={winnerId}
         />
-        <Typography component="span" sx={{ color: 'text.secondary', px: 0.5 }}>
+        <Typography
+          component="span"
+          sx={{
+            color: 'text.secondary',
+            px: 1,
+            display: 'inline-block',
+            textAlign: 'center',
+          }}
+        >
           vs
         </Typography>
         <TeamPick
@@ -247,10 +262,10 @@ function GamePickRow({
           component="span"
           sx={{
             color: 'text.secondary',
-            flex: '1 1 auto',
+            flex: '0 0 auto',
             fontSize: '0.875rem',
             ml: { md: 1 },
-            minWidth: '8rem',
+            minWidth: '12rem',
             textAlign: { md: 'right' },
           }}
         >
@@ -314,7 +329,7 @@ function TeamPick({
         alignItems: 'center',
         borderRadius: 1,
         display: 'flex',
-        flex: '1 1 0',
+        flex: '1 1 220px',
         fontWeight: selected ? 700 : 400,
         gap: 1,
         justifyContent: 'flex-start',

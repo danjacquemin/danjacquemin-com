@@ -13,7 +13,7 @@ import WeekPicks from './WeekPicks';
 
 function cloneSources(): SeasonSources {
   return {
-    schedule: structuredClone(scheduleJson),
+    schedule: structuredClone(scheduleJson), // https://developer.mozilla.org/en-US/docs/Web/API/Window/structuredClone
     stadiums: structuredClone(stadiumsJson),
     teams: structuredClone(teamsJson),
   };
@@ -36,9 +36,11 @@ function NFLConfidencePicks2026() {
   return (
     <Page title="NFL Confidence Picks">
       <Typography variant="h1">NFL Confidence Picks</Typography>
+
       {ingest.status === 'unusable' ? (
         <IngestReject files={ingest.files} />
       ) : null}
+
       {ingest.status === 'fixable' ? (
         <IngestFixForm
           files={ingest.files}
@@ -46,6 +48,7 @@ function NFLConfidencePicks2026() {
           onChange={setSources}
         />
       ) : null}
+
       {ingest.status === 'valid' ? (
         <>
           {resultsIngest?.status === 'unusable' ? (
@@ -54,6 +57,7 @@ function NFLConfidencePicks2026() {
               summary="This results file cannot be used. Scores are not shown."
             />
           ) : null}
+
           {resultsIngest?.status === 'fixable' ? (
             <ResultsFixForm
               issues={resultsIngest.issues}
@@ -61,6 +65,7 @@ function NFLConfidencePicks2026() {
               onChange={setResultsSource}
             />
           ) : null}
+
           <WeekPicks
             results={
               resultsIngest?.status === 'valid' ? resultsIngest.results : null
