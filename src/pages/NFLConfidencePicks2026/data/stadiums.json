@@ -797,5 +797,66 @@
     "country": "Germany",
     "visited": false,
     "visitDeets": null
+  },
+  {
+    "id": "39f35d02-1d7c-4caa-94e7-3d2068d04817",
+    "stadiumName": "Santiago Bernabéu Stadium",
+    "previousNames": [
+      "Bernabéu"
+    ],
+    "stadiumNickname": "Bernabéu",
+    "homeTeamIds": [],
+    "capacity": 81044,
+    "playingSurface": "Natural grass",
+    "roofType": "Open-air",
+    "yearOpened": 1947,
+    "yearClosed": null,
+    "address": "Av. de Concha Espina, 1",
+    "city": "Madrid",
+    "state": "MAD",
+    "zip": "28036",
+    "country": "Spain",
+    "visited": false,
+    "visitDeets": null
+  },
+  {
+    "id": "dee6b7de-0c51-4cb4-81ee-eb842979cf55",
+    "stadiumName": "Estadio Banorte",
+    "previousNames": [
+      "Estadio BBVA"
+    ],
+    "stadiumNickname": null,
+    "homeTeamIds": [],
+    "capacity": 53500,
+    "playingSurface": "Natural grass",
+    "roofType": "Open-air",
+    "yearOpened": 2015,
+    "yearClosed": null,
+    "address": "Av. Pablo Livas 2011",
+    "city": "Guadalupe",
+    "state": "NL",
+    "zip": "67164",
+    "country": "Mexico",
+    "visited": false,
+    "visitDeets": null
+  },
+  {
+    "id": "f26f0ca3-1d73-49d0-b0c9-69594527fb3e",
+    "stadiumName": "Stade de France",
+    "previousNames": null,
+    "stadiumNickname": null,
+    "homeTeamIds": [],
+    "capacity": 80698,
+    "playingSurface": "Natural grass",
+    "roofType": "Open-air",
+    "yearOpened": 1998,
+    "yearClosed": null,
+    "address": "ZAC du Cornillon Nord",
+    "city": "Saint-Denis",
+    "state": "IDF",
+    "zip": "93200",
+    "country": "France",
+    "visited": false,
+    "visitDeets": null
   }
 ]

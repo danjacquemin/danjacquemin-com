@@ -26,14 +26,14 @@
           "_summary": "SF @ LAR, Melbourne Cricket Ground, Thu Sep 10 8:35 PM ET"
         },
         {
-          "id": "fad36d3e-102d-43f8-960f-14f83b319b40",
+          "id": "e815c535-ff9c-49e7-8508-d733dc9a4080",
           "season": 2026,
           "week": 1,
           "gameDateTimeUTC": "2026-09-13T17:00:00.000Z",
-          "stadiumId": "765f8f02-7887-4707-8552-1de9b492cddd",
-          "homeTeamId": "pit",
-          "awayTeamId": "atl",
-          "_summary": "ATL @ PIT, Acrisure Stadium, Sun Sep 13 1:00 PM ET"
+          "stadiumId": "de14a887-e38f-427b-b02e-49396efa36c9",
+          "homeTeamId": "car",
+          "awayTeamId": "chi",
+          "_summary": "CHI @ CAR, Bank of America Stadium, Sun Sep 13 1:00 PM ET"
         },
         {
           "id": "bde8effd-ba74-43f5-b9f5-7be8f5b07bcf",
@@ -56,14 +56,14 @@
           "_summary": "NO @ DET, Ford Field, Sun Sep 13 1:00 PM ET"
         },
         {
-          "id": "e815c535-ff9c-49e7-8508-d733dc9a4080",
+          "id": "db178afd-8ce8-4762-9ab0-d515e8c8c79c",
           "season": 2026,
           "week": 1,
           "gameDateTimeUTC": "2026-09-13T17:00:00.000Z",
-          "stadiumId": "de14a887-e38f-427b-b02e-49396efa36c9",
-          "homeTeamId": "car",
-          "awayTeamId": "chi",
-          "_summary": "CHI @ CAR, Bank of America Stadium, Sun Sep 13 1:00 PM ET"
+          "stadiumId": "892f31af-c29f-435a-bb0a-60ef8595bd10",
+          "homeTeamId": "hou",
+          "awayTeamId": "buf",
+          "_summary": "BUF @ HOU, NRG Stadium, Sun Sep 13 1:00 PM ET"
         },
         {
           "id": "4a4aabcb-4882-45b3-84e4-28495484f753",
@@ -76,14 +76,24 @@
           "_summary": "BAL @ IND, Lucas Oil Stadium, Sun Sep 13 1:00 PM ET"
         },
         {
-          "id": "db178afd-8ce8-4762-9ab0-d515e8c8c79c",
+          "id": "2e3adb95-e4ea-4ce8-a8b4-bf90cf54596f",
           "season": 2026,
           "week": 1,
           "gameDateTimeUTC": "2026-09-13T17:00:00.000Z",
-          "stadiumId": "892f31af-c29f-435a-bb0a-60ef8595bd10",
-          "homeTeamId": "hou",
-          "awayTeamId": "buf",
-          "_summary": "BUF @ HOU, NRG Stadium, Sun Sep 13 1:00 PM ET"
+          "stadiumId": "51406146-153c-40d7-9c5a-8df5a113840c",
+          "homeTeamId": "jax",
+          "awayTeamId": "cle",
+          "_summary": "CLE @ JAX, EverBank Stadium, Sun Sep 13 1:00 PM ET"
+        },
+        {
+          "id": "fad36d3e-102d-43f8-960f-14f83b319b40",
+          "season": 2026,
+          "week": 1,
+          "gameDateTimeUTC": "2026-09-13T17:00:00.000Z",
+          "stadiumId": "765f8f02-7887-4707-8552-1de9b492cddd",
+          "homeTeamId": "pit",
+          "awayTeamId": "atl",
+          "_summary": "ATL @ PIT, Acrisure Stadium, Sun Sep 13 1:00 PM ET"
         },
         {
           "id": "b0680560-bc25-4620-8757-7ab957b87aee",
@@ -96,34 +106,64 @@
           "_summary": "NYJ @ TEN, Nissan Stadium, Sun Sep 13 1:00 PM ET"
         },
         {
-          "id": "2e3adb95-e4ea-4ce8-a8b4-bf90cf54596f",
-          "season": 2026,
-          "week": 1,
-          "gameDateTimeUTC": "2026-09-13T17:00:00.000Z",
-          "stadiumId": "51406146-153c-40d7-9c5a-8df5a113840c",
-          "homeTeamId": "jax",
-          "awayTeamId": "cle",
-          "_summary": "CLE @ JAX, EverBank Stadium, Sun Sep 13 1:00 PM ET"
-        },
-        {
           "id": "c30b8a81-9b45-4fed-b853-838bb302cd24",
           "season": 2026,
           "week": 1,
-          "gameDateTimeUTC": "2026-09-13T17:00:00.000Z",
+          "gameDateTimeUTC": "2026-09-13T20:25:00.000Z",
           "stadiumId": "d9f34167-daed-46bb-8221-ba00135747d3",
           "homeTeamId": "lac",
           "awayTeamId": "ari",
-          "_summary": "ARI @ LAC, SoFi Stadium, Sun Sep 13 1:00 PM ET"
+          "_summary": "ARI @ LAC, SoFi Stadium, Sun Sep 13 4:25 PM ET"
         },
         {
           "id": "4ce4195e-0ce1-4147-9539-ae3929d3de78",
           "season": 2026,
           "week": 1,
-          "gameDateTimeUTC": "2026-09-13T17:00:00.000Z",
+          "gameDateTimeUTC": "2026-09-13T20:25:00.000Z",
           "stadiumId": "2a38b03f-d1cc-48c1-8c90-dd5b1db23c2a",
           "homeTeamId": "lv",
           "awayTeamId": "mia",
-          "_summary": "MIA @ LV, Allegiant Stadium, Sun Sep 13 1:00 PM ET"
+          "_summary": "MIA @ LV, Allegiant Stadium, Sun Sep 13 4:25 PM ET"
+        },
+        {
+          "id": "2c5f96cc-e70c-4dce-8151-66c4d99c754e",
+          "season": 2026,
+          "week": 1,
+          "gameDateTimeUTC": "2026-09-13T20:25:00.000Z",
+          "stadiumId": "e57f2fba-2e6b-4d5a-8b40-d3a14eef4b7c",
+          "homeTeamId": "min",
+          "awayTeamId": "gb",
+          "_summary": "GB @ MIN, U.S. Bank Stadium, Sun Sep 13 4:25 PM ET"
+        },
+        {
+          "id": "0c89967e-3eae-4ef0-babb-e9b0a033e06d",
+          "season": 2026,
+          "week": 1,
+          "gameDateTimeUTC": "2026-09-13T20:25:00.000Z",
+          "stadiumId": "363bcc94-57e8-4c9a-a4f6-6ef6948d4ee8",
+          "homeTeamId": "phi",
+          "awayTeamId": "was",
+          "_summary": "WAS @ PHI, Lincoln Financial Field, Sun Sep 13 4:25 PM ET"
+        },
+        {
+          "id": "395d672f-8eac-4692-9fe8-540e8d38f40f",
+          "season": 2026,
+          "week": 1,
+          "gameDateTimeUTC": "2026-09-14T00:20:00.000Z",
+          "stadiumId": "c3d7f0d4-1288-416d-8047-c77c7579722e",
+          "homeTeamId": "nyg",
+          "awayTeamId": "dal",
+          "_summary": "DAL @ NYG, MetLife Stadium, Sun Sep 13 8:20 PM ET"
+        },
+        {
+          "id": "cb68e186-4662-4303-a72a-88e91bc8535b",
+          "season": 2026,
+          "week": 1,
+          "gameDateTimeUTC": "2026-09-15T00:15:00.000Z",
+          "stadiumId": "e3819f6b-1c18-4083-b70d-9f978be60b09",
+          "homeTeamId": "kc",
+          "awayTeamId": "den",
+          "_summary": "DEN @ KC, Arrowhead Stadium, Mon Sep 14 8:15 PM ET"
         }
       ]
     },
@@ -131,44 +171,2964 @@
       "weekNumber": 2,
       "games": [
         {
-          "id": "2fcdd8d5-c69a-43ef-816a-84e6d0ed8f15",
+          "id": "d3659494-f27d-4652-971a-ec8097b275bc",
           "season": 2026,
           "week": 2,
-          "gameDateTimeUTC": "2026-09-17T23:15:00.000Z",
-          "stadiumId": "e3819f6b-1c18-4083-b70d-9f978be60b09",
-          "homeTeamId": "kc",
-          "awayTeamId": "sea",
-          "_summary": "SEA @ KC, Arrowhead Stadium, Thu Sep 17 7:15 PM ET"
+          "gameDateTimeUTC": "2026-09-18T00:15:00.000Z",
+          "stadiumId": "b1ea911d-5a1b-41fc-8425-6503ab256157",
+          "homeTeamId": "buf",
+          "awayTeamId": "det",
+          "_summary": "DET @ BUF, Highmark Stadium, Thu Sep 17 8:15 PM ET"
         },
         {
-          "id": "fe31ec65-e527-44be-a57c-570f1e497b20",
+          "id": "cff28cf9-d53e-492b-a51d-63a912d64107",
           "season": 2026,
           "week": 2,
           "gameDateTimeUTC": "2026-09-20T17:00:00.000Z",
           "stadiumId": "b6a483c4-11ea-4874-985e-c4c9bdfb6171",
           "homeTeamId": "atl",
-          "awayTeamId": "chi",
-          "_summary": "CHI @ ATL, Mercedes-Benz Stadium, Sun Sep 20 1:00 PM ET"
+          "awayTeamId": "car",
+          "_summary": "CAR @ ATL, Mercedes-Benz Stadium, Sun Sep 20 1:00 PM ET"
         },
         {
-          "id": "bbe9218e-82bf-45bb-8ec7-b184fcfcbc56",
+          "id": "1fbe5ad2-9245-4f18-91fb-b7653e26a351",
           "season": 2026,
           "week": 2,
           "gameDateTimeUTC": "2026-09-20T17:00:00.000Z",
-          "stadiumId": "363bcc94-57e8-4c9a-a4f6-6ef6948d4ee8",
-          "homeTeamId": "phi",
-          "awayTeamId": "tb",
-          "_summary": "TB @ PHI, Lincoln Financial Field, Sun Sep 20 1:00 PM ET"
+          "stadiumId": "ebbfa6d5-3a14-415c-93a6-a1b80eef17bf",
+          "homeTeamId": "bal",
+          "awayTeamId": "no",
+          "_summary": "NO @ BAL, M&T Bank Stadium, Sun Sep 20 1:00 PM ET"
         },
         {
-          "id": "aaaaf5ae-b2b6-4bf0-9d62-1d5e4cbecc89",
+          "id": "e062fe18-ff9c-4f75-b239-c41b5fe0daeb",
           "season": 2026,
           "week": 2,
-          "gameDateTimeUTC": "2026-09-21T20:20:00.000Z",
+          "gameDateTimeUTC": "2026-09-20T17:00:00.000Z",
+          "stadiumId": "cfdd7c54-a855-4ab2-a22b-f930f438892c",
+          "homeTeamId": "chi",
+          "awayTeamId": "min",
+          "_summary": "MIN @ CHI, Soldier Field, Sun Sep 20 1:00 PM ET"
+        },
+        {
+          "id": "2c53e356-5f2f-4b8c-9446-f675632944e3",
+          "season": 2026,
+          "week": 2,
+          "gameDateTimeUTC": "2026-09-20T17:00:00.000Z",
+          "stadiumId": "892f31af-c29f-435a-bb0a-60ef8595bd10",
+          "homeTeamId": "hou",
+          "awayTeamId": "cin",
+          "_summary": "CIN @ HOU, NRG Stadium, Sun Sep 20 1:00 PM ET"
+        },
+        {
+          "id": "dbacc546-bec6-49f7-ac64-971d35aa494f",
+          "season": 2026,
+          "week": 2,
+          "gameDateTimeUTC": "2026-09-20T17:00:00.000Z",
+          "stadiumId": "8d81bd51-ac13-4f12-b5b4-ccfbdde7a4c5",
+          "homeTeamId": "ne",
+          "awayTeamId": "pit",
+          "_summary": "PIT @ NE, Gillette Stadium, Sun Sep 20 1:00 PM ET"
+        },
+        {
+          "id": "ab13a260-8dde-4b6c-b16d-56b509290a22",
+          "season": 2026,
+          "week": 2,
+          "gameDateTimeUTC": "2026-09-20T17:00:00.000Z",
+          "stadiumId": "c3d7f0d4-1288-416d-8047-c77c7579722e",
+          "homeTeamId": "nyj",
+          "awayTeamId": "gb",
+          "_summary": "GB @ NYJ, MetLife Stadium, Sun Sep 20 1:00 PM ET"
+        },
+        {
+          "id": "ddcf7a55-48f2-4473-b4ea-fe5ee5ae0c5c",
+          "season": 2026,
+          "week": 2,
+          "gameDateTimeUTC": "2026-09-20T17:00:00.000Z",
+          "stadiumId": "30bc29f2-a45e-4fa1-8d69-5e11d42190a5",
+          "homeTeamId": "tb",
+          "awayTeamId": "cle",
+          "_summary": "CLE @ TB, Raymond James Stadium, Sun Sep 20 1:00 PM ET"
+        },
+        {
+          "id": "2e1eb2eb-8367-4ba0-9870-42146775db3b",
+          "season": 2026,
+          "week": 2,
+          "gameDateTimeUTC": "2026-09-20T17:00:00.000Z",
+          "stadiumId": "deb48462-3e78-4609-9210-36363c678e8d",
+          "homeTeamId": "ten",
+          "awayTeamId": "phi",
+          "_summary": "PHI @ TEN, Nissan Stadium, Sun Sep 20 1:00 PM ET"
+        },
+        {
+          "id": "7d81ca52-2fe1-4553-b917-da1145c5bd83",
+          "season": 2026,
+          "week": 2,
+          "gameDateTimeUTC": "2026-09-20T20:05:00.000Z",
+          "stadiumId": "47e6a7ba-e1d8-45a8-a365-b131ec1de1ca",
+          "homeTeamId": "den",
+          "awayTeamId": "jax",
+          "_summary": "JAX @ DEN, Empower Field at Mile High, Sun Sep 20 4:05 PM ET"
+        },
+        {
+          "id": "e803f08e-16c9-4542-b7c9-eecde0e19cc2",
+          "season": 2026,
+          "week": 2,
+          "gameDateTimeUTC": "2026-09-20T20:05:00.000Z",
+          "stadiumId": "d9f34167-daed-46bb-8221-ba00135747d3",
+          "homeTeamId": "lac",
+          "awayTeamId": "lv",
+          "_summary": "LV @ LAC, SoFi Stadium, Sun Sep 20 4:05 PM ET"
+        },
+        {
+          "id": "14adb164-51c8-4453-8639-12cd96508239",
+          "season": 2026,
+          "week": 2,
+          "gameDateTimeUTC": "2026-09-20T20:25:00.000Z",
+          "stadiumId": "4038828a-bb7d-46c2-81ce-da1b2270c293",
+          "homeTeamId": "ari",
+          "awayTeamId": "sea",
+          "_summary": "SEA @ ARI, State Farm Stadium, Sun Sep 20 4:25 PM ET"
+        },
+        {
+          "id": "492b673c-73d2-4a2c-bb87-bfe00f5dfbd7",
+          "season": 2026,
+          "week": 2,
+          "gameDateTimeUTC": "2026-09-20T20:25:00.000Z",
+          "stadiumId": "69a00dd6-575b-4c5b-a00d-2b174e40bb9d",
+          "homeTeamId": "dal",
+          "awayTeamId": "was",
+          "_summary": "WAS @ DAL, AT&T Stadium, Sun Sep 20 4:25 PM ET"
+        },
+        {
+          "id": "f86275a4-954d-4358-b92c-5e17fc670954",
+          "season": 2026,
+          "week": 2,
+          "gameDateTimeUTC": "2026-09-20T20:25:00.000Z",
+          "stadiumId": "39160e46-5670-42f7-b33c-67e3e5ac3697",
+          "homeTeamId": "sf",
+          "awayTeamId": "mia",
+          "_summary": "MIA @ SF, Levi's Stadium, Sun Sep 20 4:25 PM ET"
+        },
+        {
+          "id": "657a92c9-98cd-4cc1-be50-ee2eaf44e7da",
+          "season": 2026,
+          "week": 2,
+          "gameDateTimeUTC": "2026-09-21T00:20:00.000Z",
+          "stadiumId": "e3819f6b-1c18-4083-b70d-9f978be60b09",
+          "homeTeamId": "kc",
+          "awayTeamId": "ind",
+          "_summary": "IND @ KC, Arrowhead Stadium, Sun Sep 20 8:20 PM ET"
+        },
+        {
+          "id": "903bd6d0-f99e-47e8-ac7d-1c2048443be2",
+          "season": 2026,
+          "week": 2,
+          "gameDateTimeUTC": "2026-09-22T00:15:00.000Z",
           "stadiumId": "d9f34167-daed-46bb-8221-ba00135747d3",
           "homeTeamId": "lar",
+          "awayTeamId": "nyg",
+          "_summary": "NYG @ LAR, SoFi Stadium, Mon Sep 21 8:15 PM ET"
+        }
+      ]
+    },
+    {
+      "weekNumber": 3,
+      "games": [
+        {
+          "id": "3c40127a-0dd9-4c27-9404-145e33bed126",
+          "season": 2026,
+          "week": 3,
+          "gameDateTimeUTC": "2026-09-25T00:15:00.000Z",
+          "stadiumId": "66fcf716-1af3-444f-b28f-89615fdb6518",
+          "homeTeamId": "gb",
+          "awayTeamId": "atl",
+          "_summary": "ATL @ GB, Lambeau Field, Thu Sep 24 8:15 PM ET"
+        },
+        {
+          "id": "0a2e1e10-a131-4b89-a0ba-aa7de0f86282",
+          "season": 2026,
+          "week": 3,
+          "gameDateTimeUTC": "2026-09-27T17:00:00.000Z",
+          "stadiumId": "b1ea911d-5a1b-41fc-8425-6503ab256157",
+          "homeTeamId": "buf",
+          "awayTeamId": "lac",
+          "_summary": "LAC @ BUF, Highmark Stadium, Sun Sep 27 1:00 PM ET"
+        },
+        {
+          "id": "f983b5cf-5183-4be0-840d-abcf32912612",
+          "season": 2026,
+          "week": 3,
+          "gameDateTimeUTC": "2026-09-27T17:00:00.000Z",
+          "stadiumId": "f33bef4e-cb13-4fef-9eff-90603c07c31b",
+          "homeTeamId": "cle",
+          "awayTeamId": "car",
+          "_summary": "CAR @ CLE, Huntington Bank Field, Sun Sep 27 1:00 PM ET"
+        },
+        {
+          "id": "600d7c31-9bc4-4703-a1cf-e30db0aff0d3",
+          "season": 2026,
+          "week": 3,
+          "gameDateTimeUTC": "2026-09-27T17:00:00.000Z",
+          "stadiumId": "f96aa25d-d2bb-43c2-9a28-7034296f681b",
+          "homeTeamId": "det",
+          "awayTeamId": "nyj",
+          "_summary": "NYJ @ DET, Ford Field, Sun Sep 27 1:00 PM ET"
+        },
+        {
+          "id": "1c417841-b55f-48ed-a65c-d66cb6a8a7c1",
+          "season": 2026,
+          "week": 3,
+          "gameDateTimeUTC": "2026-09-27T17:00:00.000Z",
+          "stadiumId": "d8acdc51-58d8-409a-8668-0f5fc2f9dca0",
+          "homeTeamId": "ind",
+          "awayTeamId": "hou",
+          "_summary": "HOU @ IND, Lucas Oil Stadium, Sun Sep 27 1:00 PM ET"
+        },
+        {
+          "id": "059de079-59b6-4251-9175-c7ce43327af2",
+          "season": 2026,
+          "week": 3,
+          "gameDateTimeUTC": "2026-09-27T17:00:00.000Z",
+          "stadiumId": "51406146-153c-40d7-9c5a-8df5a113840c",
+          "homeTeamId": "jax",
+          "awayTeamId": "ne",
+          "_summary": "NE @ JAX, EverBank Stadium, Sun Sep 27 1:00 PM ET"
+        },
+        {
+          "id": "5a4149da-e0c1-4732-ba57-4f30a2641520",
+          "season": 2026,
+          "week": 3,
+          "gameDateTimeUTC": "2026-09-27T17:00:00.000Z",
+          "stadiumId": "6688fdf0-a943-4bbf-bd43-87a130122e03",
+          "homeTeamId": "mia",
+          "awayTeamId": "kc",
+          "_summary": "KC @ MIA, Hard Rock Stadium, Sun Sep 27 1:00 PM ET"
+        },
+        {
+          "id": "d909a575-65dc-48a8-b715-532d219f838b",
+          "season": 2026,
+          "week": 3,
+          "gameDateTimeUTC": "2026-09-27T17:00:00.000Z",
+          "stadiumId": "c3d7f0d4-1288-416d-8047-c77c7579722e",
+          "homeTeamId": "nyg",
+          "awayTeamId": "ten",
+          "_summary": "TEN @ NYG, MetLife Stadium, Sun Sep 27 1:00 PM ET"
+        },
+        {
+          "id": "3c5a2f7b-48c9-423d-81fd-bb30ac7d1a6e",
+          "season": 2026,
+          "week": 3,
+          "gameDateTimeUTC": "2026-09-27T17:00:00.000Z",
+          "stadiumId": "765f8f02-7887-4707-8552-1de9b492cddd",
+          "homeTeamId": "pit",
+          "awayTeamId": "cin",
+          "_summary": "CIN @ PIT, Acrisure Stadium, Sun Sep 27 1:00 PM ET"
+        },
+        {
+          "id": "100a5e04-3fe7-473a-a0d2-271c92a56000",
+          "season": 2026,
+          "week": 3,
+          "gameDateTimeUTC": "2026-09-27T17:00:00.000Z",
+          "stadiumId": "698f9855-ac75-45d3-bbb9-0aa83b187a53",
+          "homeTeamId": "was",
+          "awayTeamId": "sea",
+          "_summary": "SEA @ WAS, Northwest Stadium, Sun Sep 27 1:00 PM ET"
+        },
+        {
+          "id": "64ffb6c7-670f-45a6-ad83-fc55a95d81c1",
+          "season": 2026,
+          "week": 3,
+          "gameDateTimeUTC": "2026-09-27T20:05:00.000Z",
+          "stadiumId": "39160e46-5670-42f7-b33c-67e3e5ac3697",
+          "homeTeamId": "sf",
+          "awayTeamId": "ari",
+          "_summary": "ARI @ SF, Levi's Stadium, Sun Sep 27 4:05 PM ET"
+        },
+        {
+          "id": "11c5b02c-13e6-46a0-a673-03e74b68860a",
+          "season": 2026,
+          "week": 3,
+          "gameDateTimeUTC": "2026-09-27T20:05:00.000Z",
+          "stadiumId": "30bc29f2-a45e-4fa1-8d69-5e11d42190a5",
+          "homeTeamId": "tb",
+          "awayTeamId": "min",
+          "_summary": "MIN @ TB, Raymond James Stadium, Sun Sep 27 4:05 PM ET"
+        },
+        {
+          "id": "ffc4f811-344a-4d73-8ad7-245ae82aca0e",
+          "season": 2026,
+          "week": 3,
+          "gameDateTimeUTC": "2026-09-27T20:25:00.000Z",
+          "stadiumId": "f1e28e45-0fa6-4759-9bcb-c3497d1046aa",
+          "homeTeamId": "dal",
+          "awayTeamId": "bal",
+          "_summary": "BAL @ DAL, Maracanã Stadium, Sun Sep 27 4:25 PM ET"
+        },
+        {
+          "id": "49d71d35-7dab-4949-a1f2-1174e424256c",
+          "season": 2026,
+          "week": 3,
+          "gameDateTimeUTC": "2026-09-27T20:25:00.000Z",
+          "stadiumId": "0e8ff099-ca06-45b2-b730-16f69705962a",
+          "homeTeamId": "no",
+          "awayTeamId": "lv",
+          "_summary": "LV @ NO, Caesars Superdome, Sun Sep 27 4:25 PM ET"
+        },
+        {
+          "id": "9cf1e337-1937-447f-93d4-b78eb1fe3951",
+          "season": 2026,
+          "week": 3,
+          "gameDateTimeUTC": "2026-09-28T00:20:00.000Z",
+          "stadiumId": "47e6a7ba-e1d8-45a8-a365-b131ec1de1ca",
+          "homeTeamId": "den",
+          "awayTeamId": "lar",
+          "_summary": "LAR @ DEN, Empower Field at Mile High, Sun Sep 27 8:20 PM ET"
+        },
+        {
+          "id": "70c5b4f8-4109-447f-a90b-34a9ddf0b819",
+          "season": 2026,
+          "week": 3,
+          "gameDateTimeUTC": "2026-09-29T00:15:00.000Z",
+          "stadiumId": "cfdd7c54-a855-4ab2-a22b-f930f438892c",
+          "homeTeamId": "chi",
+          "awayTeamId": "phi",
+          "_summary": "PHI @ CHI, Soldier Field, Mon Sep 28 8:15 PM ET"
+        }
+      ]
+    },
+    {
+      "weekNumber": 4,
+      "games": [
+        {
+          "id": "5f4ebba2-f9df-4cc7-8abe-5b66d810dba5",
+          "season": 2026,
+          "week": 4,
+          "gameDateTimeUTC": "2026-10-02T00:15:00.000Z",
+          "stadiumId": "f33bef4e-cb13-4fef-9eff-90603c07c31b",
+          "homeTeamId": "cle",
+          "awayTeamId": "pit",
+          "_summary": "PIT @ CLE, Huntington Bank Field, Thu Oct 1 8:15 PM ET"
+        },
+        {
+          "id": "815aeead-2d9c-4de6-8128-fe88fb5353d0",
+          "season": 2026,
+          "week": 4,
+          "gameDateTimeUTC": "2026-10-04T13:30:00.000Z",
+          "stadiumId": "2135922b-9d6b-4c6b-b652-3c3e64e57087",
+          "homeTeamId": "was",
+          "awayTeamId": "ind",
+          "_summary": "IND @ WAS, Tottenham Hotspur Stadium, Sun Oct 4 9:30 AM ET"
+        },
+        {
+          "id": "72fc67b4-0c8a-4bce-bd8f-34581397a331",
+          "season": 2026,
+          "week": 4,
+          "gameDateTimeUTC": "2026-10-04T17:00:00.000Z",
+          "stadiumId": "ebbfa6d5-3a14-415c-93a6-a1b80eef17bf",
+          "homeTeamId": "bal",
+          "awayTeamId": "ten",
+          "_summary": "TEN @ BAL, M&T Bank Stadium, Sun Oct 4 1:00 PM ET"
+        },
+        {
+          "id": "e2386b68-b7fd-48d8-b18e-6ef8b2b96b90",
+          "season": 2026,
+          "week": 4,
+          "gameDateTimeUTC": "2026-10-04T17:00:00.000Z",
+          "stadiumId": "b1ea911d-5a1b-41fc-8425-6503ab256157",
+          "homeTeamId": "buf",
+          "awayTeamId": "ne",
+          "_summary": "NE @ BUF, Highmark Stadium, Sun Oct 4 1:00 PM ET"
+        },
+        {
+          "id": "08384eae-c86d-4fe7-a870-77da6f38c227",
+          "season": 2026,
+          "week": 4,
+          "gameDateTimeUTC": "2026-10-04T17:00:00.000Z",
+          "stadiumId": "cfdd7c54-a855-4ab2-a22b-f930f438892c",
+          "homeTeamId": "chi",
+          "awayTeamId": "nyj",
+          "_summary": "NYJ @ CHI, Soldier Field, Sun Oct 4 1:00 PM ET"
+        },
+        {
+          "id": "d3d79e4d-6f33-43de-b4c7-c78dfee69a55",
+          "season": 2026,
+          "week": 4,
+          "gameDateTimeUTC": "2026-10-04T17:00:00.000Z",
+          "stadiumId": "4ddefd70-a6a6-4734-983a-83d76ef15135",
+          "homeTeamId": "cin",
+          "awayTeamId": "jax",
+          "_summary": "JAX @ CIN, Paycor Stadium, Sun Oct 4 1:00 PM ET"
+        },
+        {
+          "id": "b312be5b-6d06-4686-9a80-44e84595cda2",
+          "season": 2026,
+          "week": 4,
+          "gameDateTimeUTC": "2026-10-04T17:00:00.000Z",
+          "stadiumId": "892f31af-c29f-435a-bb0a-60ef8595bd10",
+          "homeTeamId": "hou",
+          "awayTeamId": "dal",
+          "_summary": "DAL @ HOU, NRG Stadium, Sun Oct 4 1:00 PM ET"
+        },
+        {
+          "id": "ca4c9c0c-b3b2-4393-8d67-7bf9ebd820c2",
+          "season": 2026,
+          "week": 4,
+          "gameDateTimeUTC": "2026-10-04T17:00:00.000Z",
+          "stadiumId": "c3d7f0d4-1288-416d-8047-c77c7579722e",
+          "homeTeamId": "nyg",
+          "awayTeamId": "ari",
+          "_summary": "ARI @ NYG, MetLife Stadium, Sun Oct 4 1:00 PM ET"
+        },
+        {
+          "id": "220beb1e-8a42-4550-9b56-a7521b0bc417",
+          "season": 2026,
+          "week": 4,
+          "gameDateTimeUTC": "2026-10-04T17:00:00.000Z",
+          "stadiumId": "363bcc94-57e8-4c9a-a4f6-6ef6948d4ee8",
+          "homeTeamId": "phi",
+          "awayTeamId": "lar",
+          "_summary": "LAR @ PHI, Lincoln Financial Field, Sun Oct 4 1:00 PM ET"
+        },
+        {
+          "id": "409d9b27-956e-45f8-aba0-98cc0007270f",
+          "season": 2026,
+          "week": 4,
+          "gameDateTimeUTC": "2026-10-04T17:00:00.000Z",
+          "stadiumId": "30bc29f2-a45e-4fa1-8d69-5e11d42190a5",
+          "homeTeamId": "tb",
+          "awayTeamId": "gb",
+          "_summary": "GB @ TB, Raymond James Stadium, Sun Oct 4 1:00 PM ET"
+        },
+        {
+          "id": "32423374-1b82-4dd5-9633-45cb9b3f909b",
+          "season": 2026,
+          "week": 4,
+          "gameDateTimeUTC": "2026-10-04T20:05:00.000Z",
+          "stadiumId": "e57f2fba-2e6b-4d5a-8b40-d3a14eef4b7c",
+          "homeTeamId": "min",
+          "awayTeamId": "mia",
+          "_summary": "MIA @ MIN, U.S. Bank Stadium, Sun Oct 4 4:05 PM ET"
+        },
+        {
+          "id": "ae88cf54-9612-47cd-b192-0336866d43fc",
+          "season": 2026,
+          "week": 4,
+          "gameDateTimeUTC": "2026-10-04T20:25:00.000Z",
+          "stadiumId": "2a38b03f-d1cc-48c1-8c90-dd5b1db23c2a",
+          "homeTeamId": "lv",
+          "awayTeamId": "kc",
+          "_summary": "KC @ LV, Allegiant Stadium, Sun Oct 4 4:25 PM ET"
+        },
+        {
+          "id": "e5ab8a3c-e4b2-472b-986e-9f70c9cd1a22",
+          "season": 2026,
+          "week": 4,
+          "gameDateTimeUTC": "2026-10-04T20:25:00.000Z",
+          "stadiumId": "c66f4cc4-afc0-4bd4-bdd7-d5adbfc3679b",
+          "homeTeamId": "sea",
+          "awayTeamId": "lac",
+          "_summary": "LAC @ SEA, Lumen Field, Sun Oct 4 4:25 PM ET"
+        },
+        {
+          "id": "8f7119f2-2258-4b9e-84ce-ebb7130914f7",
+          "season": 2026,
+          "week": 4,
+          "gameDateTimeUTC": "2026-10-04T20:25:00.000Z",
+          "stadiumId": "39160e46-5670-42f7-b33c-67e3e5ac3697",
+          "homeTeamId": "sf",
+          "awayTeamId": "den",
+          "_summary": "DEN @ SF, Levi's Stadium, Sun Oct 4 4:25 PM ET"
+        },
+        {
+          "id": "7606ca3a-f8b8-4dd1-86c5-bbda1e0de7c4",
+          "season": 2026,
+          "week": 4,
+          "gameDateTimeUTC": "2026-10-05T00:20:00.000Z",
+          "stadiumId": "de14a887-e38f-427b-b02e-49396efa36c9",
+          "homeTeamId": "car",
+          "awayTeamId": "det",
+          "_summary": "DET @ CAR, Bank of America Stadium, Sun Oct 4 8:20 PM ET"
+        },
+        {
+          "id": "c6e1f432-9983-4a76-aef0-fac125963945",
+          "season": 2026,
+          "week": 4,
+          "gameDateTimeUTC": "2026-10-06T00:15:00.000Z",
+          "stadiumId": "0e8ff099-ca06-45b2-b730-16f69705962a",
+          "homeTeamId": "no",
+          "awayTeamId": "atl",
+          "_summary": "ATL @ NO, Caesars Superdome, Mon Oct 5 8:15 PM ET"
+        }
+      ]
+    },
+    {
+      "weekNumber": 5,
+      "games": [
+        {
+          "id": "63917c73-3e43-4efc-93c2-cb0281432dbe",
+          "season": 2026,
+          "week": 5,
+          "gameDateTimeUTC": "2026-10-09T00:15:00.000Z",
+          "stadiumId": "69a00dd6-575b-4c5b-a00d-2b174e40bb9d",
+          "homeTeamId": "dal",
+          "awayTeamId": "tb",
+          "_summary": "TB @ DAL, AT&T Stadium, Thu Oct 8 8:15 PM ET"
+        },
+        {
+          "id": "5d0cb42d-f593-4d02-8da0-ae849384dc70",
+          "season": 2026,
+          "week": 5,
+          "gameDateTimeUTC": "2026-10-11T13:30:00.000Z",
+          "stadiumId": "2135922b-9d6b-4c6b-b652-3c3e64e57087",
+          "homeTeamId": "jax",
+          "awayTeamId": "phi",
+          "_summary": "PHI @ JAX, Tottenham Hotspur Stadium, Sun Oct 11 9:30 AM ET"
+        },
+        {
+          "id": "77c25295-24ef-4a26-9537-2627a7c1055b",
+          "season": 2026,
+          "week": 5,
+          "gameDateTimeUTC": "2026-10-11T17:00:00.000Z",
+          "stadiumId": "6688fdf0-a943-4bbf-bd43-87a130122e03",
+          "homeTeamId": "mia",
+          "awayTeamId": "cin",
+          "_summary": "CIN @ MIA, Hard Rock Stadium, Sun Oct 11 1:00 PM ET"
+        },
+        {
+          "id": "199fe575-169f-4c3b-8495-b523b070ceed",
+          "season": 2026,
+          "week": 5,
+          "gameDateTimeUTC": "2026-10-11T17:00:00.000Z",
+          "stadiumId": "8d81bd51-ac13-4f12-b5b4-ccfbdde7a4c5",
+          "homeTeamId": "ne",
+          "awayTeamId": "lv",
+          "_summary": "LV @ NE, Gillette Stadium, Sun Oct 11 1:00 PM ET"
+        },
+        {
+          "id": "3d44284b-7bd7-4cd0-9101-50cff3f19e17",
+          "season": 2026,
+          "week": 5,
+          "gameDateTimeUTC": "2026-10-11T17:00:00.000Z",
+          "stadiumId": "0e8ff099-ca06-45b2-b730-16f69705962a",
+          "homeTeamId": "no",
+          "awayTeamId": "min",
+          "_summary": "MIN @ NO, Caesars Superdome, Sun Oct 11 1:00 PM ET"
+        },
+        {
+          "id": "9f00b034-299e-4fb6-9af4-f3dcb52e54ca",
+          "season": 2026,
+          "week": 5,
+          "gameDateTimeUTC": "2026-10-11T17:00:00.000Z",
+          "stadiumId": "c3d7f0d4-1288-416d-8047-c77c7579722e",
+          "homeTeamId": "nyj",
+          "awayTeamId": "cle",
+          "_summary": "CLE @ NYJ, MetLife Stadium, Sun Oct 11 1:00 PM ET"
+        },
+        {
+          "id": "8fb1b3ad-8a9f-4085-9a3b-40e9838df6c8",
+          "season": 2026,
+          "week": 5,
+          "gameDateTimeUTC": "2026-10-11T17:00:00.000Z",
+          "stadiumId": "765f8f02-7887-4707-8552-1de9b492cddd",
+          "homeTeamId": "pit",
+          "awayTeamId": "ind",
+          "_summary": "IND @ PIT, Acrisure Stadium, Sun Oct 11 1:00 PM ET"
+        },
+        {
+          "id": "a56a0540-44ed-4273-b328-73689d770ab2",
+          "season": 2026,
+          "week": 5,
+          "gameDateTimeUTC": "2026-10-11T17:00:00.000Z",
+          "stadiumId": "deb48462-3e78-4609-9210-36363c678e8d",
+          "homeTeamId": "ten",
+          "awayTeamId": "hou",
+          "_summary": "HOU @ TEN, Nissan Stadium, Sun Oct 11 1:00 PM ET"
+        },
+        {
+          "id": "cd1b9eaa-1a9e-499d-a325-aa6416d62bd8",
+          "season": 2026,
+          "week": 5,
+          "gameDateTimeUTC": "2026-10-11T17:00:00.000Z",
+          "stadiumId": "698f9855-ac75-45d3-bbb9-0aa83b187a53",
+          "homeTeamId": "was",
+          "awayTeamId": "nyg",
+          "_summary": "NYG @ WAS, Northwest Stadium, Sun Oct 11 1:00 PM ET"
+        },
+        {
+          "id": "e7a0b4ea-6031-40b6-91e8-516374341f94",
+          "season": 2026,
+          "week": 5,
+          "gameDateTimeUTC": "2026-10-11T20:05:00.000Z",
+          "stadiumId": "d9f34167-daed-46bb-8221-ba00135747d3",
+          "homeTeamId": "lac",
+          "awayTeamId": "den",
+          "_summary": "DEN @ LAC, SoFi Stadium, Sun Oct 11 4:05 PM ET"
+        },
+        {
+          "id": "d7a9aaee-9ed8-4249-82fc-b351e752b805",
+          "season": 2026,
+          "week": 5,
+          "gameDateTimeUTC": "2026-10-11T20:25:00.000Z",
+          "stadiumId": "4038828a-bb7d-46c2-81ce-da1b2270c293",
+          "homeTeamId": "ari",
+          "awayTeamId": "det",
+          "_summary": "DET @ ARI, State Farm Stadium, Sun Oct 11 4:25 PM ET"
+        },
+        {
+          "id": "090267fb-312e-41ae-a11b-aca15056d10e",
+          "season": 2026,
+          "week": 5,
+          "gameDateTimeUTC": "2026-10-11T20:25:00.000Z",
+          "stadiumId": "66fcf716-1af3-444f-b28f-89615fdb6518",
+          "homeTeamId": "gb",
+          "awayTeamId": "chi",
+          "_summary": "CHI @ GB, Lambeau Field, Sun Oct 11 4:25 PM ET"
+        },
+        {
+          "id": "793ef26d-fb9f-458d-a223-50b7cdf58a65",
+          "season": 2026,
+          "week": 5,
+          "gameDateTimeUTC": "2026-10-11T20:25:00.000Z",
+          "stadiumId": "c66f4cc4-afc0-4bd4-bdd7-d5adbfc3679b",
+          "homeTeamId": "sea",
           "awayTeamId": "sf",
-          "_summary": "SF @ LAR, SoFi Stadium, Mon Sep 21 8:20 PM ET"
+          "_summary": "SF @ SEA, Lumen Field, Sun Oct 11 4:25 PM ET"
+        },
+        {
+          "id": "32ebab19-0675-4910-b585-059b3c0479e3",
+          "season": 2026,
+          "week": 5,
+          "gameDateTimeUTC": "2026-10-12T00:20:00.000Z",
+          "stadiumId": "b6a483c4-11ea-4874-985e-c4c9bdfb6171",
+          "homeTeamId": "atl",
+          "awayTeamId": "bal",
+          "_summary": "BAL @ ATL, Mercedes-Benz Stadium, Sun Oct 11 8:20 PM ET"
+        },
+        {
+          "id": "92a35aa8-c55f-48b7-a1e0-d3b2248c4da4",
+          "season": 2026,
+          "week": 5,
+          "gameDateTimeUTC": "2026-10-13T00:15:00.000Z",
+          "stadiumId": "d9f34167-daed-46bb-8221-ba00135747d3",
+          "homeTeamId": "lar",
+          "awayTeamId": "buf",
+          "_summary": "BUF @ LAR, SoFi Stadium, Mon Oct 12 8:15 PM ET"
+        },
+        {
+          "id": "f062c603-0737-4dc8-bd08-d287346e0ff5",
+          "season": 2026,
+          "week": 5,
+          "gameDateTimeUTC": "TBD",
+          "stadiumId": null,
+          "homeTeamId": "car",
+          "awayTeamId": "bye",
+          "_summary": "CAR bye"
+        },
+        {
+          "id": "d37dba5a-c8c2-46c3-9996-5eba9fef7847",
+          "season": 2026,
+          "week": 5,
+          "gameDateTimeUTC": "TBD",
+          "stadiumId": null,
+          "homeTeamId": "kc",
+          "awayTeamId": "bye",
+          "_summary": "KC bye"
+        }
+      ]
+    },
+    {
+      "weekNumber": 6,
+      "games": [
+        {
+          "id": "db29d6b9-2181-4366-9ac2-472ed5eea7e2",
+          "season": 2026,
+          "week": 6,
+          "gameDateTimeUTC": "2026-10-16T00:15:00.000Z",
+          "stadiumId": "47e6a7ba-e1d8-45a8-a365-b131ec1de1ca",
+          "homeTeamId": "den",
+          "awayTeamId": "sea",
+          "_summary": "SEA @ DEN, Empower Field at Mile High, Thu Oct 15 8:15 PM ET"
+        },
+        {
+          "id": "23a1d5b9-00ce-43dc-9f41-72c89eb698fb",
+          "season": 2026,
+          "week": 6,
+          "gameDateTimeUTC": "2026-10-18T13:30:00.000Z",
+          "stadiumId": "b7e4d3f2-1c5a-4b8e-9d3f-2e6c7b0a1f4d",
+          "homeTeamId": "jax",
+          "awayTeamId": "hou",
+          "_summary": "HOU @ JAX, Wembley Stadium, Sun Oct 18 9:30 AM ET"
+        },
+        {
+          "id": "b8c9c55e-9225-47de-90aa-e6406bd3d5ec",
+          "season": 2026,
+          "week": 6,
+          "gameDateTimeUTC": "2026-10-18T17:00:00.000Z",
+          "stadiumId": "b6a483c4-11ea-4874-985e-c4c9bdfb6171",
+          "homeTeamId": "atl",
+          "awayTeamId": "chi",
+          "_summary": "CHI @ ATL, Mercedes-Benz Stadium, Sun Oct 18 1:00 PM ET"
+        },
+        {
+          "id": "355cf18a-f306-4881-8e2b-62871fc74f8b",
+          "season": 2026,
+          "week": 6,
+          "gameDateTimeUTC": "2026-10-18T17:00:00.000Z",
+          "stadiumId": "f33bef4e-cb13-4fef-9eff-90603c07c31b",
+          "homeTeamId": "cle",
+          "awayTeamId": "bal",
+          "_summary": "BAL @ CLE, Huntington Bank Field, Sun Oct 18 1:00 PM ET"
+        },
+        {
+          "id": "f5828aa1-1b7a-4f3b-9745-5788aa27616a",
+          "season": 2026,
+          "week": 6,
+          "gameDateTimeUTC": "2026-10-18T17:00:00.000Z",
+          "stadiumId": "d8acdc51-58d8-409a-8668-0f5fc2f9dca0",
+          "homeTeamId": "ind",
+          "awayTeamId": "ten",
+          "_summary": "TEN @ IND, Lucas Oil Stadium, Sun Oct 18 1:00 PM ET"
+        },
+        {
+          "id": "39bd52ae-3865-43ac-b9b8-311fed903b5b",
+          "season": 2026,
+          "week": 6,
+          "gameDateTimeUTC": "2026-10-18T17:00:00.000Z",
+          "stadiumId": "8d81bd51-ac13-4f12-b5b4-ccfbdde7a4c5",
+          "homeTeamId": "ne",
+          "awayTeamId": "nyj",
+          "_summary": "NYJ @ NE, Gillette Stadium, Sun Oct 18 1:00 PM ET"
+        },
+        {
+          "id": "f1c2e432-2361-4269-9842-0365300651ff",
+          "season": 2026,
+          "week": 6,
+          "gameDateTimeUTC": "2026-10-18T17:00:00.000Z",
+          "stadiumId": "c3d7f0d4-1288-416d-8047-c77c7579722e",
+          "homeTeamId": "nyg",
+          "awayTeamId": "no",
+          "_summary": "NO @ NYG, MetLife Stadium, Sun Oct 18 1:00 PM ET"
+        },
+        {
+          "id": "2166ffcc-fdbc-431c-8181-deadfa299a04",
+          "season": 2026,
+          "week": 6,
+          "gameDateTimeUTC": "2026-10-18T17:00:00.000Z",
+          "stadiumId": "363bcc94-57e8-4c9a-a4f6-6ef6948d4ee8",
+          "homeTeamId": "phi",
+          "awayTeamId": "car",
+          "_summary": "CAR @ PHI, Lincoln Financial Field, Sun Oct 18 1:00 PM ET"
+        },
+        {
+          "id": "1d8df63e-caaa-4140-9952-2cf427a7da81",
+          "season": 2026,
+          "week": 6,
+          "gameDateTimeUTC": "2026-10-18T17:00:00.000Z",
+          "stadiumId": "30bc29f2-a45e-4fa1-8d69-5e11d42190a5",
+          "homeTeamId": "tb",
+          "awayTeamId": "pit",
+          "_summary": "PIT @ TB, Raymond James Stadium, Sun Oct 18 1:00 PM ET"
+        },
+        {
+          "id": "8468d04c-900e-446c-869c-47ddcc5e0fff",
+          "season": 2026,
+          "week": 6,
+          "gameDateTimeUTC": "2026-10-18T20:05:00.000Z",
+          "stadiumId": "d9f34167-daed-46bb-8221-ba00135747d3",
+          "homeTeamId": "lar",
+          "awayTeamId": "ari",
+          "_summary": "ARI @ LAR, SoFi Stadium, Sun Oct 18 4:05 PM ET"
+        },
+        {
+          "id": "696360d7-f49e-4bb7-bc0a-0833ef43bf85",
+          "season": 2026,
+          "week": 6,
+          "gameDateTimeUTC": "2026-10-18T20:25:00.000Z",
+          "stadiumId": "e3819f6b-1c18-4083-b70d-9f978be60b09",
+          "homeTeamId": "kc",
+          "awayTeamId": "lac",
+          "_summary": "LAC @ KC, Arrowhead Stadium, Sun Oct 18 4:25 PM ET"
+        },
+        {
+          "id": "658f6dcd-4672-41f3-9e0c-6ce71b2be7b3",
+          "season": 2026,
+          "week": 6,
+          "gameDateTimeUTC": "2026-10-18T20:25:00.000Z",
+          "stadiumId": "2a38b03f-d1cc-48c1-8c90-dd5b1db23c2a",
+          "homeTeamId": "lv",
+          "awayTeamId": "buf",
+          "_summary": "BUF @ LV, Allegiant Stadium, Sun Oct 18 4:25 PM ET"
+        },
+        {
+          "id": "e851aef7-860d-41f6-9b0a-222131dcdc22",
+          "season": 2026,
+          "week": 6,
+          "gameDateTimeUTC": "2026-10-19T00:20:00.000Z",
+          "stadiumId": "66fcf716-1af3-444f-b28f-89615fdb6518",
+          "homeTeamId": "gb",
+          "awayTeamId": "dal",
+          "_summary": "DAL @ GB, Lambeau Field, Sun Oct 18 8:20 PM ET"
+        },
+        {
+          "id": "344d4f7b-76c9-47e3-9466-f230cd738a33",
+          "season": 2026,
+          "week": 6,
+          "gameDateTimeUTC": "2026-10-20T00:15:00.000Z",
+          "stadiumId": "39160e46-5670-42f7-b33c-67e3e5ac3697",
+          "homeTeamId": "sf",
+          "awayTeamId": "was",
+          "_summary": "WAS @ SF, Levi's Stadium, Mon Oct 19 8:15 PM ET"
+        },
+        {
+          "id": "11760f5e-e9c0-4784-90b4-96428c5af086",
+          "season": 2026,
+          "week": 6,
+          "gameDateTimeUTC": "TBD",
+          "stadiumId": null,
+          "homeTeamId": "cin",
+          "awayTeamId": "bye",
+          "_summary": "CIN bye"
+        },
+        {
+          "id": "e205e0f2-8e51-43c9-90d4-f0fc3e0ebb94",
+          "season": 2026,
+          "week": 6,
+          "gameDateTimeUTC": "TBD",
+          "stadiumId": null,
+          "homeTeamId": "det",
+          "awayTeamId": "bye",
+          "_summary": "DET bye"
+        },
+        {
+          "id": "66516380-6fd6-418c-87e7-77b3e1d0750f",
+          "season": 2026,
+          "week": 6,
+          "gameDateTimeUTC": "TBD",
+          "stadiumId": null,
+          "homeTeamId": "mia",
+          "awayTeamId": "bye",
+          "_summary": "MIA bye"
+        },
+        {
+          "id": "fe17c353-89e6-4d56-97e2-6260ec184bfc",
+          "season": 2026,
+          "week": 6,
+          "gameDateTimeUTC": "TBD",
+          "stadiumId": null,
+          "homeTeamId": "min",
+          "awayTeamId": "bye",
+          "_summary": "MIN bye"
+        }
+      ]
+    },
+    {
+      "weekNumber": 7,
+      "games": [
+        {
+          "id": "d687fecc-af47-44fe-bb34-b336a0fafa53",
+          "season": 2026,
+          "week": 7,
+          "gameDateTimeUTC": "2026-10-23T00:15:00.000Z",
+          "stadiumId": "cfdd7c54-a855-4ab2-a22b-f930f438892c",
+          "homeTeamId": "chi",
+          "awayTeamId": "ne",
+          "_summary": "NE @ CHI, Soldier Field, Thu Oct 22 8:15 PM ET"
+        },
+        {
+          "id": "3903376f-32a8-475c-8b4b-549badd7f02a",
+          "season": 2026,
+          "week": 7,
+          "gameDateTimeUTC": "2026-10-25T13:30:00.000Z",
+          "stadiumId": "f26f0ca3-1d73-49d0-b0c9-69594527fb3e",
+          "homeTeamId": "no",
+          "awayTeamId": "pit",
+          "_summary": "PIT @ NO, Stade de France, Sun Oct 25 9:30 AM ET"
+        },
+        {
+          "id": "7a8872fa-e04d-44dc-a50b-8b1c3758f4a2",
+          "season": 2026,
+          "week": 7,
+          "gameDateTimeUTC": "2026-10-25T17:00:00.000Z",
+          "stadiumId": "b6a483c4-11ea-4874-985e-c4c9bdfb6171",
+          "homeTeamId": "atl",
+          "awayTeamId": "sf",
+          "_summary": "SF @ ATL, Mercedes-Benz Stadium, Sun Oct 25 1:00 PM ET"
+        },
+        {
+          "id": "b4e3cb88-d415-40a1-869e-de718bf413d1",
+          "season": 2026,
+          "week": 7,
+          "gameDateTimeUTC": "2026-10-25T17:00:00.000Z",
+          "stadiumId": "ebbfa6d5-3a14-415c-93a6-a1b80eef17bf",
+          "homeTeamId": "bal",
+          "awayTeamId": "cin",
+          "_summary": "CIN @ BAL, M&T Bank Stadium, Sun Oct 25 1:00 PM ET"
+        },
+        {
+          "id": "2e8542e2-3ea4-4f2e-bc63-c2c38ff41d58",
+          "season": 2026,
+          "week": 7,
+          "gameDateTimeUTC": "2026-10-25T17:00:00.000Z",
+          "stadiumId": "de14a887-e38f-427b-b02e-49396efa36c9",
+          "homeTeamId": "car",
+          "awayTeamId": "tb",
+          "_summary": "TB @ CAR, Bank of America Stadium, Sun Oct 25 1:00 PM ET"
+        },
+        {
+          "id": "085f9cf4-e40b-4477-a601-28a17de2d2dc",
+          "season": 2026,
+          "week": 7,
+          "gameDateTimeUTC": "2026-10-25T17:00:00.000Z",
+          "stadiumId": "892f31af-c29f-435a-bb0a-60ef8595bd10",
+          "homeTeamId": "hou",
+          "awayTeamId": "nyg",
+          "_summary": "NYG @ HOU, NRG Stadium, Sun Oct 25 1:00 PM ET"
+        },
+        {
+          "id": "43e82b10-6f8d-4ee9-873a-a00ae691c444",
+          "season": 2026,
+          "week": 7,
+          "gameDateTimeUTC": "2026-10-25T17:00:00.000Z",
+          "stadiumId": "e57f2fba-2e6b-4d5a-8b40-d3a14eef4b7c",
+          "homeTeamId": "min",
+          "awayTeamId": "ind",
+          "_summary": "IND @ MIN, U.S. Bank Stadium, Sun Oct 25 1:00 PM ET"
+        },
+        {
+          "id": "ac0ae9d6-9104-4dd1-a355-7fd1812d7cec",
+          "season": 2026,
+          "week": 7,
+          "gameDateTimeUTC": "2026-10-25T17:00:00.000Z",
+          "stadiumId": "c3d7f0d4-1288-416d-8047-c77c7579722e",
+          "homeTeamId": "nyj",
+          "awayTeamId": "mia",
+          "_summary": "MIA @ NYJ, MetLife Stadium, Sun Oct 25 1:00 PM ET"
+        },
+        {
+          "id": "2e31a699-3b63-4ffa-94f9-ace2138e0384",
+          "season": 2026,
+          "week": 7,
+          "gameDateTimeUTC": "2026-10-25T17:00:00.000Z",
+          "stadiumId": "deb48462-3e78-4609-9210-36363c678e8d",
+          "homeTeamId": "ten",
+          "awayTeamId": "cle",
+          "_summary": "CLE @ TEN, Nissan Stadium, Sun Oct 25 1:00 PM ET"
+        },
+        {
+          "id": "458f5177-bbdd-4c30-9150-9813fd1d5c1e",
+          "season": 2026,
+          "week": 7,
+          "gameDateTimeUTC": "2026-10-25T20:05:00.000Z",
+          "stadiumId": "4038828a-bb7d-46c2-81ce-da1b2270c293",
+          "homeTeamId": "ari",
+          "awayTeamId": "den",
+          "_summary": "DEN @ ARI, State Farm Stadium, Sun Oct 25 4:05 PM ET"
+        },
+        {
+          "id": "898cb74d-83b7-487b-b679-d7b24dce7151",
+          "season": 2026,
+          "week": 7,
+          "gameDateTimeUTC": "2026-10-25T20:25:00.000Z",
+          "stadiumId": "f96aa25d-d2bb-43c2-9a28-7034296f681b",
+          "homeTeamId": "det",
+          "awayTeamId": "gb",
+          "_summary": "GB @ DET, Ford Field, Sun Oct 25 4:25 PM ET"
+        },
+        {
+          "id": "80b67fc9-734c-4bf0-8fc5-d728bad167e7",
+          "season": 2026,
+          "week": 7,
+          "gameDateTimeUTC": "2026-10-25T20:25:00.000Z",
+          "stadiumId": "2a38b03f-d1cc-48c1-8c90-dd5b1db23c2a",
+          "homeTeamId": "lv",
+          "awayTeamId": "lar",
+          "_summary": "LAR @ LV, Allegiant Stadium, Sun Oct 25 4:25 PM ET"
+        },
+        {
+          "id": "9469ed10-371c-459f-830b-790eca1cccfe",
+          "season": 2026,
+          "week": 7,
+          "gameDateTimeUTC": "2026-10-26T00:20:00.000Z",
+          "stadiumId": "c66f4cc4-afc0-4bd4-bdd7-d5adbfc3679b",
+          "homeTeamId": "sea",
+          "awayTeamId": "kc",
+          "_summary": "KC @ SEA, Lumen Field, Sun Oct 25 8:20 PM ET"
+        },
+        {
+          "id": "c76a0d29-2c5b-4420-a952-0213d8650773",
+          "season": 2026,
+          "week": 7,
+          "gameDateTimeUTC": "2026-10-27T00:15:00.000Z",
+          "stadiumId": "363bcc94-57e8-4c9a-a4f6-6ef6948d4ee8",
+          "homeTeamId": "phi",
+          "awayTeamId": "dal",
+          "_summary": "DAL @ PHI, Lincoln Financial Field, Mon Oct 26 8:15 PM ET"
+        },
+        {
+          "id": "87aae1b7-62d6-48d9-8077-a478bb18ff09",
+          "season": 2026,
+          "week": 7,
+          "gameDateTimeUTC": "TBD",
+          "stadiumId": null,
+          "homeTeamId": "buf",
+          "awayTeamId": "bye",
+          "_summary": "BUF bye"
+        },
+        {
+          "id": "5dfa3a58-4dbf-46c2-bc52-a00b14748e98",
+          "season": 2026,
+          "week": 7,
+          "gameDateTimeUTC": "TBD",
+          "stadiumId": null,
+          "homeTeamId": "jax",
+          "awayTeamId": "bye",
+          "_summary": "JAX bye"
+        },
+        {
+          "id": "8b171a44-7fe6-40bf-9100-6d3c8a972e09",
+          "season": 2026,
+          "week": 7,
+          "gameDateTimeUTC": "TBD",
+          "stadiumId": null,
+          "homeTeamId": "lac",
+          "awayTeamId": "bye",
+          "_summary": "LAC bye"
+        },
+        {
+          "id": "771a9d02-7e7b-48ef-9590-83a035f86d01",
+          "season": 2026,
+          "week": 7,
+          "gameDateTimeUTC": "TBD",
+          "stadiumId": null,
+          "homeTeamId": "was",
+          "awayTeamId": "bye",
+          "_summary": "WAS bye"
+        }
+      ]
+    },
+    {
+      "weekNumber": 8,
+      "games": [
+        {
+          "id": "eb1262f4-dc4d-496a-b91c-6b520ea84c43",
+          "season": 2026,
+          "week": 8,
+          "gameDateTimeUTC": "2026-10-30T00:15:00.000Z",
+          "stadiumId": "66fcf716-1af3-444f-b28f-89615fdb6518",
+          "homeTeamId": "gb",
+          "awayTeamId": "car",
+          "_summary": "CAR @ GB, Lambeau Field, Thu Oct 29 8:15 PM ET"
+        },
+        {
+          "id": "8e03ed35-fd7d-4839-880c-c00bb6704513",
+          "season": 2026,
+          "week": 8,
+          "gameDateTimeUTC": "2026-11-01T18:00:00.000Z",
+          "stadiumId": "b1ea911d-5a1b-41fc-8425-6503ab256157",
+          "homeTeamId": "buf",
+          "awayTeamId": "bal",
+          "_summary": "BAL @ BUF, Highmark Stadium, Sun Nov 1 1:00 PM ET"
+        },
+        {
+          "id": "72c7f2eb-1803-4e9a-ad08-c1a3c828a337",
+          "season": 2026,
+          "week": 8,
+          "gameDateTimeUTC": "2026-11-01T18:00:00.000Z",
+          "stadiumId": "4ddefd70-a6a6-4734-983a-83d76ef15135",
+          "homeTeamId": "cin",
+          "awayTeamId": "ten",
+          "_summary": "TEN @ CIN, Paycor Stadium, Sun Nov 1 1:00 PM ET"
+        },
+        {
+          "id": "2bad2f01-8fb9-49fd-b5e1-e10d60ccb46a",
+          "season": 2026,
+          "week": 8,
+          "gameDateTimeUTC": "2026-11-01T18:00:00.000Z",
+          "stadiumId": "69a00dd6-575b-4c5b-a00d-2b174e40bb9d",
+          "homeTeamId": "dal",
+          "awayTeamId": "ari",
+          "_summary": "ARI @ DAL, AT&T Stadium, Sun Nov 1 1:00 PM ET"
+        },
+        {
+          "id": "f493eaa0-1958-4ba5-909f-55fc962585e9",
+          "season": 2026,
+          "week": 8,
+          "gameDateTimeUTC": "2026-11-01T18:00:00.000Z",
+          "stadiumId": "f96aa25d-d2bb-43c2-9a28-7034296f681b",
+          "homeTeamId": "det",
+          "awayTeamId": "min",
+          "_summary": "MIN @ DET, Ford Field, Sun Nov 1 1:00 PM ET"
+        },
+        {
+          "id": "856f4506-63a6-428f-863d-2a4f31b7f364",
+          "season": 2026,
+          "week": 8,
+          "gameDateTimeUTC": "2026-11-01T18:00:00.000Z",
+          "stadiumId": "51406146-153c-40d7-9c5a-8df5a113840c",
+          "homeTeamId": "jax",
+          "awayTeamId": "ind",
+          "_summary": "IND @ JAX, EverBank Stadium, Sun Nov 1 1:00 PM ET"
+        },
+        {
+          "id": "a25a08f2-f7a9-4ca7-80e9-9eda4caa80c9",
+          "season": 2026,
+          "week": 8,
+          "gameDateTimeUTC": "2026-11-01T18:00:00.000Z",
+          "stadiumId": "c3d7f0d4-1288-416d-8047-c77c7579722e",
+          "homeTeamId": "nyj",
+          "awayTeamId": "lv",
+          "_summary": "LV @ NYJ, MetLife Stadium, Sun Nov 1 1:00 PM ET"
+        },
+        {
+          "id": "9bdf0257-8378-4947-961e-b6d34e15306b",
+          "season": 2026,
+          "week": 8,
+          "gameDateTimeUTC": "2026-11-01T18:00:00.000Z",
+          "stadiumId": "765f8f02-7887-4707-8552-1de9b492cddd",
+          "homeTeamId": "pit",
+          "awayTeamId": "cle",
+          "_summary": "CLE @ PIT, Acrisure Stadium, Sun Nov 1 1:00 PM ET"
+        },
+        {
+          "id": "d349633c-ad33-4079-847c-815bf1dace54",
+          "season": 2026,
+          "week": 8,
+          "gameDateTimeUTC": "2026-11-01T18:00:00.000Z",
+          "stadiumId": "30bc29f2-a45e-4fa1-8d69-5e11d42190a5",
+          "homeTeamId": "tb",
+          "awayTeamId": "atl",
+          "_summary": "ATL @ TB, Raymond James Stadium, Sun Nov 1 1:00 PM ET"
+        },
+        {
+          "id": "f15a44e4-ea23-4f31-acaa-a3988fc6e8a5",
+          "season": 2026,
+          "week": 8,
+          "gameDateTimeUTC": "2026-11-01T21:05:00.000Z",
+          "stadiumId": "d9f34167-daed-46bb-8221-ba00135747d3",
+          "homeTeamId": "lar",
+          "awayTeamId": "lac",
+          "_summary": "LAC @ LAR, SoFi Stadium, Sun Nov 1 4:05 PM ET"
+        },
+        {
+          "id": "d7df3418-8737-4460-ad23-bd0df92adcc8",
+          "season": 2026,
+          "week": 8,
+          "gameDateTimeUTC": "2026-11-01T21:25:00.000Z",
+          "stadiumId": "47e6a7ba-e1d8-45a8-a365-b131ec1de1ca",
+          "homeTeamId": "den",
+          "awayTeamId": "kc",
+          "_summary": "KC @ DEN, Empower Field at Mile High, Sun Nov 1 4:25 PM ET"
+        },
+        {
+          "id": "0df3dd0d-113b-4090-a4fb-69078df6e12a",
+          "season": 2026,
+          "week": 8,
+          "gameDateTimeUTC": "2026-11-01T21:25:00.000Z",
+          "stadiumId": "6688fdf0-a943-4bbf-bd43-87a130122e03",
+          "homeTeamId": "mia",
+          "awayTeamId": "ne",
+          "_summary": "NE @ MIA, Hard Rock Stadium, Sun Nov 1 4:25 PM ET"
+        },
+        {
+          "id": "f9b9bbc1-b2e3-4c41-8fea-7c39f4dd1988",
+          "season": 2026,
+          "week": 8,
+          "gameDateTimeUTC": "2026-11-02T01:20:00.000Z",
+          "stadiumId": "698f9855-ac75-45d3-bbb9-0aa83b187a53",
+          "homeTeamId": "was",
+          "awayTeamId": "phi",
+          "_summary": "PHI @ WAS, Northwest Stadium, Sun Nov 1 8:20 PM ET"
+        },
+        {
+          "id": "139219da-4a16-4728-8e80-4937db042f4b",
+          "season": 2026,
+          "week": 8,
+          "gameDateTimeUTC": "2026-11-03T01:15:00.000Z",
+          "stadiumId": "c66f4cc4-afc0-4bd4-bdd7-d5adbfc3679b",
+          "homeTeamId": "sea",
+          "awayTeamId": "chi",
+          "_summary": "CHI @ SEA, Lumen Field, Mon Nov 2 8:15 PM ET"
+        },
+        {
+          "id": "12d2ec3b-0043-49a3-8f79-acde546bb9d6",
+          "season": 2026,
+          "week": 8,
+          "gameDateTimeUTC": "TBD",
+          "stadiumId": null,
+          "homeTeamId": "hou",
+          "awayTeamId": "bye",
+          "_summary": "HOU bye"
+        },
+        {
+          "id": "48d1b0d0-73ef-4214-a1cc-8ed832d2c607",
+          "season": 2026,
+          "week": 8,
+          "gameDateTimeUTC": "TBD",
+          "stadiumId": null,
+          "homeTeamId": "no",
+          "awayTeamId": "bye",
+          "_summary": "NO bye"
+        },
+        {
+          "id": "41a1178f-5e34-41d0-8f77-a4f87f1081a3",
+          "season": 2026,
+          "week": 8,
+          "gameDateTimeUTC": "TBD",
+          "stadiumId": null,
+          "homeTeamId": "nyg",
+          "awayTeamId": "bye",
+          "_summary": "NYG bye"
+        },
+        {
+          "id": "d987d39d-f2e5-47d2-82dc-55d50e113833",
+          "season": 2026,
+          "week": 8,
+          "gameDateTimeUTC": "TBD",
+          "stadiumId": null,
+          "homeTeamId": "sf",
+          "awayTeamId": "bye",
+          "_summary": "SF bye"
+        }
+      ]
+    },
+    {
+      "weekNumber": 9,
+      "games": [
+        {
+          "id": "4809d117-9d33-4e59-a1e6-915dc8082766",
+          "season": 2026,
+          "week": 9,
+          "gameDateTimeUTC": "2026-11-06T01:15:00.000Z",
+          "stadiumId": "ebbfa6d5-3a14-415c-93a6-a1b80eef17bf",
+          "homeTeamId": "bal",
+          "awayTeamId": "jax",
+          "_summary": "JAX @ BAL, M&T Bank Stadium, Thu Nov 5 8:15 PM ET"
+        },
+        {
+          "id": "3cd38965-b2d1-4ec4-9522-7402a28c666a",
+          "season": 2026,
+          "week": 9,
+          "gameDateTimeUTC": "2026-11-08T14:30:00.000Z",
+          "stadiumId": "39f35d02-1d7c-4caa-94e7-3d2068d04817",
+          "homeTeamId": "atl",
+          "awayTeamId": "cin",
+          "_summary": "CIN @ ATL, Santiago Bernabéu Stadium, Sun Nov 8 9:30 AM ET"
+        },
+        {
+          "id": "f56b70cc-c358-4e6f-8e1b-6139a167120c",
+          "season": 2026,
+          "week": 9,
+          "gameDateTimeUTC": "2026-11-08T18:00:00.000Z",
+          "stadiumId": "de14a887-e38f-427b-b02e-49396efa36c9",
+          "homeTeamId": "car",
+          "awayTeamId": "den",
+          "_summary": "DEN @ CAR, Bank of America Stadium, Sun Nov 8 1:00 PM ET"
+        },
+        {
+          "id": "6cbf88c2-cbcf-47ec-a9cb-e7a2a14d1c16",
+          "season": 2026,
+          "week": 9,
+          "gameDateTimeUTC": "2026-11-08T18:00:00.000Z",
+          "stadiumId": "d8acdc51-58d8-409a-8668-0f5fc2f9dca0",
+          "homeTeamId": "ind",
+          "awayTeamId": "dal",
+          "_summary": "DAL @ IND, Lucas Oil Stadium, Sun Nov 8 1:00 PM ET"
+        },
+        {
+          "id": "8e476271-2454-4c12-93df-5998aab2bc17",
+          "season": 2026,
+          "week": 9,
+          "gameDateTimeUTC": "2026-11-08T18:00:00.000Z",
+          "stadiumId": "e3819f6b-1c18-4083-b70d-9f978be60b09",
+          "homeTeamId": "kc",
+          "awayTeamId": "nyj",
+          "_summary": "NYJ @ KC, Arrowhead Stadium, Sun Nov 8 1:00 PM ET"
+        },
+        {
+          "id": "580c5642-96b2-4ded-b47f-6918154ef611",
+          "season": 2026,
+          "week": 9,
+          "gameDateTimeUTC": "2026-11-08T18:00:00.000Z",
+          "stadiumId": "6688fdf0-a943-4bbf-bd43-87a130122e03",
+          "homeTeamId": "mia",
+          "awayTeamId": "det",
+          "_summary": "DET @ MIA, Hard Rock Stadium, Sun Nov 8 1:00 PM ET"
+        },
+        {
+          "id": "bad3d70d-bb1e-4d96-bc99-96f7d4a83f3a",
+          "season": 2026,
+          "week": 9,
+          "gameDateTimeUTC": "2026-11-08T18:00:00.000Z",
+          "stadiumId": "0e8ff099-ca06-45b2-b730-16f69705962a",
+          "homeTeamId": "no",
+          "awayTeamId": "cle",
+          "_summary": "CLE @ NO, Caesars Superdome, Sun Nov 8 1:00 PM ET"
+        },
+        {
+          "id": "481bd072-ed8d-459d-a949-974fff309d60",
+          "season": 2026,
+          "week": 9,
+          "gameDateTimeUTC": "2026-11-08T18:00:00.000Z",
+          "stadiumId": "363bcc94-57e8-4c9a-a4f6-6ef6948d4ee8",
+          "homeTeamId": "phi",
+          "awayTeamId": "nyg",
+          "_summary": "NYG @ PHI, Lincoln Financial Field, Sun Nov 8 1:00 PM ET"
+        },
+        {
+          "id": "aa5d2f3a-0abc-43cb-98cc-444ec2825127",
+          "season": 2026,
+          "week": 9,
+          "gameDateTimeUTC": "2026-11-08T18:00:00.000Z",
+          "stadiumId": "698f9855-ac75-45d3-bbb9-0aa83b187a53",
+          "homeTeamId": "was",
+          "awayTeamId": "lar",
+          "_summary": "LAR @ WAS, Northwest Stadium, Sun Nov 8 1:00 PM ET"
+        },
+        {
+          "id": "b14f0df7-8587-4630-94e6-839a9d7fe7ce",
+          "season": 2026,
+          "week": 9,
+          "gameDateTimeUTC": "2026-11-08T21:05:00.000Z",
+          "stadiumId": "d9f34167-daed-46bb-8221-ba00135747d3",
+          "homeTeamId": "lac",
+          "awayTeamId": "hou",
+          "_summary": "HOU @ LAC, SoFi Stadium, Sun Nov 8 4:05 PM ET"
+        },
+        {
+          "id": "895002e2-5011-4b79-a328-cadc9b1af21a",
+          "season": 2026,
+          "week": 9,
+          "gameDateTimeUTC": "2026-11-08T21:05:00.000Z",
+          "stadiumId": "39160e46-5670-42f7-b33c-67e3e5ac3697",
+          "homeTeamId": "sf",
+          "awayTeamId": "lv",
+          "_summary": "LV @ SF, Levi's Stadium, Sun Nov 8 4:05 PM ET"
+        },
+        {
+          "id": "07339f10-3862-416c-a2be-d38f845b8977",
+          "season": 2026,
+          "week": 9,
+          "gameDateTimeUTC": "2026-11-08T21:25:00.000Z",
+          "stadiumId": "8d81bd51-ac13-4f12-b5b4-ccfbdde7a4c5",
+          "homeTeamId": "ne",
+          "awayTeamId": "gb",
+          "_summary": "GB @ NE, Gillette Stadium, Sun Nov 8 4:25 PM ET"
+        },
+        {
+          "id": "5e64947c-5969-46b0-a8a9-fbae79b7dab3",
+          "season": 2026,
+          "week": 9,
+          "gameDateTimeUTC": "2026-11-08T21:25:00.000Z",
+          "stadiumId": "c66f4cc4-afc0-4bd4-bdd7-d5adbfc3679b",
+          "homeTeamId": "sea",
+          "awayTeamId": "ari",
+          "_summary": "ARI @ SEA, Lumen Field, Sun Nov 8 4:25 PM ET"
+        },
+        {
+          "id": "b491ee27-e5bf-4e8e-beab-c04915335f89",
+          "season": 2026,
+          "week": 9,
+          "gameDateTimeUTC": "2026-11-09T01:20:00.000Z",
+          "stadiumId": "cfdd7c54-a855-4ab2-a22b-f930f438892c",
+          "homeTeamId": "chi",
+          "awayTeamId": "tb",
+          "_summary": "TB @ CHI, Soldier Field, Sun Nov 8 8:20 PM ET"
+        },
+        {
+          "id": "d104b925-d2c9-46ec-9900-c487474f0295",
+          "season": 2026,
+          "week": 9,
+          "gameDateTimeUTC": "2026-11-10T01:15:00.000Z",
+          "stadiumId": "e57f2fba-2e6b-4d5a-8b40-d3a14eef4b7c",
+          "homeTeamId": "min",
+          "awayTeamId": "buf",
+          "_summary": "BUF @ MIN, U.S. Bank Stadium, Mon Nov 9 8:15 PM ET"
+        },
+        {
+          "id": "3fd6132c-0e4c-4901-b3a5-5b6fb1a06943",
+          "season": 2026,
+          "week": 9,
+          "gameDateTimeUTC": "TBD",
+          "stadiumId": null,
+          "homeTeamId": "pit",
+          "awayTeamId": "bye",
+          "_summary": "PIT bye"
+        },
+        {
+          "id": "12b7a3b5-e53d-418c-b0de-4b569266843f",
+          "season": 2026,
+          "week": 9,
+          "gameDateTimeUTC": "TBD",
+          "stadiumId": null,
+          "homeTeamId": "ten",
+          "awayTeamId": "bye",
+          "_summary": "TEN bye"
+        }
+      ]
+    },
+    {
+      "weekNumber": 10,
+      "games": [
+        {
+          "id": "b859e9de-e287-4ed5-83f0-0f1c6cdc7ece",
+          "season": 2026,
+          "week": 10,
+          "gameDateTimeUTC": "2026-11-13T01:15:00.000Z",
+          "stadiumId": "c3d7f0d4-1288-416d-8047-c77c7579722e",
+          "homeTeamId": "nyg",
+          "awayTeamId": "was",
+          "_summary": "WAS @ NYG, MetLife Stadium, Thu Nov 12 8:15 PM ET"
+        },
+        {
+          "id": "bd026aa7-f077-4177-87f4-fc7477948fb3",
+          "season": 2026,
+          "week": 10,
+          "gameDateTimeUTC": "2026-11-15T14:30:00.000Z",
+          "stadiumId": "6b25629e-242f-4942-8d2c-3dd97076b851",
+          "homeTeamId": "det",
+          "awayTeamId": "ne",
+          "_summary": "NE @ DET, Allianz Arena, Sun Nov 15 9:30 AM ET"
+        },
+        {
+          "id": "1bce5fea-0837-416b-9f8b-8a0aa6f94bce",
+          "season": 2026,
+          "week": 10,
+          "gameDateTimeUTC": "2026-11-15T18:00:00.000Z",
+          "stadiumId": "b6a483c4-11ea-4874-985e-c4c9bdfb6171",
+          "homeTeamId": "atl",
+          "awayTeamId": "kc",
+          "_summary": "KC @ ATL, Mercedes-Benz Stadium, Sun Nov 15 1:00 PM ET"
+        },
+        {
+          "id": "a5dc4c5f-053a-4f8d-8e1b-e9839180e12c",
+          "season": 2026,
+          "week": 10,
+          "gameDateTimeUTC": "2026-11-15T18:00:00.000Z",
+          "stadiumId": "f33bef4e-cb13-4fef-9eff-90603c07c31b",
+          "homeTeamId": "cle",
+          "awayTeamId": "hou",
+          "_summary": "HOU @ CLE, Huntington Bank Field, Sun Nov 15 1:00 PM ET"
+        },
+        {
+          "id": "d7b7d4f4-d8a9-4f17-9ce0-fce9ea29bd5b",
+          "season": 2026,
+          "week": 10,
+          "gameDateTimeUTC": "2026-11-15T18:00:00.000Z",
+          "stadiumId": "66fcf716-1af3-444f-b28f-89615fdb6518",
+          "homeTeamId": "gb",
+          "awayTeamId": "min",
+          "_summary": "MIN @ GB, Lambeau Field, Sun Nov 15 1:00 PM ET"
+        },
+        {
+          "id": "c234c0ce-1984-4916-bc0c-9b53fe1c206f",
+          "season": 2026,
+          "week": 10,
+          "gameDateTimeUTC": "2026-11-15T18:00:00.000Z",
+          "stadiumId": "d8acdc51-58d8-409a-8668-0f5fc2f9dca0",
+          "homeTeamId": "ind",
+          "awayTeamId": "mia",
+          "_summary": "MIA @ IND, Lucas Oil Stadium, Sun Nov 15 1:00 PM ET"
+        },
+        {
+          "id": "63d18e5a-14a1-4bc0-9d83-61b4c0d4351b",
+          "season": 2026,
+          "week": 10,
+          "gameDateTimeUTC": "2026-11-15T18:00:00.000Z",
+          "stadiumId": "0e8ff099-ca06-45b2-b730-16f69705962a",
+          "homeTeamId": "no",
+          "awayTeamId": "car",
+          "_summary": "CAR @ NO, Caesars Superdome, Sun Nov 15 1:00 PM ET"
+        },
+        {
+          "id": "63a05705-56ff-49a9-a709-f92b9f262732",
+          "season": 2026,
+          "week": 10,
+          "gameDateTimeUTC": "2026-11-15T18:00:00.000Z",
+          "stadiumId": "c3d7f0d4-1288-416d-8047-c77c7579722e",
+          "homeTeamId": "nyj",
+          "awayTeamId": "buf",
+          "_summary": "BUF @ NYJ, MetLife Stadium, Sun Nov 15 1:00 PM ET"
+        },
+        {
+          "id": "266d9dd1-f406-4fcb-a6a4-2c04d927e371",
+          "season": 2026,
+          "week": 10,
+          "gameDateTimeUTC": "2026-11-15T18:00:00.000Z",
+          "stadiumId": "deb48462-3e78-4609-9210-36363c678e8d",
+          "homeTeamId": "ten",
+          "awayTeamId": "jax",
+          "_summary": "JAX @ TEN, Nissan Stadium, Sun Nov 15 1:00 PM ET"
+        },
+        {
+          "id": "67efa490-a4bf-4534-9376-5e60358b0a80",
+          "season": 2026,
+          "week": 10,
+          "gameDateTimeUTC": "2026-11-15T21:05:00.000Z",
+          "stadiumId": "4038828a-bb7d-46c2-81ce-da1b2270c293",
+          "homeTeamId": "ari",
+          "awayTeamId": "lar",
+          "_summary": "LAR @ ARI, State Farm Stadium, Sun Nov 15 4:05 PM ET"
+        },
+        {
+          "id": "9d68bab4-11d8-487e-aa1d-42b4cf5b0d41",
+          "season": 2026,
+          "week": 10,
+          "gameDateTimeUTC": "2026-11-15T21:05:00.000Z",
+          "stadiumId": "2a38b03f-d1cc-48c1-8c90-dd5b1db23c2a",
+          "homeTeamId": "lv",
+          "awayTeamId": "sea",
+          "_summary": "SEA @ LV, Allegiant Stadium, Sun Nov 15 4:05 PM ET"
+        },
+        {
+          "id": "cd692660-9ebf-443a-b03a-70181eafd9e4",
+          "season": 2026,
+          "week": 10,
+          "gameDateTimeUTC": "2026-11-15T21:25:00.000Z",
+          "stadiumId": "69a00dd6-575b-4c5b-a00d-2b174e40bb9d",
+          "homeTeamId": "dal",
+          "awayTeamId": "sf",
+          "_summary": "SF @ DAL, AT&T Stadium, Sun Nov 15 4:25 PM ET"
+        },
+        {
+          "id": "13ccda46-669f-427a-a1b9-d51d96545ebe",
+          "season": 2026,
+          "week": 10,
+          "gameDateTimeUTC": "2026-11-16T01:20:00.000Z",
+          "stadiumId": "4ddefd70-a6a6-4734-983a-83d76ef15135",
+          "homeTeamId": "cin",
+          "awayTeamId": "pit",
+          "_summary": "PIT @ CIN, Paycor Stadium, Sun Nov 15 8:20 PM ET"
+        },
+        {
+          "id": "6f8a8bff-a157-4e8f-bf26-b3b2b9ba4292",
+          "season": 2026,
+          "week": 10,
+          "gameDateTimeUTC": "2026-11-17T01:15:00.000Z",
+          "stadiumId": "ebbfa6d5-3a14-415c-93a6-a1b80eef17bf",
+          "homeTeamId": "bal",
+          "awayTeamId": "lac",
+          "_summary": "LAC @ BAL, M&T Bank Stadium, Mon Nov 16 8:15 PM ET"
+        },
+        {
+          "id": "95336827-f7af-418d-a3ea-d749187dd43d",
+          "season": 2026,
+          "week": 10,
+          "gameDateTimeUTC": "TBD",
+          "stadiumId": null,
+          "homeTeamId": "chi",
+          "awayTeamId": "bye",
+          "_summary": "CHI bye"
+        },
+        {
+          "id": "2c6144b6-c434-4b8e-a4c0-bf946416ca7f",
+          "season": 2026,
+          "week": 10,
+          "gameDateTimeUTC": "TBD",
+          "stadiumId": null,
+          "homeTeamId": "den",
+          "awayTeamId": "bye",
+          "_summary": "DEN bye"
+        },
+        {
+          "id": "d220230a-4959-4262-8bf9-d1983fb5a9f5",
+          "season": 2026,
+          "week": 10,
+          "gameDateTimeUTC": "TBD",
+          "stadiumId": null,
+          "homeTeamId": "phi",
+          "awayTeamId": "bye",
+          "_summary": "PHI bye"
+        },
+        {
+          "id": "66fe8c16-25eb-41db-9b4a-2a48645db9e7",
+          "season": 2026,
+          "week": 10,
+          "gameDateTimeUTC": "TBD",
+          "stadiumId": null,
+          "homeTeamId": "tb",
+          "awayTeamId": "bye",
+          "_summary": "TB bye"
+        }
+      ]
+    },
+    {
+      "weekNumber": 11,
+      "games": [
+        {
+          "id": "536d550b-be2f-4181-95de-4cafaa2705b4",
+          "season": 2026,
+          "week": 11,
+          "gameDateTimeUTC": "2026-11-20T01:15:00.000Z",
+          "stadiumId": "892f31af-c29f-435a-bb0a-60ef8595bd10",
+          "homeTeamId": "hou",
+          "awayTeamId": "ind",
+          "_summary": "IND @ HOU, NRG Stadium, Thu Nov 19 8:15 PM ET"
+        },
+        {
+          "id": "34388be3-8b3a-4498-a8a0-ee0b517c5ee6",
+          "season": 2026,
+          "week": 11,
+          "gameDateTimeUTC": "2026-11-22T18:00:00.000Z",
+          "stadiumId": "b1ea911d-5a1b-41fc-8425-6503ab256157",
+          "homeTeamId": "buf",
+          "awayTeamId": "mia",
+          "_summary": "MIA @ BUF, Highmark Stadium, Sun Nov 22 1:00 PM ET"
+        },
+        {
+          "id": "00c4335e-0e87-4537-b1d5-3551832ea676",
+          "season": 2026,
+          "week": 11,
+          "gameDateTimeUTC": "2026-11-22T18:00:00.000Z",
+          "stadiumId": "de14a887-e38f-427b-b02e-49396efa36c9",
+          "homeTeamId": "car",
+          "awayTeamId": "bal",
+          "_summary": "BAL @ CAR, Bank of America Stadium, Sun Nov 22 1:00 PM ET"
+        },
+        {
+          "id": "4d1ed7ad-3966-43af-8b33-15e6b326b425",
+          "season": 2026,
+          "week": 11,
+          "gameDateTimeUTC": "2026-11-22T18:00:00.000Z",
+          "stadiumId": "cfdd7c54-a855-4ab2-a22b-f930f438892c",
+          "homeTeamId": "chi",
+          "awayTeamId": "no",
+          "_summary": "NO @ CHI, Soldier Field, Sun Nov 22 1:00 PM ET"
+        },
+        {
+          "id": "11b8db39-11b3-47ab-91cf-6337a7c54070",
+          "season": 2026,
+          "week": 11,
+          "gameDateTimeUTC": "2026-11-22T18:00:00.000Z",
+          "stadiumId": "69a00dd6-575b-4c5b-a00d-2b174e40bb9d",
+          "homeTeamId": "dal",
+          "awayTeamId": "ten",
+          "_summary": "TEN @ DAL, AT&T Stadium, Sun Nov 22 1:00 PM ET"
+        },
+        {
+          "id": "db47d79c-7671-4662-b517-71c2e4af7ed0",
+          "season": 2026,
+          "week": 11,
+          "gameDateTimeUTC": "2026-11-22T18:00:00.000Z",
+          "stadiumId": "f96aa25d-d2bb-43c2-9a28-7034296f681b",
+          "homeTeamId": "det",
+          "awayTeamId": "tb",
+          "_summary": "TB @ DET, Ford Field, Sun Nov 22 1:00 PM ET"
+        },
+        {
+          "id": "6146fe93-5126-4754-8587-431aed630a21",
+          "season": 2026,
+          "week": 11,
+          "gameDateTimeUTC": "2026-11-22T18:00:00.000Z",
+          "stadiumId": "e3819f6b-1c18-4083-b70d-9f978be60b09",
+          "homeTeamId": "kc",
+          "awayTeamId": "ari",
+          "_summary": "ARI @ KC, Arrowhead Stadium, Sun Nov 22 1:00 PM ET"
+        },
+        {
+          "id": "44a51750-0c01-4c20-a9da-f4a14a27d8c6",
+          "season": 2026,
+          "week": 11,
+          "gameDateTimeUTC": "2026-11-22T18:00:00.000Z",
+          "stadiumId": "c3d7f0d4-1288-416d-8047-c77c7579722e",
+          "homeTeamId": "nyg",
+          "awayTeamId": "jax",
+          "_summary": "JAX @ NYG, MetLife Stadium, Sun Nov 22 1:00 PM ET"
+        },
+        {
+          "id": "ad866009-7893-4a3d-8400-ea939092a87f",
+          "season": 2026,
+          "week": 11,
+          "gameDateTimeUTC": "2026-11-22T21:05:00.000Z",
+          "stadiumId": "d9f34167-daed-46bb-8221-ba00135747d3",
+          "homeTeamId": "lac",
+          "awayTeamId": "nyj",
+          "_summary": "NYJ @ LAC, SoFi Stadium, Sun Nov 22 4:05 PM ET"
+        },
+        {
+          "id": "7e6dab37-b444-417e-aea0-950edf56eff8",
+          "season": 2026,
+          "week": 11,
+          "gameDateTimeUTC": "2026-11-22T21:25:00.000Z",
+          "stadiumId": "47e6a7ba-e1d8-45a8-a365-b131ec1de1ca",
+          "homeTeamId": "den",
+          "awayTeamId": "lv",
+          "_summary": "LV @ DEN, Empower Field at Mile High, Sun Nov 22 4:25 PM ET"
+        },
+        {
+          "id": "b7e58292-2640-45de-8315-c56592c52aab",
+          "season": 2026,
+          "week": 11,
+          "gameDateTimeUTC": "2026-11-22T21:25:00.000Z",
+          "stadiumId": "363bcc94-57e8-4c9a-a4f6-6ef6948d4ee8",
+          "homeTeamId": "phi",
+          "awayTeamId": "pit",
+          "_summary": "PIT @ PHI, Lincoln Financial Field, Sun Nov 22 4:25 PM ET"
+        },
+        {
+          "id": "65a11ec6-9fa6-4d80-88b2-e477f5cb3084",
+          "season": 2026,
+          "week": 11,
+          "gameDateTimeUTC": "2026-11-23T01:20:00.000Z",
+          "stadiumId": "dee6b7de-0c51-4cb4-81ee-eb842979cf55",
+          "homeTeamId": "sf",
+          "awayTeamId": "min",
+          "_summary": "MIN @ SF, Estadio Banorte, Sun Nov 22 8:20 PM ET"
+        },
+        {
+          "id": "e2080a80-f7aa-438d-83e3-a4b0d9108eaf",
+          "season": 2026,
+          "week": 11,
+          "gameDateTimeUTC": "2026-11-24T01:15:00.000Z",
+          "stadiumId": "698f9855-ac75-45d3-bbb9-0aa83b187a53",
+          "homeTeamId": "was",
+          "awayTeamId": "cin",
+          "_summary": "CIN @ WAS, Northwest Stadium, Mon Nov 23 8:15 PM ET"
+        },
+        {
+          "id": "fd8987cd-cc48-4723-9473-783ed508a34d",
+          "season": 2026,
+          "week": 11,
+          "gameDateTimeUTC": "TBD",
+          "stadiumId": null,
+          "homeTeamId": "atl",
+          "awayTeamId": "bye",
+          "_summary": "ATL bye"
+        },
+        {
+          "id": "b1f0af76-d106-46b5-ad55-92c2db6cd2db",
+          "season": 2026,
+          "week": 11,
+          "gameDateTimeUTC": "TBD",
+          "stadiumId": null,
+          "homeTeamId": "cle",
+          "awayTeamId": "bye",
+          "_summary": "CLE bye"
+        },
+        {
+          "id": "1f9d27a2-f429-483b-807b-727e959e39e5",
+          "season": 2026,
+          "week": 11,
+          "gameDateTimeUTC": "TBD",
+          "stadiumId": null,
+          "homeTeamId": "gb",
+          "awayTeamId": "bye",
+          "_summary": "GB bye"
+        },
+        {
+          "id": "4a675029-28a4-4d8d-b006-838cd4234557",
+          "season": 2026,
+          "week": 11,
+          "gameDateTimeUTC": "TBD",
+          "stadiumId": null,
+          "homeTeamId": "lar",
+          "awayTeamId": "bye",
+          "_summary": "LAR bye"
+        },
+        {
+          "id": "6c6b6af0-abd0-4b72-b1d5-4e6fc4aaff37",
+          "season": 2026,
+          "week": 11,
+          "gameDateTimeUTC": "TBD",
+          "stadiumId": null,
+          "homeTeamId": "ne",
+          "awayTeamId": "bye",
+          "_summary": "NE bye"
+        },
+        {
+          "id": "5dcccdfe-173c-4aab-a926-6ed02a375374",
+          "season": 2026,
+          "week": 11,
+          "gameDateTimeUTC": "TBD",
+          "stadiumId": null,
+          "homeTeamId": "sea",
+          "awayTeamId": "bye",
+          "_summary": "SEA bye"
+        }
+      ]
+    },
+    {
+      "weekNumber": 12,
+      "games": [
+        {
+          "id": "b33324f1-ec12-44c9-8d5d-ec1d2cdf02fe",
+          "season": 2026,
+          "week": 12,
+          "gameDateTimeUTC": "2026-11-26T01:00:00.000Z",
+          "stadiumId": "d9f34167-daed-46bb-8221-ba00135747d3",
+          "homeTeamId": "lar",
+          "awayTeamId": "gb",
+          "_summary": "GB @ LAR, SoFi Stadium, Wed Nov 25 8:00 PM ET"
+        },
+        {
+          "id": "5c8747f2-4a38-4e7f-80c2-1fd5d83c0841",
+          "season": 2026,
+          "week": 12,
+          "gameDateTimeUTC": "2026-11-26T18:00:00.000Z",
+          "stadiumId": "f96aa25d-d2bb-43c2-9a28-7034296f681b",
+          "homeTeamId": "det",
+          "awayTeamId": "chi",
+          "_summary": "CHI @ DET, Ford Field, Thu Nov 26 1:00 PM ET"
+        },
+        {
+          "id": "4d5e5fdf-7e33-456a-a9e8-7e1d997508c6",
+          "season": 2026,
+          "week": 12,
+          "gameDateTimeUTC": "2026-11-26T21:30:00.000Z",
+          "stadiumId": "69a00dd6-575b-4c5b-a00d-2b174e40bb9d",
+          "homeTeamId": "dal",
+          "awayTeamId": "phi",
+          "_summary": "PHI @ DAL, AT&T Stadium, Thu Nov 26 4:30 PM ET"
+        },
+        {
+          "id": "7e2c35c2-8947-466c-9393-af3fcd5cf068",
+          "season": 2026,
+          "week": 12,
+          "gameDateTimeUTC": "2026-11-27T01:20:00.000Z",
+          "stadiumId": "b1ea911d-5a1b-41fc-8425-6503ab256157",
+          "homeTeamId": "buf",
+          "awayTeamId": "kc",
+          "_summary": "KC @ BUF, Highmark Stadium, Thu Nov 26 8:20 PM ET"
+        },
+        {
+          "id": "57051fa1-c25e-4969-a428-a6a520863617",
+          "season": 2026,
+          "week": 12,
+          "gameDateTimeUTC": "2026-11-27T20:00:00.000Z",
+          "stadiumId": "765f8f02-7887-4707-8552-1de9b492cddd",
+          "homeTeamId": "pit",
+          "awayTeamId": "den",
+          "_summary": "DEN @ PIT, Acrisure Stadium, Fri Nov 27 3:00 PM ET"
+        },
+        {
+          "id": "00a58299-5b0c-43a3-ad86-061a7d4309b8",
+          "season": 2026,
+          "week": 12,
+          "gameDateTimeUTC": "2026-11-29T18:00:00.000Z",
+          "stadiumId": "4ddefd70-a6a6-4734-983a-83d76ef15135",
+          "homeTeamId": "cin",
+          "awayTeamId": "no",
+          "_summary": "NO @ CIN, Paycor Stadium, Sun Nov 29 1:00 PM ET"
+        },
+        {
+          "id": "ca17fdb1-a07d-4e3c-b3cc-208fae7fcbd2",
+          "season": 2026,
+          "week": 12,
+          "gameDateTimeUTC": "2026-11-29T18:00:00.000Z",
+          "stadiumId": "f33bef4e-cb13-4fef-9eff-90603c07c31b",
+          "homeTeamId": "cle",
+          "awayTeamId": "lv",
+          "_summary": "LV @ CLE, Huntington Bank Field, Sun Nov 29 1:00 PM ET"
+        },
+        {
+          "id": "4b0430b9-9760-4478-9652-3b39d339d2d1",
+          "season": 2026,
+          "week": 12,
+          "gameDateTimeUTC": "2026-11-29T18:00:00.000Z",
+          "stadiumId": "892f31af-c29f-435a-bb0a-60ef8595bd10",
+          "homeTeamId": "hou",
+          "awayTeamId": "bal",
+          "_summary": "BAL @ HOU, NRG Stadium, Sun Nov 29 1:00 PM ET"
+        },
+        {
+          "id": "658a672f-248b-4860-a172-f9b50fdb232e",
+          "season": 2026,
+          "week": 12,
+          "gameDateTimeUTC": "2026-11-29T18:00:00.000Z",
+          "stadiumId": "d8acdc51-58d8-409a-8668-0f5fc2f9dca0",
+          "homeTeamId": "ind",
+          "awayTeamId": "nyg",
+          "_summary": "NYG @ IND, Lucas Oil Stadium, Sun Nov 29 1:00 PM ET"
+        },
+        {
+          "id": "4c060036-4359-4a8a-8bc2-55f850f159cc",
+          "season": 2026,
+          "week": 12,
+          "gameDateTimeUTC": "2026-11-29T18:00:00.000Z",
+          "stadiumId": "6688fdf0-a943-4bbf-bd43-87a130122e03",
+          "homeTeamId": "mia",
+          "awayTeamId": "nyj",
+          "_summary": "NYJ @ MIA, Hard Rock Stadium, Sun Nov 29 1:00 PM ET"
+        },
+        {
+          "id": "830b5c46-0b43-42fa-be79-a6b1e36621bf",
+          "season": 2026,
+          "week": 12,
+          "gameDateTimeUTC": "2026-11-29T18:00:00.000Z",
+          "stadiumId": "e57f2fba-2e6b-4d5a-8b40-d3a14eef4b7c",
+          "homeTeamId": "min",
+          "awayTeamId": "atl",
+          "_summary": "ATL @ MIN, U.S. Bank Stadium, Sun Nov 29 1:00 PM ET"
+        },
+        {
+          "id": "4d74fbab-dee8-44d5-9a20-f9f11293e514",
+          "season": 2026,
+          "week": 12,
+          "gameDateTimeUTC": "2026-11-29T21:05:00.000Z",
+          "stadiumId": "51406146-153c-40d7-9c5a-8df5a113840c",
+          "homeTeamId": "jax",
+          "awayTeamId": "ten",
+          "_summary": "TEN @ JAX, EverBank Stadium, Sun Nov 29 4:05 PM ET"
+        },
+        {
+          "id": "4237830d-0598-4a51-8ce0-721fd2070880",
+          "season": 2026,
+          "week": 12,
+          "gameDateTimeUTC": "2026-11-29T21:25:00.000Z",
+          "stadiumId": "4038828a-bb7d-46c2-81ce-da1b2270c293",
+          "homeTeamId": "ari",
+          "awayTeamId": "was",
+          "_summary": "WAS @ ARI, State Farm Stadium, Sun Nov 29 4:25 PM ET"
+        },
+        {
+          "id": "9bc26a56-c197-4596-862c-176840fe5091",
+          "season": 2026,
+          "week": 12,
+          "gameDateTimeUTC": "2026-11-29T21:25:00.000Z",
+          "stadiumId": "39160e46-5670-42f7-b33c-67e3e5ac3697",
+          "homeTeamId": "sf",
+          "awayTeamId": "sea",
+          "_summary": "SEA @ SF, Levi's Stadium, Sun Nov 29 4:25 PM ET"
+        },
+        {
+          "id": "198911f1-7b4b-4f8d-a200-379e92f4b5e6",
+          "season": 2026,
+          "week": 12,
+          "gameDateTimeUTC": "2026-11-30T01:20:00.000Z",
+          "stadiumId": "d9f34167-daed-46bb-8221-ba00135747d3",
+          "homeTeamId": "lac",
+          "awayTeamId": "ne",
+          "_summary": "NE @ LAC, SoFi Stadium, Sun Nov 29 8:20 PM ET"
+        },
+        {
+          "id": "d688a71c-c80c-4d03-bca5-631b73145bac",
+          "season": 2026,
+          "week": 12,
+          "gameDateTimeUTC": "2026-12-01T01:15:00.000Z",
+          "stadiumId": "30bc29f2-a45e-4fa1-8d69-5e11d42190a5",
+          "homeTeamId": "tb",
+          "awayTeamId": "car",
+          "_summary": "CAR @ TB, Raymond James Stadium, Mon Nov 30 8:15 PM ET"
+        }
+      ]
+    },
+    {
+      "weekNumber": 13,
+      "games": [
+        {
+          "id": "83386595-456d-4e57-a447-2976f51412a7",
+          "season": 2026,
+          "week": 13,
+          "gameDateTimeUTC": "2026-12-04T01:15:00.000Z",
+          "stadiumId": "d9f34167-daed-46bb-8221-ba00135747d3",
+          "homeTeamId": "lar",
+          "awayTeamId": "kc",
+          "_summary": "KC @ LAR, SoFi Stadium, Thu Dec 3 8:15 PM ET"
+        },
+        {
+          "id": "23a5e020-6714-4a6e-813f-de181218443b",
+          "season": 2026,
+          "week": 13,
+          "gameDateTimeUTC": "2026-12-06T18:00:00.000Z",
+          "stadiumId": "b6a483c4-11ea-4874-985e-c4c9bdfb6171",
+          "homeTeamId": "atl",
+          "awayTeamId": "det",
+          "_summary": "DET @ ATL, Mercedes-Benz Stadium, Sun Dec 6 1:00 PM ET"
+        },
+        {
+          "id": "8fc745fb-3af1-49a7-8d15-816b00156169",
+          "season": 2026,
+          "week": 13,
+          "gameDateTimeUTC": "2026-12-06T18:00:00.000Z",
+          "stadiumId": "cfdd7c54-a855-4ab2-a22b-f930f438892c",
+          "homeTeamId": "chi",
+          "awayTeamId": "jax",
+          "_summary": "JAX @ CHI, Soldier Field, Sun Dec 6 1:00 PM ET"
+        },
+        {
+          "id": "a84de4c9-e545-4f61-aa57-a3d40a30d095",
+          "season": 2026,
+          "week": 13,
+          "gameDateTimeUTC": "2026-12-06T18:00:00.000Z",
+          "stadiumId": "f33bef4e-cb13-4fef-9eff-90603c07c31b",
+          "homeTeamId": "cle",
+          "awayTeamId": "cin",
+          "_summary": "CIN @ CLE, Huntington Bank Field, Sun Dec 6 1:00 PM ET"
+        },
+        {
+          "id": "c7dbbe38-eb8e-44f2-9d2c-53b86f5d3b76",
+          "season": 2026,
+          "week": 13,
+          "gameDateTimeUTC": "2026-12-06T18:00:00.000Z",
+          "stadiumId": "0e8ff099-ca06-45b2-b730-16f69705962a",
+          "homeTeamId": "no",
+          "awayTeamId": "gb",
+          "_summary": "GB @ NO, Caesars Superdome, Sun Dec 6 1:00 PM ET"
+        },
+        {
+          "id": "399fcaf3-aee3-4789-bc76-f9ed487187ae",
+          "season": 2026,
+          "week": 13,
+          "gameDateTimeUTC": "2026-12-06T18:00:00.000Z",
+          "stadiumId": "c3d7f0d4-1288-416d-8047-c77c7579722e",
+          "homeTeamId": "nyg",
+          "awayTeamId": "sf",
+          "_summary": "SF @ NYG, MetLife Stadium, Sun Dec 6 1:00 PM ET"
+        },
+        {
+          "id": "612e822c-c5b4-4579-9579-c5aee7398978",
+          "season": 2026,
+          "week": 13,
+          "gameDateTimeUTC": "2026-12-06T18:00:00.000Z",
+          "stadiumId": "30bc29f2-a45e-4fa1-8d69-5e11d42190a5",
+          "homeTeamId": "tb",
+          "awayTeamId": "lac",
+          "_summary": "LAC @ TB, Raymond James Stadium, Sun Dec 6 1:00 PM ET"
+        },
+        {
+          "id": "f5ad97e9-7247-40a5-aa51-c600773f0cac",
+          "season": 2026,
+          "week": 13,
+          "gameDateTimeUTC": "2026-12-06T18:00:00.000Z",
+          "stadiumId": "deb48462-3e78-4609-9210-36363c678e8d",
+          "homeTeamId": "ten",
+          "awayTeamId": "was",
+          "_summary": "WAS @ TEN, Nissan Stadium, Sun Dec 6 1:00 PM ET"
+        },
+        {
+          "id": "4be055d4-dd4a-4810-be47-8187768ff0e1",
+          "season": 2026,
+          "week": 13,
+          "gameDateTimeUTC": "2026-12-06T21:05:00.000Z",
+          "stadiumId": "4038828a-bb7d-46c2-81ce-da1b2270c293",
+          "homeTeamId": "ari",
+          "awayTeamId": "phi",
+          "_summary": "PHI @ ARI, State Farm Stadium, Sun Dec 6 4:05 PM ET"
+        },
+        {
+          "id": "0aaff37a-809c-4764-8eaf-1a918cf8e035",
+          "season": 2026,
+          "week": 13,
+          "gameDateTimeUTC": "2026-12-06T21:05:00.000Z",
+          "stadiumId": "47e6a7ba-e1d8-45a8-a365-b131ec1de1ca",
+          "homeTeamId": "den",
+          "awayTeamId": "mia",
+          "_summary": "MIA @ DEN, Empower Field at Mile High, Sun Dec 6 4:05 PM ET"
+        },
+        {
+          "id": "af38b80e-fa5f-4a5a-a319-d6c86df3c850",
+          "season": 2026,
+          "week": 13,
+          "gameDateTimeUTC": "2026-12-06T21:25:00.000Z",
+          "stadiumId": "e57f2fba-2e6b-4d5a-8b40-d3a14eef4b7c",
+          "homeTeamId": "min",
+          "awayTeamId": "car",
+          "_summary": "CAR @ MIN, U.S. Bank Stadium, Sun Dec 6 4:25 PM ET"
+        },
+        {
+          "id": "c54d1915-3b4d-4df0-92a0-396f9e594ffe",
+          "season": 2026,
+          "week": 13,
+          "gameDateTimeUTC": "2026-12-06T21:25:00.000Z",
+          "stadiumId": "8d81bd51-ac13-4f12-b5b4-ccfbdde7a4c5",
+          "homeTeamId": "ne",
+          "awayTeamId": "buf",
+          "_summary": "BUF @ NE, Gillette Stadium, Sun Dec 6 4:25 PM ET"
+        },
+        {
+          "id": "21bf4c69-efc4-4957-a1b7-12dfee164ca5",
+          "season": 2026,
+          "week": 13,
+          "gameDateTimeUTC": "2026-12-07T01:20:00.000Z",
+          "stadiumId": "765f8f02-7887-4707-8552-1de9b492cddd",
+          "homeTeamId": "pit",
+          "awayTeamId": "hou",
+          "_summary": "HOU @ PIT, Acrisure Stadium, Sun Dec 6 8:20 PM ET"
+        },
+        {
+          "id": "149867e7-b2bb-431c-a631-0604284b521b",
+          "season": 2026,
+          "week": 13,
+          "gameDateTimeUTC": "2026-12-08T01:15:00.000Z",
+          "stadiumId": "c66f4cc4-afc0-4bd4-bdd7-d5adbfc3679b",
+          "homeTeamId": "sea",
+          "awayTeamId": "dal",
+          "_summary": "DAL @ SEA, Lumen Field, Mon Dec 7 8:15 PM ET"
+        },
+        {
+          "id": "6961d6b2-308e-4015-9b74-e5f4233ce289",
+          "season": 2026,
+          "week": 13,
+          "gameDateTimeUTC": "TBD",
+          "stadiumId": null,
+          "homeTeamId": "bal",
+          "awayTeamId": "bye",
+          "_summary": "BAL bye"
+        },
+        {
+          "id": "5efc51b8-22c5-4e7f-a920-83a496d1db94",
+          "season": 2026,
+          "week": 13,
+          "gameDateTimeUTC": "TBD",
+          "stadiumId": null,
+          "homeTeamId": "ind",
+          "awayTeamId": "bye",
+          "_summary": "IND bye"
+        },
+        {
+          "id": "f744954a-d007-45ba-ad91-994df115222b",
+          "season": 2026,
+          "week": 13,
+          "gameDateTimeUTC": "TBD",
+          "stadiumId": null,
+          "homeTeamId": "lv",
+          "awayTeamId": "bye",
+          "_summary": "LV bye"
+        },
+        {
+          "id": "58510190-0c10-4df1-aa44-51b72b2b2904",
+          "season": 2026,
+          "week": 13,
+          "gameDateTimeUTC": "TBD",
+          "stadiumId": null,
+          "homeTeamId": "nyj",
+          "awayTeamId": "bye",
+          "_summary": "NYJ bye"
+        }
+      ]
+    },
+    {
+      "weekNumber": 14,
+      "games": [
+        {
+          "id": "ceabd97e-ff7e-4a9f-a3f8-f7df87e3ce81",
+          "season": 2026,
+          "week": 14,
+          "gameDateTimeUTC": "2026-12-11T01:15:00.000Z",
+          "stadiumId": "8d81bd51-ac13-4f12-b5b4-ccfbdde7a4c5",
+          "homeTeamId": "ne",
+          "awayTeamId": "min",
+          "_summary": "MIN @ NE, Gillette Stadium, Thu Dec 10 8:15 PM ET"
+        },
+        {
+          "id": "613949a5-a7d0-4edf-87a4-1d1f2b240444",
+          "season": 2026,
+          "week": 14,
+          "gameDateTimeUTC": "2026-12-13T18:00:00.000Z",
+          "stadiumId": "ebbfa6d5-3a14-415c-93a6-a1b80eef17bf",
+          "homeTeamId": "bal",
+          "awayTeamId": "tb",
+          "_summary": "TB @ BAL, M&T Bank Stadium, Sun Dec 13 1:00 PM ET"
+        },
+        {
+          "id": "5b4ecb31-45f8-4cb7-bd69-e7d325a32501",
+          "season": 2026,
+          "week": 14,
+          "gameDateTimeUTC": "2026-12-13T18:00:00.000Z",
+          "stadiumId": "de14a887-e38f-427b-b02e-49396efa36c9",
+          "homeTeamId": "car",
+          "awayTeamId": "no",
+          "_summary": "NO @ CAR, Bank of America Stadium, Sun Dec 13 1:00 PM ET"
+        },
+        {
+          "id": "47c73198-9bc9-4836-82cc-1ab80badc251",
+          "season": 2026,
+          "week": 14,
+          "gameDateTimeUTC": "2026-12-13T18:00:00.000Z",
+          "stadiumId": "f33bef4e-cb13-4fef-9eff-90603c07c31b",
+          "homeTeamId": "cle",
+          "awayTeamId": "atl",
+          "_summary": "ATL @ CLE, Huntington Bank Field, Sun Dec 13 1:00 PM ET"
+        },
+        {
+          "id": "b5e2ed23-74e6-4bd5-98c1-c97830125556",
+          "season": 2026,
+          "week": 14,
+          "gameDateTimeUTC": "2026-12-13T18:00:00.000Z",
+          "stadiumId": "f96aa25d-d2bb-43c2-9a28-7034296f681b",
+          "homeTeamId": "det",
+          "awayTeamId": "ten",
+          "_summary": "TEN @ DET, Ford Field, Sun Dec 13 1:00 PM ET"
+        },
+        {
+          "id": "94d452f4-6239-40d7-8886-2beb4902226b",
+          "season": 2026,
+          "week": 14,
+          "gameDateTimeUTC": "2026-12-13T18:00:00.000Z",
+          "stadiumId": "6688fdf0-a943-4bbf-bd43-87a130122e03",
+          "homeTeamId": "mia",
+          "awayTeamId": "chi",
+          "_summary": "CHI @ MIA, Hard Rock Stadium, Sun Dec 13 1:00 PM ET"
+        },
+        {
+          "id": "68d9ac78-e8ef-4f12-9c92-52d8fb1a0a6b",
+          "season": 2026,
+          "week": 14,
+          "gameDateTimeUTC": "2026-12-13T18:00:00.000Z",
+          "stadiumId": "c3d7f0d4-1288-416d-8047-c77c7579722e",
+          "homeTeamId": "nyj",
+          "awayTeamId": "den",
+          "_summary": "DEN @ NYJ, MetLife Stadium, Sun Dec 13 1:00 PM ET"
+        },
+        {
+          "id": "56e57277-6485-4424-9e9a-84ae62ae1016",
+          "season": 2026,
+          "week": 14,
+          "gameDateTimeUTC": "2026-12-13T18:00:00.000Z",
+          "stadiumId": "363bcc94-57e8-4c9a-a4f6-6ef6948d4ee8",
+          "homeTeamId": "phi",
+          "awayTeamId": "ind",
+          "_summary": "IND @ PHI, Lincoln Financial Field, Sun Dec 13 1:00 PM ET"
+        },
+        {
+          "id": "a71882ec-9255-436a-8d0e-fce543dad8a8",
+          "season": 2026,
+          "week": 14,
+          "gameDateTimeUTC": "2026-12-13T18:00:00.000Z",
+          "stadiumId": "698f9855-ac75-45d3-bbb9-0aa83b187a53",
+          "homeTeamId": "was",
+          "awayTeamId": "hou",
+          "_summary": "HOU @ WAS, Northwest Stadium, Sun Dec 13 1:00 PM ET"
+        },
+        {
+          "id": "94ac1139-cb02-4cad-acc8-cf04752c719b",
+          "season": 2026,
+          "week": 14,
+          "gameDateTimeUTC": "2026-12-13T21:05:00.000Z",
+          "stadiumId": "2a38b03f-d1cc-48c1-8c90-dd5b1db23c2a",
+          "homeTeamId": "lv",
+          "awayTeamId": "lac",
+          "_summary": "LAC @ LV, Allegiant Stadium, Sun Dec 13 4:05 PM ET"
+        },
+        {
+          "id": "29da4d6c-f4c7-4e3b-b7e6-1ed861502a47",
+          "season": 2026,
+          "week": 14,
+          "gameDateTimeUTC": "2026-12-13T21:25:00.000Z",
+          "stadiumId": "4ddefd70-a6a6-4734-983a-83d76ef15135",
+          "homeTeamId": "cin",
+          "awayTeamId": "kc",
+          "_summary": "KC @ CIN, Paycor Stadium, Sun Dec 13 4:25 PM ET"
+        },
+        {
+          "id": "85588ec2-f89f-4e59-beeb-112f4a1d3167",
+          "season": 2026,
+          "week": 14,
+          "gameDateTimeUTC": "2026-12-13T21:25:00.000Z",
+          "stadiumId": "c66f4cc4-afc0-4bd4-bdd7-d5adbfc3679b",
+          "homeTeamId": "sea",
+          "awayTeamId": "nyg",
+          "_summary": "NYG @ SEA, Lumen Field, Sun Dec 13 4:25 PM ET"
+        },
+        {
+          "id": "0639b89f-b3a0-4a87-898b-cb8d9d3051bd",
+          "season": 2026,
+          "week": 14,
+          "gameDateTimeUTC": "2026-12-13T21:25:00.000Z",
+          "stadiumId": "39160e46-5670-42f7-b33c-67e3e5ac3697",
+          "homeTeamId": "sf",
+          "awayTeamId": "lar",
+          "_summary": "LAR @ SF, Levi's Stadium, Sun Dec 13 4:25 PM ET"
+        },
+        {
+          "id": "a4415d7b-85ce-4327-a7f6-b6db20a9d79a",
+          "season": 2026,
+          "week": 14,
+          "gameDateTimeUTC": "2026-12-14T01:20:00.000Z",
+          "stadiumId": "66fcf716-1af3-444f-b28f-89615fdb6518",
+          "homeTeamId": "gb",
+          "awayTeamId": "buf",
+          "_summary": "BUF @ GB, Lambeau Field, Sun Dec 13 8:20 PM ET"
+        },
+        {
+          "id": "fd91e610-5d30-46ce-8d98-e8cd1e54a696",
+          "season": 2026,
+          "week": 14,
+          "gameDateTimeUTC": "2026-12-15T01:15:00.000Z",
+          "stadiumId": "51406146-153c-40d7-9c5a-8df5a113840c",
+          "homeTeamId": "jax",
+          "awayTeamId": "pit",
+          "_summary": "PIT @ JAX, EverBank Stadium, Mon Dec 14 8:15 PM ET"
+        },
+        {
+          "id": "47fdf837-63c1-40b7-98c1-66b2baa9ffa1",
+          "season": 2026,
+          "week": 14,
+          "gameDateTimeUTC": "TBD",
+          "stadiumId": null,
+          "homeTeamId": "ari",
+          "awayTeamId": "bye",
+          "_summary": "ARI bye"
+        },
+        {
+          "id": "4ff2bd49-db8d-4791-8935-4af7a7b5f197",
+          "season": 2026,
+          "week": 14,
+          "gameDateTimeUTC": "TBD",
+          "stadiumId": null,
+          "homeTeamId": "dal",
+          "awayTeamId": "bye",
+          "_summary": "DAL bye"
+        }
+      ]
+    },
+    {
+      "weekNumber": 15,
+      "games": [
+        {
+          "id": "3c3306ac-4d53-4c6e-adc0-0162dc0fdb56",
+          "season": 2026,
+          "week": 15,
+          "gameDateTimeUTC": "2026-12-18T01:15:00.000Z",
+          "stadiumId": "d9f34167-daed-46bb-8221-ba00135747d3",
+          "homeTeamId": "lac",
+          "awayTeamId": "sf",
+          "_summary": "SF @ LAC, SoFi Stadium, Thu Dec 17 8:15 PM ET"
+        },
+        {
+          "id": "72310f17-c6fd-4176-a9f2-9fcb0d052c92",
+          "season": 2026,
+          "week": 15,
+          "gameDateTimeUTC": "2026-12-19T22:00:00.000Z",
+          "stadiumId": "363bcc94-57e8-4c9a-a4f6-6ef6948d4ee8",
+          "homeTeamId": "phi",
+          "awayTeamId": "sea",
+          "_summary": "SEA @ PHI, Lincoln Financial Field, Sat Dec 19 5:00 PM ET"
+        },
+        {
+          "id": "f7f3a69d-5fc6-48be-88a0-a993f4b79e03",
+          "season": 2026,
+          "week": 15,
+          "gameDateTimeUTC": "2026-12-20T01:20:00.000Z",
+          "stadiumId": "b1ea911d-5a1b-41fc-8425-6503ab256157",
+          "homeTeamId": "buf",
+          "awayTeamId": "chi",
+          "_summary": "CHI @ BUF, Highmark Stadium, Sat Dec 19 8:20 PM ET"
+        },
+        {
+          "id": "c3108f30-75a8-4fb1-9929-9204cfc47bdf",
+          "season": 2026,
+          "week": 15,
+          "gameDateTimeUTC": "2026-12-20T18:00:00.000Z",
+          "stadiumId": "de14a887-e38f-427b-b02e-49396efa36c9",
+          "homeTeamId": "car",
+          "awayTeamId": "cin",
+          "_summary": "CIN @ CAR, Bank of America Stadium, Sun Dec 20 1:00 PM ET"
+        },
+        {
+          "id": "667eda25-bac1-4b31-aede-012e43d7629b",
+          "season": 2026,
+          "week": 15,
+          "gameDateTimeUTC": "2026-12-20T18:00:00.000Z",
+          "stadiumId": "66fcf716-1af3-444f-b28f-89615fdb6518",
+          "homeTeamId": "gb",
+          "awayTeamId": "mia",
+          "_summary": "MIA @ GB, Lambeau Field, Sun Dec 20 1:00 PM ET"
+        },
+        {
+          "id": "4e734553-b84c-4965-afc5-40979f918c0d",
+          "season": 2026,
+          "week": 15,
+          "gameDateTimeUTC": "2026-12-20T18:00:00.000Z",
+          "stadiumId": "892f31af-c29f-435a-bb0a-60ef8595bd10",
+          "homeTeamId": "hou",
+          "awayTeamId": "jax",
+          "_summary": "JAX @ HOU, NRG Stadium, Sun Dec 20 1:00 PM ET"
+        },
+        {
+          "id": "7f60aa4f-d739-4e92-9704-905231e70931",
+          "season": 2026,
+          "week": 15,
+          "gameDateTimeUTC": "2026-12-20T18:00:00.000Z",
+          "stadiumId": "c3d7f0d4-1288-416d-8047-c77c7579722e",
+          "homeTeamId": "nyg",
+          "awayTeamId": "cle",
+          "_summary": "CLE @ NYG, MetLife Stadium, Sun Dec 20 1:00 PM ET"
+        },
+        {
+          "id": "4a897032-317c-4ae4-bf03-2902f79192e5",
+          "season": 2026,
+          "week": 15,
+          "gameDateTimeUTC": "2026-12-20T18:00:00.000Z",
+          "stadiumId": "765f8f02-7887-4707-8552-1de9b492cddd",
+          "homeTeamId": "pit",
+          "awayTeamId": "bal",
+          "_summary": "BAL @ PIT, Acrisure Stadium, Sun Dec 20 1:00 PM ET"
+        },
+        {
+          "id": "f0ffd5cb-5390-4451-ae3a-8a685282048d",
+          "season": 2026,
+          "week": 15,
+          "gameDateTimeUTC": "2026-12-20T18:00:00.000Z",
+          "stadiumId": "30bc29f2-a45e-4fa1-8d69-5e11d42190a5",
+          "homeTeamId": "tb",
+          "awayTeamId": "no",
+          "_summary": "NO @ TB, Raymond James Stadium, Sun Dec 20 1:00 PM ET"
+        },
+        {
+          "id": "68b0895e-3f47-4b15-8ca3-fe268fa81e25",
+          "season": 2026,
+          "week": 15,
+          "gameDateTimeUTC": "2026-12-20T18:00:00.000Z",
+          "stadiumId": "deb48462-3e78-4609-9210-36363c678e8d",
+          "homeTeamId": "ten",
+          "awayTeamId": "ind",
+          "_summary": "IND @ TEN, Nissan Stadium, Sun Dec 20 1:00 PM ET"
+        },
+        {
+          "id": "1016c446-23c1-4feb-9766-c27fcd5118f7",
+          "season": 2026,
+          "week": 15,
+          "gameDateTimeUTC": "2026-12-20T18:00:00.000Z",
+          "stadiumId": "698f9855-ac75-45d3-bbb9-0aa83b187a53",
+          "homeTeamId": "was",
+          "awayTeamId": "atl",
+          "_summary": "ATL @ WAS, Northwest Stadium, Sun Dec 20 1:00 PM ET"
+        },
+        {
+          "id": "92edcf51-bf25-45db-ae67-ddd3abb92807",
+          "season": 2026,
+          "week": 15,
+          "gameDateTimeUTC": "2026-12-20T21:05:00.000Z",
+          "stadiumId": "4038828a-bb7d-46c2-81ce-da1b2270c293",
+          "homeTeamId": "ari",
+          "awayTeamId": "nyj",
+          "_summary": "NYJ @ ARI, State Farm Stadium, Sun Dec 20 4:05 PM ET"
+        },
+        {
+          "id": "6b6ce757-c99a-4d08-8fc4-0d05734343f3",
+          "season": 2026,
+          "week": 15,
+          "gameDateTimeUTC": "2026-12-20T21:25:00.000Z",
+          "stadiumId": "d9f34167-daed-46bb-8221-ba00135747d3",
+          "homeTeamId": "lar",
+          "awayTeamId": "dal",
+          "_summary": "DAL @ LAR, SoFi Stadium, Sun Dec 20 4:25 PM ET"
+        },
+        {
+          "id": "cb0a4c34-a704-4668-8141-9274753b4071",
+          "season": 2026,
+          "week": 15,
+          "gameDateTimeUTC": "2026-12-20T21:25:00.000Z",
+          "stadiumId": "2a38b03f-d1cc-48c1-8c90-dd5b1db23c2a",
+          "homeTeamId": "lv",
+          "awayTeamId": "den",
+          "_summary": "DEN @ LV, Allegiant Stadium, Sun Dec 20 4:25 PM ET"
+        },
+        {
+          "id": "87c02af0-a551-406a-bc64-7231e89a4cc8",
+          "season": 2026,
+          "week": 15,
+          "gameDateTimeUTC": "2026-12-21T01:20:00.000Z",
+          "stadiumId": "e57f2fba-2e6b-4d5a-8b40-d3a14eef4b7c",
+          "homeTeamId": "min",
+          "awayTeamId": "det",
+          "_summary": "DET @ MIN, U.S. Bank Stadium, Sun Dec 20 8:20 PM ET"
+        },
+        {
+          "id": "d82501b2-1c5d-4edc-913d-7f448f00d519",
+          "season": 2026,
+          "week": 15,
+          "gameDateTimeUTC": "2026-12-22T01:15:00.000Z",
+          "stadiumId": "e3819f6b-1c18-4083-b70d-9f978be60b09",
+          "homeTeamId": "kc",
+          "awayTeamId": "ne",
+          "_summary": "NE @ KC, Arrowhead Stadium, Mon Dec 21 8:15 PM ET"
+        }
+      ]
+    },
+    {
+      "weekNumber": 16,
+      "games": [
+        {
+          "id": "a8525806-54f4-4f63-9b0b-1d1f836a7c26",
+          "season": 2026,
+          "week": 16,
+          "gameDateTimeUTC": "2026-12-25T01:15:00.000Z",
+          "stadiumId": "363bcc94-57e8-4c9a-a4f6-6ef6948d4ee8",
+          "homeTeamId": "phi",
+          "awayTeamId": "hou",
+          "_summary": "HOU @ PHI, Lincoln Financial Field, Thu Dec 24 8:15 PM ET"
+        },
+        {
+          "id": "4d495d44-50ad-416c-babc-ea4461abd226",
+          "season": 2026,
+          "week": 16,
+          "gameDateTimeUTC": "2026-12-25T18:00:00.000Z",
+          "stadiumId": "cfdd7c54-a855-4ab2-a22b-f930f438892c",
+          "homeTeamId": "chi",
+          "awayTeamId": "gb",
+          "_summary": "GB @ CHI, Soldier Field, Fri Dec 25 1:00 PM ET"
+        },
+        {
+          "id": "e806a071-01ad-4dbb-ba22-2cf7def577a2",
+          "season": 2026,
+          "week": 16,
+          "gameDateTimeUTC": "2026-12-25T21:30:00.000Z",
+          "stadiumId": "47e6a7ba-e1d8-45a8-a365-b131ec1de1ca",
+          "homeTeamId": "den",
+          "awayTeamId": "buf",
+          "_summary": "BUF @ DEN, Empower Field at Mile High, Fri Dec 25 4:30 PM ET"
+        },
+        {
+          "id": "de44fb50-95dd-4004-8bc6-7dc6232a4884",
+          "season": 2026,
+          "week": 16,
+          "gameDateTimeUTC": "2026-12-26T01:15:00.000Z",
+          "stadiumId": "c66f4cc4-afc0-4bd4-bdd7-d5adbfc3679b",
+          "homeTeamId": "sea",
+          "awayTeamId": "lar",
+          "_summary": "LAR @ SEA, Lumen Field, Fri Dec 25 8:15 PM ET"
+        },
+        {
+          "id": "b8cc4339-d641-4df2-9d00-5994fab95aaf",
+          "season": 2026,
+          "week": 16,
+          "gameDateTimeUTC": "2026-12-27T18:00:00.000Z",
+          "stadiumId": "ebbfa6d5-3a14-415c-93a6-a1b80eef17bf",
+          "homeTeamId": "bal",
+          "awayTeamId": "cle",
+          "_summary": "CLE @ BAL, M&T Bank Stadium, Sun Dec 27 1:00 PM ET"
+        },
+        {
+          "id": "490dddc4-9aff-4397-afc7-58b6d72bfa16",
+          "season": 2026,
+          "week": 16,
+          "gameDateTimeUTC": "2026-12-27T18:00:00.000Z",
+          "stadiumId": "6688fdf0-a943-4bbf-bd43-87a130122e03",
+          "homeTeamId": "mia",
+          "awayTeamId": "lac",
+          "_summary": "LAC @ MIA, Hard Rock Stadium, Sun Dec 27 1:00 PM ET"
+        },
+        {
+          "id": "315d45a9-2172-4b14-8823-061b4d67dd43",
+          "season": 2026,
+          "week": 16,
+          "gameDateTimeUTC": "2026-12-27T18:00:00.000Z",
+          "stadiumId": "0e8ff099-ca06-45b2-b730-16f69705962a",
+          "homeTeamId": "no",
+          "awayTeamId": "ari",
+          "_summary": "ARI @ NO, Caesars Superdome, Sun Dec 27 1:00 PM ET"
+        },
+        {
+          "id": "cb954c80-eb55-4451-9ad7-a68d5db3acfb",
+          "season": 2026,
+          "week": 16,
+          "gameDateTimeUTC": "2026-12-27T18:00:00.000Z",
+          "stadiumId": "c3d7f0d4-1288-416d-8047-c77c7579722e",
+          "homeTeamId": "nyj",
+          "awayTeamId": "ne",
+          "_summary": "NE @ NYJ, MetLife Stadium, Sun Dec 27 1:00 PM ET"
+        },
+        {
+          "id": "ca331c9b-cbcb-44b7-8d84-e220f7fa87e7",
+          "season": 2026,
+          "week": 16,
+          "gameDateTimeUTC": "2026-12-27T21:05:00.000Z",
+          "stadiumId": "2a38b03f-d1cc-48c1-8c90-dd5b1db23c2a",
+          "homeTeamId": "lv",
+          "awayTeamId": "ten",
+          "_summary": "TEN @ LV, Allegiant Stadium, Sun Dec 27 4:05 PM ET"
+        },
+        {
+          "id": "c04caca4-3c4a-4070-9f22-e88b7d2e3c7a",
+          "season": 2026,
+          "week": 16,
+          "gameDateTimeUTC": "2026-12-27T21:25:00.000Z",
+          "stadiumId": "e3819f6b-1c18-4083-b70d-9f978be60b09",
+          "homeTeamId": "kc",
+          "awayTeamId": "sf",
+          "_summary": "SF @ KC, Arrowhead Stadium, Sun Dec 27 4:25 PM ET"
+        },
+        {
+          "id": "98773bc3-9e10-4524-8ad3-494f8a3033ec",
+          "season": 2026,
+          "week": 16,
+          "gameDateTimeUTC": "2026-12-28T01:20:00.000Z",
+          "stadiumId": "69a00dd6-575b-4c5b-a00d-2b174e40bb9d",
+          "homeTeamId": "dal",
+          "awayTeamId": "jax",
+          "_summary": "JAX @ DAL, AT&T Stadium, Sun Dec 27 8:20 PM ET"
+        },
+        {
+          "id": "94514636-360e-4c02-b81f-55848cbdb250",
+          "season": 2026,
+          "week": 16,
+          "gameDateTimeUTC": "2026-12-29T00:00:00.000Z",
+          "stadiumId": "b6a483c4-11ea-4874-985e-c4c9bdfb6171",
+          "homeTeamId": "atl",
+          "awayTeamId": "tb",
+          "_summary": "TB @ ATL, Mercedes-Benz Stadium, Mon Dec 28 7:00 PM ET"
+        },
+        {
+          "id": "27771b3d-fc9f-4d7c-814a-34bf44ee8c5a",
+          "season": 2026,
+          "week": 16,
+          "gameDateTimeUTC": "2026-12-29T00:00:00.000Z",
+          "stadiumId": "d8acdc51-58d8-409a-8668-0f5fc2f9dca0",
+          "homeTeamId": "ind",
+          "awayTeamId": "cin",
+          "_summary": "CIN @ IND, Lucas Oil Stadium, Mon Dec 28 7:00 PM ET"
+        },
+        {
+          "id": "03d3c1b9-4212-4fff-9214-c31220d047e7",
+          "season": 2026,
+          "week": 16,
+          "gameDateTimeUTC": "2026-12-29T00:00:00.000Z",
+          "stadiumId": "e57f2fba-2e6b-4d5a-8b40-d3a14eef4b7c",
+          "homeTeamId": "min",
+          "awayTeamId": "was",
+          "_summary": "WAS @ MIN, U.S. Bank Stadium, Mon Dec 28 7:00 PM ET"
+        },
+        {
+          "id": "f525ef56-cab3-4aa9-b8cd-5fd8746efd09",
+          "season": 2026,
+          "week": 16,
+          "gameDateTimeUTC": "2026-12-29T00:00:00.000Z",
+          "stadiumId": "765f8f02-7887-4707-8552-1de9b492cddd",
+          "homeTeamId": "pit",
+          "awayTeamId": "car",
+          "_summary": "CAR @ PIT, Acrisure Stadium, Mon Dec 28 7:00 PM ET"
+        },
+        {
+          "id": "0bf74a9b-f448-4b53-95f7-9f59eed5d4df",
+          "season": 2026,
+          "week": 16,
+          "gameDateTimeUTC": "2026-12-29T01:15:00.000Z",
+          "stadiumId": "f96aa25d-d2bb-43c2-9a28-7034296f681b",
+          "homeTeamId": "det",
+          "awayTeamId": "nyg",
+          "_summary": "NYG @ DET, Ford Field, Mon Dec 28 8:15 PM ET"
+        }
+      ]
+    },
+    {
+      "weekNumber": 17,
+      "games": [
+        {
+          "id": "78874733-f6b8-495b-bb82-5232f6dacde0",
+          "season": 2026,
+          "week": 17,
+          "gameDateTimeUTC": "2027-01-01T01:15:00.000Z",
+          "stadiumId": "4ddefd70-a6a6-4734-983a-83d76ef15135",
+          "homeTeamId": "cin",
+          "awayTeamId": "bal",
+          "_summary": "BAL @ CIN, Paycor Stadium, Thu Dec 31 8:15 PM ET"
+        },
+        {
+          "id": "386f3ca9-5011-4e2c-b421-433cf4a1f583",
+          "season": 2026,
+          "week": 17,
+          "gameDateTimeUTC": "2027-01-03T18:00:00.000Z",
+          "stadiumId": "b6a483c4-11ea-4874-985e-c4c9bdfb6171",
+          "homeTeamId": "atl",
+          "awayTeamId": "no",
+          "_summary": "NO @ ATL, Mercedes-Benz Stadium, Sun Jan 3 1:00 PM ET"
+        },
+        {
+          "id": "c7484c65-3617-4684-960c-e48e5490a3e8",
+          "season": 2026,
+          "week": 17,
+          "gameDateTimeUTC": "2027-01-03T18:00:00.000Z",
+          "stadiumId": "de14a887-e38f-427b-b02e-49396efa36c9",
+          "homeTeamId": "car",
+          "awayTeamId": "sea",
+          "_summary": "SEA @ CAR, Bank of America Stadium, Sun Jan 3 1:00 PM ET"
+        },
+        {
+          "id": "46b2da70-240f-4b6c-bc84-a17b8410a887",
+          "season": 2026,
+          "week": 17,
+          "gameDateTimeUTC": "2027-01-03T18:00:00.000Z",
+          "stadiumId": "f33bef4e-cb13-4fef-9eff-90603c07c31b",
+          "homeTeamId": "cle",
+          "awayTeamId": "ind",
+          "_summary": "IND @ CLE, Huntington Bank Field, Sun Jan 3 1:00 PM ET"
+        },
+        {
+          "id": "4dada2ca-ed41-4a1a-8f39-81fa2a8b1c3e",
+          "season": 2026,
+          "week": 17,
+          "gameDateTimeUTC": "2027-01-03T18:00:00.000Z",
+          "stadiumId": "69a00dd6-575b-4c5b-a00d-2b174e40bb9d",
+          "homeTeamId": "dal",
+          "awayTeamId": "nyg",
+          "_summary": "NYG @ DAL, AT&T Stadium, Sun Jan 3 1:00 PM ET"
+        },
+        {
+          "id": "e296d84d-0dad-4e94-a4fc-8d01cf13e796",
+          "season": 2026,
+          "week": 17,
+          "gameDateTimeUTC": "2027-01-03T18:00:00.000Z",
+          "stadiumId": "6688fdf0-a943-4bbf-bd43-87a130122e03",
+          "homeTeamId": "mia",
+          "awayTeamId": "buf",
+          "_summary": "BUF @ MIA, Hard Rock Stadium, Sun Jan 3 1:00 PM ET"
+        },
+        {
+          "id": "3b12817c-3d2f-44bb-8213-cdd9446a9a4f",
+          "season": 2026,
+          "week": 17,
+          "gameDateTimeUTC": "2027-01-03T18:00:00.000Z",
+          "stadiumId": "c3d7f0d4-1288-416d-8047-c77c7579722e",
+          "homeTeamId": "nyj",
+          "awayTeamId": "min",
+          "_summary": "MIN @ NYJ, MetLife Stadium, Sun Jan 3 1:00 PM ET"
+        },
+        {
+          "id": "94e58b3c-e5da-48c2-8668-b8bf6e844e9a",
+          "season": 2026,
+          "week": 17,
+          "gameDateTimeUTC": "2027-01-03T18:00:00.000Z",
+          "stadiumId": "deb48462-3e78-4609-9210-36363c678e8d",
+          "homeTeamId": "ten",
+          "awayTeamId": "pit",
+          "_summary": "PIT @ TEN, Nissan Stadium, Sun Jan 3 1:00 PM ET"
+        },
+        {
+          "id": "2fd764ab-df31-4e6d-9b60-923630e36fa0",
+          "season": 2026,
+          "week": 17,
+          "gameDateTimeUTC": "2027-01-03T21:05:00.000Z",
+          "stadiumId": "4038828a-bb7d-46c2-81ce-da1b2270c293",
+          "homeTeamId": "ari",
+          "awayTeamId": "lv",
+          "_summary": "LV @ ARI, State Farm Stadium, Sun Jan 3 4:05 PM ET"
+        },
+        {
+          "id": "fafe2a56-ac62-477b-984b-a873a59a0ab5",
+          "season": 2026,
+          "week": 17,
+          "gameDateTimeUTC": "2027-01-03T21:25:00.000Z",
+          "stadiumId": "cfdd7c54-a855-4ab2-a22b-f930f438892c",
+          "homeTeamId": "chi",
+          "awayTeamId": "det",
+          "_summary": "DET @ CHI, Soldier Field, Sun Jan 3 4:25 PM ET"
+        },
+        {
+          "id": "9198306a-3016-456e-a11d-d94eb4a67908",
+          "season": 2026,
+          "week": 17,
+          "gameDateTimeUTC": "2027-01-04T01:20:00.000Z",
+          "stadiumId": "39160e46-5670-42f7-b33c-67e3e5ac3697",
+          "homeTeamId": "sf",
+          "awayTeamId": "phi",
+          "_summary": "PHI @ SF, Levi's Stadium, Sun Jan 3 8:20 PM ET"
+        },
+        {
+          "id": "06744e97-b41d-4592-a624-8a8ace87b2e3",
+          "season": 2026,
+          "week": 17,
+          "gameDateTimeUTC": "2027-01-05T00:00:00.000Z",
+          "stadiumId": "51406146-153c-40d7-9c5a-8df5a113840c",
+          "homeTeamId": "jax",
+          "awayTeamId": "was",
+          "_summary": "WAS @ JAX, EverBank Stadium, Mon Jan 4 7:00 PM ET"
+        },
+        {
+          "id": "1596dedb-645a-4a41-acf7-be74b176dad7",
+          "season": 2026,
+          "week": 17,
+          "gameDateTimeUTC": "2027-01-05T00:00:00.000Z",
+          "stadiumId": "d9f34167-daed-46bb-8221-ba00135747d3",
+          "homeTeamId": "lac",
+          "awayTeamId": "kc",
+          "_summary": "KC @ LAC, SoFi Stadium, Mon Jan 4 7:00 PM ET"
+        },
+        {
+          "id": "949e9475-5a06-4267-ba5e-bff988f2999c",
+          "season": 2026,
+          "week": 17,
+          "gameDateTimeUTC": "2027-01-05T00:00:00.000Z",
+          "stadiumId": "8d81bd51-ac13-4f12-b5b4-ccfbdde7a4c5",
+          "homeTeamId": "ne",
+          "awayTeamId": "den",
+          "_summary": "DEN @ NE, Gillette Stadium, Mon Jan 4 7:00 PM ET"
+        },
+        {
+          "id": "93075348-5206-4c0a-b7f7-e029184fc6b0",
+          "season": 2026,
+          "week": 17,
+          "gameDateTimeUTC": "2027-01-05T00:00:00.000Z",
+          "stadiumId": "30bc29f2-a45e-4fa1-8d69-5e11d42190a5",
+          "homeTeamId": "tb",
+          "awayTeamId": "lar",
+          "_summary": "LAR @ TB, Raymond James Stadium, Mon Jan 4 7:00 PM ET"
+        },
+        {
+          "id": "ba405991-6885-4290-a3c4-c35e68b9b14e",
+          "season": 2026,
+          "week": 17,
+          "gameDateTimeUTC": "2027-01-05T01:15:00.000Z",
+          "stadiumId": "66fcf716-1af3-444f-b28f-89615fdb6518",
+          "homeTeamId": "gb",
+          "awayTeamId": "hou",
+          "_summary": "HOU @ GB, Lambeau Field, Mon Jan 4 8:15 PM ET"
+        }
+      ]
+    },
+    {
+      "weekNumber": 18,
+      "games": [
+        {
+          "id": "0293d8c5-ee63-47a2-98f3-51be01cbd2e8",
+          "season": 2026,
+          "week": 18,
+          "gameDateTimeUTC": "2027-01-10T00:00:00.000Z",
+          "stadiumId": "4038828a-bb7d-46c2-81ce-da1b2270c293",
+          "homeTeamId": "ari",
+          "awayTeamId": "sf",
+          "_summary": "SF @ ARI, State Farm Stadium, Sat Jan 9 7:00 PM ET"
+        },
+        {
+          "id": "be14cb10-8a7a-4727-8bd3-15c79a841761",
+          "season": 2026,
+          "week": 18,
+          "gameDateTimeUTC": "2027-01-10T00:00:00.000Z",
+          "stadiumId": "ebbfa6d5-3a14-415c-93a6-a1b80eef17bf",
+          "homeTeamId": "bal",
+          "awayTeamId": "pit",
+          "_summary": "PIT @ BAL, M&T Bank Stadium, Sat Jan 9 7:00 PM ET"
+        },
+        {
+          "id": "4ef93c3c-ee18-487b-a02f-ab744c81cddb",
+          "season": 2026,
+          "week": 18,
+          "gameDateTimeUTC": "2027-01-10T00:00:00.000Z",
+          "stadiumId": "b1ea911d-5a1b-41fc-8425-6503ab256157",
+          "homeTeamId": "buf",
+          "awayTeamId": "nyj",
+          "_summary": "NYJ @ BUF, Highmark Stadium, Sat Jan 9 7:00 PM ET"
+        },
+        {
+          "id": "52bb0a75-610f-4e54-bb93-419c4957a4ea",
+          "season": 2026,
+          "week": 18,
+          "gameDateTimeUTC": "2027-01-10T00:00:00.000Z",
+          "stadiumId": "de14a887-e38f-427b-b02e-49396efa36c9",
+          "homeTeamId": "car",
+          "awayTeamId": "atl",
+          "_summary": "ATL @ CAR, Bank of America Stadium, Sat Jan 9 7:00 PM ET"
+        },
+        {
+          "id": "b22b633e-369e-4a3b-be4e-17b7698e09a8",
+          "season": 2026,
+          "week": 18,
+          "gameDateTimeUTC": "2027-01-10T00:00:00.000Z",
+          "stadiumId": "4ddefd70-a6a6-4734-983a-83d76ef15135",
+          "homeTeamId": "cin",
+          "awayTeamId": "cle",
+          "_summary": "CLE @ CIN, Paycor Stadium, Sat Jan 9 7:00 PM ET"
+        },
+        {
+          "id": "047928fb-73d9-474a-bb23-8c0f1e4e5f01",
+          "season": 2026,
+          "week": 18,
+          "gameDateTimeUTC": "2027-01-10T00:00:00.000Z",
+          "stadiumId": "47e6a7ba-e1d8-45a8-a365-b131ec1de1ca",
+          "homeTeamId": "den",
+          "awayTeamId": "lac",
+          "_summary": "LAC @ DEN, Empower Field at Mile High, Sat Jan 9 7:00 PM ET"
+        },
+        {
+          "id": "a94f5ef0-e7f0-40ba-9e52-aac64a55b1e8",
+          "season": 2026,
+          "week": 18,
+          "gameDateTimeUTC": "2027-01-10T00:00:00.000Z",
+          "stadiumId": "66fcf716-1af3-444f-b28f-89615fdb6518",
+          "homeTeamId": "gb",
+          "awayTeamId": "det",
+          "_summary": "DET @ GB, Lambeau Field, Sat Jan 9 7:00 PM ET"
+        },
+        {
+          "id": "00727383-79de-4b26-ac90-6b91c01a4d08",
+          "season": 2026,
+          "week": 18,
+          "gameDateTimeUTC": "2027-01-10T00:00:00.000Z",
+          "stadiumId": "892f31af-c29f-435a-bb0a-60ef8595bd10",
+          "homeTeamId": "hou",
+          "awayTeamId": "ten",
+          "_summary": "TEN @ HOU, NRG Stadium, Sat Jan 9 7:00 PM ET"
+        },
+        {
+          "id": "a4ec2689-b826-4f2b-953e-ba8aa5e0aebf",
+          "season": 2026,
+          "week": 18,
+          "gameDateTimeUTC": "2027-01-10T00:00:00.000Z",
+          "stadiumId": "d8acdc51-58d8-409a-8668-0f5fc2f9dca0",
+          "homeTeamId": "ind",
+          "awayTeamId": "jax",
+          "_summary": "JAX @ IND, Lucas Oil Stadium, Sat Jan 9 7:00 PM ET"
+        },
+        {
+          "id": "0d57b4f1-d755-42a7-be76-55d432a4e0a4",
+          "season": 2026,
+          "week": 18,
+          "gameDateTimeUTC": "2027-01-10T00:00:00.000Z",
+          "stadiumId": "e3819f6b-1c18-4083-b70d-9f978be60b09",
+          "homeTeamId": "kc",
+          "awayTeamId": "lv",
+          "_summary": "LV @ KC, Arrowhead Stadium, Sat Jan 9 7:00 PM ET"
+        },
+        {
+          "id": "a33c42b4-4e52-43b6-9350-2027306ef88d",
+          "season": 2026,
+          "week": 18,
+          "gameDateTimeUTC": "2027-01-10T00:00:00.000Z",
+          "stadiumId": "d9f34167-daed-46bb-8221-ba00135747d3",
+          "homeTeamId": "lar",
+          "awayTeamId": "sea",
+          "_summary": "SEA @ LAR, SoFi Stadium, Sat Jan 9 7:00 PM ET"
+        },
+        {
+          "id": "da6d53a0-0f29-492e-8f31-0ae145696575",
+          "season": 2026,
+          "week": 18,
+          "gameDateTimeUTC": "2027-01-10T00:00:00.000Z",
+          "stadiumId": "e57f2fba-2e6b-4d5a-8b40-d3a14eef4b7c",
+          "homeTeamId": "min",
+          "awayTeamId": "chi",
+          "_summary": "CHI @ MIN, U.S. Bank Stadium, Sat Jan 9 7:00 PM ET"
+        },
+        {
+          "id": "5b40d655-de66-4987-a8ff-5fd2fcd89c6d",
+          "season": 2026,
+          "week": 18,
+          "gameDateTimeUTC": "2027-01-10T00:00:00.000Z",
+          "stadiumId": "8d81bd51-ac13-4f12-b5b4-ccfbdde7a4c5",
+          "homeTeamId": "ne",
+          "awayTeamId": "mia",
+          "_summary": "MIA @ NE, Gillette Stadium, Sat Jan 9 7:00 PM ET"
+        },
+        {
+          "id": "b79d55ca-d008-4d18-89da-d8d5dbce378b",
+          "season": 2026,
+          "week": 18,
+          "gameDateTimeUTC": "2027-01-10T00:00:00.000Z",
+          "stadiumId": "0e8ff099-ca06-45b2-b730-16f69705962a",
+          "homeTeamId": "no",
+          "awayTeamId": "tb",
+          "_summary": "TB @ NO, Caesars Superdome, Sat Jan 9 7:00 PM ET"
+        },
+        {
+          "id": "c6d8b233-7543-4947-9723-81384460be47",
+          "season": 2026,
+          "week": 18,
+          "gameDateTimeUTC": "2027-01-10T00:00:00.000Z",
+          "stadiumId": "c3d7f0d4-1288-416d-8047-c77c7579722e",
+          "homeTeamId": "nyg",
+          "awayTeamId": "phi",
+          "_summary": "PHI @ NYG, MetLife Stadium, Sat Jan 9 7:00 PM ET"
+        },
+        {
+          "id": "08ab5ef5-ba22-47e7-af19-2cb3ca41639f",
+          "season": 2026,
+          "week": 18,
+          "gameDateTimeUTC": "2027-01-10T00:00:00.000Z",
+          "stadiumId": "698f9855-ac75-45d3-bbb9-0aa83b187a53",
+          "homeTeamId": "was",
+          "awayTeamId": "dal",
+          "_summary": "DAL @ WAS, Northwest Stadium, Sat Jan 9 7:00 PM ET"
         }
       ]
     }
