@@ -14,9 +14,24 @@ function PageHeader() {
           component="div"
           sx={{
             display: 'flex',
+            gap: 2,
             justifyContent: 'flex-end',
           }}
         >
+          <Link
+            to="/nfl/2026"
+            aria-label="NFL confidence picks 2026"
+            className="nav-link"
+          >
+            <Typography
+              fontWeight="500"
+              fontSize="body2.fontSize"
+              noWrap
+              align="right"
+            >
+              nfl 2026
+            </Typography>
+          </Link>
           <Link to="/" aria-label="back to the home page" className="nav-link">
             <Typography
               fontWeight="500"

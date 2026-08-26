@@ -8,6 +8,7 @@ import GamePickList from './GamePickList';
 import {
   loadWeekRows,
   readUserEmail,
+  thisPlayerSeasonTotal,
   writeUserEmail,
   writeWeekCard,
 } from './storage';
@@ -44,12 +45,33 @@ function WeekPicks({ results, season, stadiums, teams }: WeekPicksProps) {
   const [weekNumber, setWeekNumber] = useState(() =>
     defaultWeekNumber(season, new Date()),
   );
+  const [liveRows, setLiveRows] = useState<WeekCardRow[] | null>(null);
+  const seasonPoints = thisPlayerSeasonTotal({
+    currentRows: liveRows ?? undefined,
+    currentWeekNumber: weekNumber,
+    results,
+    season,
+    teams,
+  });
+
+  function handleWeekChange(_: unknown, value: number) {
+    setLiveRows(null);
+    setWeekNumber(value);
+  }
 
   return (
     <Box>
+      <Typography
+        component="p"
+        color="text.secondary"
+        aria-live="polite"
+        sx={{ mb: 2 }}
+      >
+        Season total: {seasonPoints} {seasonPoints === 1 ? 'point' : 'points'}
+      </Typography>
       <Tabs
         value={weekNumber}
-        onChange={(_, value: number) => setWeekNumber(value)}
+        onChange={handleWeekChange}
         variant="scrollable"
         scrollButtons="auto"
         allowScrollButtonsMobile
@@ -62,6 +84,7 @@ function WeekPicks({ results, season, stadiums, teams }: WeekPicksProps) {
       </Tabs>
       <WeekView
         key={weekNumber}
+        onRowsChange={setLiveRows}
         results={results}
         season={season}
         stadiums={stadiums}
@@ -73,6 +96,7 @@ function WeekPicks({ results, season, stadiums, teams }: WeekPicksProps) {
 }
 
 type WeekViewProps = {
+  onRowsChange: (rows: WeekCardRow[]) => void;
   results: NFLConfidenceResults | null;
   season: NFLSeason;
   stadiums: NFLStadiumList;
@@ -81,6 +105,7 @@ type WeekViewProps = {
 };
 
 function WeekView({
+  onRowsChange,
   results,
   season,
   stadiums,
@@ -168,6 +193,7 @@ function WeekView({
     if (reloadIfClosed()) return;
     writeWeekCard({ rows: next, weekNumber });
     setRows(next);
+    onRowsChange(next);
   }
 
   function handlePick(gameId: string, winnerId: string) {
@@ -253,6 +279,7 @@ function WeekView({
     writeUserEmail(parsed.email);
     setRows(applied.rows);
     setEmail(parsed.email);
+    onRowsChange(applied.rows);
   }
 
   return (
@@ -292,21 +319,23 @@ function WeekView({
             />
           )}
         </Box>
-        <WeekRail
-          canExport={canExport}
-          closesAt={closesAt}
-          email={email}
-          frozen={frozen}
-          n={n}
-          onDownload={handleDownload}
-          onEmailChange={handleEmailChange}
-          onUploadFile={handleUpload}
-          payload={payload}
-          picked={picked}
-          resultsPosted={frozen && resultsPosted}
-          score={railScore}
-          uploadError={uploadError}
-        />
+        {n === 0 ? null : (
+          <WeekRail
+            canExport={canExport}
+            closesAt={closesAt}
+            email={email}
+            frozen={frozen}
+            n={n}
+            onDownload={handleDownload}
+            onEmailChange={handleEmailChange}
+            onUploadFile={handleUpload}
+            payload={payload}
+            picked={picked}
+            resultsPosted={frozen && resultsPosted}
+            score={railScore}
+            uploadError={uploadError}
+          />
+        )}
       </Box>
     </Box>
   );

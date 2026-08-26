@@ -80,7 +80,8 @@ function WeekRail({
         <>
           {picked === 0 ? (
             <Alert severity="info">
-              This week is closed. Upload a week QR to restore your card.
+              This week is closed. No picks on this device. Upload a week QR to
+              restore your card.
             </Alert>
           ) : null}
           {score ? (
@@ -88,9 +89,15 @@ function WeekRail({
               <Typography component="p">{score.correct} right</Typography>
               <Typography component="p">{score.points} points</Typography>
             </>
-          ) : resultsPosted ? null : (
+          ) : null}
+          {!score && !resultsPosted ? (
             <Typography component="p">Results not posted yet</Typography>
-          )}
+          ) : null}
+          {!score && resultsPosted && picked > 0 ? (
+            <Typography component="p" color="text.secondary">
+              No complete card on this device.
+            </Typography>
+          ) : null}
           <Button
             variant="outlined"
             component="label"

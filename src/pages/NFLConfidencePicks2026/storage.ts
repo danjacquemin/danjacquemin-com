@@ -1,6 +1,14 @@
-import { hydrateRows, type WeekCard } from './week';
+import { scoreWeek } from '@/features/nfl-confidence-picks';
 
-import type { NFLGame } from '@/features/nfl-schedule';
+import {
+  hydrateRows,
+  realGames,
+  type WeekCard,
+  type WeekCardRow,
+} from './week';
+
+import type { NFLConfidenceResults } from '@/features/nfl-confidence-picks';
+import type { NFLGame, NFLSeason } from '@/features/nfl-schedule';
 import type { NFLTeamList } from '@/features/nfl-teams';
 
 export const USER_EMAIL_KEY = 'userEmail';
@@ -51,6 +59,47 @@ export function loadWeekRows(
   teams: NFLTeamList,
 ) {
   return hydrateRows(readWeekCard(weekNumber), games, teams, weekNumber);
+}
+
+export function thisPlayerSeasonTotal({
+  currentRows,
+  currentWeekNumber,
+  results,
+  season,
+  teams,
+}: {
+  currentRows?: WeekCardRow[];
+  currentWeekNumber?: number;
+  results: NFLConfidenceResults | null;
+  season: NFLSeason;
+  teams: NFLTeamList;
+}): number {
+  let points = 0;
+
+  for (const week of season.games) {
+    const games = realGames(week.games);
+    if (games.length === 0) continue;
+
+    const card =
+      week.weekNumber === currentWeekNumber && currentRows
+        ? currentRows
+        : loadWeekRows(week.weekNumber, week.games, teams);
+    const resultsWeek = results?.weeks.find(
+      (entry) => entry.weekNumber === week.weekNumber,
+    );
+    const scored = scoreWeek({
+      card,
+      games,
+      resultsWeek,
+      weekNumber: week.weekNumber,
+    });
+
+    if (scored.status === 'posted' && scored.totals) {
+      points += scored.totals.points;
+    }
+  }
+
+  return points;
 }
 
 function isWeekCard(value: unknown): value is WeekCard {
