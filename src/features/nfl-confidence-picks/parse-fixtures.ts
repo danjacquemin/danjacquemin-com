@@ -91,7 +91,7 @@ const cases: ParseCase[] = [
   },
   {
     data: {
-      picks: [weekEntryValid.picks[0]],
+      picks: [{ ...weekEntryValid.picks[0], confidence: 1 }],
       weekNumber: 1,
     },
     expectPass: false,
