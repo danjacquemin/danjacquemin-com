@@ -1,0 +1,15 @@
+{
+  "weekNumber": 1,
+  "picks": [
+    {
+      "gameId": "d7f229f7-a0f9-409e-831e-a4053027b1d8",
+      "winnerId": "sea",
+      "confidence": 1
+    },
+    {
+      "gameId": "baeed6f6-8d95-4692-8ccc-9c7e3c20da2c",
+      "winnerId": "lar",
+      "confidence": 1
+    }
+  ]
+}
