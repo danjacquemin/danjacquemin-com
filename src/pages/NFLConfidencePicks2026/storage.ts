@@ -48,6 +48,14 @@ export function writeWeekCard(card: WeekCard): void {
   }
 }
 
+export function clearWeekCard(weekNumber: number): void {
+  try {
+    localStorage.removeItem(weekStorageKey(weekNumber));
+  } catch {
+    // Private mode or quota: keep working from memory.
+  }
+}
+
 export function loadWeekRows(
   weekNumber: number,
   games: readonly NFLGame[],

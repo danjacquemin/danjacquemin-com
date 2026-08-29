@@ -1,7 +1,5 @@
 import { Box, Link, Typography } from '@mui/material';
 
-import { Link as RouterLink } from 'react-router-dom';
-
 import Page from '../../templates/Page';
 
 function About() {

@@ -6,6 +6,7 @@ import { scoreWeek, withWeek } from '@/features/nfl-confidence-picks';
 
 import GamePickList from './GamePickList';
 import {
+  clearWeekCard,
   loadWeekRows,
   readUserEmail,
   // thisPlayerSeasonTotal,
@@ -17,6 +18,8 @@ import {
   defaultWeekNumber,
   downloadSvg,
   encodeQrPayload,
+  hydrateRows,
+  isPristineCard,
   isValidEmail,
   parseQrPayload,
   qrFilename,
@@ -221,6 +224,15 @@ function WeekView({
     }
   }
 
+  function handleReset() {
+    if (reloadIfClosed()) return;
+    // Drop the key so this week matches a fresh browser, not an empty stored card.
+    clearWeekCard(weekNumber);
+    const next = hydrateRows(null, week?.games ?? [], teams, weekNumber);
+    setRows(next);
+    onStoredCardChange();
+  }
+
   function handleDownload(svg: SVGSVGElement) {
     if (reloadIfClosed()) return;
     if (!canExport) return;
@@ -270,6 +282,7 @@ function WeekView({
       return;
     }
 
+    // Upload may write after cutoff; pick/reorder/download may not.
     writeWeekCard({ rows: applied.rows, weekNumber });
     writeUserEmail(parsed.email);
     setRows(applied.rows);
@@ -279,7 +292,12 @@ function WeekView({
 
   return (
     <Box>
-      <Typography id={`week-${weekNumber}-heading`} variant="h2" gutterBottom>
+      <Typography
+        id={`week-${weekNumber}-heading`}
+        variant="h2"
+        gutterBottom
+        sx={{ marginBottom: '3rem' }}
+      >
         {weekHeading(weekNumber, week?.games ?? [])}
       </Typography>
       <Box
@@ -317,18 +335,23 @@ function WeekView({
         {n === 0 ? null : (
           <WeekRail
             canExport={canExport}
+            canReset={
+              !isPristineCard(rows, week?.games ?? [], teams, weekNumber)
+            }
             closesAt={closesAt}
             email={email}
             frozen={frozen}
             n={n}
             onDownload={handleDownload}
             onEmailChange={handleEmailChange}
+            onReset={handleReset}
             onUploadFile={handleUpload}
             payload={payload}
             picked={picked}
             resultsPosted={frozen && resultsPosted}
             score={railScore}
             uploadError={uploadError}
+            weekNumber={weekNumber}
           />
         )}
       </Box>

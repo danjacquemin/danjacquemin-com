@@ -125,6 +125,20 @@ export function hydrateRows(
   return rows;
 }
 
+export function isPristineCard(
+  rows: readonly WeekCardRow[],
+  games: readonly NFLGame[],
+  teams: NFLTeamList,
+  weekNumber: number,
+): boolean {
+  const pristine = hydrateRows(null, games, teams, weekNumber);
+  if (rows.length !== pristine.length) return false;
+  return rows.every(
+    (row, index) =>
+      row.gameId === pristine[index].gameId && row.winnerId === null,
+  );
+}
+
 export function cutoffHasPassed(
   closesAt: Date | null,
   now: number = Date.now(),

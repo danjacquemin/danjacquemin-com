@@ -9,34 +9,40 @@ import type { ChangeEvent } from 'react';
 
 type WeekRailProps = {
   canExport: boolean;
+  canReset: boolean;
   closesAt: Date | null;
   email: string;
   frozen: boolean;
   n: number;
   onDownload: (svg: SVGSVGElement) => void;
   onEmailChange: (email: string) => void;
+  onReset: () => void;
   onUploadFile: (file: File) => Promise<void>;
   payload: string;
   picked: number;
   resultsPosted: boolean;
   score: { correct: number; points: number } | null;
   uploadError: string | null;
+  weekNumber: number;
 };
 
 function WeekRail({
   canExport,
+  canReset,
   closesAt,
   email,
   frozen,
   n,
   onDownload,
   onEmailChange,
+  onReset,
   onUploadFile,
   payload,
   picked,
   resultsPosted,
   score,
   uploadError,
+  weekNumber,
 }: WeekRailProps) {
   const qrRef = useRef<SVGSVGElement>(null);
   const [uploading, setUploading] = useState(false);
@@ -60,6 +66,26 @@ function WeekRail({
     if (!svg) return;
     onDownload(svg);
   }
+
+  const uploadControl = (
+    <>
+      <Button
+        variant="outlined"
+        component="label"
+        disabled={uploading}
+        aria-label="Upload week QR"
+      >
+        {uploading ? 'Reading QR…' : 'Upload QR'}
+        <input
+          hidden
+          type="file"
+          accept="image/svg+xml,image/png,image/jpeg,image/*"
+          onChange={handleUpload}
+        />
+      </Button>
+      {uploadError ? <Alert severity="error">{uploadError}</Alert> : null}
+    </>
+  );
 
   return (
     <Box
@@ -98,21 +124,6 @@ function WeekRail({
               No complete card on this device.
             </Typography>
           ) : null}
-          <Button
-            variant="outlined"
-            component="label"
-            disabled={uploading}
-            aria-label="Upload week QR"
-          >
-            {uploading ? 'Reading QR…' : 'Upload QR'}
-            <input
-              hidden
-              type="file"
-              accept="image/svg+xml,image/png,image/jpeg,image/*"
-              onChange={handleUpload}
-            />
-          </Button>
-          {uploadError ? <Alert severity="error">{uploadError}</Alert> : null}
         </>
       ) : (
         <>
@@ -174,6 +185,19 @@ function WeekRail({
             </Typography>
           ) : null}
         </>
+      )}
+      {uploadControl}
+      {frozen ? null : (
+        <Button
+          variant="outlined"
+          size="small"
+          disabled={!canReset}
+          onClick={onReset}
+          aria-label={`Reset picks for week ${weekNumber}`}
+          sx={{ alignSelf: 'flex-start', textTransform: 'none' }}
+        >
+          Reset Week {weekNumber}
+        </Button>
       )}
     </Box>
   );
