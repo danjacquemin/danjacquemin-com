@@ -1,0 +1,18 @@
+{
+  "season": 2026,
+  "weeks": [
+    {
+      "weekNumber": 1,
+      "games": [
+        {
+          "awayTeamId": "ne",
+          "homeTeamId": "sea",
+          "winnerId": "ne",
+          "status": "final",
+          "awayScore": 13,
+          "homeScore": 24
+        }
+      ]
+    }
+  ]
+}

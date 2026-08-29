@@ -614,7 +614,7 @@
     "visitDeets": null
   },
   {
-    "id": "d1affb15-18a8-4c49-b336-7e809c0d8aeb",
+    "id": "deb48462-3e78-4609-9210-36363c678e8d",
     "stadiumName": "Nissan Stadium",
     "previousNames": null,
     "stadiumNickname": "The Jack",
@@ -635,7 +635,7 @@
     "visitDeets": null
   },
   {
-    "id": "7a9efe59-6100-4f0a-abd4-7b19b4c6547a",
+    "id": "698f9855-ac75-45d3-bbb9-0aa83b187a53",
     "stadiumName": "Northwest Stadium",
     "previousNames": [
       "FedExField",
@@ -659,7 +659,7 @@
     "visitDeets": null
   },
   {
-    "id": "736566a5-d253-4d84-9581-7ad7d7ebccda",
+    "id": "c3d7f0d4-1288-416d-8047-c77c7579722e",
     "stadiumName": "MetLife Stadium",
     "previousNames": null,
     "stadiumNickname": "The Meadowlands",
@@ -795,6 +795,67 @@
     "state": "BAV",
     "zip": "80939",
     "country": "Germany",
+    "visited": false,
+    "visitDeets": null
+  },
+  {
+    "id": "39f35d02-1d7c-4caa-94e7-3d2068d04817",
+    "stadiumName": "Santiago Bernabéu Stadium",
+    "previousNames": [
+      "Bernabéu"
+    ],
+    "stadiumNickname": "Bernabéu",
+    "homeTeamIds": [],
+    "capacity": 81044,
+    "playingSurface": "Natural grass",
+    "roofType": "Open-air",
+    "yearOpened": 1947,
+    "yearClosed": null,
+    "address": "Av. de Concha Espina, 1",
+    "city": "Madrid",
+    "state": "MAD",
+    "zip": "28036",
+    "country": "Spain",
+    "visited": false,
+    "visitDeets": null
+  },
+  {
+    "id": "dee6b7de-0c51-4cb4-81ee-eb842979cf55",
+    "stadiumName": "Estadio Banorte",
+    "previousNames": [
+      "Estadio BBVA"
+    ],
+    "stadiumNickname": null,
+    "homeTeamIds": [],
+    "capacity": 53500,
+    "playingSurface": "Natural grass",
+    "roofType": "Open-air",
+    "yearOpened": 2015,
+    "yearClosed": null,
+    "address": "Av. Pablo Livas 2011",
+    "city": "Guadalupe",
+    "state": "NL",
+    "zip": "67164",
+    "country": "Mexico",
+    "visited": false,
+    "visitDeets": null
+  },
+  {
+    "id": "f26f0ca3-1d73-49d0-b0c9-69594527fb3e",
+    "stadiumName": "Stade de France",
+    "previousNames": null,
+    "stadiumNickname": null,
+    "homeTeamIds": [],
+    "capacity": 80698,
+    "playingSurface": "Natural grass",
+    "roofType": "Open-air",
+    "yearOpened": 1998,
+    "yearClosed": null,
+    "address": "ZAC du Cornillon Nord",
+    "city": "Saint-Denis",
+    "state": "IDF",
+    "zip": "93200",
+    "country": "France",
     "visited": false,
     "visitDeets": null
   }

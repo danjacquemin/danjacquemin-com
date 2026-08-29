@@ -68,7 +68,7 @@ export const baseTheme = {
     },
     h2: {
       fontFamily: '"Playfair Display", serif',
-      fontSize: '1.5rem',
+      fontSize: '2.2rem',
       lineHeight: 1.1,
     },
     h3: {

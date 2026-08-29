@@ -36,8 +36,8 @@ const cards: readonly HomeCardData[] = [
     partOfSpeech: 'noun',
     definition:
       "debris that was deliberately thrown overboard by a crew of a ship in distress, most often to lighten the ship's load",
-    chipLabel: "2025 NFL Pick'em",
-    chipTo: '/nfl',
+    chipLabel: '2026 NFL Confidence Picks',
+    chipTo: '/nfl/2026',
   },
   {
     title: (
